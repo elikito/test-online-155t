@@ -1,0 +1,21 @@
+<div *ngIf="!mostrarResultado">
+  <div *ngFor="let pregunta of preguntas">
+    <p><strong>{{ pregunta.id }}.</strong> {{ pregunta.pregunta }}</p>
+    <div *ngFor="let key of ['a', 'b', 'c', 'd']">
+      <label>
+        <input type="radio"
+               [name]="'pregunta_' + pregunta.id"
+               [value]="key"
+               (change)="seleccionarRespuesta(pregunta.id, key)">
+        {{ key }}) {{ pregunta.opciones[key] }}
+      </label>
+    </div>
+    <hr>
+  </div>
+  <button (click)="enviar()">Enviar</button>
+</div>
+
+<div *ngIf="mostrarResultado">
+  <h2>Resultado</h2>
+  <p>Has acertado {{ aciertos }} de {{ preguntas.length }} preguntas.</p>
+</div>
