@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listado de Exámenes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrapcss/bootstrap.min.css
+</head>
+<body class="container py-5">
+
+  <h1 class="mb-4">Exámenes disponibles</h1>
+  <ul id="exam-list" class="list-group mb-5"></ul>
+
+  <h2>Temario</h2>
+  <div id="temario" class="border p-3 bg-light"></div>
+
+  <script>
+    // Cargar exámenes
+    fetch('/api/exams')
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('exam-list');
+        data.forEach(file => {
+          const li = document.createElement('li');
+          li.className = 'list-group-item';
+          li.textContent = file;
+          list.appendChild(li);
+        });
+      });
+
+    // Cargar temario
+    fetch('/api/temario')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('temario').innerHTML = html;
+      });
+  </script>
+
+</body>
+</html>
