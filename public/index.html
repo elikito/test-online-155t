@@ -2,19 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Listado de Exámenes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrapcss/bootstrap.min.css
-</head>
+  <title>Test Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrapead>
 <body class="container py-5">
 
-  <h1 class="mb-4">Exámenes disponibles</h1>
-  <ul id="exam-list" class="list-group mb-5"></ul>
+  <h1 class="mb-4">Test Online</h1>
 
   <h2>Temario</h2>
-  <div id="temario" class="border p-3 bg-light"></div>
+  <div id="temario" class="border p-3 bg-light mb-5"></div>
+
+  <h2>Exámenes disponibles</h2>
+  <ul id="exam-list" class="list-group"></ul>
 
   <script>
-    // Cargar exámenes
+    // Cargar temario
+    fetch('/api/temario')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('temario').innerHTML = html;
+      });
+
+    // Cargar lista de exámenes
     fetch('/api/exams')
       .then(res => res.json())
       .then(data => {
@@ -25,13 +33,6 @@
           li.textContent = file;
           list.appendChild(li);
         });
-      });
-
-    // Cargar temario
-    fetch('/api/temario')
-      .then(res => res.text())
-      .then(html => {
-        document.getElementById('temario').innerHTML = html;
       });
   </script>
 
