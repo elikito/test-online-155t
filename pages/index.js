@@ -270,8 +270,6 @@ const handleAnswer = (key) => {
 			</div>
 		</div>
 		)}
-
-
     </div>
   );
 }
