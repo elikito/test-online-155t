@@ -288,10 +288,6 @@ const handleAnswer = (key) => {
 			</div>
 		</div>
 	)}
-
-      <footer className="mt-5 mb-3 text-center text-muted">
-        <small>Examen creado por [Tu Nombre] - Todos los derechos reservados &copy; {new Date().getFullYear()}</small>
-      </footer>
     </div>
   );
 }
