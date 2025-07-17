@@ -12,6 +12,12 @@ export default function Home() {
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState({ preguntas: [], respuestas: [] });
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showCreatePanel, setShowCreatePanel] = useState(false);
+  const [newTestTitle, setNewTestTitle] = useState('');
+  const [newQuestions, setNewQuestions] = useState([]);
+  const [newQuestionText, setNewQuestionText] = useState('');
+  const [newOptions, setNewOptions] = useState({ a: '', b: '', c: '', d: '' });
+  const [newCorrect, setNewCorrect] = useState('a');
 
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
@@ -28,32 +34,32 @@ export default function Home() {
       .map(({ value }) => value);
   };
 
-const loadExam = async (filename) => {
-  const res = await fetch(`/exams/${filename}`);
-  const data = await res.json();
-  const shuffled = shuffleArray(data);
+  const loadExam = async (filename) => {
+    const res = await fetch(`/exams/${filename}`);
+    const data = await res.json();
+    const shuffled = shuffleArray(data);
 
-  const saved = localStorage.getItem(`respuestas_${filename}`);
-  let restored = shuffled;
+    const saved = localStorage.getItem(`respuestas_${filename}`);
+    let restored = shuffled;
 
-  if (saved) {
-    const savedAnswers = JSON.parse(saved);
-    restored = shuffled.map(q => {
-      const match = savedAnswers.find(sq => sq.id_pregunta === q.id_pregunta);
-      return match ? { ...q, respuesta_usuario: match.respuesta_usuario } : q;
-    });
+    if (saved) {
+      const savedAnswers = JSON.parse(saved);
+      restored = shuffled.map(q => {
+        const match = savedAnswers.find(sq => sq.id_pregunta === q.id_pregunta);
+        return match ? { ...q, respuesta_usuario: match.respuesta_usuario } : q;
+      });
 
-    // Recalcular contador
-    const correct = restored.filter(q => q.respuesta_usuario === q.respuesta_correcta).length;
-    const incorrect = restored.filter(q => q.respuesta_usuario && q.respuesta_usuario !== q.respuesta_correcta).length;
-    setCorrectCount(correct);
-    setIncorrectCount(incorrect);
-  }
+      // Recalcular contador
+      const correct = restored.filter(q => q.respuesta_usuario === q.respuesta_correcta).length;
+      const incorrect = restored.filter(q => q.respuesta_usuario && q.respuesta_usuario !== q.respuesta_correcta).length;
+      setCorrectCount(correct);
+      setIncorrectCount(incorrect);
+    }
 
-  setQuestions(restored);
-  setCurrent(0);
-  setSelectedOption(restored[0].respuesta_usuario || null);
-};
+    setQuestions(restored);
+    setCurrent(0);
+    setSelectedOption(restored[0].respuesta_usuario || null);
+  };
 
   const handleSelect = (e) => {
     const file = e.target.value;
@@ -61,24 +67,23 @@ const loadExam = async (filename) => {
     loadExam(file);
   };
 
-const handleAnswer = (key) => {
-  if (selectedOption !== null) return;
-  setSelectedOption(key);
+  const handleAnswer = (key) => {
+    if (selectedOption !== null) return;
+    setSelectedOption(key);
 
-  const updatedQuestions = [...questions];
-  updatedQuestions[current].respuesta_usuario = key;
-  setQuestions(updatedQuestions);
+    const updatedQuestions = [...questions];
+    updatedQuestions[current].respuesta_usuario = key;
+    setQuestions(updatedQuestions);
 
-  localStorage.setItem(`respuestas_${selectedExam}`, JSON.stringify(updatedQuestions));
+    localStorage.setItem(`respuestas_${selectedExam}`, JSON.stringify(updatedQuestions));
 
-  const correct = updatedQuestions[current].respuesta_correcta;
-  if (key === correct) {
-    setCorrectCount(prev => prev + 1);
-  } else {
-    setIncorrectCount(prev => prev + 1);
-  }
-};
-
+    const correct = updatedQuestions[current].respuesta_correcta;
+    if (key === correct) {
+      setCorrectCount(prev => prev + 1);
+    } else {
+      setIncorrectCount(prev => prev + 1);
+    }
+  };
 
   const nextQuestion = () => {
     setSelectedOption(null);
@@ -106,6 +111,36 @@ const handleAnswer = (key) => {
     });
     setSearchResults({ preguntas, respuestas });
   }, [search, questions]);
+
+  const addNewQuestion = () => {
+    if (!newQuestionText.trim()) return;
+    setNewQuestions([
+      ...newQuestions,
+      {
+        pregunta: newQuestionText,
+        opciones: { ...newOptions },
+        respuesta_correcta: newCorrect,
+        id_pregunta: Date.now() + Math.random()
+      }
+    ]);
+    setNewQuestionText('');
+    setNewOptions({ a: '', b: '', c: '', d: '' });
+    setNewCorrect('a');
+  };
+
+  const downloadTest = () => {
+    const test = {
+      titulo: newTestTitle,
+      preguntas: newQuestions
+    };
+    const blob = new Blob([JSON.stringify(test, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${newTestTitle || 'nuevo_test'}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -184,6 +219,12 @@ const handleAnswer = (key) => {
               disabled={questions.length === 0}
             >
               Señor GPT
+            </button>
+            <button
+              className="btn btn-success"
+              onClick={() => setShowCreatePanel(true)}
+            >
+              Crear nuevo test
             </button>
           </div>
         </div>
@@ -304,24 +345,19 @@ const handleAnswer = (key) => {
             <div className="d-flex flex-wrap gap-2">
               {questions.map((q, index) => {
                 let btnClass = "btn btn-outline-secondary";
-                if (index < current) {
-                  const userAnswered = index < current;
-                  const isCorrect = q.respuesta_usuario === q.respuesta_correcta;
-                  if (userAnswered) {
-                    btnClass = isCorrect ? "btn btn-success" : "btn btn-danger";
-                  }
-                } else if (index === current) {
-                  btnClass = "btn btn-primary";
+                if (index === current) {
+                  btnClass += " active";
+                } else if (q.respuesta_usuario) {
+                  btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
                 }
-
                 return (
                   <button
                     key={index}
                     className={btnClass}
-                    style={{ width: '40px', height: '40px', padding: 0 }}
+                    style={{ flex: '1 0 30%', minWidth: 120 }}
                     onClick={() => {
                       setCurrent(index);
-                      setSelectedOption(questions[index].respuesta_usuario || null);
+                      setSelectedOption(q.respuesta_usuario);
                     }}
                   >
                     {index + 1}
@@ -333,9 +369,85 @@ const handleAnswer = (key) => {
         )}
       </div>
 
+      {/* Panel para crear nuevo test */}
+      {showCreatePanel && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            right: 0,
+            width: 400,
+            height: '100vh',
+            background: '#fff',
+            zIndex: 2000,
+            boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
+            padding: 24,
+            overflowY: 'auto'
+          }}
+        >
+          <h4>Crear nuevo test</h4>
+          <button className="btn-close float-end" onClick={() => setShowCreatePanel(false)} />
+          <div className="mb-3">
+            <label className="form-label">Título del test</label>
+            <input
+              className="form-control"
+              value={newTestTitle}
+              onChange={e => setNewTestTitle(e.target.value)}
+            />
+          </div>
+          <hr />
+          <h5>Añadir pregunta</h5>
+          <div className="mb-2">
+            <input
+              className="form-control mb-2"
+              placeholder="Texto de la pregunta"
+              value={newQuestionText}
+              onChange={e => setNewQuestionText(e.target.value)}
+            />
+            {['a', 'b', 'c', 'd'].map(opt => (
+              <div className="input-group mb-2" key={opt}>
+                <span className="input-group-text">{opt.toUpperCase()}</span>
+                <input
+                  className="form-control"
+                  placeholder={`Opción ${opt.toUpperCase()}`}
+                  value={newOptions[opt]}
+                  onChange={e => setNewOptions({ ...newOptions, [opt]: e.target.value })}
+                />
+                <span className="input-group-text">
+                  <input
+                    type="radio"
+                    name="correct"
+                    checked={newCorrect === opt}
+                    onChange={() => setNewCorrect(opt)}
+                  />
+                  Correcta
+                </span>
+              </div>
+            ))}
+            <button className="btn btn-primary" onClick={addNewQuestion}>Añadir pregunta</button>
+          </div>
+          <hr />
+          <h6>Preguntas añadidas: {newQuestions.length}</h6>
+          <ul>
+            {newQuestions.map((q, idx) => (
+              <li key={idx}>{q.pregunta}</li>
+            ))}
+          </ul>
+          <button
+            className="btn btn-success mt-3"
+            onClick={downloadTest}
+            disabled={!newTestTitle || newQuestions.length === 0}
+          >
+            Descargar test como JSON
+          </button>
+        </div>
+      )}
+
       {/* Footer */}
-      <footer className="bg-light text-center py-3 mt-auto border-top">
-        {new Date().getFullYear()} - Elías K
+      <footer className="bg-light text-center text-lg-start mt-auto py-3">
+        <div className="container">
+          <p className="text-muted mb-0">© 2023 Test AGE. Todos los derechos reservados.</p>
+        </div>
       </footer>
     </div>
   );
