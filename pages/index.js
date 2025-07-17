@@ -118,6 +118,27 @@ const handleAnswer = (key) => {
             <option key={idx} value={file}>{file}</option>
           ))}
         </select>
+        {questions.length > 0 && (
+          <button
+            className="btn btn-warning mt-2 ms-2"
+            onClick={() => {
+              setCorrectCount(0);
+              setIncorrectCount(0);
+              const resetQuestions = questions.map(q => {
+                const { respuesta_usuario, ...rest } = q;
+                return rest;
+              });
+              setQuestions(resetQuestions);
+              setCurrent(0);
+              setSelectedOption(null);
+              if (selectedExam) {
+                localStorage.removeItem(`respuestas_${selectedExam}`);
+              }
+            }}
+          >
+            Reiniciar test
+          </button>
+        )}
       </div>
 
       <div className="mb-3">
