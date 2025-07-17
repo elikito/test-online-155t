@@ -119,25 +119,43 @@ const handleAnswer = (key) => {
           ))}
         </select>
         {questions.length > 0 && (
-          <button
-            className="btn btn-warning mt-2 ms-2"
-            onClick={() => {
-              setCorrectCount(0);
-              setIncorrectCount(0);
-              const resetQuestions = questions.map(q => {
-                const { respuesta_usuario, ...rest } = q;
-                return rest;
-              });
-              setQuestions(resetQuestions);
-              setCurrent(0);
-              setSelectedOption(null);
-              if (selectedExam) {
-                localStorage.removeItem(`respuestas_${selectedExam}`);
-              }
-            }}
-          >
-            Reiniciar test
-          </button>
+          <>
+            <button
+              className="btn btn-warning mt-2 ms-2"
+              onClick={() => {
+                setCorrectCount(0);
+                setIncorrectCount(0);
+                const resetQuestions = questions.map(q => {
+                  const { respuesta_usuario, ...rest } = q;
+                  return rest;
+                });
+                setQuestions(resetQuestions);
+                setCurrent(0);
+                setSelectedOption(null);
+                if (selectedExam) {
+                  localStorage.removeItem(`respuestas_${selectedExam}`);
+                }
+              }}
+            >
+              Reiniciar test
+            </button>
+            <button
+              className="btn btn-info mt-2 ms-2"
+              onClick={() => {
+                if (!currentQuestion) return;
+                // Construir el texto a buscar
+                let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                  texto += `${key.toUpperCase()}: ${value}\n`;
+                });
+                // Buscar en Google (abrir nueva pestaña con el texto)
+                const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                window.open(url, '_blank');
+              }}
+            >
+              Buscar en ChatGPT
+            </button>
+          </>
         )}
       </div>
 
