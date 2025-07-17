@@ -1,7 +1,7 @@
 {
   "name": "test-online-155t",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "main": "index.html",
   "type": "module",
   "dependencies": {
     "express": "^4.18.2",
