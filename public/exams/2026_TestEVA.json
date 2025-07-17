@@ -1,0 +1,16 @@
+{
+  "titulo": "2026 prueba",
+  "preguntas": [
+    {
+      "pregunta": "a que hora nos vamos?",
+      "opciones": {
+        "a": "A las 14",
+        "b": "A las 15",
+        "c": "A las 18",
+        "d": "Jamás"
+      },
+      "respuesta_correcta": "a",
+      "id_pregunta": 1752756553144.064
+    }
+  ]
+}
