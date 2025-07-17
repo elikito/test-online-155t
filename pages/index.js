@@ -183,14 +183,14 @@ const handleAnswer = (key) => {
               }}
               disabled={questions.length === 0}
             >
-              Preguntar a GPT
+              Señor GPT
             </button>
           </div>
         </div>
       </div>
 
       <div className="container mt-5" style={{ flex: 1 }}>
-        <h1 className="mb-4">Examen Online</h1>
+        <h1 className="mb-4">Test AGE</h1>
 
         <div className="mb-3">
           <label className="form-label">Selecciona un examen:</label>
@@ -214,7 +214,7 @@ const handleAnswer = (key) => {
 
         {search && (
           <div className="mb-4">
-            <h5>Preguntas con el literal buscado</h5>
+            <h5>Preguntas encontradas</h5>
             {searchResults.preguntas.length === 0 && <p>No hay coincidencias.</p>}
             <ul>
               {searchResults.preguntas.map((q, idx) => (
@@ -232,7 +232,7 @@ const handleAnswer = (key) => {
                 </li>
               ))}
             </ul>
-            <h5>Respuestas con el texto buscado</h5>
+            <h5>Respuestas encontradas</h5>
             {searchResults.respuestas.length === 0 && <p>No hay coincidencias.</p>}
             <ul>
               {searchResults.respuestas.map((r, idx) => (
@@ -335,7 +335,7 @@ const handleAnswer = (key) => {
 
       {/* Footer */}
       <footer className="bg-light text-center py-3 mt-auto border-top">
-        {new Date().getFullYear()} - lorem ipsum
+        {new Date().getFullYear()} - Elías K
       </footer>
     </div>
   );
