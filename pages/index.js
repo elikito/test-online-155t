@@ -9,6 +9,8 @@ export default function Home() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [correctCount, setCorrectCount] = useState(0);
   const [incorrectCount, setIncorrectCount] = useState(0);
+  const [search, setSearch] = useState('');
+  const [searchResults, setSearchResults] = useState({ preguntas: [], respuestas: [] });
 
   useEffect(() => {
     setExamFiles(['examen_prueba.json']); // Simulación
@@ -80,6 +82,26 @@ const handleAnswer = (key) => {
 
   const currentQuestion = questions[current];
 
+  useEffect(() => {
+    if (!search) {
+      setSearchResults({ preguntas: [], respuestas: [] });
+      return;
+    }
+    const lower = search.toLowerCase();
+    const preguntas = questions.filter(q =>
+      q.pregunta.toLowerCase().includes(lower)
+    );
+    const respuestas = [];
+    questions.forEach((q, idx) => {
+      Object.entries(q.opciones).forEach(([key, value]) => {
+        if (value.toLowerCase().includes(lower)) {
+          respuestas.push({ pregunta: q.pregunta, opcion: key, texto: value, index: idx });
+        }
+      });
+    });
+    setSearchResults({ preguntas, respuestas });
+  }, [search, questions]);
+
   return (
     <div className="container mt-5">
       <h1 className="mb-4">Examen Online</h1>
@@ -93,6 +115,57 @@ const handleAnswer = (key) => {
           ))}
         </select>
       </div>
+
+      <div className="mb-3">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Buscar en preguntas o respuestas..."
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+        />
+      </div>
+
+      {search && (
+        <div className="mb-4">
+          <h5>Preguntas con el literal buscado</h5>
+          {searchResults.preguntas.length === 0 && <p>No hay coincidencias.</p>}
+          <ul>
+            {searchResults.preguntas.map((q, idx) => (
+              <li key={q.id_pregunta || idx}>
+                <button
+                  className="btn btn-link p-0"
+                  onClick={() => {
+                    const i = questions.findIndex(qq => qq.id_pregunta === q.id_pregunta);
+                    setCurrent(i);
+                    setSelectedOption(questions[i].respuesta_usuario || null);
+                  }}
+                >
+                  {q.pregunta}
+                </button>
+              </li>
+            ))}
+          </ul>
+          <h5>Respuestas con el texto buscado</h5>
+          {searchResults.respuestas.length === 0 && <p>No hay coincidencias.</p>}
+          <ul>
+            {searchResults.respuestas.map((r, idx) => (
+              <li key={idx}>
+                <button
+                  className="btn btn-link p-0"
+                  onClick={() => {
+                    setCurrent(r.index);
+                    setSelectedOption(questions[r.index].respuesta_usuario || null);
+                  }}
+                >
+                  Pregunta: {r.pregunta} <br />
+                  <strong>{r.opcion.toUpperCase()}:</strong> {r.texto}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {currentQuestion && (
         <div className="card">
