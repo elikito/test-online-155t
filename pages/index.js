@@ -13,7 +13,11 @@ export default function Home() {
   const [searchResults, setSearchResults] = useState({ preguntas: [], respuestas: [] });
 
   useEffect(() => {
-    setExamFiles(['examen_prueba.json']); // Simulación
+    // Obtener la lista de exámenes disponibles desde el backend
+    fetch('/api/exams')
+      .then(res => res.json())
+      .then(files => setExamFiles(files))
+      .catch(() => setExamFiles([]));
   }, []);
 
   const shuffleArray = (array) => {
