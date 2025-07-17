@@ -21,16 +21,32 @@ export default function Home() {
       .map(({ value }) => value);
   };
 
-  const loadExam = async (filename) => {
-    const res = await fetch(`/exams/${filename}`);
-    const data = await res.json();
-    const shuffled = shuffleArray(data);
-    setQuestions(shuffled);
-    setCurrent(0);
-    setSelectedOption(null);
-    setCorrectCount(0);
-    setIncorrectCount(0);
-  };
+const loadExam = async (filename) => {
+  const res = await fetch(`/exams/${filename}`);
+  const data = await res.json();
+  const shuffled = shuffleArray(data);
+
+  const saved = localStorage.getItem(`respuestas_${filename}`);
+  let restored = shuffled;
+
+  if (saved) {
+    const savedAnswers = JSON.parse(saved);
+    restored = shuffled.map(q => {
+      const match = savedAnswers.find(sq => sq.id_pregunta === q.id_pregunta);
+      return match ? { ...q, respuesta_usuario: match.respuesta_usuario } : q;
+    });
+
+    // Recalcular contador
+    const correct = restored.filter(q => q.respuesta_usuario === q.respuesta_correcta).length;
+    const incorrect = restored.filter(q => q.respuesta_usuario && q.respuesta_usuario !== q.respuesta_correcta).length;
+    setCorrectCount(correct);
+    setIncorrectCount(incorrect);
+  }
+
+  setQuestions(restored);
+  setCurrent(0);
+  setSelectedOption(restored[0].respuesta_usuario || null);
+};
 
   const handleSelect = (e) => {
     const file = e.target.value;
@@ -38,16 +54,24 @@ export default function Home() {
     loadExam(file);
   };
 
-  const handleAnswer = (key) => {
-    if (selectedOption !== null) return; // Evita doble clic
-    setSelectedOption(key);
-    const correct = questions[current].respuesta_correcta;
-    if (key === correct) {
-      setCorrectCount(prev => prev + 1);
-    } else {
-      setIncorrectCount(prev => prev + 1);
-    }
-  };
+const handleAnswer = (key) => {
+  if (selectedOption !== null) return;
+  setSelectedOption(key);
+
+  const updatedQuestions = [...questions];
+  updatedQuestions[current].respuesta_usuario = key;
+  setQuestions(updatedQuestions);
+
+  localStorage.setItem(`respuestas_${selectedExam}`, JSON.stringify(updatedQuestions));
+
+  const correct = updatedQuestions[current].respuesta_correcta;
+  if (key === correct) {
+    setCorrectCount(prev => prev + 1);
+  } else {
+    setIncorrectCount(prev => prev + 1);
+  }
+};
+
 
   const nextQuestion = () => {
     setSelectedOption(null);
@@ -109,11 +133,47 @@ export default function Home() {
         </div>
       )}
 
-      {questions.length > 0 && (
-        <div className="mt-4 text-center">
-          <p><strong>Correctas:</strong> {correctCount} | <strong>Incorrectas:</strong> {incorrectCount}</p>
-        </div>
-      )}
+	{questions.length > 0 && (
+		<div className="mt-4 text-center">
+			<p><strong>Correctas:</strong> {correctCount} | <strong>Incorrectas:</strong> {incorrectCount}</p>
+		</div>
+	)}
+
+	{questions.length > 0 && (
+		<div className="mt-4">
+			<h5>Navegación de preguntas</h5>
+			<div className="d-flex flex-wrap gap-2">
+			{questions.map((q, index) => {
+				let btnClass = "btn btn-outline-secondary";
+				if (index < current) {
+				const userAnswered = index < current;
+				const isCorrect = q.respuesta_usuario === q.respuesta_correcta;
+				if (userAnswered) {
+					btnClass = isCorrect ? "btn btn-success" : "btn btn-danger";
+				}
+				} else if (index === current) {
+				btnClass = "btn btn-primary";
+				}
+
+				return (
+				<button
+					key={index}
+					className={btnClass}
+					style={{ width: '40px', height: '40px', padding: 0 }}
+					onClick={() => {
+					setCurrent(index);
+					setSelectedOption(q.respuesta_usuario || null);
+					}}
+				>
+					{index + 1}
+				</button>
+				);
+			})}
+			</div>
+		</div>
+		)}
+
+
     </div>
   );
 }
