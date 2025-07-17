@@ -9,7 +9,7 @@
       "d": "Nombrar conjuntamente Comisiones de Investigación sobre asuntos de interés público. Sus conclusiones serán vinculantes  para los Tribunales."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_07",
@@ -21,7 +21,7 @@
       "d": "6 años y se renovarán por terceras partes cada"
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_09",
@@ -33,7 +33,7 @@
       "d": "El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría absoluta  de la moción de censura."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_10",
@@ -45,7 +45,7 @@
       "d": "Formular solicitudes.      2024 - TAI-L – MODELO A  Página 2 de 14"
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_11",
@@ -57,7 +57,7 @@
       "d": "Permitirá también el acceso a servicios de firma electrónica, en particular, a servicios de firma de documentos electrónicos  mediante certificados electrónicos centralizados."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_12",
@@ -69,7 +69,7 @@
       "d": "Deberá motivarse."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_13",
@@ -81,7 +81,7 @@
       "d": "No podrá ser superior a seis años."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_14",
@@ -93,7 +93,7 @@
       "d": "La factura electrónica solo se utilizará en contratación, estando excluida de la justificación de ayudas y subvenciones."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_15",
@@ -105,7 +105,7 @@
       "d": "Adecuación de datos."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_16",
@@ -117,7 +117,7 @@
       "d": "Cuando la notificación se practique en el domicilio del interesado, de no hallarse presente éste en el momento de entregarse  la notificación, podrá hacerse cargo de ella cualquier persona mayor de dieciséis años que se encuentre en el domicilio y  haga constar su identidad."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_17",
@@ -129,7 +129,7 @@
       "d": "Enlace directo al Boletín Oficial correspondiente."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_18",
@@ -141,7 +141,7 @@
       "d": "Utiliza un sistema de intercambio de mensajes conforme al estándar SAML"
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_20",
@@ -153,7 +153,7 @@
       "d": "CEGADA      2024 - TAI-L – MODELO A  Página 3 de 14"
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_21",
@@ -165,7 +165,7 @@
       "d": "M.2"
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_22",
@@ -177,7 +177,7 @@
       "d": "Es la interfaz entre la tarjeta controladora y el cable de conexión."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_23",
@@ -189,7 +189,7 @@
       "d": "Las reestructuraciones se realizan desde las hojas hacia la raíz."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_24",
@@ -201,7 +201,7 @@
       "d": "Se pude implementar usando una estructura dinámica."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_25",
@@ -213,7 +213,7 @@
       "d": "En JAVA, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class)."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_26",
@@ -225,7 +225,7 @@
       "d": "Facilitar la comunicación entre usuarios a través de terminales."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_27",
@@ -237,7 +237,7 @@
       "d": "No permite la reutilización de código, no pudiendo usar bibliotecas de otros desarrolladores."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_28",
@@ -249,7 +249,7 @@
       "d": "Un atributo que se utiliza solo para consultas."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_29",
@@ -261,7 +261,7 @@
       "d": "Rembrandt."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_30",
@@ -273,7 +273,7 @@
       "d": "Un lenguaje de manipulación de datos."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_31",
@@ -285,7 +285,7 @@
       "d": "Dominio."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_32",
@@ -297,7 +297,7 @@
       "d": "Una relación en 3FN estará también en 2FN, pero no en 1FN."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_33",
@@ -309,7 +309,7 @@
       "d": "Regresión.      2024 - TAI-L – MODELO A  Página 4 de 14"
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_34",
@@ -321,7 +321,7 @@
       "d": "Not (a>=d) and not (c>=b)"
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_35",
@@ -333,7 +333,7 @@
       "d": "Todo procedimiento debe ejecutar una sentencia de return."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_36",
@@ -345,7 +345,7 @@
       "d": "Este programa es un bucle infinito."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_37",
@@ -357,7 +357,7 @@
       "d": "El comando SELECT es un comando DML."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_38",
@@ -369,7 +369,7 @@
       "d": "Utiliza WHERE para condiciones de filtrado."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_39",
@@ -381,7 +381,7 @@
       "d": "Un error durante la ejecución de cualquier trigger no cancela automáticamente la operación que lo disparó, la cancelación  hay que programarla."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_40",
@@ -393,7 +393,7 @@
       "d": "Se representa mediante una línea discontinua que une la superclase y subclase con un rectángulo al lado de la superclase."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_41",
@@ -405,7 +405,7 @@
       "d": "Muestra únicamente el modelado estático de un sistema software, que puede utilizarse en las diferentes fases de su ciclo de  desarrollo."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_42",
@@ -417,7 +417,7 @@
       "d": "Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y  sin afectar a otros objetos."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_43",
@@ -429,7 +429,7 @@
       "d": "Es una plataforma para desarrollar aplicaciones móviles que se puede ejecutar en sistema Android solamente."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_44",
@@ -441,7 +441,7 @@
       "d": "Razor utiliza el @símbolo para realizar la transición de C# a HTML.    2024 - TAI-L – MODELO A  Página 5 de 14"
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_45",
@@ -453,7 +453,7 @@
       "d": "JPA no permite definir relaciones entre entidades del tipo uno a muchos."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_46",
@@ -465,7 +465,7 @@
       "d": "Comunicación diferencial: usan nodos distintos para comunicarse y sincronizarse a través de redes independientes entre sí."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_47",
@@ -477,7 +477,7 @@
       "d": "Es una arquitectura no orientada a recursos."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_48",
@@ -489,7 +489,7 @@
       "d": "En XHTML es obligatoria la presencia del elemento <head>."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_49",
@@ -501,7 +501,7 @@
       "d": "onmouseout."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_50",
@@ -513,7 +513,7 @@
       "d": "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en  el plazo de diez días hábiles."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_51",
@@ -525,7 +525,7 @@
       "d": "Alto esfuerzo físico."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_52",
@@ -537,7 +537,7 @@
       "d": "Son un conjunto de normas que deben cumplir las herramientas de autor para ser accesibles y generar contenidos también  accesibles."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_53",
@@ -549,7 +549,7 @@
       "d": "Selenium, Cucumber y GitLab."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_54",
@@ -561,7 +561,7 @@
       "d": "Pruebas de migración."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_55",
@@ -573,7 +573,7 @@
       "d": "Hilos."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_56",
@@ -585,7 +585,7 @@
       "d": "Analizar uno o varios servidores con una directiva generada por SCW.    2024 - TAI-L – MODELO A  Página 6 de 14"
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_57",
@@ -597,7 +597,7 @@
       "d": "10.000 bytes."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_58",
@@ -609,7 +609,7 @@
       "d": "PAT."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_59",
@@ -621,7 +621,7 @@
       "d": "Árbol."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_60",
@@ -633,7 +633,7 @@
       "d": "Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar interno a la organización."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_61",
@@ -645,7 +645,7 @@
       "d": "NAS es el acrónimo de Network Area Storage."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_62",
@@ -657,7 +657,7 @@
       "d": "Los backups son una representación instantánea del estado de un sistema en un momento específico."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_63",
@@ -669,7 +669,7 @@
       "d": "Descarga los correos automáticamente del servidor."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_64",
@@ -681,7 +681,7 @@
       "d": "Docker, Kubernetes y Debian."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_65",
@@ -693,7 +693,7 @@
       "d": "El último estándar de PoE activo es el IEEE 802.3at."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_66",
@@ -705,7 +705,7 @@
       "d": "Seguridad de red."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_67",
@@ -717,7 +717,7 @@
       "d": "INES."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_68",
@@ -729,7 +729,7 @@
       "d": "Es el formato más adecuado cuando el documento original es un PDF."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_69",
@@ -741,7 +741,7 @@
       "d": "El barrido (“escaneo”) de puertos es un ataque que trata de obtener información básica acerca de qué servicios se ofrecen  en un determinado sistema, así como otros detalles técnicos del mismo."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_70",
@@ -753,7 +753,7 @@
       "d": "Categoría 5E."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_71",
@@ -765,7 +765,7 @@
       "d": "NB-IoT.      2024 - TAI-L – MODELO A  Página 7 de 14"
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_72",
@@ -777,7 +777,7 @@
       "d": "La capa de sesión a menudo se divide en dos subcapas: la capa de control de acceso a los medios (MAC) y la capa de control  de enlace lógico (LLC)."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_73",
@@ -789,7 +789,7 @@
       "d": "ICMP es un protocolo de la capa de Internet."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_74",
@@ -801,7 +801,7 @@
       "d": "En las redes clase C se permite direccionar 254 equipos como máximo."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_75",
@@ -813,7 +813,7 @@
       "d": "407"
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_76",
@@ -825,7 +825,7 @@
       "d": "Es el Foro de Gobernanza de Internet."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_77",
@@ -837,7 +837,7 @@
       "d": "El tipo ASCII es adecuado para transferir páginas HTML y las imágenes que puedan contener."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_78",
@@ -849,7 +849,7 @@
       "d": "Whaling."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_79",
@@ -861,7 +861,7 @@
       "d": "Honeypot."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_80",
@@ -873,7 +873,7 @@
       "d": "OLVIDO."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_06",
@@ -885,7 +885,7 @@
       "d": "Server Side Rendering."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_07",
@@ -897,7 +897,7 @@
       "d": "Diagrama de Entidad/Relación."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_08",
@@ -909,7 +909,7 @@
       "d": "Apache CXF."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_09",
@@ -921,7 +921,7 @@
       "d": "JAX-RS."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_10",
@@ -933,7 +933,7 @@
       "d": "Mercurial."
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_11",
@@ -945,7 +945,7 @@
       "d": "OffsetTime."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_12",
@@ -957,7 +957,7 @@
       "d": "OpenAPI/Swagger."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_13",
@@ -969,7 +969,7 @@
       "d": "CREATE TABLE Subsanacion AS (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_14",
@@ -981,7 +981,7 @@
       "d": "Repeatable read."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_15",
@@ -993,7 +993,7 @@
       "d": "XML-Encryption."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_16",
@@ -1005,7 +1005,7 @@
       "d": "dotnet install iText."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_17",
@@ -1017,7 +1017,7 @@
       "d": "Normalizar las tablas en Forma Normal de Boyce-Codd (FNBC)."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_18",
@@ -1029,7 +1029,7 @@
       "d": "En la Sprint Review."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_19",
@@ -1041,7 +1041,7 @@
       "d": "Servicio, Proveedor de servicios, Consumidor de servicios y Registro de servicios.    2024 - TAI-L – MODELO A  Página 10 de 14"
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_20",
@@ -1053,7 +1053,7 @@
       "d": "int ?? Telefono"
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_06",
@@ -1065,7 +1065,7 @@
       "d": "FTP es un protocolo de usuario y DNS es un protocolo de soporte.    2024 - TAI-L – MODELO A  Página 12 de 14"
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_07",
@@ -1077,7 +1077,7 @@
       "d": "Asignar todos los hosts conectados a cualquier puerto del switch a la VLAN"
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_09",
@@ -1089,7 +1089,7 @@
       "d": "A que el cable del dispositivo es coaxial y no Ethernet."
     },
     "respuesta_correcta": "",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_10",
@@ -1101,7 +1101,7 @@
       "d": "kexec -l"
     },
     "respuesta_correcta": "a",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_11",
@@ -1113,7 +1113,7 @@
       "d": "FTPS no contiene comandos estandarizados para manipular directorios o listar atributos, mientras que SFTP sí."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_12",
@@ -1125,7 +1125,7 @@
       "d": "Es un ataque masivo a una organización ocurrido por un fallo que no se había advertido hasta ese momento y, por tanto, no  se cuenta con la salvaguarda o parche para prevenirlo."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_13",
@@ -1137,7 +1137,7 @@
       "d": "UDP (por defecto) y TCP."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_14",
@@ -1149,7 +1149,7 @@
       "d": "Formatear a fábrica todos los dispositivos móviles."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_15",
@@ -1161,7 +1161,7 @@
       "d": "Porque el aire acondicionado para un CPD siempre debe provenir del techo y para las personas puede provenir lateralmente.    2024 - TAI-L – MODELO A  Página 13 de 14"
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_16",
@@ -1173,7 +1173,7 @@
       "d": "El hash es la firma del CCN de la página web donde se presenta la herramienta que estamos intentando descargar y es una  medida para evitar que los hackers puedan manipular la página y subir otro fichero en vez del que se pretende descargar."
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_17",
@@ -1185,7 +1185,7 @@
       "d": "La CPU del ordenador es insuficiente y provoca estos problemas."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_18",
@@ -1197,7 +1197,7 @@
       "d": "Con POP3, si los usuarios organizan sus correos electrónicos en un dispositivo mediante carpetas, ya no tendrán que hacerlo  en el resto de dispositivos porque se replica la organización en carpetas."
     },
     "respuesta_correcta": "d",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_19",
@@ -1209,7 +1209,7 @@
       "d": "sudo mysql -u root -p"
     },
     "respuesta_correcta": "b",
-    "capitulo": null
+    "tema": null
   },
   {
     "id_pregunta": "2024modeloA_20",
@@ -1221,6 +1221,6 @@
       "d": "Relaciones de confianza entre el Directorio Activo actual y el dominio de seguridad del grupo de usuarios Profesores."
     },
     "respuesta_correcta": "c",
-    "capitulo": null
+    "tema": null
   }
 ]
