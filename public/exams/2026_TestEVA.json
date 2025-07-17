@@ -1,6 +1,4 @@
-{
-  "titulo": "2026 prueba",
-  "preguntas": [
+[
     {
       "pregunta": "a que hora nos vamos?",
       "opciones": {
@@ -13,4 +11,3 @@
       "id_pregunta": 1752756553144.064
     }
   ]
-}
