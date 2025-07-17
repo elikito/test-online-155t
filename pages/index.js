@@ -278,7 +278,7 @@ const handleAnswer = (key) => {
 					style={{ width: '40px', height: '40px', padding: 0 }}
 					onClick={() => {
 					setCurrent(index);
-					setSelectedOption(q.respuesta_usuario || null);
+					setSelectedOption(questions[index].respuesta_usuario || null);
 					}}
 				>
 					{index + 1}
@@ -287,7 +287,11 @@ const handleAnswer = (key) => {
 			})}
 			</div>
 		</div>
-		)}
+	)}
+
+      <footer className="mt-5 mb-3 text-center text-muted">
+        <small>Examen creado por [Tu Nombre] - Todos los derechos reservados &copy; {new Date().getFullYear()}</small>
+      </footer>
     </div>
   );
 }
