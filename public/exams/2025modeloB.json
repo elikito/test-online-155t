@@ -1,0 +1,26 @@
+[
+  {
+    "id_pregunta": "2025modeloB_01",
+    "pregunta": "Soy otra pregunta:",
+    "opciones": {
+      "a": "Incorrecta.",
+      "b": "Siempre la B, esta es correcta.",
+      "c": "Tampoco es esta.",
+      "d": "Que nooo."
+    },
+    "respuesta_correcta": "b",
+    "tema": "Asignación aleatoria de tema"
+  },
+  {
+    "id_pregunta": "2025modeloB_02",
+    "pregunta": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non erat nec nisi facilisis facilisis. Sed at ligula a enim aliquet facilisis. Nullam in justo id leo tincidunt facilisis. Proin ac felis vel est efficitur eleifend.",
+    "opciones": {
+      "a": "La C",
+      "b": "Esta es la C",
+      "c": "Correcta ",
+      "d": "Nombrar conjuntamente Comisiones de Investigación sobre asuntos de interés público. Sus conclusiones serán vinculantes  para los Tribunales."
+    },
+    "respuesta_correcta": "c",
+    "tema": "Tema de Lorem Ipsum"
+  }
+]
