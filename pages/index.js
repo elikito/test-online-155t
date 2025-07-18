@@ -230,7 +230,7 @@ export default function Home() {
             <hr />
             <a
               className="btn btn-outline-primary"
-              href="assets\temario.md"
+              href="/temario.md"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
