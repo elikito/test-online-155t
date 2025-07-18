@@ -343,7 +343,7 @@ export default function Home() {
         {questions.length > 0 && (
           <div className="mt-4">
             <h5>Navegación de preguntas</h5>
-            <div className="d-flex flex-wrap gap-2">
+            <div className="d-flex flex-wrap gap-2 justify-content-center">
               {questions.map((q, index) => {
                 let btnClass = "btn btn-outline-secondary";
                 if (index === current) {
@@ -351,17 +351,27 @@ export default function Home() {
                 } else if (q.respuesta_usuario) {
                   btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
                 }
+                // Formato 01, 02, ..., 10, 11...
+                const num = (index + 1).toString().padStart(2, '0');
                 return (
                   <button
                     key={index}
                     className={btnClass}
-                    style={{ flex: '1 0 30%', minWidth: 120 }}
+                    style={{
+                      width: 44,
+                      height: 44,
+                      padding: 0,
+                      fontWeight: 'bold',
+                      fontVariantNumeric: 'tabular-nums',
+                      fontSize: 18,
+                      flex: '0 0 44px'
+                    }}
                     onClick={() => {
                       setCurrent(index);
                       setSelectedOption(questions[index].respuesta_usuario || null);
                     }}
                   >
-                    {index + 1}
+                    {num}
                   </button>
                 );
               })}
