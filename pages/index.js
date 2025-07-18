@@ -68,7 +68,8 @@ export default function Home() {
   };
 
   const handleAnswer = (key) => {
-    if (selectedOption !== null) return;
+    // No permitir responder si la pregunta ya tiene respuesta
+    if (questions[current].respuesta_usuario) return;
     setSelectedOption(key);
 
     const updatedQuestions = [...questions];
@@ -357,7 +358,7 @@ export default function Home() {
                     style={{ flex: '1 0 30%', minWidth: 120 }}
                     onClick={() => {
                       setCurrent(index);
-                      setSelectedOption(q.respuesta_usuario);
+                      setSelectedOption(questions[index].respuesta_usuario || null);
                     }}
                   >
                     {index + 1}
