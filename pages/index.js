@@ -227,6 +227,25 @@ export default function Home() {
             >
               Crear nuevo test
             </button>
+            <hr />
+            <a
+              className="btn btn-outline-primary"
+              href="/temario.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              Ver Temario
+            </a>
+            <button
+              className="btn btn-outline-secondary"
+              onClick={() => {
+                window.location.href = '/';
+                setMenuOpen(false);
+              }}
+            >
+              Test
+            </button>
           </div>
         </div>
       </div>
@@ -449,7 +468,7 @@ export default function Home() {
             onClick={downloadTest}
             disabled={!newTestTitle || newQuestions.length === 0}
           >
-            Descargar test como JSON
+            Descargar test en formato JSON
           </button>
         </div>
       )}
@@ -457,7 +476,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-light text-center text-lg-start mt-auto py-3">
         <div className="container">
-          <p className="text-muted mb-0">© 2023 Test AGE. Todos los derechos reservados.</p>
+          <p className="text-muted mb-0">- 2025 Test AGE -</p>
         </div>
       </footer>
     </div>
