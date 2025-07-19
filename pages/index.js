@@ -19,6 +19,10 @@ export default function Home() {
   const [newOptions, setNewOptions] = useState({ a: '', b: '', c: '', d: '' });
   const [newCorrect, setNewCorrect] = useState('a');
   const [showTemarioPanel, setShowTemarioPanel] = useState(false);
+  const [temarioAuth, setTemarioAuth] = useState(false);
+  const [temarioInput, setTemarioInput] = useState('');
+  const [temarioError, setTemarioError] = useState('');
+  const [temarioUrl, setTemarioUrl] = useState('');
 
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
@@ -142,6 +146,22 @@ export default function Home() {
     a.download = `${newTestTitle || 'nuevo_test'}.json`;
     a.click();
     URL.revokeObjectURL(url);
+  };
+
+  const handleTemarioLogin = async () => {
+    setTemarioError('');
+    const res = await fetch('/api/temario', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password: temarioInput })
+    });
+    if (res.ok) {
+      const data = await res.json();
+      setTemarioAuth(true);
+      setTemarioUrl(data.url);
+    } else {
+      setTemarioError('Contraseña incorrecta');
+    }
   };
 
   return (
@@ -487,13 +507,42 @@ export default function Home() {
             overflowY: 'auto'
           }}
         >
-          <h4>Temario (Notion)</h4>
-          <button className="btn-close float-end" onClick={() => setShowTemarioPanel(false)} />
-          <iframe
-            src="https://www.notion.so/Temario-230451f068f180439818f6244b03528e?source=copy_link"
-            style={{ width: '100%', height: '90vh', border: 'none' }}
-            title="Temario Notion"
-          />
+          <h4>Temario</h4>
+          <button className="btn-close float-end" onClick={() => {
+            setShowTemarioPanel(false);
+            setTemarioAuth(false);
+            setTemarioInput('');
+            setTemarioError('');
+          }} />
+          {!temarioAuth ? (
+            <div className="mt-4">
+              <p>Introduce la contraseña para acceder al temario:</p>
+              <input
+                type="password"
+                className="form-control mb-2"
+                value={temarioInput}
+                onChange={e => setTemarioInput(e.target.value)}
+              />
+              {temarioError && <div className="text-danger mb-2">{temarioError}</div>}
+              <button className="btn btn-primary" onClick={handleTemarioLogin}>
+                Acceder
+              </button>
+            </div>
+          ) : (
+            <div className="mt-4 text-center">
+              <p>
+                El temario se encuentra en Notion.<br />
+                <a
+                  href={temarioUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  Abrir Temario en Notion
+                </a>
+              </p>
+            </div>
+          )}
         </div>
       )}
 
