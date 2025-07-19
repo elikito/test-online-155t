@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "id_pregunta": "temariopruebaelias_01",
+    "id_pregunta": "ejemplo_01",
     "pregunta": "pregunta 1",
     "opciones": {
       "a": "sistema1",
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "id_pregunta": "temariopruebaelias_02",
+    "id_pregunta": "ejemplo_02",
     "pregunta": "pregunta 2",
     "opciones": {
       "a": "op1",
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "id_pregunta": "temariopruebaelias_03",
+    "id_pregunta": "ejemplo_03",
     "pregunta": "preguntita3",
     "opciones": {
       "a": "preguntita2",
