@@ -23,6 +23,11 @@ export default function Home() {
   const [temarioInput, setTemarioInput] = useState('');
   const [temarioError, setTemarioError] = useState('');
   const [temarioUrl, setTemarioUrl] = useState('');
+  const [temas, setTemas] = useState([]);
+  const [temaSearch, setTemaSearch] = useState('');
+  const [newTema, setNewTema] = useState('');
+  const [editIndex, setEditIndex] = useState(null);
+  const [errorPregunta, setErrorPregunta] = useState('');
 
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
@@ -161,6 +166,91 @@ export default function Home() {
       setTemarioUrl(data.url);
     } else {
       setTemarioError('Contraseña incorrecta');
+    }
+  };
+
+  // Cargar temas desde temario.txt al abrir el panel de crear test
+  useEffect(() => {
+    if (showCreatePanel && temas.length === 0) {
+      fetch('/temario.txt')
+        .then(res => res.text())
+        .then(txt => {
+          // Solo líneas con formato "1.1.1 - ..." o "1.1 - ..." o "1 - ..."
+          const lines = txt.split('\n')
+            .map(l => l.trim())
+            .filter(l => /^\d+(\.\d+)*\s*-\s+/.test(l));
+          setTemas(lines);
+        });
+    }
+  }, [showCreatePanel]);
+
+  const addOrEditQuestion = () => {
+    setErrorPregunta('');
+    if (!newQuestionText.trim() || !newTema) {
+      setErrorPregunta('Rellena la pregunta y selecciona un tema.');
+      return;
+    }
+    // Verifica que las 4 opciones estén rellenas
+    if (['a', 'b', 'c', 'd'].some(opt => !newOptions[opt].trim())) {
+      setErrorPregunta('Debes rellenar las 4 opciones.');
+      return;
+    }
+    if (editIndex !== null) {
+      // Editar pregunta existente
+      const updated = [...newQuestions];
+      updated[editIndex] = {
+        ...updated[editIndex],
+        pregunta: newQuestionText,
+        opciones: { ...newOptions },
+        respuesta_correcta: newCorrect,
+        tema: newTema
+      };
+      setNewQuestions(updated);
+      setEditIndex(null);
+    } else {
+      // Añadir nueva pregunta con id secuencial
+      const id = (newQuestions.length + 1).toString().padStart(2, '0');
+      setNewQuestions([
+        ...newQuestions,
+        {
+          pregunta: newQuestionText,
+          opciones: { ...newOptions },
+          respuesta_correcta: newCorrect,
+          tema: newTema,
+          id_pregunta: id
+        }
+      ]);
+    }
+    setNewQuestionText('');
+    setNewOptions({ a: '', b: '', c: '', d: '' });
+    setNewCorrect('a');
+    setNewTema('');
+    setErrorPregunta('');
+  };
+
+  const handleEdit = idx => {
+    const q = newQuestions[idx];
+    setNewQuestionText(q.pregunta);
+    setNewOptions({ ...q.opciones });
+    setNewCorrect(q.respuesta_correcta);
+    setNewTema(q.tema || '');
+    setEditIndex(idx);
+    setErrorPregunta('');
+  };
+
+  const handleDelete = idx => {
+    const updated = newQuestions.filter((_, i) => i !== idx)
+      .map((q, i) => ({
+        ...q,
+        id_pregunta: (i + 1).toString().padStart(2, '0') // Recalcula ids
+      }));
+    setNewQuestions(updated);
+    if (editIndex === idx) {
+      setEditIndex(null);
+      setNewQuestionText('');
+      setNewOptions({ a: '', b: '', c: '', d: '' });
+      setNewCorrect('a');
+      setNewTema('');
     }
   };
 
@@ -434,7 +524,15 @@ export default function Home() {
           }}
         >
           <h4>Crear nuevo test</h4>
-          <button className="btn-close float-end" onClick={() => setShowCreatePanel(false)} />
+          <button className="btn-close float-end" onClick={() => {
+            setShowCreatePanel(false);
+            setEditIndex(null);
+            setNewQuestionText('');
+            setNewOptions({ a: '', b: '', c: '', d: '' });
+            setNewCorrect('a');
+            setNewTema('');
+            setErrorPregunta('');
+          }} />
           <div className="mb-3">
             <label className="form-label">Título del test</label>
             <input
@@ -444,7 +542,7 @@ export default function Home() {
             />
           </div>
           <hr />
-          <h5>Añadir pregunta</h5>
+          <h5>{editIndex !== null ? 'Editar pregunta' : 'Añadir pregunta'}</h5>
           <div className="mb-2">
             <input
               className="form-control mb-2"
@@ -452,6 +550,25 @@ export default function Home() {
               value={newQuestionText}
               onChange={e => setNewQuestionText(e.target.value)}
             />
+            {/* Selector de tema con buscador */}
+            <input
+              className="form-control mb-2"
+              placeholder="Buscar tema..."
+              value={temaSearch}
+              onChange={e => setTemaSearch(e.target.value)}
+            />
+            <select
+              className="form-select mb-2"
+              value={newTema}
+              onChange={e => setNewTema(e.target.value)}
+            >
+              <option value="">-- Selecciona tema --</option>
+              {temas
+                .filter(t => t.toLowerCase().includes(temaSearch.toLowerCase()))
+                .map((t, i) => (
+                  <option key={i} value={t}>{t}</option>
+                ))}
+            </select>
             {['a', 'b', 'c', 'd'].map(opt => (
               <div className="input-group mb-2" key={opt}>
                 <span className="input-group-text">{opt.toUpperCase()}</span>
@@ -472,13 +589,44 @@ export default function Home() {
                 </span>
               </div>
             ))}
-            <button className="btn btn-primary" onClick={addNewQuestion}>Añadir pregunta</button>
+            {errorPregunta && <div className="text-danger mb-2">{errorPregunta}</div>}
+            <button
+              className="btn btn-primary"
+              onClick={addOrEditQuestion}
+            >
+              {editIndex !== null ? 'Guardar cambios' : 'Añadir pregunta'}
+            </button>
+            {editIndex !== null && (
+              <button
+                className="btn btn-secondary ms-2"
+                onClick={() => {
+                  setEditIndex(null);
+                  setNewQuestionText('');
+                  setNewOptions({ a: '', b: '', c: '', d: '' });
+                  setNewCorrect('a');
+                  setNewTema('');
+                  setErrorPregunta('');
+                }}
+              >
+                Cancelar
+              </button>
+            )}
           </div>
           <hr />
           <h6>Preguntas añadidas: {newQuestions.length}</h6>
-          <ul>
+          <ul className="list-group mb-2">
             {newQuestions.map((q, idx) => (
-              <li key={idx}>{q.pregunta}</li>
+              <li key={idx} className="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <strong>{q.id_pregunta}.</strong> {q.pregunta}
+                  <br />
+                  <small className="text-muted">{q.tema}</small>
+                </div>
+                <div>
+                  <button className="btn btn-sm btn-outline-primary me-1" onClick={() => handleEdit(idx)}>Editar</button>
+                  <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(idx)}>Eliminar</button>
+                </div>
+              </li>
             ))}
           </ul>
           <button
