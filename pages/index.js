@@ -140,15 +140,21 @@ export default function Home() {
   };
 
   const downloadTest = () => {
-    const test = {
-      titulo: newTestTitle,
-      preguntas: newQuestions
-    };
-    const blob = new Blob([JSON.stringify(test, null, 2)], { type: 'application/json' });
+    // Genera el nombre base del test (sin espacios ni caracteres raros)
+    const baseName = (newTestTitle || 'nuevo_test').replace(/[^a-zA-Z0-9]/g, '');
+    const preguntas = newQuestions.map((q, idx) => ({
+      id: idx + 1,
+      id_pregunta: `${baseName}_${(idx + 1).toString().padStart(2, '0')}`,
+      pregunta: q.pregunta,
+      opciones: { ...q.opciones },
+      respuesta_correcta: q.respuesta_correcta,
+      tema: q.tema
+    }));
+    const blob = new Blob([JSON.stringify(preguntas, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${newTestTitle || 'nuevo_test'}.json`;
+    a.download = `${baseName}.json`;
     a.click();
     URL.revokeObjectURL(url);
   };
