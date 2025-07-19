@@ -18,6 +18,7 @@ export default function Home() {
   const [newQuestionText, setNewQuestionText] = useState('');
   const [newOptions, setNewOptions] = useState({ a: '', b: '', c: '', d: '' });
   const [newCorrect, setNewCorrect] = useState('a');
+  const [showTemarioPanel, setShowTemarioPanel] = useState(false);
 
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
@@ -227,16 +228,13 @@ export default function Home() {
             >
               Crear nuevo test
             </button>
-            <hr />
-            <a
-              className="btn btn-outline-primary"
-              href="/temario.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
+            <button
+              className="btn btn-primary"
+              onClick={() => setShowTemarioPanel(true)}
             >
               Ver Temario
-            </a>
+            </button>
+            <hr />
             <button
               className="btn btn-outline-secondary"
               onClick={() => {
@@ -470,6 +468,32 @@ export default function Home() {
           >
             Descargar test en formato JSON
           </button>
+        </div>
+      )}
+
+      {/* Panel para ver temario */}
+      {showTemarioPanel && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            right: 0,
+            width: 500,
+            height: '100vh',
+            background: '#fff',
+            zIndex: 3000,
+            boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
+            padding: 24,
+            overflowY: 'auto'
+          }}
+        >
+          <h4>Temario (Notion)</h4>
+          <button className="btn-close float-end" onClick={() => setShowTemarioPanel(false)} />
+          <iframe
+            src="https://www.notion.so/Temario-230451f068f180439818f6244b03528e?source=copy_link"
+            style={{ width: '100%', height: '90vh', border: 'none' }}
+            title="Temario Notion"
+          />
         </div>
       )}
 
