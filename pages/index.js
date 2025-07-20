@@ -29,6 +29,17 @@ export default function Home() {
   const [editIndex, setEditIndex] = useState(null);
   const [errorPregunta, setErrorPregunta] = useState('');
 
+  // Añadir estado para el test personalizado
+  const [showCustomTestPanel, setShowCustomTestPanel] = useState(false);
+  const [customNumQuestions, setCustomNumQuestions] = useState(10);
+  const [customTema, setCustomTema] = useState('');
+  const [customExam, setCustomExam] = useState('');
+  const [customQuestions, setCustomQuestions] = useState([]);
+  const [customTemas, setCustomTemas] = useState([]);
+  const [customTemaCounts, setCustomTemaCounts] = useState({});
+  const [customExamList, setCustomExamList] = useState([]);
+  const [customLoading, setCustomLoading] = useState(false);
+
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
     fetch('/api/exams')
@@ -68,7 +79,7 @@ export default function Home() {
 
     setQuestions(restored);
     setCurrent(0);
-    setSelectedOption(restored[0].respuesta_usuario || null);
+    setSelectedOption(restored.length > 0 ? restored[0].respuesta_usuario || null : null);
   };
 
   const handleSelect = (e) => {
@@ -260,6 +271,75 @@ export default function Home() {
     }
   };
 
+  // Cargar todos los exámenes y temas al abrir el panel personalizado
+  useEffect(() => {
+    if (showCustomTestPanel) {
+      setCustomLoading(true);
+      fetch('/api/all-questions')
+        .then(res => res.json())
+        .then(allQuestions => {
+          setCustomQuestions(allQuestions);
+
+          // Temas únicos y conteo
+          const temaCounts = {};
+          allQuestions.forEach(q => {
+            temaCounts[q.tema] = (temaCounts[q.tema] || 0) + 1;
+          });
+          setCustomTemaCounts(temaCounts);
+          setCustomTemas(Object.keys(temaCounts).sort());
+
+          // Exámenes únicos
+          const exams = [...new Set(allQuestions.map(q => q.examen))];
+          setCustomExamList(exams);
+          setCustomLoading(false);
+        });
+    }
+  }, [showCustomTestPanel]);
+
+  // Filtrar preguntas según filtros seleccionados
+  const getFilteredCustomQuestions = () => {
+    let filtered = customQuestions;
+    if (customExam) filtered = filtered.filter(q => q.examen === customExam);
+    if (customTema) filtered = filtered.filter(q => q.tema === customTema);
+    return filtered;
+  };
+
+  const [customTestQuestions, setCustomTestQuestions] = useState([]);
+  const [customTestStarted, setCustomTestStarted] = useState(false);
+  const [customTestCurrent, setCustomTestCurrent] = useState(0);
+  const [customTestSelected, setCustomTestSelected] = useState(null);
+  const [customTestCorrect, setCustomTestCorrect] = useState(0);
+  const [customTestIncorrect, setCustomTestIncorrect] = useState(0);
+
+  const startCustomTest = () => {
+    const filtered = getFilteredCustomQuestions();
+    const shuffled = filtered.sort(() => Math.random() - 0.5).slice(0, customNumQuestions);
+    setCustomTestQuestions(shuffled);
+    setCustomTestStarted(true);
+    setCustomTestCurrent(0);
+    setCustomTestSelected(null);
+    setCustomTestCorrect(0);
+    setCustomTestIncorrect(0);
+  };
+
+  const handleCustomTestAnswer = (key) => {
+    if (customTestQuestions[customTestCurrent].respuesta_usuario) return;
+    setCustomTestSelected(key);
+    const updated = [...customTestQuestions];
+    updated[customTestCurrent].respuesta_usuario = key;
+    setCustomTestQuestions(updated);
+    if (key === updated[customTestCurrent].respuesta_correcta) {
+      setCustomTestCorrect(prev => prev + 1);
+    } else {
+      setCustomTestIncorrect(prev => prev + 1);
+    }
+  };
+
+  const nextCustomTestQuestion = () => {
+    setCustomTestSelected(null);
+    setCustomTestCurrent(prev => prev + 1);
+  };
+
   return (
     <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       {/* Sidebar y overlay */}
@@ -350,6 +430,13 @@ export default function Home() {
             >
               Ver Temario
             </button>
+            {/* Botón para test personalizado */}
+            <button
+              className="btn btn-outline-dark"
+              onClick={() => setShowCustomTestPanel(true)}
+            >
+              Test personalizado
+            </button>
             <hr />
             <button
               className="btn btn-outline-secondary"
@@ -398,8 +485,10 @@ export default function Home() {
                     className="btn btn-link p-0"
                     onClick={() => {
                       const i = questions.findIndex(qq => qq.id_pregunta === q.id_pregunta);
-                      setCurrent(i);
-                      setSelectedOption(questions[i].respuesta_usuario || null);
+                      if (i !== -1) {
+                        setCurrent(i);
+                        setSelectedOption(questions[i].respuesta_usuario || null);
+                      }
                     }}
                   >
                     {q.pregunta}
@@ -695,6 +784,173 @@ export default function Home() {
                   Abrir Temario en Notion
                 </a>
               </p>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Panel para test personalizado */}
+      {showCustomTestPanel && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            right: 0,
+            width: 500,
+            height: '100vh',
+            background: '#fff',
+            zIndex: 4000,
+            boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
+            padding: 24,
+            overflowY: 'auto'
+          }}
+        >
+          <h4>Test personalizado</h4>
+          <button className="btn-close float-end" onClick={() => {
+            setShowCustomTestPanel(false);
+            setCustomTestStarted(false);
+            setCustomTestQuestions([]);
+            setCustomTestCurrent(0);
+            setCustomTestSelected(null);
+          }} />
+          {!customTestStarted ? (
+            <div>
+              {customLoading ? (
+                <div className="my-4 text-center">
+                  <div className="spinner-border" />
+                  <div>Cargando preguntas...</div>
+                </div>
+              ) : (
+                <>
+                  <div className="mb-3">
+                    <label className="form-label">Examen</label>
+                    <select
+                      className="form-select"
+                      value={customExam}
+                      onChange={e => setCustomExam(e.target.value)}
+                    >
+                      <option value="">-- Todos --</option>
+                      {customExamList.map((ex, i) => (
+                        <option key={i} value={ex}>{ex}</option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Tema</label>
+                    <select
+                      className="form-select"
+                      value={customTema}
+                      onChange={e => setCustomTema(e.target.value)}
+                    >
+                      <option value="">-- Todos --</option>
+                      {customTemas.map((t, i) => (
+                        <option key={i} value={t}>
+                          {t} ({customTemaCounts[t] || 0} preguntas)
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Número de preguntas</label>
+                    <input
+                      type="number"
+                      className="form-control"
+                      min={1}
+                      max={Math.max(1, getFilteredCustomQuestions().length)}
+                      value={customNumQuestions}
+                      onChange={e => setCustomNumQuestions(Number(e.target.value))}
+                    />
+                    <small className="text-muted">
+                      Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
+                    </small>
+                  </div>
+                  <button
+                    className="btn btn-success"
+                    disabled={getFilteredCustomQuestions().length === 0}
+                    onClick={startCustomTest}
+                  >
+                    Comenzar test
+                  </button>
+                </>
+              )}
+            </div>
+          ) : (
+            <div>
+              {customTestQuestions.length > 0 && (
+                <div className="card mb-3">
+                  <div className="card-body">
+                    <h5 className="card-title">Pregunta {customTestCurrent + 1}</h5>
+                    <p className="card-text">{customTestQuestions[customTestCurrent].pregunta}</p>
+                    <p><strong>Tema:</strong> {customTestQuestions[customTestCurrent].tema}</p>
+                    <ul className="list-group">
+                      {Object.entries(customTestQuestions[customTestCurrent].opciones).map(([key, value]) => {
+                        let className = "list-group-item";
+                        if (customTestSelected) {
+                          if (key === customTestQuestions[customTestCurrent].respuesta_correcta) {
+                            className += " list-group-item-success";
+                          } else if (key === customTestSelected) {
+                            className += " list-group-item-danger";
+                          }
+                        }
+                        return (
+                          <li
+                            key={key}
+                            className={className}
+                            style={{ cursor: customTestSelected ? 'default' : 'pointer' }}
+                            onClick={() => handleCustomTestAnswer(key)}
+                          >
+                            <strong>{key.toUpperCase()}:</strong> {value}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    {customTestSelected && customTestCurrent < customTestQuestions.length - 1 && (
+                      <button className="btn btn-primary mt-3" onClick={nextCustomTestQuestion}>Siguiente</button>
+                    )}
+                    {customTestSelected && customTestCurrent === customTestQuestions.length - 1 && (
+                      <p className="mt-3 text-success">¡Has llegado al final del test personalizado!</p>
+                    )}
+                  </div>
+                </div>
+              )}
+              <div className="mt-4 text-center">
+                <p><strong>Correctas:</strong> {customTestCorrect} | <strong>Incorrectas:</strong> {customTestIncorrect}</p>
+              </div>
+              <div className="mt-4">
+                <h5>Navegación de preguntas</h5>
+                <div className="d-flex flex-wrap gap-2 justify-content-center">
+                  {customTestQuestions.map((q, index) => {
+                    let btnClass = "btn btn-outline-secondary";
+                    if (index === customTestCurrent) {
+                      btnClass += " active";
+                    } else if (q.respuesta_usuario) {
+                      btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
+                    }
+                    const num = (index + 1).toString().padStart(2, '0');
+                    return (
+                      <button
+                        key={index}
+                        className={btnClass}
+                        style={{
+                          width: 44,
+                          height: 44,
+                          padding: 0,
+                          fontWeight: 'bold',
+                          fontVariantNumeric: 'tabular-nums',
+                          fontSize: 18,
+                          flex: '0 0 44px'
+                        }}
+                        onClick={() => {
+                          setCustomTestCurrent(index);
+                          setCustomTestSelected(q.respuesta_usuario || null);
+                        }}
+                      >
+                        {num}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           )}
         </div>

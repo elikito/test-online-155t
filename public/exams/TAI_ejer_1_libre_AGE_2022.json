@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_01",
     "pregunta": "De acuerdo con el artículo 64 de la Constitución Española de 1978 (en adelante CE), los actos del Rey, excepto la propuesta y el nombramiento del Presidente del Gobierno, y la disolución de las Cámaras prevista en el artículo 99, serán refrendados por:",
     "opciones": {
@@ -14,6 +15,7 @@
   },
   {
     "id": 2,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_02",
     "pregunta": "La suspensión de los derechos y libertades se encuentra regulada en la CE en:",
     "opciones": {
@@ -27,6 +29,7 @@
   },
   {
     "id": 3,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_03",
     "pregunta": "Según el artículo 68 de la CE, ¿cuál es la circunscripción electoral en nuestro sistema electoral?",
     "opciones": {
@@ -40,6 +43,7 @@
   },
   {
     "id": 4,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_04",
     "pregunta": "Según el artículo 18 de la ley 50/1997, de 27 de noviembre, del Gobierno que regula el funcionamiento del Consejo de Ministros, ¿quién actúa como Secretario de este órgano colegiado?",
     "opciones": {
@@ -53,6 +57,7 @@
   },
   {
     "id": 5,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_05",
     "pregunta": "De acuerdo con el artículo 78 de la CE, expirado el mandato de las Cortes Generales o en caso de disolución de las mismas, las Diputaciones Permanentes seguirán ejerciendo sus funciones hasta:",
     "opciones": {
@@ -66,6 +71,7 @@
   },
   {
     "id": 6,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_06",
     "pregunta": "Según establece el artículo 24 de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, el plazo máximo para resolver y notificar la resolución de una reclamación ante el Consejo de Transparencia y Buen Gobierno será de:",
     "opciones": {
@@ -79,6 +85,7 @@
   },
   {
     "id": 7,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_07",
     "pregunta": "Señale cuál de los siguientes NO es un compromiso del IV Plan de Gobierno Abierto de España:",
     "opciones": {
@@ -92,6 +99,7 @@
   },
   {
     "id": 8,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_08",
     "pregunta": "Conforme establece el artículo 18 de la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, todas las resoluciones de compatibilidad para desempeñar un segundo puesto o actividad en el sector público o el ejercicio de actividades privadas se inscribirán:",
     "opciones": {
@@ -105,6 +113,7 @@
   },
   {
     "id": 9,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_09",
     "pregunta": "De acuerdo con el artículo 30 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, el grado de dependencia será revisable:",
     "opciones": {
@@ -118,6 +127,7 @@
   },
   {
     "id": 10,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_10",
     "pregunta": "Conforme el artículo 49 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, para impulsar la adopción voluntaria de planes de igualdad, el Gobierno establecerá:",
     "opciones": {
@@ -131,6 +141,7 @@
   },
   {
     "id": 11,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_11",
     "pregunta": "Con carácter general el documento nacional de identidad tendrá un período de validez, a contar desde la fecha de la expedición o de cada una de sus renovaciones, de:",
     "opciones": {
@@ -144,6 +155,7 @@
   },
   {
     "id": 12,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_12",
     "pregunta": "De acuerdo con el artículo 4 de la Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza, el periodo de vigencia de los certificados cualificados:",
     "opciones": {
@@ -157,6 +169,7 @@
   },
   {
     "id": 13,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_13",
     "pregunta": "Indique según el título X de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de los siguientes NO es un derecho digital?",
     "opciones": {
@@ -170,6 +183,7 @@
   },
   {
     "id": 14,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_14",
     "pregunta": "Según establece el artículo 34 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, los responsables y encargados de tratamiento comunicarán a la Agencia Española de Protección de Datos, las designaciones, nombramientos y ceses de los delegados de protección de datos en el plazo de:",
     "opciones": {
@@ -183,6 +197,7 @@
   },
   {
     "id": 15,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_15",
     "pregunta": "Según el Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad, ¿cuál de las siguientes medidas de seguridad afecta a la dimensión de Confidencialidad?",
     "opciones": {
@@ -196,6 +211,7 @@
   },
   {
     "id": 16,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_16",
     "pregunta": "Señale la respuesta correcta sobre lo que establece la Norma Técnica de Interoperabilidad de Protocolos de Intermediación de Datos:",
     "opciones": {
@@ -209,6 +225,7 @@
   },
   {
     "id": 17,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_17",
     "pregunta": "Señale qué afirmación es correcta con respecto a las soluciones de Ciberseguridad proporcionadas por el Centro Criptológico Nacional (CCN):",
     "opciones": {
@@ -222,6 +239,7 @@
   },
   {
     "id": 18,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_18",
     "pregunta": "Señale la respuesta correcta referente a los servicios comunes en materia de administración electrónica:",
     "opciones": {
@@ -235,6 +253,7 @@
   },
   {
     "id": 19,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_19",
     "pregunta": "La CE regula la institución del Defensor del Pueblo como:",
     "opciones": {
@@ -248,6 +267,7 @@
   },
   {
     "id": 20,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_20",
     "pregunta": "¿Qué es WCAG?",
     "opciones": {
@@ -261,6 +281,7 @@
   },
   {
     "id": 21,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_21",
     "pregunta": "¿Cuál de los siguientes es el nombre de un conector usado para carga y datos creado por el fabricante Apple?",
     "opciones": {
@@ -274,6 +295,7 @@
   },
   {
     "id": 22,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_22",
     "pregunta": "Con respecto a las sentencias del lenguaje SQL, indique la respuesta INCORRECTA:",
     "opciones": {
@@ -287,6 +309,7 @@
   },
   {
     "id": 23,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_23",
     "pregunta": "Cuál de los siguientes son los objetos básicos de Kubernetes:",
     "opciones": {
@@ -300,6 +323,7 @@
   },
   {
     "id": 24,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_24",
     "pregunta": "La ALU es una parte de:",
     "opciones": {
@@ -313,6 +337,7 @@
   },
   {
     "id": 25,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_25",
     "pregunta": "Señale la respuesta correcta sobre el modelo CISC:",
     "opciones": {
@@ -326,6 +351,7 @@
   },
   {
     "id": 26,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_26",
     "pregunta": "En relación con los sistemas RAID señale la respuesta INCORRECTA:",
     "opciones": {
@@ -339,6 +365,7 @@
   },
   {
     "id": 27,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_27",
     "pregunta": "¿Cuál de las siguientes es una tecnología de almacenamiento en disco mediante bus serie?",
     "opciones": {
@@ -352,6 +379,7 @@
   },
   {
     "id": 28,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_28",
     "pregunta": "Respecto a la norma USB indique la respuesta INCORRECTA:",
     "opciones": {
@@ -365,6 +393,7 @@
   },
   {
     "id": 29,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_29",
     "pregunta": "En teoría de grafos, el algoritmo para la determinación del camino más corto, dado un vértice origen, hacia el resto de los vértices en un grafo que tiene pesos en cada arista se denomina:",
     "opciones": {
@@ -378,6 +407,7 @@
   },
   {
     "id": 30,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_30",
     "pregunta": "Con respecto a los estándares PDF, señale que afirmación NO es correcta:",
     "opciones": {
@@ -391,6 +421,7 @@
   },
   {
     "id": 31,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_31",
     "pregunta": "¿Cuál de las versiones siguientes es la más reciente del sistema operativo macOS?",
     "opciones": {
@@ -404,6 +435,7 @@
   },
   {
     "id": 32,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_32",
     "pregunta": "Cuál de las siguientes afirmaciones NO es correcta:",
     "opciones": {
@@ -417,6 +449,7 @@
   },
   {
     "id": 33,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_33",
     "pregunta": "Las bases de datos relacionales ofrecen propiedades ACID. Dicho acrónimo se refiere a:",
     "opciones": {
@@ -430,6 +463,7 @@
   },
   {
     "id": 34,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_34",
     "pregunta": "Entre las características obligatorias de un sistema gestor de bases de datos orientadas a objetos, NO se encuentra:",
     "opciones": {
@@ -443,6 +477,7 @@
   },
   {
     "id": 35,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_35",
     "pregunta": "Señale qué es el Machine Learning Services para SQL Server:",
     "opciones": {
@@ -456,6 +491,7 @@
   },
   {
     "id": 36,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_36",
     "pregunta": "Señale la respuesta correcta relativa al Modelo Entidad/Relación Extendido según establece METRICA v3:",
     "opciones": {
@@ -469,6 +505,7 @@
   },
   {
     "id": 37,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_37",
     "pregunta": "La arquitectura ANSI/SPARC define para un sistema de gestión de bases de datos tres niveles de abstracción. Indicar la afirmación INCORRECTA:",
     "opciones": {
@@ -482,6 +519,7 @@
   },
   {
     "id": 38,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_38",
     "pregunta": "Cuál de las siguientes afirmaciones es FALSA:",
     "opciones": {
@@ -495,6 +533,7 @@
   },
   {
     "id": 39,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_39",
     "pregunta": "C++ permite especificar más de una función con el mismo nombre en el mismo ámbito. ¿Cómo se denominan estas funciones?",
     "opciones": {
@@ -508,6 +547,7 @@
   },
   {
     "id": 40,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_40",
     "pregunta": "Indica, de las siguientes afirmaciones, cuál es verdadera:",
     "opciones": {
@@ -521,6 +561,7 @@
   },
   {
     "id": 41,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_41",
     "pregunta": "Señale la respuesta correcta sobre los tipos de controladores (drivers) JDBC:",
     "opciones": {
@@ -534,6 +575,7 @@
   },
   {
     "id": 42,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_42",
     "pregunta": "Señale la respuesta INCORRECTA. Los tipos más corrientes de anomalías de base de datos son:",
     "opciones": {
@@ -547,6 +589,7 @@
   },
   {
     "id": 43,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_43",
     "pregunta": "En SQL, ¿cómo se pueden eliminar los datos en una tabla, pero no la propia definición de la tabla?",
     "opciones": {
@@ -560,6 +603,7 @@
   },
   {
     "id": 44,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_44",
     "pregunta": "¿Cuál de los siguientes términos hace referencia a patrones generales de software para asignación de responsabilidades en el diseño orientado a objetos?",
     "opciones": {
@@ -573,6 +617,7 @@
   },
   {
     "id": 45,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_45",
     "pregunta": "Según METRICA v3, la relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen, es una relación entre clases de tipo:",
     "opciones": {
@@ -586,6 +631,7 @@
   },
   {
     "id": 46,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_46",
     "pregunta": "Según METRICA v3, ¿cuál es diagrama que describe en detalle un determinado escenario de un caso de uso?",
     "opciones": {
@@ -599,6 +645,7 @@
   },
   {
     "id": 47,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_47",
     "pregunta": "Indique cuál de las siguientes NO es una librería de Java proporcionada por la Apache Foundation:",
     "opciones": {
@@ -612,6 +659,7 @@
   },
   {
     "id": 48,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_48",
     "pregunta": "Seleccione la respuesta correcta sobre .NET:",
     "opciones": {
@@ -625,6 +673,7 @@
   },
   {
     "id": 49,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_49",
     "pregunta": "Señale la respuesta INCORRECTA referente al objeto POCO en .NET:",
     "opciones": {
@@ -638,6 +687,7 @@
   },
   {
     "id": 50,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_50",
     "pregunta": "Cuál de las siguientes afirmaciones sobre REST es FALSA:",
     "opciones": {
@@ -651,6 +701,7 @@
   },
   {
     "id": 51,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_51",
     "pregunta": "Señale cuál es un estándar OASIS que define los mecanismos para establecer y compartir contextos de seguridad, y para obtener claves de contextos de seguridad:",
     "opciones": {
@@ -664,6 +715,7 @@
   },
   {
     "id": 52,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_52",
     "pregunta": "Señale la afirmación correcta con respecto a WSIL:",
     "opciones": {
@@ -677,6 +729,7 @@
   },
   {
     "id": 53,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_53",
     "pregunta": "¿Cuál es el motor web desarrollado por The Mozilla Foundation?",
     "opciones": {
@@ -690,6 +743,7 @@
   },
   {
     "id": 54,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_54",
     "pregunta": "¿Qué término está relacionado con XML-binary Optimized Packaging (XOP)?",
     "opciones": {
@@ -703,6 +757,7 @@
   },
   {
     "id": 55,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_55",
     "pregunta": "¿Cuál de los siguientes NO es un framework para javascript?",
     "opciones": {
@@ -716,6 +771,7 @@
   },
   {
     "id": 56,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_56",
     "pregunta": "Para detectar, eliminar y/o mitigar las debilidades de una aplicación se pueden realizar diferentes análisis de seguridad durante el ciclo de vida del desarrollo de software, entre los que NO se encuentra:",
     "opciones": {
@@ -729,6 +785,7 @@
   },
   {
     "id": 57,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_57",
     "pregunta": "El principio de la accesibilidad web que exige que los componentes y la navegación de la interfaz de usuario se puedan utilizar por cualquier persona usuaria es:",
     "opciones": {
@@ -742,6 +799,7 @@
   },
   {
     "id": 58,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_58",
     "pregunta": "Según METRICA v3, ¿qué tipo de pruebas son las que tienen como objetivo verificar el correcto ensamblaje entre los distintos componentes para comprobar que interactúan correctamente a través de sus interfaces, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales especificados?",
     "opciones": {
@@ -755,6 +813,7 @@
   },
   {
     "id": 59,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_59",
     "pregunta": "Según establece METRICA v3, ¿qué participantes están presentes en la tarea de \"Elaboración de los Manuales de Usuario\"?",
     "opciones": {
@@ -768,6 +827,7 @@
   },
   {
     "id": 60,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_60",
     "pregunta": "¿Cuál de las siguientes herramientas NO es un software para el control de versiones?",
     "opciones": {
@@ -781,6 +841,7 @@
   },
   {
     "id": 61,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_61",
     "pregunta": "Señale la respuesta INCORRECTA sobre el kernel de un Sistema Operativo:",
     "opciones": {
@@ -794,6 +855,7 @@
   },
   {
     "id": 62,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_62",
     "pregunta": "En un sistema UNIX, cuál es la respuesta INCORRECTA:",
     "opciones": {
@@ -807,6 +869,7 @@
   },
   {
     "id": 63,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_63",
     "pregunta": "Respecto a la virtualización de máquinas, indique la opción FALSA:",
     "opciones": {
@@ -820,6 +883,7 @@
   },
   {
     "id": 64,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_64",
     "pregunta": "Una copia de seguridad (backup) diferencial:",
     "opciones": {
@@ -833,6 +897,7 @@
   },
   {
     "id": 65,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_65",
     "pregunta": "¿En qué campo del objeto de Kubernetes hay que incluir los valores que permiten identificar unívocamente al objeto?",
     "opciones": {
@@ -846,6 +911,7 @@
   },
   {
     "id": 66,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_66",
     "pregunta": "¿Cuál de los siguientes NO es un protocolo de correo electrónico?",
     "opciones": {
@@ -859,6 +925,7 @@
   },
   {
     "id": 67,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_67",
     "pregunta": "De los siguientes protocolos, ¿cuál se utiliza para administrar dispositivos de una red?",
     "opciones": {
@@ -872,6 +939,7 @@
   },
   {
     "id": 68,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_68",
     "pregunta": "¿Cuál es el comando usado por el administrador SNMP que se utiliza para recuperar datos voluminosos de una tabla MIB grande?",
     "opciones": {
@@ -885,6 +953,7 @@
   },
   {
     "id": 69,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_69",
     "pregunta": "¿Qué es ECDSA?",
     "opciones": {
@@ -898,6 +967,7 @@
   },
   {
     "id": 70,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_70",
     "pregunta": "Seleccione la respuesta INCORRECTA sobre la firma electrónica:",
     "opciones": {
@@ -911,6 +981,7 @@
   },
   {
     "id": 71,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_71",
     "pregunta": "¿Cuál de estos equipos de interconexión trabaja a nivel de red (nivel 3 del modelo OSI)?",
     "opciones": {
@@ -924,6 +995,7 @@
   },
   {
     "id": 72,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_72",
     "pregunta": "Cuál es la respuesta INCORRECTA acerca de la fibra óptica plástica (POF):",
     "opciones": {
@@ -937,6 +1009,7 @@
   },
   {
     "id": 73,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_73",
     "pregunta": "¿Cuál es el prefijo de dirección de Multicast en IPv6?",
     "opciones": {
@@ -950,6 +1023,7 @@
   },
   {
     "id": 74,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_74",
     "pregunta": "Seleccione la respuesta correcta sobre los niveles y servicios del modelo OSI:",
     "opciones": {
@@ -963,6 +1037,7 @@
   },
   {
     "id": 75,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_75",
     "pregunta": "¿Cuál de los siguientes organismos está especializado en telecomunicaciones de la Organización de las Naciones Unidas (ONU), encargado de regular las telecomunicaciones a nivel internacional entre las distintas administraciones y empresas operadoras?",
     "opciones": {
@@ -976,6 +1051,7 @@
   },
   {
     "id": 76,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_76",
     "pregunta": "¿Qué parte de un certificado de sitio web necesita un navegador para establecer una conexión segura HTTPS?",
     "opciones": {
@@ -989,6 +1065,7 @@
   },
   {
     "id": 77,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_77",
     "pregunta": "¿Qué es un portal cautivo?",
     "opciones": {
@@ -1002,6 +1079,7 @@
   },
   {
     "id": 78,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_78",
     "pregunta": "Entre los protocolos que puede usar una VPN para proporcionar cifrado NO se encuentra:",
     "opciones": {
@@ -1015,6 +1093,7 @@
   },
   {
     "id": 79,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_79",
     "pregunta": "¿Qué significa CSMA/CD?",
     "opciones": {
@@ -1028,6 +1107,7 @@
   },
   {
     "id": 80,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_80",
     "pregunta": "¿Qué dispositivo tiene como objetivo principal filtrar el tráfico de una LAN para que el trafico local continúe siendo local pero permitiendo conectividad a otros segmentos?",
     "opciones": {
@@ -1041,6 +1121,7 @@
   },
   {
     "id": 81,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_reserva_1",
     "pregunta": "¿A qué se corresponden las siglas de Red SOHO?",
     "opciones": {
@@ -1054,6 +1135,7 @@
   },
   {
     "id": 82,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_reserva_2",
     "pregunta": "Dentro de los dispositivos Android, es posible encontrar un gran número de capas de personalización. Señale cuál NO es una de ellas:",
     "opciones": {
@@ -1067,6 +1149,7 @@
   },
   {
     "id": 83,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_reserva_3",
     "pregunta": "Señale qué paquete R en SQL Server Machine Learning Services permite realizar transformaciones y manipulaciones de datos, resúmenes estadísticos, visualizaciones y muchas formas de modelado:",
     "opciones": {
@@ -1080,6 +1163,7 @@
   },
   {
     "id": 84,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_reserva_4",
     "pregunta": "¿Cuál de los siguientes lenguajes está relacionado con el desarrollo en backend?",
     "opciones": {
@@ -1093,6 +1177,7 @@
   },
   {
     "id": 85,
+    "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "tai_2022_reserva_5",
     "pregunta": "Indique cuáles son los diferentes tipos de configuración contemplados para WPS:",
     "opciones": {
