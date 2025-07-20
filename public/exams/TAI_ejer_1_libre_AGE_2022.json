@@ -234,7 +234,7 @@
       "c": "GLORIA, Gestión de eventos e información de seguridad.",
       "d": "MONICA, Gestor de logs para responder ante incidentes y amenazas."
     },
-    "respuesta_correcta": "b",
+    "respuesta_correcta": "d",
     "tema": "1.8.3 - Esquema Nacional de Seguridad (ENS)"
   },
   {
@@ -696,7 +696,7 @@
       "c": "URI son las siglas de Unique Resource Identifier.",
       "d": "Utiliza un protocolo cliente/servidor sin estado."
     },
-    "respuesta_correcta": "d",
+    "respuesta_correcta": "c",
     "tema": "3.7.1 - HTML, XML, navegadores"
   },
   {
