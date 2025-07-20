@@ -42,6 +42,7 @@ export default function Home() {
 
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
+    // volvi
     fetch('/api/exams')
       .then(res => res.json())
       .then(files => setExamFiles(files))
