@@ -507,7 +507,7 @@
     "id": 37,
     "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "2022_1_libre_37",
-    "pregunta": "La arquitectura ANSI/SPARC define para un sistema de gestión de bases de datos tres niveles de abstracción. Indicar la afirmación INCORRECTA:",
+    "pregunta": "ANULADA La arquitectura ANSI/SPARC define para un sistema de gestión de bases de datos tres niveles de abstracción. Indicar la afirmación INCORRECTA:",
     "opciones": {
       "a": "El nivel externo contiene las vistas externas de la base de datos y permite a cada tipo de usuario ver sólo aquella parte del esquema que le interesa.",
       "b": "El nivel físico define cómo se almacenan los datos y los métodos de acceso.",
@@ -619,7 +619,7 @@
     "id": 45,
     "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "2022_1_libre_45",
-    "pregunta": "Según METRICA v3, la relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen, es una relación entre clases de tipo:",
+    "pregunta": "ANULADA Según METRICA v3, la relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen, es una relación entre clases de tipo:",
     "opciones": {
       "a": "Herencia.",
       "b": "Composición.",
@@ -689,7 +689,7 @@
     "id": 50,
     "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "2022_1_libre_50",
-    "pregunta": "Cuál de las siguientes afirmaciones sobre REST es FALSA:",
+    "pregunta": "ANULADA Cuál de las siguientes afirmaciones sobre REST es FALSA:",
     "opciones": {
       "a": "REST es el acrónimo de Representational State Transfer.",
       "b": "Los objetos en REST siempre se manipulan a partir de la URI.",
@@ -1109,7 +1109,7 @@
     "id": 80,
     "examen": "TAI_ejer_1_libre_AGE_2022",
     "id_pregunta": "2022_1_libre_80",
-    "pregunta": "¿Qué dispositivo tiene como objetivo principal filtrar el tráfico de una LAN para que el trafico local continúe siendo local pero permitiendo conectividad a otros segmentos?",
+    "pregunta": "ANULADA ¿Qué dispositivo tiene como objetivo principal filtrar el tráfico de una LAN para que el trafico local continúe siendo local pero permitiendo conectividad a otros segmentos?",
     "opciones": {
       "a": "Switch",
       "b": "Hub",

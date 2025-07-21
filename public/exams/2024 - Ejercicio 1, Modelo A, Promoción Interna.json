@@ -10,8 +10,8 @@
       "c": "Minimización de datos.",
       "d": "Adecuación de datos."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 2,
@@ -24,8 +24,8 @@
       "c": "La capacidad de garantizar la confidencialidad, autenticidad, disponibilidad y resiliencia permanentes de los sistemas y servicios de tratamiento.",
       "d": "La capacidad de garantizar la confidencialidad, autenticidad, integridad y disponibilidad permanentes de los sistemas y servicios de tratamiento."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 3,
@@ -38,8 +38,8 @@
       "c": "Organizativa, operacional y de protección.",
       "d": "Infraestructuras, estándares y protocolos."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 4,
@@ -52,8 +52,8 @@
       "c": "Crecimiento de la producción y reducción del paro.",
       "d": "Acción por el clima."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 5,
@@ -66,8 +66,8 @@
       "c": "No podrá ser superior a cinco años.",
       "d": "No podrá ser superior a seis años."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 6,
@@ -80,8 +80,8 @@
       "c": "No trata en ningún artículo sobre la factura electrónica.",
       "d": "La factura electrónica solo se utilizará en contratación, estando excluida de la justificación de ayudas y subvenciones."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 7,
@@ -94,8 +94,8 @@
       "c": "Flexibilidad, interoperabilidad y seguridad.",
       "d": "Accesibilidad, interoperabilidad y reutilización."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 8,
@@ -108,8 +108,8 @@
       "c": "La persona titular del Ministerio de Justicia.",
       "d": "La persona titular de la Dirección General para la Igualdad Real y Efectiva de las personas LGTBI."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 9,
@@ -122,8 +122,8 @@
       "c": "La que existe cuando una disposición legal o reglamentaria, una cláusula convencional o contractual, un pacto individual, una decisión unilateral o un criterio o práctica, o bien un entorno, producto o servicio, aparentemente neutros, puedan ocasionar una desventaja particular a una persona respecto de otras por motivo de o por razón de discapacidad, siempre que objetivamente no respondan a una finalidad legítima y que los medios para la consecución de esta finalidad no sean adecuados y necesarios.",
       "d": "Toda conducta no deseada relacionada con la discapacidad de una persona, que tenga como objetivo o consecuencia atentar contra su dignidad o crear un entorno intimidatorio, hostil, degradante, humillante u ofensivo."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 10,
@@ -136,8 +136,8 @@
       "c": "Las notificaciones se practicarán preferentemente en papel y, en todo caso, cuando el interesado resulte obligado a recibirlas por esta vía.",
       "d": "Cuando la notificación se practique en el domicilio del interesado, de no hallarse presente éste en el momento de entregarse la notificación, podrá hacerse cargo de ella cualquier persona mayor de dieciséis años que se encuentre en el domicilio y haga constar su identidad."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 11,
@@ -150,8 +150,8 @@
       "c": "Una clasificación que pretende clarificar los diferentes tipos de tecnologías, técnicas y mecanismos que abarca el concepto abstracto de “Inteligencia Artificial”.",
       "d": "Una clasificación de los tipos de controladores (drivers) JDBC."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 12,
@@ -164,8 +164,8 @@
       "c": "La profundidad del bit es la capacidad de reproducir los píxeles en tonos grises.",
       "d": "Sólo los formatos TIFF y JPEG sirven para guardar una imagen digitalizada. El formato PDF se emplea para guardar imágenes de textos únicamente."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 13,
@@ -178,8 +178,8 @@
       "c": "No se puede implementar usando una estructura dinámica.",
       "d": "Las operaciones de apilar (push) y desapilar (pop) se realizan en cualquier posición."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 14,
@@ -192,8 +192,8 @@
       "c": "Se pueden escribir usando lenguaje natural, usando pseudo-código o incluso algún lenguaje de programación.",
       "d": "En JAVA, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class)."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 15,
@@ -206,8 +206,8 @@
       "c": "Se utiliza exclusivamente para la construcción de aplicaciones para iOS.",
       "d": "Algunas de las variables más comunes son String, Int, Double y Boot."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 16,
@@ -220,8 +220,8 @@
       "c": "Se recomienda su uso con aplicaciones intensivas a nivel computacional, como juegos o simulaciones físicas.",
       "d": "No permite la reutilización de código, no pudiendo usar bibliotecas de otros desarrolladores."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 17,
@@ -234,10 +234,10 @@
       "c": ".NET 8.0",
       "d": ".NET 2000"
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
-    {
+  {
     "id": 18,
     "examen": "TAI_ejer_1_A_promo_AGE_2024",
     "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_18",
@@ -248,8 +248,8 @@
       "c": "Dar error.",
       "d": "Imprimirá ‘1010’."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 19,
@@ -262,8 +262,8 @@
       "c": "DAST.",
       "d": "SART."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 20,
@@ -276,8 +276,8 @@
       "c": "Tipo de Correspondencia.",
       "d": "Dominio."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 21,
@@ -290,8 +290,8 @@
       "c": "ex",
       "d": "ch"
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 22,
@@ -304,8 +304,8 @@
       "c": "Razor se ejecuta directamente en el navegador del cliente.",
       "d": "Razor utiliza el @símbolo para realizar la transición de C# a HTML."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 23,
@@ -318,8 +318,8 @@
       "c": "La documentación entregada es la principal medida del progreso.",
       "d": "Las mejores arquitecturas, requisitos y diseños emergen de equipos bien jerarquizados."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 24,
@@ -332,8 +332,8 @@
       "c": "El comando TRUNCATE es un comando DML.",
       "d": "El comando SELECT es un comando DML."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 25,
@@ -346,8 +346,8 @@
       "c": "Un número decimal empaquetado con una coma decimal implícita.",
       "d": "Un entero de cuatro bytes con una precisión de 10 dígitos."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 26,
@@ -360,8 +360,8 @@
       "c": "En la arquitectura REST, la interfaz para acceder a los recursos expuestos puede ser HTTP o FTP.",
       "d": "Es una arquitectura no orientada a recursos."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 27,
@@ -374,8 +374,8 @@
       "c": "Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
       "d": "Una relación en 2FN estará también en 2FN, pero no en 1FN."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 28,
@@ -388,8 +388,8 @@
       "c": "La temporalidad de los eventos se indica en la cláusula ON SCHEDULE.",
       "d": "Una vez que el evento se ha ejecutado hay que eliminarlo manualmente."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 29,
@@ -402,8 +402,8 @@
       "c": "Se basa en el paradigma de la orientación a objetos.",
       "d": "Nuestra únicamente el modelado estático de un sistema software, que puede utilizarse en las diferentes fases de su ciclo de desarrollo."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 30,
@@ -416,8 +416,8 @@
       "c": "Simplifica el tratamiento de los objetos creados que, al poseer de una interfaz común, se tratan todos de la misma manera.",
       "d": "Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y sin afectar a otros objetos."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 31,
@@ -430,8 +430,8 @@
       "c": "Este programa imprime los números pares del 1 al 100.",
       "d": "Este programa es un bucle infinito."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 32,
@@ -444,8 +444,8 @@
       "c": "Reconocimiento después que recuerdo.",
       "d": "Ayuda y documentación."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 33,
@@ -458,8 +458,8 @@
       "c": "Vishing.",
       "d": "Whaling."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 34,
@@ -472,8 +472,8 @@
       "c": "Split horizon.",
       "d": "Hold down."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 35,
@@ -486,8 +486,8 @@
       "c": "21",
       "d": "20"
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 36,
@@ -500,8 +500,8 @@
       "c": "Diafonía.",
       "d": "Desajuste de impedancia."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 37,
@@ -514,8 +514,8 @@
       "c": "ifconfig eth0",
       "d": "tcpdump eth0"
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 38,
@@ -528,8 +528,8 @@
       "c": "Al registro que contiene la dirección de la siguiente instrucción del programa que se ejecutará.",
       "d": "Al registro que contiene el número de procesos que están corriendo en paralelo."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 39,
@@ -542,8 +542,8 @@
       "c": "SNTP.",
       "d": "SMTP."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 40,
@@ -556,8 +556,8 @@
       "c": "El enfoque de diseño único, sin posibilidad de elegir la tecnología.",
       "d": "Mejora la resistencia a los errores, permitiendo degradar una funcionalidad sin bloquear toda la aplicación."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 41,
@@ -570,8 +570,8 @@
       "c": "El resultado es un fichero de texto XML. No es adecuado cuando el fichero original es muy grande.",
       "d": "Es el formato más adecuado cuando el documento original es un PDF."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 42,
@@ -584,8 +584,8 @@
       "c": "Sirve para medir la eficiencia energética de un equipo concreto de entre todos los conectados en un CPD.",
       "d": "Sirve para comparar la energía consumida por el CPD con la cantidad de energía consumida por los equipos que no son TI (sistemas de refrigeración, etc.)."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 43,
@@ -598,8 +598,8 @@
       "c": "Errores de servidor: el servidor falló al completar una solicitud aparentemente válida.",
       "d": "Redirecciones: el cliente tiene que tomar una acción adicional para completar la petición."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   },
   {
     "id": 44,
@@ -612,8 +612,8 @@
       "c": "La capa de presentación del modelo OSI está incluida en la capa de aplicación del modelo TCP/IP.",
       "d": "La capa de transporte del modelo TCP/IP se corresponde con la capa de transporte del modelo OSI."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 45,
@@ -626,8 +626,8 @@
       "c": "MONICA.",
       "d": "OLVIDO."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 46,
@@ -640,8 +640,8 @@
       "c": "Redes integradas para voz y datos.",
       "d": "Seguridad de red."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 47,
@@ -654,8 +654,8 @@
       "c": "Conservar 3 copias de los datos, en 2 medios iguales con 1 copia almacenada en un lugar interno a la organización.",
       "d": "Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar interno a la organización."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 48,
@@ -668,8 +668,8 @@
       "c": "Es una solución difícil de escalar, requiere planificación previa.",
       "d": "Aumenta en gran medida los costos asociados con la energía, la refrigeración y el cableado en el centro de datos."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 49,
@@ -682,8 +682,8 @@
       "c": "Las redes de clase A usan una máscara de subred predeterminada de 255.0.0.0.",
       "d": "En las redes clase C se permite direccionar 254 equipos como máximo."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 50,
@@ -696,13 +696,13 @@
       "c": "Desarrollado en la RFC 2205, es un protocolo de configuración de reserva de recursos diseñado para servicios integrados de Internet.",
       "d": "Desarrollado en la RFC 2974, posibilita el anuncio de sesiones multimedia en la modalidad multicast."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 51,
     "examen": "TAI_ejer_1_A_promo_AGE_2024",
-    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_Pregunta_reserva_01",
+    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_51",
     "pregunta": "Según establece la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales, ¿quién NO puede ponerse en contacto con los prestadores de servicios de la sociedad de la información para acceder a los contenidos de la persona fallecida?",
     "opciones": {
       "a": "En caso de fallecimiento de personas con discapacidad, estas facultades podrán ejercerse por quienes hubiesen sido designados para el ejercicio de funciones de apoyo si tales facultades se entendieran comprendidas en las medidas de apoyo prestadas por el designado.",
@@ -710,13 +710,13 @@
       "c": "En caso de personas fallecidas mayores de edad, estas facultades no podrán ejercerse por sus representantes legales o, en el marco de sus competencias, por el Ministerio Fiscal, que podrá actuar de oficio o a instancia de cualquier persona física o jurídica interesada.",
       "d": "Las personas vinculadas al fallecido por razones familiares o de hecho, así como sus herederos podrán dirigirse a los prestadores de servicios de la sociedad de la información al objeto de acceder a dichos contenidos e impartirles las instrucciones que estimen oportunas sobre su utilización, destino o supresión."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "c",
+    "tema": null
   },
   {
     "id": 52,
     "examen": "TAI_ejer_1_A_promo_AGE_2024",
-    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_Pregunta_reserva_02",
+    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_52",
     "pregunta": "¿Cuál de las siguientes respuestas se corresponden con el número 450 estando este representado en base decimal?",
     "opciones": {
       "a": "111000010 en binario.",
@@ -724,13 +724,13 @@
       "c": "1F4 en hexadecimal.",
       "d": "407 en octal."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "a",
+    "tema": null
   },
   {
     "id": 53,
     "examen": "TAI_ejer_1_A_promo_AGE_2024",
-    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_Pregunta_reserva_03",
+    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_53",
     "pregunta": "Indique la respuesta correcta respecto al lenguaje de programación F#:",
     "opciones": {
       "a": "El literal tipo sbyte es un número natural de 8 bits sin signo.",
@@ -738,13 +738,13 @@
       "c": "Para realizar comentarios en el código de múltiples líneas se utiliza //* para iniciar el comentario y *// para cerrarlo.",
       "d": "La expresión 'let immutable x = 1' es correcta."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 54,
     "examen": "TAI_ejer_1_A_promo_AGE_2024",
-    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_Pregunta_reserva_04",
+    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_54",
     "pregunta": "Indique la opción correcta sobre un 'repositorio bare' en el sistema de control de versiones Git:",
     "opciones": {
       "a": "Un repositorio bare es un mecanismo para lanzar scripts de usuario cuando suceden ciertas acciones importantes.",
@@ -752,13 +752,13 @@
       "c": "No existen repositorios bare en Git.",
       "d": "Un repositorio bare se suele usar para automatizar la copia de seguridad del repositorio local de trabajo."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "b",
+    "tema": null
   },
   {
     "id": 55,
     "examen": "TAI_ejer_1_A_promo_AGE_2024",
-    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_Pregunta_reserva_05",
+    "id_pregunta": "TAI_ejer_1_A_promo_AGE_2024_55",
     "pregunta": "Indique la respuesta INCORRECTA respecto a PoE (Power over Ethernet):",
     "opciones": {
       "a": "Power over Ethernet (PoE) es una tecnología que permite que los conmutadores de red transmitan energía y datos a través de un cable Ethernet simultáneamente.",
@@ -766,7 +766,7 @@
       "c": "PoE pasivo no se adhiere a ningún estándar IEEE.",
       "d": "El último estándar de PoE activo es el IEEE 802.3at."
     },
-    "respuesta_correcta": "null",
-    "tema": "null"
+    "respuesta_correcta": "d",
+    "tema": null
   }
 ]
