@@ -730,7 +730,7 @@ export default function Home() {
             onClick={downloadTest}
             disabled={!newTestTitle || newQuestions.length === 0}
           >
-            Descargar test en formato JSON
+            Descargar test en formato Jeison
           </button>
         </div>
       )}
