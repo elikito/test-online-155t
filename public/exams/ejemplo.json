@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "examen": "nombre_del_pdf",
     "id_pregunta": "ejemplo_01",
     "pregunta": "pregunta 1",
     "opciones": {
@@ -9,11 +10,12 @@
       "c": "sistema3",
       "d": "sistema4"
     },
-    "respuesta_correcta": "a",
-    "tema": "4.1 - Administración del sistema operativo"
+    "respuesta_correcta": "null",
+    "tema": "null"
   },
   {
     "id": 2,
+    "examen": "nombre_del_pdf",
     "id_pregunta": "ejemplo_02",
     "pregunta": "pregunta 2",
     "opciones": {
@@ -22,11 +24,12 @@
       "c": "op3",
       "d": "op4"
     },
-    "respuesta_correcta": "c",
-    "tema": "4.9 - Seguridad en redes"
+    "respuesta_correcta": "null",
+    "tema": "null"
   },
   {
     "id": 3,
+    "examen": "nombre_del_pdf",
     "id_pregunta": "ejemplo_03",
     "pregunta": "preguntita3",
     "opciones": {
@@ -35,7 +38,7 @@
       "c": "asdfas",
       "d": "asdfsdf"
     },
-    "respuesta_correcta": "c",
-    "tema": "1.3.4 - Relaciones con las Cortes Generales"
+    "respuesta_correcta": "null",
+    "tema": "null"
   }
 ]
