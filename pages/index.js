@@ -58,6 +58,17 @@ export default function Home() {
       .map(({ value }) => value);
   };
 
+  const copiarPreguntaActual = (pregunta) => {
+    if (!pregunta) return;
+    let texto = `Pregunta: ${pregunta.pregunta}\n`;
+    Object.entries(pregunta.opciones).forEach(([key, value]) => {
+      texto += `${key.toUpperCase()}: ${value}\n`;
+    });
+    navigator.clipboard.writeText(texto)
+      .then(() => alert("Pregunta copiada al portapapeles"))
+      .catch(err => alert("No se pudo copiar"));
+  };
+
   const loadExam = async (filename) => {
     const res = await fetch(`/exams/${filename}`);
     const data = await res.json();
@@ -582,7 +593,7 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Botones extra debajo de la tarjeta */}
-                <div className="mt-3 d-flex gap-2">
+                <div className="mt-3 d-flex gap-2 flex-wrap">
                   <button
                     className="btn btn-warning"
                     onClick={() => {
@@ -614,6 +625,12 @@ export default function Home() {
                     }}
                   >
                     Señor GPT
+                  </button>
+                  <button
+                    className="btn btn-outline-secondary"
+                    onClick={() => copiarPreguntaActual(currentQuestion)}
+                  >
+                    Copiar pregunta
                   </button>
                 </div>
               </>
@@ -948,6 +965,39 @@ export default function Home() {
                           <p className="mt-3 text-success">¡Has llegado al final del test personalizado!</p>
                         )}
                       </div>
+                        <div className="mt-3 d-flex gap-2 flex-wrap">
+                          <button
+                            className="btn btn-warning"
+                            onClick={() => {
+                              setCustomTestStarted(false);
+                              setCustomTestQuestions([]);
+                              setCustomTestCurrent(0);
+                              setCustomTestSelected(null);
+                            }}
+                          >
+                            Reiniciar test
+                          </button>
+                          <button
+                            className="btn btn-info"
+                            onClick={() => {
+                              let pregunta = customTestQuestions[customTestCurrent];
+                              let texto = `Pregunta: ${pregunta.pregunta}\n`;
+                              Object.entries(pregunta.opciones).forEach(([key, value]) => {
+                                texto += `${key.toUpperCase()}: ${value}\n`;
+                              });
+                              const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                              window.open(url, '_blank');
+                            }}
+                          >
+                            Señor GPT
+                          </button>
+                          <button
+                            className="btn btn-outline-secondary"
+                            onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
+                          >
+                            Copiar pregunta
+                          </button>
+                        </div>
                     </div>
                   )}
                   <div className="mt-4 text-center">
