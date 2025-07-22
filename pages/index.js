@@ -65,8 +65,8 @@ export default function Home() {
       texto += `${key.toUpperCase()}: ${value}\n`;
     });
     navigator.clipboard.writeText(texto)
-      .then(() => alert("Pregunta copiada al portapapeles"))
-      .catch(err => alert("No se pudo copiar"));
+//      .then(() => alert("Pregunta copiada al portapapeles"))
+//      .catch(err => alert("No se pudo copiar"));
   };
 
   const loadExam = async (filename) => {
