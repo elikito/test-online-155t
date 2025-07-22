@@ -11,7 +11,7 @@
       "d": "Adecuación de datos."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "1.7.1 - Principios generales (licitud, finalidad, proporcionalidad)"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
       "d": "La capacidad de garantizar la confidencialidad, autenticidad, integridad y disponibilidad permanentes de los sistemas y servicios de tratamiento."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "1.7.3 - Obligaciones del responsable y encargado del tratamiento"
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@
       "d": "Infraestructuras, estándares y protocolos."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "1.8.4 - Esquema Nacional de Interoperabilidad (ENI)"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
       "d": "Acción por el clima."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "1.4.6 - Agenda 2030 y Objetivos de Desarrollo Sostenible (ODS)"
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@
       "d": "No podrá ser superior a seis años."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "1.6.2 - DNI electrónico"
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@
       "d": "La factura electrónica solo se utilizará en contratación, estando excluida de la justificación de ayudas y subvenciones."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "1.6.3 - Agenda Digital para España"
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@
       "d": "Accesibilidad, interoperabilidad y reutilización."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "1.4.5 - Ley 19/2013 de Transparencia"
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@
       "d": "La persona titular de la Dirección General para la Igualdad Real y Efectiva de las personas LGTBI."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "1.5.3 - Igualdad LGTBI"
   },
   {
     "id": 9,
@@ -123,7 +123,7 @@
       "d": "Toda conducta no deseada relacionada con la discapacidad de una persona, que tenga como objetivo o consecuencia atentar contra su dignidad o crear un entorno intimidatorio, hostil, degradante, humillante u ofensivo."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "1.5.4 - Régimen jurídico de discapacidad y dependencia"
   },
   {
     "id": 10,
@@ -137,7 +137,7 @@
       "d": "Cuando la notificación se practique en el domicilio del interesado, de no hallarse presente éste en el momento de entregarse la notificación, podrá hacerse cargo de ella cualquier persona mayor de dieciséis años que se encuentre en el domicilio y haga constar su identidad."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "1.8.2 - Registros, notificaciones, medios electrónicos"
   },
   {
     "id": 11,
@@ -151,7 +151,7 @@
       "d": "Una clasificación de los tipos de controladores (drivers) JDBC."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "2.1.3 - Arquitectura de ordenadores y componentes internos"
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@
       "d": "Sólo los formatos TIFF y JPEG sirven para guardar una imagen digitalizada. El formato PDF se emplea para guardar imágenes de textos únicamente."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "2.2.2 - Digitalización y conectividad"
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@
       "d": "Las operaciones de apilar (push) y desapilar (pop) se realizan en cualquier posición."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "2.3.1 - Tipos abstractos y estructuras de datos"
   },
   {
     "id": 14,
@@ -193,7 +193,7 @@
       "d": "En JAVA, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class)."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "2.3.1 - Tipos abstractos y estructuras de datos"
   },
   {
     "id": 15,
@@ -207,7 +207,7 @@
       "d": "Algunas de las variables más comunes son String, Int, Double y Boot."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "3.5.1 - Componentes y lenguajes"
   },
   {
     "id": 16,
@@ -221,7 +221,7 @@
       "d": "No permite la reutilización de código, no pudiendo usar bibliotecas de otros desarrolladores."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "3.5.1 - Componentes y lenguajes"
   },
   {
     "id": 17,
@@ -235,7 +235,7 @@
       "d": ".NET 2000"
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "3.5.1 - Componentes y lenguajes"
   },
   {
     "id": 18,
@@ -249,7 +249,7 @@
       "d": "Imprimirá ‘1010’."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "3.2.1 - Tipos de datos, operadores, bucles"
   },
   {
     "id": 19,
@@ -263,7 +263,7 @@
       "d": "SART."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "3.8.2 - Seguridad del software"
   },
   {
     "id": 20,
@@ -277,7 +277,7 @@
       "d": "Dominio."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "3.1.1 - Modelado de datos"
   },
   {
     "id": 21,
@@ -291,7 +291,7 @@
       "d": "ch"
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "3.5.3 - Desarrollo de interfaces"
   },
   {
     "id": 22,
@@ -305,7 +305,7 @@
       "d": "Razor utiliza el @símbolo para realizar la transición de C# a HTML."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "3.5.3 - Desarrollo de interfaces"
   },
   {
     "id": 23,
@@ -319,7 +319,7 @@
       "d": "Las mejores arquitecturas, requisitos y diseños emergen de equipos bien jerarquizados."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "3.9.2 - Pruebas y metodologías"
   },
   {
     "id": 24,
@@ -333,7 +333,7 @@
       "d": "El comando SELECT es un comando DML."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "3.3.1 - ANSI SQL"
   },
   {
     "id": 25,
@@ -347,7 +347,7 @@
       "d": "Un entero de cuatro bytes con una precisión de 10 dígitos."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "2.1.3 - Arquitectura de ordenadores y componentes internos"
   },
   {
     "id": 26,
@@ -361,7 +361,7 @@
       "d": "Es una arquitectura no orientada a recursos."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "4.8.1 - Servicios web"
   },
   {
     "id": 27,
@@ -375,7 +375,7 @@
       "d": "Una relación en 2FN estará también en 2FN, pero no en 1FN."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "3.1.3 - Normalización"
   },
   {
     "id": 28,
@@ -389,7 +389,7 @@
       "d": "Una vez que el evento se ha ejecutado hay que eliminarlo manualmente."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "3.3.1 - ANSI SQL"
   },
   {
     "id": 29,
@@ -403,7 +403,7 @@
       "d": "Nuestra únicamente el modelado estático de un sistema software, que puede utilizarse en las diferentes fases de su ciclo de desarrollo."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "3.4.2 - UML"
   },
   {
     "id": 30,
@@ -417,7 +417,7 @@
       "d": "Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y sin afectar a otros objetos."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "3.4.3 - Patrones de diseño"
   },
   {
     "id": 31,
@@ -431,7 +431,7 @@
       "d": "Este programa es un bucle infinito."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "3.2.1 - Tipos de datos, operadores, bucles"
   },
   {
     "id": 32,
@@ -445,7 +445,7 @@
       "d": "Ayuda y documentación."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "3.8.1 - Usabilidad y diseño accesible"
   },
   {
     "id": 33,
@@ -459,7 +459,7 @@
       "d": "Whaling."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "4.9.2 - Seguridad del usuario final"
   },
   {
     "id": 34,
@@ -473,7 +473,7 @@
       "d": "Hold down."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "4.7.2 - TCP/IP"
   },
   {
     "id": 35,
@@ -487,7 +487,7 @@
       "d": "20"
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "4.10.1 - Métodos de acceso"
   },
   {
     "id": 36,
@@ -501,7 +501,7 @@
       "d": "Desajuste de impedancia."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "4.6.1 - Dispositivos de red"
   },
   {
     "id": 37,
@@ -515,7 +515,7 @@
       "d": "tcpdump eth0"
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "4.1.1 - Administración del sistema operativo"
   },
   {
     "id": 38,
@@ -529,7 +529,7 @@
       "d": "Al registro que contiene el número de procesos que están corriendo en paralelo."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "2.4.2 - Elementos constitutivos, funcionamiento"
   },
   {
     "id": 39,
@@ -543,7 +543,7 @@
       "d": "SMTP."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "4.3.1 - Email"
   },
   {
     "id": 40,
@@ -557,7 +557,7 @@
       "d": "Mejora la resistencia a los errores, permitiendo degradar una funcionalidad sin bloquear toda la aplicación."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "3.6.1 - Arquitecturas distribuidas"
   },
   {
     "id": 41,
@@ -571,7 +571,7 @@
       "d": "Es el formato más adecuado cuando el documento original es un PDF."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "1.6.1 - Identidad y firma electrónica"
   },
   {
     "id": 42,
@@ -585,7 +585,7 @@
       "d": "Sirve para comparar la energía consumida por el CPD con la cantidad de energía consumida por los equipos que no son TI (sistemas de refrigeración, etc.)."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "4.5.3 - Infraestructura y soporte"
   },
   {
     "id": 43,
@@ -599,7 +599,7 @@
       "d": "Redirecciones: el cliente tiene que tomar una acción adicional para completar la petición."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "4.7.2 - TCP/IP"
   },
   {
     "id": 44,
@@ -613,7 +613,7 @@
       "d": "La capa de transporte del modelo TCP/IP se corresponde con la capa de transporte del modelo OSI."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "4.7.1 - Modelo OSI"
   },
   {
     "id": 45,
@@ -627,7 +627,7 @@
       "d": "OLVIDO."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "4.4.2 - Monitorización"
   },
   {
     "id": 46,
@@ -641,7 +641,7 @@
       "d": "Seguridad de red."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "4.6.1 - Dispositivos de red"
   },
   {
     "id": 47,
@@ -655,7 +655,7 @@
       "d": "Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar interno a la organización."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "4.2.1 - Backup físico y virtual"
   },
   {
     "id": 48,
@@ -669,7 +669,7 @@
       "d": "Aumenta en gran medida los costos asociados con la energía, la refrigeración y el cableado en el centro de datos."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "4.5.3 - Infraestructura y soporte"
   },
   {
     "id": 49,
@@ -683,7 +683,7 @@
       "d": "En las redes clase C se permite direccionar 254 equipos como máximo."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "4.7.2 - TCP/IP"
   },
   {
     "id": 50,
@@ -697,7 +697,7 @@
       "d": "Desarrollado en la RFC 2974, posibilita el anuncio de sesiones multimedia en la modalidad multicast."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "3.6.2 - Protocolos"
   },
   {
     "id": 51,
@@ -711,7 +711,7 @@
       "d": "Las personas vinculadas al fallecido por razones familiares o de hecho, así como sus herederos podrán dirigirse a los prestadores de servicios de la sociedad de la información al objeto de acceder a dichos contenidos e impartirles las instrucciones que estimen oportunas sobre su utilización, destino o supresión."
     },
     "respuesta_correcta": "c",
-    "tema": null
+    "tema": "1.7.4 - Derechos digitales"
   },
   {
     "id": 52,
@@ -725,7 +725,7 @@
       "d": "407 en octal."
     },
     "respuesta_correcta": "a",
-    "tema": null
+    "tema": "2.1.1 - Representación y comunicación de la información"
   },
   {
     "id": 53,
@@ -739,7 +739,7 @@
       "d": "La expresión 'let immutable x = 1' es correcta."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "3.5.1 - Componentes y lenguajes"
   },
   {
     "id": 54,
@@ -753,7 +753,7 @@
       "d": "Un repositorio bare se suele usar para automatizar la copia de seguridad del repositorio local de trabajo."
     },
     "respuesta_correcta": "b",
-    "tema": null
+    "tema": "3.9.1 - Repositorios y control de versiones"
   },
   {
     "id": 55,
@@ -767,6 +767,6 @@
       "d": "El último estándar de PoE activo es el IEEE 802.3at."
     },
     "respuesta_correcta": "d",
-    "tema": null
+    "tema": "4.5.3 - Infraestructura y soporte"
   }
 ]
