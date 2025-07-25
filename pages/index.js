@@ -43,6 +43,7 @@ export default function Home() {
   // Añade esta línea:
   const [customFontSize, setCustomFontSize] = useState(18);
   const [customLoading, setCustomLoading] = useState(false);
+  const [customAllQuestions, setCustomAllQuestions] = useState(false);
 
   // Añadir estado para el ancho del panel
   const [panelWidth, setPanelWidth] = useState(500);
@@ -1083,8 +1084,28 @@ export default function Home() {
                             onChange={e => {
                               const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
                               setCustomNumQuestions(val);
+                              setCustomAllQuestions(val === getFilteredCustomQuestions().length);
                             }}
+                            disabled={customAllQuestions}
                           />
+                          <div className="form-check mt-2">
+                            <input
+                              className="form-check-input"
+                              type="checkbox"
+                              id="allQuestionsCheck"
+                              checked={customAllQuestions}
+                              onChange={e => {
+                                setCustomAllQuestions(e.target.checked);
+                                if (e.target.checked) {
+                                  setCustomNumQuestions(getFilteredCustomQuestions().length);
+                                }
+                              }}
+                              disabled={getFilteredCustomQuestions().length === 0}
+                            />
+                            <label className="form-check-label" htmlFor="allQuestionsCheck">
+                              Todos
+                            </label>
+                          </div>
                           <small className="text-muted">
                             Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
                           </small>
