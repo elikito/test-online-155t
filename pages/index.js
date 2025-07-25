@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const PANEL_WIDTH = 600; // Cambia este valor para modificar el ancho en ambos paneles
+
 export default function Home() {
   // Estado para controlar la vista principal o subpaneles
   const [view, setView] = useState('');
@@ -576,10 +578,13 @@ export default function Home() {
   const [infiniteQuestions, setInfiniteQuestions] = useState([]);
   const [infiniteCurrent, setInfiniteCurrent] = useState(0);
 
-  // Añade estos estados para el modo infinito
+  // Añade estos estados para el modo Infinito
   const [infiniteSelected, setInfiniteSelected] = useState(null);
   const [infiniteCorrect, setInfiniteCorrect] = useState(0);
   const [infiniteIncorrect, setInfiniteIncorrect] = useState(0);
+
+  // Añade este estado al principio del componente Home
+  const [autoNext, setAutoNext] = useState(false);
 
   // Cuando cambie de pregunta, actualiza la opción seleccionada
   useEffect(() => {
@@ -588,7 +593,7 @@ export default function Home() {
     }
   }, [infiniteCurrent, infiniteQuestions, reviewMode]);
 
-  // Maneja la respuesta en modo infinito y actualiza contadores
+  // Maneja la respuesta en modo Infinito y actualiza contadores
   const handleInfiniteAnswer = (key) => {
     if (infiniteQuestions[infiniteCurrent]?.respuesta_usuario) return;
     setInfiniteSelected(key);
@@ -663,7 +668,7 @@ export default function Home() {
                 <ul className="mb-0 mt-2" style={{ paddingLeft: 22 }}>
                   <li><strong>Crear test:</strong> Crea un test personalizado eligiendo temas y número de preguntas.</li>
                   <li><strong>Cargar Temario:</strong> Consulta el temario completo.</li>
-                  <li><strong>Preguntas sin fin:</strong> Practica en modo aleatorio continuo, sin límite de preguntas.</li>
+                  <li><strong>Modo Infinito:</strong> Practica en modo Infinito, sin límite de preguntas.</li>
                   <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y descárgalas en formato JSON.</li>
                 </ul>
               </div>
@@ -689,7 +694,7 @@ export default function Home() {
                   setReviewMode('infinito');
                   setView('repaso');
                 }}>
-                  Preguntas sin fin
+                  Modo Infinito
                 </button>
               </div>
 
@@ -706,30 +711,104 @@ export default function Home() {
           <>
             <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
             <h4 className="mb-3">
-              {reviewMode === 'infinito' && 'Modo aleatorio continuo'}
+              {reviewMode === 'infinito' && 'Modo Infinito'}
             </h4>
+            {/* Check para continuar automáticamente */}
+            <div className="form-check mb-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="autoNextCheck"
+                checked={autoNext}
+                onChange={e => setAutoNext(e.target.checked)}
+              />
+              <label className="form-check-label" htmlFor="autoNextCheck">
+                Continuar automáticamente al responder
+              </label>
+            </div>
             {reviewMode === 'infinito' && infiniteQuestions.length === 0 && (
               <div className="alert alert-info">
-                No hay preguntas disponibles para el modo aleatorio continuo.
+                No hay preguntas disponibles para el modo Infinito.
               </div>
             )}
             {reviewMode === 'infinito' && infiniteQuestions.length > 0 && (
-              <TestPanel
-                questions={infiniteQuestions}
-                current={infiniteCurrent}
-                setCurrent={setInfiniteCurrent}
-                selectedOption={infiniteSelected}
-                setSelectedOption={setInfiniteSelected}
-                handleAnswer={handleInfiniteAnswer}
-                nextQuestion={() => setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length)}
-                correctCount={infiniteCorrect}
-                incorrectCount={infiniteIncorrect}
-                copiarPreguntaActual={copiarPreguntaActual}
-                reiniciarTest={reiniciarInfinito}
-                handleSenorGPT={() => {}}
-                showTopButtons={true}
-                customFontSize={18}
-              />
+              <div
+                style={{
+                  width: PANEL_WIDTH,
+                  margin: '0 auto'
+                }}
+              >
+                {/* Botones superiores como en test personalizado */}
+                <div className="d-flex gap-2 align-items-center mb-3 justify-content-end">
+                  <button
+                    className="btn btn-light btn-sm"
+                    title="Reducir tamaño de texto"
+                    style={{ fontSize: 18, padding: '2px 8px' }}
+                    onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
+                  >
+                    <span role="img" aria-label="disminuir">A-</span>
+                  </button>
+                  <button
+                    className="btn btn-light btn-sm"
+                    title="Aumentar tamaño de texto"
+                    style={{ fontSize: 22, padding: '2px 8px' }}
+                    onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
+                  >
+                    <span role="img" aria-label="aumentar">A+</span>
+                  </button>
+                  <button 
+                    className="btn btn-info btn-sm" 
+                    onClick={() => {
+                      const currentQuestion = infiniteQuestions[infiniteCurrent];
+                      let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                      Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                        texto += `${key.toUpperCase()}: ${value}\n`;
+                      });
+                      const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                      window.open(url, '_blank');
+                    }}
+                  >
+                    <span role="img" aria-label="robot">🤖</span>
+                  </button>
+                  <button 
+                    className="btn btn-outline-secondary btn-sm" 
+                    onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}
+                  >
+                    📋 Copiar
+                  </button>
+                </div>
+                <TestPanel
+                  questions={infiniteQuestions}
+                  current={infiniteCurrent}
+                  setCurrent={setInfiniteCurrent}
+                  selectedOption={infiniteSelected}
+                  setSelectedOption={setInfiniteSelected}
+                  handleAnswer={(key) => {
+                    handleInfiniteAnswer(key);
+                    if (autoNext && infiniteCurrent < infiniteQuestions.length - 1) {
+                      setTimeout(() => {
+                        setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length);
+                      }, 1000);
+                    }
+                  }}
+                  nextQuestion={() => setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length)}
+                  correctCount={infiniteCorrect}
+                  incorrectCount={infiniteIncorrect}
+                  copiarPreguntaActual={copiarPreguntaActual}
+                  reiniciarTest={reiniciarInfinito}
+                  handleSenorGPT={() => {
+                    const currentQuestion = infiniteQuestions[infiniteCurrent];
+                    let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                    Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                      texto += `${key.toUpperCase()}: ${value}\n`;
+                    });
+                    const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                    window.open(url, '_blank');
+                  }}
+                  showTopButtons={false}
+                  customFontSize={customFontSize}
+                />
+              </div>
             )}
           </>
         )}
@@ -1108,23 +1187,33 @@ export default function Home() {
               )}
             </div>
             
+            {/* Título fuera del contenedor, igual que en modo Infinito */}
+            <h4 className="mb-3">Test personalizado</h4>
+            
+            {/* Checkbox continuar automáticamente - igual que en modo Infinito */}
+            <div className="form-check mb-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="autoNextCheckCustom"
+                checked={autoNext}
+                onChange={e => setAutoNext(e.target.checked)}
+              />
+              <label className="form-check-label" htmlFor="autoNextCheckCustom">
+                Continuar automáticamente al responder
+              </label>
+            </div>
+            
             <div
               style={{
-                width: '100%',
-                maxWidth: 800,
-                margin: '0 auto',
-                background: '#fff',
-                // boxShadow solo hasta las opciones, no en el panel entero
-                padding: 0,
-                overflowY: 'auto'
+                width: PANEL_WIDTH,
+                margin: '0 auto'
               }}
             >
-              {/* Título con botones alineados a la derecha */}
-              <div className="d-flex justify-content-between align-items-center mb-3 px-4 pt-4">
-                <h4 className="mb-0">Test personalizado</h4>
-                {customTestStarted && (
-                  <div className="d-flex gap-2 align-items-center">
-                    {/* Iconos para tamaño de texto */}
+              {customTestStarted && (
+                <>
+                  {/* Botones alineados a la derecha */}
+                  <div className="d-flex gap-2 align-items-center justify-content-end mb-3">
                     <button
                       className="btn btn-light btn-sm"
                       title="Reducir tamaño de texto"
@@ -1162,114 +1251,117 @@ export default function Home() {
                       📋 Copiar
                     </button>
                   </div>
-                )}
-              </div>
+                </>
+              )}
               
-              <div
-                style={{
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-                  borderRadius: 0,
-                  margin: 0,
-                  padding: 24,
-                  paddingTop: 0,
-                  paddingBottom: 0,
-                  // Responsive font size
-                  fontSize: customFontSize,
-                  transition: 'font-size 0.2s'
-                }}
-              >
-                {!customTestStarted ? (
-                  <div>
-                    {customLoading ? (
-                      <div className="my-4 text-center">
-                        <div className="spinner-border" />
-                        <div>Cargando preguntas...</div>
-                      </div>
-                    ) : (
-                      <>
-                        <div className="mb-3">
-                          <label className="form-label">Examen</label>
-                          <select
-                            className="form-select"
-                            value={customExam}
-                            onChange={e => setCustomExam(e.target.value)}
-                          >
-                            <option value="">-- Todos --</option>
-                            {customExamList.map((ex, i) => (
-                              <option key={i} value={ex}>{ex}</option>
-                            ))}
-                          </select>
-                        </div>
-                        <div className="mb-3">
-                          <label className="form-label">Tema</label>
-                          <select
-                            className="form-select"
-                            value={customTema}
-                            onChange={e => setCustomTema(e.target.value)}
-                          >
-                            <option value="">-- Todos --</option>
-                            {customTemas.map((t, i) => (
-                              <option key={i} value={t}>
-                                {t} ({customTemaCounts[t] || 0} preguntas)
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                        <div className="mb-3">
-                          <label className="form-label">Número de preguntas</label>
-                          <input
-                            type="number"
-                            className="form-control"
-                            min={1}
-                            max={Math.max(1, getFilteredCustomQuestions().length)}
-                            value={customNumQuestions}
-                            onChange={e => {
-                              const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
-                              setCustomNumQuestions(val);
-                            }}
-                          />
-                          <small className="text-muted">
-                            Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
-                          </small>
-                        </div>
-                        <button
-                          className="btn btn-success"
-                          disabled={getFilteredCustomQuestions().length === 0}
-                          onClick={startCustomTest}
+              {!customTestStarted ? (
+                <div
+                  style={{
+                    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                    borderRadius: 0,
+                    margin: 0,
+                    padding: 24,
+                    fontSize: customFontSize,
+                    transition: 'font-size 0.2s',
+                    width: 'auto',
+                    marginLeft: 'auto',
+                    marginRight: 'auto'
+                  }}
+                >
+                  {customLoading ? (
+                    <div className="my-4 text-center">
+                      <div className="spinner-border" />
+                      <div>Cargando preguntas...</div>
+                    </div>
+                  ) : (
+                    <>
+                      <div className="mb-3">
+                        <label className="form-label">Examen</label>
+                        <select
+                          className="form-select"
+                          value={customExam}
+                          onChange={e => setCustomExam(e.target.value)}
                         >
-                          Comenzar test
-                        </button>
-                      </>
-                    )}
-                  </div>
-                ) : (
-                  <div>
-                    <TestPanel
-                      questions={customTestQuestions}
-                      current={customTestCurrent}
-                      setCurrent={setCustomTestCurrent}
-                      selectedOption={customTestSelected}
-                      setSelectedOption={setCustomTestSelected}
-                      handleAnswer={handleCustomTestAnswer}
-                      nextQuestion={nextCustomTestQuestion}
-                      correctCount={customTestCorrect}
-                      incorrectCount={customTestIncorrect}
-                      copiarPreguntaActual={copiarPreguntaActual}
-                      handleSenorGPT={() => {
-                        const currentQuestion = customTestQuestions[customTestCurrent];
-                        let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                          texto += `${key.toUpperCase()}: ${value}\n`;
-                        });
-                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                        window.open(url, '_blank');
-                      }}
-                      showTopButtons={true}
-                      customFontSize={customFontSize}
-                    />
-                  </div>
-                )}
-              </div>
+                          <option value="">-- Todos --</option>
+                          {customExamList.map((ex, i) => (
+                            <option key={i} value={ex}>{ex}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="mb-3">
+                        <label className="form-label">Tema</label>
+                        <select
+                          className="form-select"
+                          value={customTema}
+                          onChange={e => setCustomTema(e.target.value)}
+                        >
+                          <option value="">-- Todos --</option>
+                          {customTemas.map((t, i) => (
+                            <option key={i} value={t}>
+                              {t} ({customTemaCounts[t] || 0} preguntas)
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="mb-3">
+                        <label className="form-label">Número de preguntas</label>
+                        <input
+                          type="number"
+                          className="form-control"
+                          min={1}
+                          max={Math.max(1, getFilteredCustomQuestions().length)}
+                          value={customNumQuestions}
+                          onChange={e => {
+                            const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
+                            setCustomNumQuestions(val);
+                          }}
+                        />
+                        <small className="text-muted">
+                          Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
+                        </small>
+                      </div>
+                      <button
+                        className="btn btn-success"
+                        disabled={getFilteredCustomQuestions().length === 0}
+                        onClick={startCustomTest}
+                      >
+                        Comenzar test
+                      </button>
+                    </>
+                  )}
+                </div>
+              ) : (
+                <TestPanel
+                  questions={customTestQuestions}
+                  current={customTestCurrent}
+                  setCurrent={setCustomTestCurrent}
+                  selectedOption={customTestSelected}
+                  setSelectedOption={setCustomTestSelected}
+                  handleAnswer={(key) => {
+                    handleCustomTestAnswer(key);
+                    if (autoNext && customTestCurrent < customTestQuestions.length - 1) {
+                      setTimeout(() => {
+                        setCustomTestCurrent(c => c + 1);
+                      }, 1000);
+                    }
+                  }}
+                  nextQuestion={nextCustomTestQuestion}
+                  correctCount={customTestCorrect}
+                  incorrectCount={customTestIncorrect}
+                  copiarPreguntaActual={copiarPreguntaActual}
+                  handleSenorGPT={() => {
+                    const currentQuestion = customTestQuestions[customTestCurrent];
+                    let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                    Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                      texto += `${key.toUpperCase()}: ${value}\n`;
+                    });
+                    const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                    window.open(url, '_blank');
+                  }}
+                  showTopButtons={true}
+                  customFontSize={customFontSize}
+                />
+              )}
             </div>
           </>
         )}
@@ -1294,6 +1386,8 @@ export default function Home() {
               style={{
                 background: '#fff',
                 padding: '20px',
+                borderRadius: '8px',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
                 borderRadius: '8px',
                 boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
                 maxWidth: '400px',
