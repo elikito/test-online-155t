@@ -534,12 +534,17 @@ export default function Home() {
         {view === '' && (
           <>
             <h1 className="mb-4">Test AGE</h1>
-
-            {/* Botones principales en el orden solicitado */}
-            <div className="mb-3 d-flex gap-2">
-              <button className="btn btn-primary" onClick={() => setView('temario')}>Ver Temario</button>
-              <button className="btn btn-outline-dark" onClick={() => setView('personalizado')}>Test personalizado</button>
-              <button className="btn btn-success" onClick={() => setView('crear')}>Crear nuevo test</button>
+            {/* Botones principales en cuadrícula responsiva */}
+            <div className="row mb-3 g-2">
+              <div className="col-6 col-md-auto">
+                <button className="btn btn-primary w-100" onClick={() => setView('temario')}>Ver Temario</button>
+              </div>
+              <div className="col-6 col-md-auto">
+                <button className="btn btn-outline-dark w-100" onClick={() => setView('personalizado')}>Test personalizado</button>
+              </div>
+              <div className="col-6 col-md-auto">
+                <button className="btn btn-success w-100" onClick={() => setView('crear')}>Crear nuevo test</button>
+              </div>
             </div>
           </>
         )}
