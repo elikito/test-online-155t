@@ -53,6 +53,9 @@ export default function Home() {
   const [confirmAction, setConfirmAction] = useState(null);
   const [confirmMessage, setConfirmMessage] = useState('');
 
+  // Nueva línea para controlar el número de filas de navegación
+  const [navRows, setNavRows] = useState(5); // Por defecto 5 filas visibles
+
   // Función para mostrar confirmación personalizada
   const showCustomConfirm = (message, action) => {
     setConfirmMessage(message);
@@ -388,6 +391,27 @@ export default function Home() {
 
   function TestPanel({ questions, current, setCurrent, selectedOption, setSelectedOption, handleAnswer, nextQuestion, correctCount, incorrectCount, copiarPreguntaActual, reiniciarTest, handleSenorGPT, crearNuevoTest, showTopButtons = false, customFontSize = 18 }) {
     const currentQuestion = questions[current];
+
+    // --- Panel de navegación regulable ---
+    const BUTTON_SIZE = 36;
+    const GAP_SIZE = 4; // gap-1 ~ 4px
+    const BUTTONS_PER_ROW = 8;
+
+    // Calcula filas totales y visibles
+    const totalRows = Math.ceil(questions.length / BUTTONS_PER_ROW);
+    const maxRows = Math.min(15, totalRows);
+    const minRows = 1;
+
+    // Estado para filas visibles (usa el estado global si lo tienes, si no, usa local)
+    const [navRowsLocal, setNavRowsLocal] = useState(Math.min(5, totalRows));
+    // Si usas navRows global, reemplaza navRowsLocal por navRows y setNavRows
+
+    // Si quieres que el ajuste sea por test, usa navRowsLocal, si global, usa navRows
+
+    const visibleRows = Math.max(minRows, Math.min(navRowsLocal, maxRows));
+    const panelHeight = visibleRows * (BUTTON_SIZE + GAP_SIZE);
+    const needsScroll = totalRows > visibleRows;
+
     return (
       <>
         {currentQuestion && (
@@ -427,13 +451,6 @@ export default function Home() {
             </div>
           </div>
         )}
-        
-        {/* Botones solo para test normal (no personalizado) */}
-        {!showTopButtons && (
-          <div className="mt-3 d-flex gap-2 flex-wrap">
-            <button className="btn btn-warning" onClick={reiniciarTest}>Reiniciar test</button>
-          </div>
-        )}
 
         {/* Barra inferior fija */}
         <div 
@@ -456,7 +473,6 @@ export default function Home() {
                 <span><strong>Correctas:</strong> {correctCount}</span>
                 <span><strong>Incorrectas:</strong> {incorrectCount}</span>
               </div>
-              
               <div className="d-flex gap-2">
                 <button 
                   className="btn btn-outline-primary btn-sm"
@@ -469,7 +485,7 @@ export default function Home() {
                   }}
                   disabled={current === 0}
                 >
-                  ← Anterior
+                  <span role="img" aria-label="anterior">⬅️</span>
                 </button>
                 <button 
                   className="btn btn-outline-primary btn-sm"
@@ -482,13 +498,39 @@ export default function Home() {
                   }}
                   disabled={current === questions.length - 1}
                 >
-                  Siguiente →
+                  <span role="img" aria-label="siguiente">➡️</span>
                 </button>
               </div>
             </div>
-            
-            {/* Segunda fila: Navegación numérica de preguntas */}
-            <div className="d-flex flex-wrap gap-1 justify-content-center" style={{ maxHeight: '60px', overflowY: 'auto' }}>
+
+            {/* Controles para regular filas */}
+            <div className="d-flex justify-content-center align-items-center mb-2 gap-2">
+              <button
+                className="btn btn-light btn-sm"
+                disabled={navRowsLocal <= minRows}
+                onClick={() => setNavRowsLocal(r => Math.max(minRows, r - 1))}
+                title="Reducir filas"
+              >-</button>
+              <span style={{ minWidth: 60, textAlign: 'center' }}>
+                Filas: {visibleRows}
+              </span>
+              <button
+                className="btn btn-light btn-sm"
+                disabled={navRowsLocal >= Math.min(15, totalRows)}
+                onClick={() => setNavRowsLocal(r => Math.min(15, r + 1, totalRows))}
+                title="Aumentar filas"
+              >+</button>
+            </div>
+
+            {/* Panel de navegación numérica */}
+            <div
+              className="d-flex flex-wrap gap-1 justify-content-center"
+              style={{
+                height: `${panelHeight}px`,
+                overflowY: needsScroll ? 'auto' : 'hidden',
+                transition: 'height 0.2s'
+              }}
+            >
               {questions.map((q, index) => {
                 let btnClass = "btn btn-outline-secondary btn-sm";
                 if (index === current) {
@@ -553,7 +595,7 @@ export default function Home() {
         {view === 'cargar' && (
           <>
             <button className="btn btn-secondary mb-4" onClick={() => setView('')}>
-              ← Inicio
+              <span role="img" aria-label="inicio">Volver Volver al inicio</span> 
             </button>
             <h1 className="mb-4">Test AGE</h1>
             <div className="mb-3">
@@ -700,7 +742,7 @@ export default function Home() {
         {/* Vista crear test */}
         {view === 'crear' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>← Volver al inicio</button>
+            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
             {/* Copia del panel de crear test */}
             <div
               style={{
@@ -823,7 +865,7 @@ export default function Home() {
         {/* Vista temario */}
         {view === 'temario' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>← Volver al inicio</button>
+            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
             <div
               style={{
                 width: 500,
@@ -873,7 +915,7 @@ export default function Home() {
           <>
             <div className="d-flex justify-content-between align-items-center mb-4">
               <button className="btn btn-secondary" onClick={() => setView('')}>
-                ← Volver al inicio
+                Volver
               </button>
               {customTestStarted && (
                 <div className="d-flex gap-2">
@@ -968,7 +1010,7 @@ export default function Home() {
                         window.open(url, '_blank');
                       }}
                     >
-                      Señor GPT
+                      <span role="img" aria-label="robot">🤖</span>
                     </button>
                     <button 
                       className="btn btn-outline-secondary btn-sm" 
