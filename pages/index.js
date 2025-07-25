@@ -404,7 +404,8 @@ export default function Home() {
     const minRows = 1;
 
     // Estado para filas visibles (usa el estado global si lo tienes, si no, usa local)
-    const [navRowsLocal, setNavRowsLocal] = useState(Math.min(5, totalRows));
+    const navRowsLocal = navRows;
+    const setNavRowsLocal = setNavRows;
     // Si usas navRows global, reemplaza navRowsLocal por navRows y setNavRows
 
     // Si quieres que el ajuste sea por test, usa navRowsLocal, si global, usa navRows
@@ -1144,6 +1145,8 @@ export default function Home() {
                       }}
                       showTopButtons={true}
                       customFontSize={customFontSize}
+                      navRows={navRows}
+                      setNavRows={setNavRows}
                     />
                   </div>
                 )}
