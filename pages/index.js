@@ -656,6 +656,19 @@ export default function Home() {
           <>
             <h1 className="mb-4">Test AGE</h1>
 
+            {/* Texto descriptivo de las opciones principales */}
+            <div className="mb-4">
+              <div className="alert alert-info" style={{ fontSize: 17 }}>
+                <strong>¿Qué puedes hacer aquí?</strong>
+                <ul className="mb-0 mt-2" style={{ paddingLeft: 22 }}>
+                  <li><strong>Crear test:</strong> Crea un test personalizado eligiendo temas y número de preguntas.</li>
+                  <li><strong>Cargar Temario:</strong> Consulta el temario completo.</li>
+                  <li><strong>Preguntas sin fin:</strong> Practica en modo aleatorio continuo, sin límite de preguntas.</li>
+                  <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y descárgalas en formato JSON.</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="row mb-3 g-2">
 
               <div className="col-6 col-md-auto">
@@ -676,7 +689,7 @@ export default function Home() {
                   setReviewMode('infinito');
                   setView('repaso');
                 }}>
-                  Modo infinito
+                  Preguntas sin fin
                 </button>
               </div>
 
