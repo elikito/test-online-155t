@@ -389,7 +389,7 @@ export default function Home() {
     return (
       <>
         {currentQuestion && (
-          <div className="card">
+          <div className="card" style={{ marginBottom: '120px' }}> {/* Espacio para la barra fija */}
             <div className="card-body">
               <h5 className="card-title">Pregunta {current + 1}</h5>
               <p><strong>Tema:</strong> {currentQuestion.tema || 'No especificado'}</p>
@@ -425,6 +425,7 @@ export default function Home() {
             </div>
           </div>
         )}
+        
         {/* Botones solo para test normal (no personalizado) */}
         {!showTopButtons && (
           <div className="mt-3 d-flex gap-2 flex-wrap">
@@ -435,6 +436,7 @@ export default function Home() {
             </button>
           </div>
         )}
+        
         {/* Botones para test personalizado (solo los de abajo) */}
         {showTopButtons && (
           <div className="mt-3 d-flex gap-2 flex-wrap">
@@ -444,8 +446,90 @@ export default function Home() {
             </button>
           </div>
         )}
-        <div className="mt-4 text-center">
-          <p><strong>Correctas:</strong> {correctCount} | <strong>Incorrectas:</strong> {incorrectCount}</p>
+
+        {/* Barra inferior fija */}
+        <div 
+          style={{
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            backgroundColor: '#f8f9fa',
+            borderTop: '1px solid #dee2e6',
+            padding: '15px',
+            zIndex: 1000,
+            boxShadow: '0 -2px 8px rgba(0,0,0,0.1)'
+          }}
+        >
+          <div className="container-fluid">
+            {/* Primera fila: Contadores y botones de navegación */}
+            <div className="d-flex justify-content-between align-items-center mb-3">
+              <div className="d-flex align-items-center gap-3">
+                <span><strong>Correctas:</strong> {correctCount}</span>
+                <span><strong>Incorrectas:</strong> {incorrectCount}</span>
+              </div>
+              
+              <div className="d-flex gap-2">
+                <button 
+                  className="btn btn-outline-primary btn-sm"
+                  onClick={() => {
+                    const newCurrent = current - 1;
+                    setCurrent(newCurrent);
+                    setSelectedOption(questions[newCurrent].respuesta_usuario || null);
+                  }}
+                  disabled={current === 0}
+                >
+                  ← Anterior
+                </button>
+                <button 
+                  className="btn btn-outline-primary btn-sm"
+                  onClick={() => {
+                    const newCurrent = current + 1;
+                    setCurrent(newCurrent);
+                    setSelectedOption(questions[newCurrent].respuesta_usuario || null);
+                  }}
+                  disabled={current === questions.length - 1}
+                >
+                  Siguiente →
+                </button>
+              </div>
+            </div>
+            
+            {/* Segunda fila: Navegación numérica de preguntas */}
+            <div className="d-flex flex-wrap gap-1 justify-content-center" style={{ maxHeight: '60px', overflowY: 'auto' }}>
+              {questions.map((q, index) => {
+                let btnClass = "btn btn-outline-secondary btn-sm";
+                if (index === current) {
+                  btnClass = "btn btn-primary btn-sm";
+                } else if (q.respuesta_usuario) {
+                  btnClass = q.respuesta_usuario === q.respuesta_correcta 
+                    ? "btn btn-success btn-sm" 
+                    : "btn btn-danger btn-sm";
+                }
+                const num = (index + 1).toString().padStart(2, '0');
+                return (
+                  <button
+                    key={index}
+                    className={btnClass}
+                    style={{
+                      width: '36px',
+                      height: '36px',
+                      padding: 0,
+                      fontWeight: 'bold',
+                      fontSize: '12px',
+                      flex: '0 0 36px'
+                    }}
+                    onClick={() => {
+                      setCurrent(index);
+                      setSelectedOption(questions[index].respuesta_usuario || null);
+                    }}
+                  >
+                    {num}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </>
     );
@@ -472,7 +556,7 @@ export default function Home() {
         {view === 'cargar' && (
           <>
             <button className="btn btn-secondary mb-4" onClick={() => setView('')}>
-              ← Volver al inicio
+              ← Inicio
             </button>
             <h1 className="mb-4">Test AGE</h1>
             <div className="mb-3">
@@ -630,7 +714,7 @@ export default function Home() {
                 overflowY: 'auto'
               }}
             >
-              <h4>Crear nuevo test</h4>
+              <h4>Nuevo test</h4>
               <div className="mb-3">
                 <label className="form-label">Título del test</label>
                 <input
@@ -853,7 +937,35 @@ export default function Home() {
                 overflowY: 'auto'
               }}
             >
-              <h4>Test personalizado</h4>
+              {/* Título con botones alineados a la derecha */}
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <h4 className="mb-0">Test personalizado</h4>
+                {customTestStarted && (
+                  <div className="d-flex gap-2">
+                    <button 
+                      className="btn btn-info btn-sm" 
+                      onClick={() => {
+                        const currentQuestion = customTestQuestions[customTestCurrent];
+                        let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                          texto += `${key.toUpperCase()}: ${value}\n`;
+                        });
+                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                        window.open(url, '_blank');
+                      }}
+                    >
+                      Señor GPT
+                    </button>
+                    <button 
+                      className="btn btn-outline-secondary btn-sm" 
+                      onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
+                    >
+                      📋 Copiar
+                    </button>
+                  </div>
+                )}
+              </div>
+              
               {!customTestStarted ? (
                 <div>
                   {customLoading ? (
@@ -938,7 +1050,7 @@ export default function Home() {
                       const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
                       window.open(url, '_blank');
                     }}
-                    showTopButtons={true}
+                    showTopButtons={false}
                   />
                   {customTestQuestions.length > 0 && (
                     <div className="mt-4">
