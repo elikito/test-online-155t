@@ -43,7 +43,6 @@ export default function Home() {
   // Añade esta línea:
   const [customFontSize, setCustomFontSize] = useState(18);
   const [customLoading, setCustomLoading] = useState(false);
-  const [customAllQuestions, setCustomAllQuestions] = useState(false);
 
   // Añadir estado para el ancho del panel
   const [panelWidth, setPanelWidth] = useState(500);
@@ -404,8 +403,7 @@ export default function Home() {
     const minRows = 1;
 
     // Estado para filas visibles (usa el estado global si lo tienes, si no, usa local)
-    const navRowsLocal = navRows;
-    const setNavRowsLocal = setNavRows;
+    const [navRowsLocal, setNavRowsLocal] = useState(Math.min(5, totalRows));
     // Si usas navRows global, reemplaza navRowsLocal por navRows y setNavRows
 
     // Si quieres que el ajuste sea por test, usa navRowsLocal, si global, usa navRows
@@ -571,25 +569,155 @@ export default function Home() {
     );
   }
 
+  // Nuevo estado para el modo repaso
+  const [reviewMode, setReviewMode] = useState('');
+  const [reviewQuestions, setReviewQuestions] = useState([]);
+  const [markedQuestions, setMarkedQuestions] = useState([]);
+  const [infiniteQuestions, setInfiniteQuestions] = useState([]);
+  const [infiniteCurrent, setInfiniteCurrent] = useState(0);
+
+  // Añade estos estados para el modo infinito
+  const [infiniteSelected, setInfiniteSelected] = useState(null);
+  const [infiniteCorrect, setInfiniteCorrect] = useState(0);
+  const [infiniteIncorrect, setInfiniteIncorrect] = useState(0);
+
+  // Cuando cambie de pregunta, actualiza la opción seleccionada
+  useEffect(() => {
+    if (reviewMode === 'infinito' && infiniteQuestions.length > 0) {
+      setInfiniteSelected(infiniteQuestions[infiniteCurrent]?.respuesta_usuario || null);
+    }
+  }, [infiniteCurrent, infiniteQuestions, reviewMode]);
+
+  // Maneja la respuesta en modo infinito y actualiza contadores
+  const handleInfiniteAnswer = (key) => {
+    if (infiniteQuestions[infiniteCurrent]?.respuesta_usuario) return;
+    setInfiniteSelected(key);
+    const updated = [...infiniteQuestions];
+    updated[infiniteCurrent] = {
+      ...updated[infiniteCurrent],
+      respuesta_usuario: key
+    };
+    setInfiniteQuestions(updated);
+
+    if (key === updated[infiniteCurrent].respuesta_correcta) {
+      setInfiniteCorrect(prev => prev + 1);
+    } else {
+      setInfiniteIncorrect(prev => prev + 1);
+    }
+  };
+
+  // Al reiniciar el test infinito, reinicia los contadores también
+  const reiniciarInfinito = () => {
+    setInfiniteQuestions(infiniteQuestions.map(q => {
+      const { respuesta_usuario, ...rest } = q;
+      return rest;
+    }));
+    setInfiniteCurrent(0);
+    setInfiniteSelected(null);
+    setInfiniteCorrect(0);
+    setInfiniteIncorrect(0);
+  };
+
+  // Guardar preguntas falladas al terminar un test
+  useEffect(() => {
+    if (view === 'cargar' && questions.length > 0) {
+      const failed = questions.filter(q => q.respuesta_usuario && q.respuesta_usuario !== q.respuesta_correcta);
+      localStorage.setItem('fallos_ultimo_test', JSON.stringify(failed));
+    }
+  }, [view, questions]);
+
+  // Marcar/desmarcar pregunta difícil
+  const toggleMarkQuestion = (q) => {
+    setMarkedQuestions(prev => {
+      const exists = prev.find(mq => mq.id_pregunta === q.id_pregunta);
+      let updated;
+      if (exists) {
+        updated = prev.filter(mq => mq.id_pregunta !== q.id_pregunta);
+      } else {
+        updated = [...prev, q];
+      }
+      localStorage.setItem('preguntas_marcadas', JSON.stringify(updated));
+      return updated;
+    });
+  };
+
+  // Cargar preguntas marcadas al iniciar
+  useEffect(() => {
+    const marcadas = JSON.parse(localStorage.getItem('preguntas_marcadas') || '[]');
+    setMarkedQuestions(marcadas);
+  }, []);
+
+  // --- Render principal ---
   return (
     <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div className="container mt-5" style={{ flex: 1 }}>
-        {/* Vistas condicionales */}
+
         {view === '' && (
           <>
             <h1 className="mb-4">Test AGE</h1>
-            {/* Botones principales en cuadrícula responsiva */}
+
             <div className="row mb-3 g-2">
+
               <div className="col-6 col-md-auto">
-                <button className="btn btn-primary w-100" onClick={() => setView('temario')}>Ver Temario</button>
+                <button className="btn btn-outline-dark w-100" onClick={() => setView('personalizado')}>Crear test</button>
               </div>
+
               <div className="col-6 col-md-auto">
-                <button className="btn btn-outline-dark w-100" onClick={() => setView('personalizado')}>Test personalizado</button>
+                <button className="btn btn-primary w-100" onClick={() => setView('temario')}>Cargar Temario</button>
               </div>
+
               <div className="col-6 col-md-auto">
-                <button className="btn btn-success w-100" onClick={() => setView('crear')}>Crear nuevo test</button>
+                <button className="btn btn-secondary w-100" onClick={async () => {
+                  // Cargar todas las preguntas y barajar
+                  const res = await fetch('/api/all-questions');
+                  const all = await res.json();
+                  setInfiniteQuestions(all.sort(() => Math.random() - 0.5));
+                  setInfiniteCurrent(0);
+                  setReviewMode('infinito');
+                  setView('repaso');
+                }}>
+                  Modo infinito
+                </button>
               </div>
+
+              <div className="col-6 col-md-auto">
+                <button className="btn btn-success w-100" onClick={() => setView('crear')}>Crear preguntas</button>
+              </div>
+              
             </div>
+          </>
+        )}
+
+        {/* --- Panel de repaso inteligente --- */}
+        {view === 'repaso' && (
+          <>
+            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
+            <h4 className="mb-3">
+              {reviewMode === 'infinito' && 'Modo aleatorio continuo'}
+            </h4>
+            {reviewMode === 'infinito' && infiniteQuestions.length === 0 && (
+              <div className="alert alert-info">
+                No hay preguntas disponibles para el modo aleatorio continuo.
+              </div>
+            )}
+            {reviewMode === 'infinito' && infiniteQuestions.length > 0 && (
+              <TestPanel
+                questions={infiniteQuestions}
+                current={infiniteCurrent}
+                setCurrent={setInfiniteCurrent}
+                selectedOption={infiniteSelected}
+                setSelectedOption={setInfiniteSelected}
+                handleAnswer={handleInfiniteAnswer}
+                nextQuestion={() => setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length)}
+                correctCount={infiniteCorrect}
+                incorrectCount={infiniteIncorrect}
+                copiarPreguntaActual={copiarPreguntaActual}
+                reiniciarTest={reiniciarInfinito}
+                handleSenorGPT={() => {}}
+                showTopButtons={true}
+                customFontSize={18}
+              />
+            )}
           </>
         )}
 
@@ -1085,28 +1213,8 @@ export default function Home() {
                             onChange={e => {
                               const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
                               setCustomNumQuestions(val);
-                              setCustomAllQuestions(val === getFilteredCustomQuestions().length);
                             }}
-                            disabled={customAllQuestions}
                           />
-                          <div className="form-check mt-2">
-                            <input
-                              className="form-check-input"
-                              type="checkbox"
-                              id="allQuestionsCheck"
-                              checked={customAllQuestions}
-                              onChange={e => {
-                                setCustomAllQuestions(e.target.checked);
-                                if (e.target.checked) {
-                                  setCustomNumQuestions(getFilteredCustomQuestions().length);
-                                }
-                              }}
-                              disabled={getFilteredCustomQuestions().length === 0}
-                            />
-                            <label className="form-check-label" htmlFor="allQuestionsCheck">
-                              Todos
-                            </label>
-                          </div>
                           <small className="text-muted">
                             Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
                           </small>
@@ -1145,8 +1253,6 @@ export default function Home() {
                       }}
                       showTopButtons={true}
                       customFontSize={customFontSize}
-                      navRows={navRows}
-                      setNavRows={setNavRows}
                     />
                   </div>
                 )}
