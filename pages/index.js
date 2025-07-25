@@ -42,6 +42,32 @@ export default function Home() {
   const [customExamList, setCustomExamList] = useState([]);
   const [customLoading, setCustomLoading] = useState(false);
 
+  // Añadir estado para el ancho del panel
+  const [panelWidth, setPanelWidth] = useState(500);
+  const [showCopiedMessage, setShowCopiedMessage] = useState(false);
+
+  // Añadir estado para el popup de confirmación
+  const [showConfirmDialog, setShowConfirmDialog] = useState(false);
+  const [confirmAction, setConfirmAction] = useState(null);
+  const [confirmMessage, setConfirmMessage] = useState('');
+
+  // Función para mostrar confirmación personalizada
+  const showCustomConfirm = (message, action) => {
+    setConfirmMessage(message);
+    setConfirmAction(() => action);
+    setShowConfirmDialog(true);
+  };
+
+  // Función para manejar la confirmación
+  const handleConfirm = (confirmed) => {
+    setShowConfirmDialog(false);
+    if (confirmed && confirmAction) {
+      confirmAction();
+    }
+    setConfirmAction(null);
+    setConfirmMessage('');
+  };
+
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
     // volvi
@@ -58,6 +84,7 @@ export default function Home() {
       .map(({ value }) => value);
   };
 
+  // Modificar la función copiarPreguntaActual
   const copiarPreguntaActual = (pregunta) => {
     if (!pregunta) return;
     let texto = `Pregunta: ${pregunta.pregunta}\n`;
@@ -65,8 +92,11 @@ export default function Home() {
       texto += `${key.toUpperCase()}: ${value}\n`;
     });
     navigator.clipboard.writeText(texto)
-//      .then(() => alert("Pregunta copiada al portapapeles"))
-//      .catch(err => alert("No se pudo copiar"));
+      .then(() => {
+        setShowCopiedMessage(true);
+        setTimeout(() => setShowCopiedMessage(false), 2000);
+      })
+      .catch(err => console.error("No se pudo copiar"));
   };
 
   const loadExam = async (filename) => {
@@ -354,136 +384,86 @@ export default function Home() {
     setCustomTestCurrent(prev => prev + 1);
   };
 
+  function TestPanel({ questions, current, setCurrent, selectedOption, setSelectedOption, handleAnswer, nextQuestion, correctCount, incorrectCount, copiarPreguntaActual, reiniciarTest, handleSenorGPT, crearNuevoTest, showTopButtons = false }) {
+    const currentQuestion = questions[current];
+    return (
+      <>
+        {currentQuestion && (
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Pregunta {current + 1}</h5>
+              <p><strong>Tema:</strong> {currentQuestion.tema || 'No especificado'}</p>
+              <p className="card-text">{currentQuestion.pregunta}</p>
+              <ul className="list-group">
+                {Object.entries(currentQuestion.opciones).map(([key, value]) => {
+                  let className = "list-group-item";
+                  if (selectedOption) {
+                    if (key === currentQuestion.respuesta_correcta) {
+                      className += " list-group-item-success";
+                    } else if (key === selectedOption) {
+                      className += " list-group-item-danger";
+                    }
+                  }
+                  return (
+                    <li
+                      key={key}
+                      className={className}
+                      style={{ cursor: selectedOption ? 'default' : 'pointer' }}
+                      onClick={() => handleAnswer(key)}
+                    >
+                      <strong>{key.toUpperCase()}:</strong> {value}
+                    </li>
+                  );
+                })}
+              </ul>
+              {selectedOption && current < questions.length - 1 && (
+                <button className="btn btn-primary mt-3" onClick={nextQuestion}>Siguiente</button>
+              )}
+              {selectedOption && current === questions.length - 1 && (
+                <p className="mt-3 text-success">¡Has llegado al final del examen!</p>
+              )}
+            </div>
+          </div>
+        )}
+        {/* Botones solo para test normal (no personalizado) */}
+        {!showTopButtons && (
+          <div className="mt-3 d-flex gap-2 flex-wrap">
+            <button className="btn btn-warning" onClick={reiniciarTest}>Reiniciar test</button>
+            <button className="btn btn-info" onClick={handleSenorGPT}>Señor GPT</button>
+            <button className="btn btn-outline-secondary" onClick={() => copiarPreguntaActual(currentQuestion)}>
+              📋 Copiar
+            </button>
+          </div>
+        )}
+        {/* Botones para test personalizado (solo los de abajo) */}
+        {showTopButtons && (
+          <div className="mt-3 d-flex gap-2 flex-wrap">
+            <button className="btn btn-info" onClick={handleSenorGPT}>Señor GPT</button>
+            <button className="btn btn-outline-secondary" onClick={() => copiarPreguntaActual(currentQuestion)}>
+              📋 Copiar
+            </button>
+          </div>
+        )}
+        <div className="mt-4 text-center">
+          <p><strong>Correctas:</strong> {correctCount} | <strong>Incorrectas:</strong> {incorrectCount}</p>
+        </div>
+      </>
+    );
+  }
+
   return (
     <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* Sidebar y overlay */}
-      <div>
-        <button
-          className="btn btn-outline-secondary m-3"
-          style={{ position: 'fixed', top: 10, left: 10, zIndex: 1051 }}
-          onClick={() => setMenuOpen(true)}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        {/* Overlay */}
-        {menuOpen && (
-          <div
-            style={{
-              position: 'fixed',
-              top: 0, left: 0, width: '100vw', height: '100vh',
-              background: 'rgba(0,0,0,0.3)', zIndex: 1050
-            }}
-            onClick={() => setMenuOpen(false)}
-          />
-        )}
-        {/* Sidebar */}
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: menuOpen ? 0 : '-220px',
-            width: 220,
-            height: '100vh',
-            background: '#fff',
-            boxShadow: '2px 0 8px rgba(0,0,0,0.1)',
-            zIndex: 1052,
-            transition: 'left 0.2s'
-          }}
-        >
-          <div className="p-3 border-bottom d-flex justify-content-between align-items-center">
-            <strong>Menú</strong>
-            <button className="btn-close" onClick={() => setMenuOpen(false)} />
-          </div>
-          <div className="p-3 d-grid gap-2">
-            <button
-              className="btn btn-warning"
-              onClick={() => {
-                setCorrectCount(0);
-                setIncorrectCount(0);
-                const resetQuestions = questions.map(q => {
-                  const { respuesta_usuario, ...rest } = q;
-                  return rest;
-                });
-                setQuestions(resetQuestions);
-                setCurrent(0);
-                setSelectedOption(null);
-                if (selectedExam) {
-                  localStorage.removeItem(`respuestas_${selectedExam}`);
-                }
-                setMenuOpen(false);
-              }}
-              disabled={questions.length === 0}
-            >
-              Reiniciar test
-            </button>
-            <button
-              className="btn btn-info"
-              onClick={() => {
-                if (!currentQuestion) return;
-                let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                  texto += `${key.toUpperCase()}: ${value}\n`;
-                });
-                const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                window.open(url, '_blank');
-                setMenuOpen(false);
-              }}
-              disabled={questions.length === 0}
-            >
-              Señor GPT
-            </button>
-            <button
-              className="btn btn-success"
-              onClick={() => setShowCreatePanel(true)}
-            >
-              Crear nuevo test
-            </button>
-            <button
-              className="btn btn-primary"
-              onClick={() => setShowTemarioPanel(true)}
-            >
-              Ver Temario
-            </button>
-            {/* Botón para test personalizado */}
-            <button
-              className="btn btn-outline-dark"
-              onClick={() => setShowCustomTestPanel(true)}
-            >
-              Test personalizado
-            </button>
-            <hr />
-            <button
-              className="btn btn-outline-secondary"
-              onClick={() => {
-                window.location.href = '/';
-                setMenuOpen(false);
-              }}
-            >
-              Test
-            </button>
-          </div>
-        </div>
-      </div>
-
       <div className="container mt-5" style={{ flex: 1 }}>
         {/* Vistas condicionales */}
         {view === '' && (
           <>
             <h1 className="mb-4">Test AGE</h1>
 
-            <div className="mb-3">
-              <label className="form-label">Selecciona un examen:</label>
-              <select className="form-select" onChange={e => { handleSelect(e); setView('cargar'); }} value={selectedExam}>
-                <option value="">-- Selecciona --</option>
-                {examFiles.map((file, idx) => (
-                  <option key={idx} value={file}>{file}</option>
-                ))}
-              </select>
-            </div>
+            {/* Botones principales en el orden solicitado */}
             <div className="mb-3 d-flex gap-2">
-              <button className="btn btn-success" onClick={() => setView('crear')}>Crear nuevo test</button>
               <button className="btn btn-primary" onClick={() => setView('temario')}>Ver Temario</button>
               <button className="btn btn-outline-dark" onClick={() => setView('personalizado')}>Test personalizado</button>
+              <button className="btn btn-success" onClick={() => setView('crear')}>Crear nuevo test</button>
             </div>
           </>
         )}
@@ -555,91 +535,45 @@ export default function Home() {
                 </ul>
               </div>
             )}
-            {currentQuestion && (
-              <>
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title">Pregunta {current + 1}</h5>
-                    <p><strong>Tema:</strong> {currentQuestion.tema || 'No especificado'}</p>
-                    <p className="card-text">{currentQuestion.pregunta}</p>
-                    <ul className="list-group">
-                      {Object.entries(currentQuestion.opciones).map(([key, value]) => {
-                        let className = "list-group-item";
-                        if (selectedOption) {
-                          if (key === currentQuestion.respuesta_correcta) {
-                            className += " list-group-item-success";
-                          } else if (key === selectedOption) {
-                            className += " list-group-item-danger";
-                          }
-                        }
-                        return (
-                          <li
-                            key={key}
-                            className={className}
-                            style={{ cursor: selectedOption ? 'default' : 'pointer' }}
-                            onClick={() => handleAnswer(key)}
-                          >
-                            <strong>{key.toUpperCase()}:</strong> {value}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                    {selectedOption && current < questions.length - 1 && (
-                      <button className="btn btn-primary mt-3" onClick={nextQuestion}>Siguiente</button>
-                    )}
-                    {selectedOption && current === questions.length - 1 && (
-                      <p className="mt-3 text-success">¡Has llegado al final del examen!</p>
-                    )}
-                  </div>
-                </div>
-                {/* Botones extra debajo de la tarjeta */}
-                <div className="mt-3 d-flex gap-2 flex-wrap">
-                  <button
-                    className="btn btn-warning"
-                    onClick={() => {
-                      setCorrectCount(0);
-                      setIncorrectCount(0);
-                      const resetQuestions = questions.map(q => {
-                        const { respuesta_usuario, ...rest } = q;
-                        return rest;
-                      });
-                      setQuestions(resetQuestions);
-                      setCurrent(0);
-                      setSelectedOption(null);
-                      if (selectedExam) {
-                        localStorage.removeItem(`respuestas_${selectedExam}`);
-                      }
-                    }}
-                  >
-                    Reiniciar test
-                  </button>
-                  <button
-                    className="btn btn-info"
-                    onClick={() => {
-                      let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                      Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                        texto += `${key.toUpperCase()}: ${value}\n`;
-                      });
-                      const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                      window.open(url, '_blank');
-                    }}
-                  >
-                    Señor GPT
-                  </button>
-                  <button
-                    className="btn btn-outline-secondary"
-                    onClick={() => copiarPreguntaActual(currentQuestion)}
-                  >
-                    Copiar pregunta
-                  </button>
-                </div>
-              </>
-            )}
-            {questions.length > 0 && (
-              <div className="mt-4 text-center">
-                <p><strong>Correctas:</strong> {correctCount} | <strong>Incorrectas:</strong> {incorrectCount}</p>
-              </div>
-            )}
+            <TestPanel
+              questions={questions}
+              current={current}
+              setCurrent={setCurrent}
+              selectedOption={selectedOption}
+              setSelectedOption={setSelectedOption}
+              handleAnswer={handleAnswer}
+              nextQuestion={nextQuestion}
+              correctCount={correctCount}
+              incorrectCount={incorrectCount}
+              copiarPreguntaActual={copiarPreguntaActual}
+              reiniciarTest={() => {
+                showCustomConfirm(
+                  '¿Estás seguro de que quieres reiniciar el test? Se perderán todas las respuestas.',
+                  () => {
+                    setCorrectCount(0);
+                    setIncorrectCount(0);
+                    const resetQuestions = questions.map(q => {
+                      const { respuesta_usuario, ...rest } = q;
+                      return rest;
+                    });
+                    setQuestions(resetQuestions);
+                    setCurrent(0);
+                    setSelectedOption(null);
+                    if (selectedExam) {
+                      localStorage.removeItem(`respuestas_${selectedExam}`);
+                    }
+                  }
+                );
+              }}
+              handleSenorGPT={() => {
+                let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                  texto += `${key.toUpperCase()}: ${value}\n`;
+                });
+                const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                window.open(url, '_blank');
+              }}
+            />
             {questions.length > 0 && (
               <div className="mt-4">
                 <h5>Navegación de preguntas</h5>
@@ -855,10 +789,63 @@ export default function Home() {
         {/* Vista test personalizado */}
         {view === 'personalizado' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>← Volver al inicio</button>
+            <div className="d-flex justify-content-between align-items-center mb-4">
+              <button className="btn btn-secondary" onClick={() => setView('')}>
+                ← Volver al inicio
+              </button>
+              {/* Botones que aparecen solo cuando el test está iniciado */}
+              {customTestStarted && (
+                <div className="d-flex gap-2">
+                  <button 
+                    className="btn btn-warning" 
+                    onClick={() => {
+                      showCustomConfirm(
+                        '¿Estás seguro de que quieres reiniciar el test? Se perderán todas las respuestas.',
+                        () => {
+                          setCustomTestCorrect(0);
+                          setCustomTestIncorrect(0);
+                          const resetQuestions = customTestQuestions.map(q => {
+                            const { respuesta_usuario, ...rest } = q;
+                            return rest;
+                          });
+                          setCustomTestQuestions(resetQuestions);
+                          setCustomTestCurrent(0);
+                          setCustomTestSelected(null);
+                        }
+                      );
+                    }}
+                  >
+                    Reiniciar test
+                  </button>
+                  <button 
+                    className="btn btn-primary" 
+                    onClick={() => {
+                      showCustomConfirm(
+                        '¿Estás seguro de que quieres crear un nuevo test? Se perderá el progreso actual.',
+                        () => {
+                          // Resetear configuración y volver al panel de configuración
+                          setCustomTestStarted(false);
+                          setCustomTestQuestions([]);
+                          setCustomTestCurrent(0);
+                          setCustomTestSelected(null);
+                          setCustomTestCorrect(0);
+                          setCustomTestIncorrect(0);
+                          setCustomExam('');
+                          setCustomTema('');
+                          setCustomNumQuestions(10);
+                        }
+                      );
+                    }}
+                  >
+                    Crear nuevo test
+                  </button>
+                </div>
+              )}
+            </div>
+            
             <div
               style={{
-                width: 500,
+                width: panelWidth,
                 margin: '0 auto',
                 background: '#fff',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
@@ -930,474 +917,152 @@ export default function Home() {
                 </div>
               ) : (
                 <div>
+                  {/* Usar el mismo TestPanel que el panel principal */}
+                  <TestPanel
+                    questions={customTestQuestions}
+                    current={customTestCurrent}
+                    setCurrent={setCustomTestCurrent}
+                    selectedOption={customTestSelected}
+                    setSelectedOption={setCustomTestSelected}
+                    handleAnswer={handleCustomTestAnswer}
+                    nextQuestion={nextCustomTestQuestion}
+                    correctCount={customTestCorrect}
+                    incorrectCount={customTestIncorrect}
+                    copiarPreguntaActual={copiarPreguntaActual}
+                    handleSenorGPT={() => {
+                      const currentQuestion = customTestQuestions[customTestCurrent];
+                      let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                      Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                        texto += `${key.toUpperCase()}: ${value}\n`;
+                      });
+                      const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                      window.open(url, '_blank');
+                    }}
+                    showTopButtons={true}
+                  />
                   {customTestQuestions.length > 0 && (
-                    <div className="card mb-3">
-                      <div className="card-body">
-                        <h5 className="card-title">Pregunta {customTestCurrent + 1}</h5>
-                        <p><strong>Tema:</strong> {customTestQuestions[customTestCurrent].tema}</p>
-                        <p className="card-text">{customTestQuestions[customTestCurrent].pregunta}</p>
-                        <ul className="list-group">
-                          {Object.entries(customTestQuestions[customTestCurrent].opciones).map(([key, value]) => {
-                            let className = "list-group-item";
-                            if (customTestSelected) {
-                              if (key === customTestQuestions[customTestCurrent].respuesta_correcta) {
-                                className += " list-group-item-success";
-                              } else if (key === customTestSelected) {
-                                className += " list-group-item-danger";
-                              }
-                            }
-                            return (
-                              <li
-                                key={key}
-                                className={className}
-                                style={{ cursor: customTestSelected ? 'default' : 'pointer' }}
-                                onClick={() => handleCustomTestAnswer(key)}
-                              >
-                                <strong>{key.toUpperCase()}:</strong> {value}
-                              </li>
-                            );
-                          })}
-                        </ul>
-                        {customTestSelected && customTestCurrent < customTestQuestions.length - 1 && (
-                          <button className="btn btn-primary mt-3" onClick={nextCustomTestQuestion}>Siguiente</button>
-                        )}
-                        {customTestSelected && customTestCurrent === customTestQuestions.length - 1 && (
-                          <p className="mt-3 text-success">¡Has llegado al final del test personalizado!</p>
-                        )}
+                    <div className="mt-4">
+                      <h5>Navegación de preguntas</h5>
+                      <div className="d-flex flex-wrap gap-2 justify-content-center">
+                        {customTestQuestions.map((q, index) => {
+                          let btnClass = "btn btn-outline-secondary";
+                          if (index === customTestCurrent) {
+                            btnClass += " active";
+                          } else if (q.respuesta_usuario) {
+                            btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
+                          }
+                          const num = (index + 1).toString().padStart(2, '0');
+                          return (
+                            <button
+                              key={index}
+                              className={btnClass}
+                              style={{
+                                width: 44,
+                                height: 44,
+                                padding: 0,
+                                fontWeight: 'bold',
+                                fontVariantNumeric: 'tabular-nums',
+                                fontSize: 18,
+                                flex: '0 0 44px'
+                              }}
+                              onClick={() => {
+                                setCustomTestCurrent(index);
+                                setCustomTestSelected(q.respuesta_usuario || null);
+                              }}
+                            >
+                              {num}
+                            </button>
+                          );
+                        })}
                       </div>
-                        <div className="mt-3 d-flex gap-2 flex-wrap">
-                          <button
-                            className="btn btn-warning"
-                            onClick={() => {
-                              setCustomTestStarted(false);
-                              setCustomTestQuestions([]);
-                              setCustomTestCurrent(0);
-                              setCustomTestSelected(null);
-                            }}
-                          >
-                            Reiniciar test
-                          </button>
-                          <button
-                            className="btn btn-info"
-                            onClick={() => {
-                              let pregunta = customTestQuestions[customTestCurrent];
-                              let texto = `Pregunta: ${pregunta.pregunta}\n`;
-                              Object.entries(pregunta.opciones).forEach(([key, value]) => {
-                                texto += `${key.toUpperCase()}: ${value}\n`;
-                              });
-                              const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                              window.open(url, '_blank');
-                            }}
-                          >
-                            Señor GPT
-                          </button>
-                          <button
-                            className="btn btn-outline-secondary"
-                            onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
-                          >
-                            Copiar pregunta
-                          </button>
-                        </div>
                     </div>
                   )}
-                  <div className="mt-4 text-center">
-                    <p><strong>Correctas:</strong> {customTestCorrect} | <strong>Incorrectas:</strong> {customTestIncorrect}</p>
-                  </div>
-                  <div className="mt-4">
-                    <h5>Navegación de preguntas</h5>
-                    <div className="d-flex flex-wrap gap-2 justify-content-center">
-                      {customTestQuestions.map((q, index) => {
-                        let btnClass = "btn btn-outline-secondary";
-                        if (index === customTestCurrent) {
-                          btnClass += " active";
-                        } else if (q.respuesta_usuario) {
-                          btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
-                        }
-                        const num = (index + 1).toString().padStart(2, '0');
-                        return (
-                          <button
-                            key={index}
-                            className={btnClass}
-                            style={{
-                              width: 44,
-                              height: 44,
-                              padding: 0,
-                              fontWeight: 'bold',
-                              fontVariantNumeric: 'tabular-nums',
-                              fontSize: 18,
-                              flex: '0 0 44px'
-                            }}
-                            onClick={() => {
-                              setCustomTestCurrent(index);
-                              setCustomTestSelected(q.respuesta_usuario || null);
-                            }}
-                          >
-                            {num}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
                 </div>
               )}
+            </div>
+            
+            {/* Slider para ajustar el ancho del panel */}
+            <div className="mt-4 d-flex align-items-center justify-content-center gap-3">
+              <label className="form-label mb-0">Ancho del panel:</label>
+              <input
+                type="range"
+                className="form-range"
+                min="400"
+                max="800"
+                step="50"
+                value={panelWidth}
+                onChange={e => setPanelWidth(Number(e.target.value))}
+                style={{ width: '200px' }}
+              />
+              <span className="text-muted">{panelWidth}px</span>
             </div>
           </>
         )}
-      </div>
 
-      {/* Panel para crear nuevo test */}
-      {showCreatePanel && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            right: 0,
-            width: 400,
-            height: '100vh',
-            background: '#fff',
-            zIndex: 2000,
-            boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
-            padding: 24,
-            overflowY: 'auto'
-          }}
-        >
-          <h4>Crear nuevo test</h4>
-          <button className="btn-close float-end" onClick={() => {
-            setShowCreatePanel(false);
-            setEditIndex(null);
-            setNewQuestionText('');
-            setNewOptions({ a: '', b: '', c: '', d: '' });
-            setNewCorrect('a');
-            setNewTema('');
-            setErrorPregunta('');
-          }} />
-          <div className="mb-3">
-            <label className="form-label">Título del test</label>
-            <input
-              className="form-control"
-              value={newTestTitle}
-              onChange={e => setNewTestTitle(e.target.value)}
-            />
-          </div>
-          <hr />
-          <h5>{editIndex !== null ? 'Editar pregunta' : 'Añadir pregunta'}</h5>
-          <div className="mb-2">
-            <input
-              className="form-control mb-2"
-              placeholder="Texto de la pregunta"
-              value={newQuestionText}
-              onChange={e => setNewQuestionText(e.target.value)}
-            />
-            {/* Selector de tema con buscador */}
-            <input
-              className="form-control mb-2"
-              placeholder="Buscar tema..."
-              value={temaSearch}
-              onChange={e => setTemaSearch(e.target.value)}
-            />
-            <select
-              className="form-select mb-2"
-              value={newTema}
-              onChange={e => setNewTema(e.target.value)}
-            >
-              <option value="">-- Selecciona tema --</option>
-              {temas
-                .filter(t => t.toLowerCase().includes(temaSearch.toLowerCase()))
-                .map((t, i) => (
-                  <option key={i} value={t}>{t}</option>
-                ))}
-            </select>
-            {['a', 'b', 'c', 'd'].map(opt => (
-              <div className="input-group mb-2" key={opt}>
-                <span className="input-group-text">{opt.toUpperCase()}</span>
-                <input
-                  className="form-control"
-                  placeholder={`Opción ${opt.toUpperCase()}`}
-                  value={newOptions[opt]}
-                  onChange={e => setNewOptions({ ...newOptions, [opt]: e.target.value })}
-                />
-                <span className="input-group-text">
-                  <input
-                    type="radio"
-                    name="correct"
-                    checked={newCorrect === opt}
-                    onChange={() => setNewCorrect(opt)}
-                  />
-                  Correcta
-                </span>
-              </div>
-            ))}
-            {errorPregunta && <div className="text-danger mb-2">{errorPregunta}</div>}
-            <button
-              className="btn btn-primary"
-              onClick={addOrEditQuestion}
-            >
-              {editIndex !== null ? 'Guardar cambios' : 'Añadir pregunta'}
-            </button>
-            {editIndex !== null && (
-              <button
-                className="btn btn-secondary ms-2"
-                onClick={() => {
-                  setEditIndex(null);
-                  setNewQuestionText('');
-                  setNewOptions({ a: '', b: '', c: '', d: '' });
-                  setNewCorrect('a');
-                  setNewTema('');
-                  setErrorPregunta('');
-                }}
-              >
-                Cancelar
-              </button>
-            )}
-          </div>
-          <hr />
-          <h6>Preguntas añadidas: {newQuestions.length}</h6>
-          <ul className="list-group mb-2">
-            {newQuestions.map((q, idx) => (
-              <li key={idx} className="list-group-item d-flex justify-content-between align-items-center">
-                <div>
-                  <strong>{q.id_pregunta}.</strong> {q.pregunta}
-                  <br />
-                  <small className="text-muted">{q.tema}</small>
-                </div>
-                <div>
-                  <button className="btn btn-sm btn-outline-primary me-1" onClick={() => handleEdit(idx)}>Editar</button>
-                  <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(idx)}>Eliminar</button>
-                </div>
-              </li>
-            ))}
-          </ul>
-          <button
-            className="btn btn-success mt-3"
-            onClick={downloadTest}
-            disabled={!newTestTitle || newQuestions.length === 0}
+        {/* Popup de confirmación */}
+        {showConfirmDialog && (
+          <div
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              width: '100vw',
+              height: '100vh',
+              background: 'rgba(0,0,0,0.5)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 10000
+            }}
           >
-            Descargar test en formato JSON
-          </button>
-        </div>
-      )}
-
-      {/* Panel para ver temario */}
-      {showTemarioPanel && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            right: 0,
-            width: 500,
-            height: '100vh',
-            background: '#fff',
-            zIndex: 3000,
-            boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
-            padding: 24,
-            overflowY: 'auto'
-          }}
-        >
-          <h4>Temario</h4>
-          <button className="btn-close float-end" onClick={() => {
-            setShowTemarioPanel(false);
-            setTemarioAuth(false);
-            setTemarioInput('');
-            setTemarioError('');
-          }} />
-          {!temarioAuth ? (
-            <div className="mt-4">
-              <p>Introduce la contraseña para acceder al temario:</p>
-              <input
-                type="password"
-                className="form-control mb-2"
-                value={temarioInput}
-                onChange={e => setTemarioInput(e.target.value)}
-              />
-              {temarioError && <div className="text-danger mb-2">{temarioError}</div>}
-              <button className="btn btn-primary" onClick={handleTemarioLogin}>
-                Acceder
-              </button>
-            </div>
-          ) : (
-            <div className="mt-4 text-center">
-              <p>
-                El temario se encuentra en Notion.<br />
-                <a
-                  href={temarioUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary"
+            <div
+              style={{
+                background: '#fff',
+                padding: '20px',
+                borderRadius: '8px',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
+                maxWidth: '400px',
+                textAlign: 'center'
+              }}
+            >
+              <p style={{ marginBottom: '20px', fontSize: '16px' }}>{confirmMessage}</p>
+              <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
+                <button 
+                  className="btn btn-danger"
+                  onClick={() => handleConfirm(true)}
                 >
-                  Abrir Temario en Notion
-                </a>
-              </p>
+                  Sí, continuar
+                </button>
+                <button 
+                  className="btn btn-secondary"
+                  onClick={() => handleConfirm(false)}
+                >
+                  Cancelar
+                </button>
+              </div>
             </div>
-          )}
-        </div>
-      )}
+          </div>
+        )}
 
-      {/* Panel para test personalizado */}
-      {showCustomTestPanel && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            right: 0,
-            width: 500,
-            height: '100vh',
-            background: '#fff',
-            zIndex: 4000,
-            boxShadow: '-2px 0 8px rgba(0,0,0,0.1)',
-            padding: 24,
-            overflowY: 'auto'
-          }}
-        >
-          <h4>Test personalizado</h4>
-          <button className="btn-close float-end" onClick={() => {
-            setShowCustomTestPanel(false);
-            setCustomTestStarted(false);
-            setCustomTestQuestions([]);
-            setCustomTestCurrent(0);
-            setCustomTestSelected(null);
-          }} />
-          {!customTestStarted ? (
-            <div>
-              {customLoading ? (
-                <div className="my-4 text-center">
-                  <div className="spinner-border" />
-                  <div>Cargando preguntas...</div>
-                </div>
-              ) : (
-                <>
-                  <div className="mb-3">
-                    <label className="form-label">Examen</label>
-                    <select
-                      className="form-select"
-                      value={customExam}
-                      onChange={e => setCustomExam(e.target.value)}
-                    >
-                      <option value="">-- Todos --</option>
-                      {customExamList.map((ex, i) => (
-                        <option key={i} value={ex}>{ex}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <label className="form-label">Tema</label>
-                    <select
-                      className="form-select"
-                      value={customTema}
-                      onChange={e => setCustomTema(e.target.value)}
-                    >
-                      <option value="">-- Todos --</option>
-                      {customTemas.map((t, i) => (
-                        <option key={i} value={t}>
-                          {t} ({customTemaCounts[t] || 0} preguntas)
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className="mb-3">
-                    <label className="form-label">Número de preguntas</label>
-                    <input
-                      type="number"
-                      className="form-control"
-                      min={1}
-                      max={Math.max(1, getFilteredCustomQuestions().length)}
-                      value={customNumQuestions}
-                      onChange={e => setCustomNumQuestions(Number(e.target.value))}
-                    />
-                    <small className="text-muted">
-                      Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
-                    </small>
-                  </div>
-                  <button
-                    className="btn btn-success"
-                    disabled={getFilteredCustomQuestions().length === 0}
-                    onClick={startCustomTest}
-                  >
-                    Comenzar test
-                  </button>
-                </>
-              )}
-            </div>
-          ) : (
-            <div>
-              {customTestQuestions.length > 0 && (
-                <div className="card mb-3">
-                  <div className="card-body">
-                    <h5 className="card-title">Pregunta {customTestCurrent + 1}</h5>
-                    <p className="card-text">{customTestQuestions[customTestCurrent].pregunta}</p>
-                    <p><strong>Tema:</strong> {customTestQuestions[customTestCurrent].tema}</p>
-                    <ul className="list-group">
-                      {Object.entries(customTestQuestions[customTestCurrent].opciones).map(([key, value]) => {
-                        let className = "list-group-item";
-                        if (customTestSelected) {
-                          if (key === customTestQuestions[customTestCurrent].respuesta_correcta) {
-                            className += " list-group-item-success";
-                          } else if (key === customTestSelected) {
-                            className += " list-group-item-danger";
-                          }
-                        }
-                        return (
-                          <li
-                            key={key}
-                            className={className}
-                            style={{ cursor: customTestSelected ? 'default' : 'pointer' }}
-                            onClick={() => handleCustomTestAnswer(key)}
-                          >
-                            <strong>{key.toUpperCase()}:</strong> {value}
-                          </li>
-                        );
-                      })}
-                    </ul>
-                    {customTestSelected && customTestCurrent < customTestQuestions.length - 1 && (
-                      <button className="btn btn-primary mt-3" onClick={nextCustomTestQuestion}>Siguiente</button>
-                    )}
-                    {customTestSelected && customTestCurrent === customTestQuestions.length - 1 && (
-                      <p className="mt-3 text-success">¡Has llegado al final del test personalizado!</p>
-                    )}
-                  </div>
-                </div>
-              )}
-              <div className="mt-4 text-center">
-                <p><strong>Correctas:</strong> {customTestCorrect} | <strong>Incorrectas:</strong> {customTestIncorrect}</p>
-              </div>
-              <div className="mt-4">
-                <h5>Navegación de preguntas</h5>
-                <div className="d-flex flex-wrap gap-2 justify-content-center">
-                  {customTestQuestions.map((q, index) => {
-                    let btnClass = "btn btn-outline-secondary";
-                    if (index === customTestCurrent) {
-                      btnClass += " active";
-                    } else if (q.respuesta_usuario) {
-                      btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
-                    }
-                    const num = (index + 1).toString().padStart(2, '0');
-                    return (
-                      <button
-                        key={index}
-                        className={btnClass}
-                        style={{
-                          width: 44,
-                          height: 44,
-                          padding: 0,
-                          fontWeight: 'bold',
-                          fontVariantNumeric: 'tabular-nums',
-                          fontSize: 18,
-                          flex: '0 0 44px'
-                        }}
-                        onClick={() => {
-                          setCustomTestCurrent(index);
-                          setCustomTestSelected(q.respuesta_usuario || null);
-                        }}
-                      >
-                        {num}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      )}
+        {/* Mensaje copiado */}
+        {showCopiedMessage && (
+          <div
+            style={{
+              position: 'fixed',
+              top: '20px',
+              right: '20px',
+              background: '#28a745',
+              color: 'white',
+              padding: '10px 15px',
+              borderRadius: '5px',
+              zIndex: 9999,
+              boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
+            }}
+          >
+            ✅ Pregunta copiada
+          </div>
+        )}
+      </div>
 
       {/* Footer */}
       <footer className="bg-light text-center text-lg-start mt-auto py-3">
