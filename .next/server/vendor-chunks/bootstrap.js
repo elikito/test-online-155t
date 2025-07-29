@@ -10,7 +10,7 @@ exports.id = "vendor-chunks/bootstrap";
 exports.ids = ["vendor-chunks/bootstrap"];
 exports.modules = {
 
-/***/ "./node_modules/bootstrap/dist/css/bootstrap.min.css":
+/***/ "(pages-dir-node)/./node_modules/bootstrap/dist/css/bootstrap.min.css":
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap/dist/css/bootstrap.min.css ***!
   \***********************************************************/

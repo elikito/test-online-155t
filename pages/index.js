@@ -434,12 +434,6 @@ export default function Home() {
   }) {
     const currentQuestion = questions[current];
 
-    // Añadir estados para el drag resize
-    const [isDragging, setIsDragging] = useState(false);
-    const [dragStartY, setDragStartY] = useState(0);
-    const [dragStartRows, setDragStartRows] = useState(0);
-    const [continuousUpdate, setContinuousUpdate] = useState(null);
-
     // --- Panel de navegación regulable ---
     const BUTTON_SIZE = 36;
     const GAP_SIZE = 4;
@@ -457,74 +451,6 @@ export default function Home() {
     const baseFooterHeight = 80; // Altura base de la barra inferior
     const navPanelHeight = showNavPanel ? panelHeight + 32 : 0; // +32 para padding y handle
     const dynamicMarginBottom = baseFooterHeight + navPanelHeight + 20; // +20 margen extra
-
-    // Handlers para el drag resize
-    const handleMouseDown = (e) => {
-      setIsDragging(true);
-      setDragStartY(e.clientY);
-      setDragStartRows(navRows);
-      e.preventDefault();
-    };
-
-    const handleMouseMove = (e) => {
-      if (!isDragging) return;
-      
-      const deltaY = dragStartY - e.clientY; // Invertido para que arrastrar hacia arriba aumente las filas
-      const rowChange = Math.round(deltaY / 40); // Cada 40px de movimiento = 1 fila
-      const newRows = Math.max(minRows, Math.min(maxRows, dragStartRows + rowChange));
-      
-      if (newRows !== navRows) {
-        setNavRows(newRows);
-        
-        // Iniciar actualización continua si nos movemos mucho
-        if (Math.abs(rowChange) > 0 && !continuousUpdate) {
-          const direction = rowChange > 0 ? 1 : -1;
-          const interval = setInterval(() => {
-            setNavRows(current => {
-              const next = current + direction;
-              if (next < minRows || next > maxRows) {
-                clearInterval(interval);
-                setContinuousUpdate(null);
-                return current;
-              }
-              return next;
-            });
-          }, 150); // Cambio cada 150ms
-          setContinuousUpdate(interval);
-        }
-      }
-    };
-
-    const handleMouseUp = () => {
-      setIsDragging(false);
-      // Limpiar el intervalo de actualización continua
-      if (continuousUpdate) {
-        clearInterval(continuousUpdate);
-        setContinuousUpdate(null);
-      }
-    };
-
-    // useEffect para manejar eventos globales de mouse
-    useEffect(() => {
-      if (isDragging) {
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseup', handleMouseUp);
-        document.body.style.cursor = 'ns-resize';
-        document.body.style.userSelect = 'none';
-      }
-
-      return () => {
-        document.removeEventListener('mousemove', handleMouseMove);
-        document.removeEventListener('mouseup', handleMouseUp);
-        document.body.style.cursor = '';
-        document.body.style.userSelect = '';
-        // Limpiar intervalo si existe
-        if (continuousUpdate) {
-          clearInterval(continuousUpdate);
-          setContinuousUpdate(null);
-        }
-      };
-    }, [isDragging, dragStartY, dragStartRows, navRows, continuousUpdate]);
 
     return (
       <>
@@ -602,7 +528,20 @@ export default function Home() {
                 <span className="d-none d-md-inline"><strong>Incorrectas:</strong> {incorrectCount}</span>
               </div>
               
-              {/* Grupo centro - navegación */}
+              {/* Grupo centro - controles */}
+              <div className="d-flex align-items-center gap-2">
+                <button
+                  className="btn btn-outline-info btn-sm"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                  onClick={() => setShowNavPanel(!showNavPanel)}
+                  title={showNavPanel ? "Ocultar panel de navegación" : "Mostrar panel de navegación"}
+                >
+                  {showNavPanel ? '👁️‍🗨️' : '👁️'}
+                </button>
+                
+              </div>
+
+              {/* Grupo derecha - navegación */}
               <div className="d-flex gap-2">
                 <button 
                   className="btn btn-outline-primary btn-sm"
@@ -639,70 +578,18 @@ export default function Home() {
                   <span className="d-none d-md-inline">Siguiente</span>
                 </button>
               </div>
-
-              {/* Grupo derecha - controles */}
-              <div className="d-flex align-items-center gap-2">
-                <button
-                  className="btn btn-outline-info btn-sm"
-                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
-                  onClick={() => setShowNavPanel(!showNavPanel)}
-                  title={showNavPanel ? "Ocultar panel de navegación" : "Mostrar panel de navegación"}
-                >
-                  {showNavPanel ? '👁️‍🗨️' : '👁️'}
-                </button>
-                
-              </div>
             </div>
 
             {/* Panel de navegación numérica con resize handle */}
             {showNavPanel && (
               <div style={{ position: 'relative' }}>
-                {/* Handle de resize en la parte superior */}
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '-8px',
-                    left: '0',
-                    right: '0',
-                    height: '16px',
-                    cursor: 'ns-resize',
-                    zIndex: 1001,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    backgroundColor: 'rgba(0,0,0,0.05)',
-                    borderRadius: '8px 8px 0 0',
-                    opacity: isDragging ? 1 : 0.7,
-                    transition: 'opacity 0.2s'
-                  }}
-                  onMouseDown={handleMouseDown}
-                  title="Arrastra para ajustar el número de filas"
-                >
-                  <div style={{
-                    width: '40px',
-                    height: '3px',
-                    backgroundColor: '#6c757d',
-                    borderRadius: '2px',
-                    position: 'relative'
-                  }}>
-                    <div style={{
-                      width: '40px',
-                      height: '3px',
-                      backgroundColor: '#6c757d',
-                      borderRadius: '2px',
-                      position: 'absolute',
-                      top: '5px'
-                    }}></div>
-                  </div>
-                </div>
-
                 {/* Panel de navegación */}
                 <div
                   className="d-flex flex-wrap gap-1 justify-content-center"
                   style={{
                     height: `${panelHeight}px`,
                     overflowY: needsScroll ? 'auto' : 'hidden',
-                    transition: isDragging ? 'none' : 'height 0.2s',
+                    transition: 'height 0.2s',
                     width: '100%',
                     backgroundColor: '#fff',
                     borderRadius: '8px',
