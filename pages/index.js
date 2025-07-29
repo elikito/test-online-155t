@@ -42,8 +42,6 @@ export default function Home() {
   const [customTemas, setCustomTemas] = useState([]);
   const [customTemaCounts, setCustomTemaCounts] = useState({});
   const [customExamList, setCustomExamList] = useState([]);
-  // Añade esta línea:
-  const [customFontSize, setCustomFontSize] = useState(18);
   const [customLoading, setCustomLoading] = useState(false);
 
   // Añadir estado para las filas de navegación
@@ -430,12 +428,17 @@ export default function Home() {
     correctCount, 
     incorrectCount, 
     showTopButtons = false, 
-    customFontSize = 18,
     autoNext = false,
-    navRows, // Recibir como prop
-    setNavRows // Recibir como prop
+    navRows,
+    setNavRows
   }) {
     const currentQuestion = questions[current];
+
+    // Añadir estados para el drag resize
+    const [isDragging, setIsDragging] = useState(false);
+    const [dragStartY, setDragStartY] = useState(0);
+    const [dragStartRows, setDragStartRows] = useState(0);
+    const [continuousUpdate, setContinuousUpdate] = useState(null);
 
     // --- Panel de navegación regulable ---
     const BUTTON_SIZE = 36;
@@ -446,16 +449,93 @@ export default function Home() {
     const maxRows = Math.min(15, totalRows);
     const minRows = 1;
 
-    // Usar las props en lugar del estado local
     const visibleRows = Math.max(minRows, Math.min(navRows, maxRows));
     const panelHeight = visibleRows * (BUTTON_SIZE + GAP_SIZE);
     const needsScroll = totalRows > visibleRows;
 
+    // Calcular el margen inferior dinámicamente basado en el panel de navegación
+    const baseFooterHeight = 80; // Altura base de la barra inferior
+    const navPanelHeight = showNavPanel ? panelHeight + 32 : 0; // +32 para padding y handle
+    const dynamicMarginBottom = baseFooterHeight + navPanelHeight + 20; // +20 margen extra
+
+    // Handlers para el drag resize
+    const handleMouseDown = (e) => {
+      setIsDragging(true);
+      setDragStartY(e.clientY);
+      setDragStartRows(navRows);
+      e.preventDefault();
+    };
+
+    const handleMouseMove = (e) => {
+      if (!isDragging) return;
+      
+      const deltaY = dragStartY - e.clientY; // Invertido para que arrastrar hacia arriba aumente las filas
+      const rowChange = Math.round(deltaY / 40); // Cada 40px de movimiento = 1 fila
+      const newRows = Math.max(minRows, Math.min(maxRows, dragStartRows + rowChange));
+      
+      if (newRows !== navRows) {
+        setNavRows(newRows);
+        
+        // Iniciar actualización continua si nos movemos mucho
+        if (Math.abs(rowChange) > 0 && !continuousUpdate) {
+          const direction = rowChange > 0 ? 1 : -1;
+          const interval = setInterval(() => {
+            setNavRows(current => {
+              const next = current + direction;
+              if (next < minRows || next > maxRows) {
+                clearInterval(interval);
+                setContinuousUpdate(null);
+                return current;
+              }
+              return next;
+            });
+          }, 150); // Cambio cada 150ms
+          setContinuousUpdate(interval);
+        }
+      }
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+      // Limpiar el intervalo de actualización continua
+      if (continuousUpdate) {
+        clearInterval(continuousUpdate);
+        setContinuousUpdate(null);
+      }
+    };
+
+    // useEffect para manejar eventos globales de mouse
+    useEffect(() => {
+      if (isDragging) {
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
+        document.body.style.cursor = 'ns-resize';
+        document.body.style.userSelect = 'none';
+      }
+
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+        // Limpiar intervalo si existe
+        if (continuousUpdate) {
+          clearInterval(continuousUpdate);
+          setContinuousUpdate(null);
+        }
+      };
+    }, [isDragging, dragStartY, dragStartRows, navRows, continuousUpdate]);
+
     return (
       <>
         {currentQuestion && (
-          <div className="card" style={{ marginBottom: '120px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', borderRadius: 0, margin: 0 }}>
-            <div className="card-body" style={{ fontSize: customFontSize }}>
+          <div className="card" style={{ 
+            marginBottom: `${dynamicMarginBottom}px`, 
+            boxShadow: '0 2px 8px rgba(0,0,0,0.1)', 
+            borderRadius: 0, 
+            margin: 0 
+          }}>
+            <div className="card-body">
               <h5 className="card-title">Pregunta {current + 1}</h5>
               <p><strong>Tema:</strong> {currentQuestion.tema || 'No especificado'}</p>
               <p className="card-text">{currentQuestion.pregunta}</p>
@@ -482,7 +562,7 @@ export default function Home() {
                 })}
               </ul>
               {selectedOption && current < questions.length - 1 && !autoNext && (
-                <button className="btn btn-primary mt-3" onClick={nextQuestion}>Siguiente</button>
+                <button className="btn btn-primary mt-3" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={nextQuestion}>Siguiente</button>
               )}
               {selectedOption && current === questions.length - 1 && (
                 <p className="mt-3 text-success">¡Has llegado al final del examen!</p>
@@ -500,7 +580,7 @@ export default function Home() {
             right: 0,
             backgroundColor: '#f8f9fa',
             borderTop: '1px solid #dee2e6',
-            padding: '15px',
+            padding: '5px',
             zIndex: 1000,
             boxShadow: '0 -2px 8px rgba(0,0,0,0.1)'
           }}
@@ -508,16 +588,25 @@ export default function Home() {
           <div className="container-fluid">
             {/* Una sola fila con todos los elementos */}
             <div className="d-flex justify-content-between align-items-center mb-3">
-              {/* Contadores a la izquierda */}
+              {/* Grupo izquierda - contadores */}
               <div className="d-flex align-items-center gap-3">
-                <span><strong>Correctas:</strong> {correctCount}</span>
-                <span><strong>Incorrectas:</strong> {incorrectCount}</span>
+                {/* Versión móvil: iconos */}
+                <span className="d-md-none">
+                  <span style={{ color: '#28a745' }}>✅</span> {correctCount}
+                </span>
+                <span className="d-md-none">
+                  <span style={{ color: '#dc3545' }}>❌</span> {incorrectCount}
+                </span>
+                {/* Versión escritorio: texto completo */}
+                <span className="d-none d-md-inline"><strong>Correctas:</strong> {correctCount}</span>
+                <span className="d-none d-md-inline"><strong>Incorrectas:</strong> {incorrectCount}</span>
               </div>
               
-              {/* Botones de navegación centrados */}
+              {/* Grupo centro - navegación */}
               <div className="d-flex gap-2">
                 <button 
                   className="btn btn-outline-primary btn-sm"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                   onClick={() => {
                     const newCurrent = current - 1;
                     if (newCurrent >= 0 && newCurrent < questions.length) {
@@ -527,10 +616,14 @@ export default function Home() {
                   }}
                   disabled={current === 0}
                 >
-                  Anterior
+                  {/* Versión móvil: solo emoji */}
+                  <span className="d-md-none">⬅️</span>
+                  {/* Versión escritorio: texto completo */}
+                  <span className="d-none d-md-inline">Anterior</span>
                 </button>
                 <button 
                   className="btn btn-outline-primary btn-sm"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                   onClick={() => {
                     const newCurrent = current + 1;
                     if (newCurrent >= 0 && newCurrent < questions.length) {
@@ -540,82 +633,115 @@ export default function Home() {
                   }}
                   disabled={current === questions.length - 1}
                 >
-                  Siguiente
+                  {/* Versión móvil: solo emoji */}
+                  <span className="d-md-none">➡️</span>
+                  {/* Versión escritorio: texto completo */}
+                  <span className="d-none d-md-inline">Siguiente</span>
                 </button>
               </div>
 
-              {/* Controles para regular filas a la derecha */}
+              {/* Grupo derecha - controles */}
               <div className="d-flex align-items-center gap-2">
                 <button
                   className="btn btn-outline-info btn-sm"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                   onClick={() => setShowNavPanel(!showNavPanel)}
                   title={showNavPanel ? "Ocultar panel de navegación" : "Mostrar panel de navegación"}
                 >
                   {showNavPanel ? '👁️‍🗨️' : '👁️'}
                 </button>
-                {showNavPanel && (
-                  <>
-                    <button
-                      className="btn btn-light btn-sm"
-                      disabled={navRows <= minRows}
-                      onClick={() => setNavRows(r => Math.max(minRows, r - 1))}
-                      title="Reducir filas"
-                    >-</button>
-                    <span style={{ minWidth: 60, textAlign: 'center' }}>
-                      Filas: {visibleRows}
-                    </span>
-                    <button
-                      className="btn btn-light btn-sm"
-                      disabled={navRows >= Math.min(15, totalRows)}
-                      onClick={() => setNavRows(r => Math.min(15, r + 1, totalRows))}
-                      title="Aumentar filas"
-                    >+</button>
-                  </>
-                )}
+                
               </div>
             </div>
 
-            {/* Panel de navegación numérica - solo se muestra si showNavPanel es true */}
+            {/* Panel de navegación numérica con resize handle */}
             {showNavPanel && (
-              <div
-                className="d-flex flex-wrap gap-1 justify-content-center"
-                style={{
-                  height: `${panelHeight}px`,
-                  overflowY: needsScroll ? 'auto' : 'hidden',
-                  transition: 'height 0.2s'
-                }}
-              >
-                {questions.map((q, index) => {
-                  let btnClass = "btn btn-outline-secondary btn-sm";
-                  if (index === current) {
-                    btnClass = "btn btn-primary btn-sm";
-                  } else if (q.respuesta_usuario) {
-                    btnClass = q.respuesta_usuario === q.respuesta_correcta 
-                      ? "btn btn-success btn-sm" 
-                      : "btn btn-danger btn-sm";
-                  }
-                  const num = (index + 1).toString().padStart(2, '0');
-                  return (
-                    <button
-                      key={index}
-                      className={btnClass}
-                      style={{
-                        width: '36px',
-                        height: '36px',
-                        padding: 0,
-                        fontWeight: 'bold',
-                        fontSize: '12px',
-                        flex: '0 0 36px'
-                      }}
-                      onClick={() => {
-                        setCurrent(index);
-                        setSelectedOption(questions[index].respuesta_usuario || null);
-                      }}
-                    >
-                      {num}
-                    </button>
-                  );
-                })}
+              <div style={{ position: 'relative' }}>
+                {/* Handle de resize en la parte superior */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '-8px',
+                    left: '0',
+                    right: '0',
+                    height: '16px',
+                    cursor: 'ns-resize',
+                    zIndex: 1001,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundColor: 'rgba(0,0,0,0.05)',
+                    borderRadius: '8px 8px 0 0',
+                    opacity: isDragging ? 1 : 0.7,
+                    transition: 'opacity 0.2s'
+                  }}
+                  onMouseDown={handleMouseDown}
+                  title="Arrastra para ajustar el número de filas"
+                >
+                  <div style={{
+                    width: '40px',
+                    height: '3px',
+                    backgroundColor: '#6c757d',
+                    borderRadius: '2px',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      width: '40px',
+                      height: '3px',
+                      backgroundColor: '#6c757d',
+                      borderRadius: '2px',
+                      position: 'absolute',
+                      top: '5px'
+                    }}></div>
+                  </div>
+                </div>
+
+                {/* Panel de navegación */}
+                <div
+                  className="d-flex flex-wrap gap-1 justify-content-center"
+                  style={{
+                    height: `${panelHeight}px`,
+                    overflowY: needsScroll ? 'auto' : 'hidden',
+                    transition: isDragging ? 'none' : 'height 0.2s',
+                    width: '100%',
+                    backgroundColor: '#fff',
+                    borderRadius: '8px',
+                    border: '1px solid #dee2e6',
+                    padding: '8px'
+                  }}
+                >
+                  {questions.map((q, index) => {
+                    let btnClass = "btn btn-outline-secondary btn-sm";
+                    if (index === current) {
+                      btnClass = "btn btn-primary btn-sm";
+                    } else if (q.respuesta_usuario) {
+                      btnClass = q.respuesta_usuario === q.respuesta_correcta 
+                        ? "btn btn-success btn-sm" 
+                        : "btn btn-danger btn-sm";
+                    }
+                    const num = (index + 1).toString().padStart(2, '0');
+                    return (
+                      <button
+                        key={index}
+                        className={btnClass}
+                        style={{
+                          width: '36px',
+                          height: '36px',
+                          padding: 0,
+                          fontWeight: 'bold',
+                          fontSize: '12px',
+                          flex: '0 0 36px'
+                        }}
+                        onClick={() => {
+                          setCurrent(index);
+                          setSelectedOption(questions[index].respuesta_usuario || null);
+                        }}
+                      >
+                        {num}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             )}
           </div>
@@ -707,15 +833,15 @@ export default function Home() {
             <div className="row mb-3 g-2">
 
               <div className="col-6 col-md-auto">
-                <button className="btn btn-outline-dark w-100" onClick={() => setView('personalizado')}>Crear test</button>
+                <button className="btn btn-outline-dark w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('personalizado')}>Crear test</button>
               </div>
 
               <div className="col-6 col-md-auto">
-                <button className="btn btn-primary w-100" onClick={() => setView('temario')}>Cargar Temario</button>
+                <button className="btn btn-primary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('temario')}>Cargar Temario</button>
               </div>
 
               <div className="col-6 col-md-auto">
-                <button className="btn btn-secondary w-100" onClick={async () => {
+                <button className="btn btn-secondary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={async () => {
                   const res = await fetch('/api/all-questions');
                   const all = await res.json();
                   
@@ -732,7 +858,7 @@ export default function Home() {
               </div>
 
               <div className="col-6 col-md-auto">
-                <button className="btn btn-success w-100" onClick={() => setView('crear')}>Crear preguntas</button>
+                <button className="btn btn-success w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('crear')}>Crear preguntas</button>
               </div>
               
             </div>
@@ -742,7 +868,7 @@ export default function Home() {
         {/* --- Panel de repaso inteligente --- */}
         {view === 'repaso' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
+            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
             <h4 className="mb-3">
               {reviewMode === 'infinito' && 'Modo Infinito'}
             </h4>
@@ -752,15 +878,9 @@ export default function Home() {
               </div>
             )}
             {reviewMode === 'infinito' && infiniteQuestions.length > 0 && (
-              <div
-                style={{
-                  width: PANEL_WIDTH,
-                  margin: '0 auto'
-                }}
-              >
-                {/* Botones superiores con checkbox incluido - IGUAL QUE EN TEST PERSONALIZADO */}
+              <div style={{ width: '100%', margin: '0 auto' }}>
+                {/* Botones superiores con checkbox */}
                 <div className="d-flex gap-2 align-items-center justify-content-between mb-3">
-                  {/* Checkbox continuar automáticamente */}
                   <div className="form-check">
                     <input
                       className="form-check-input"
@@ -774,26 +894,11 @@ export default function Home() {
                     </label>
                   </div>
                   
-                  {/* Botones de herramientas alineados a la derecha */}
+                  {/* Botones de herramientas */}
                   <div className="d-flex gap-2 align-items-center">
-                    <button
-                      className="btn btn-light btn-sm"
-                      title="Reducir tamaño de texto"
-                      style={{ fontSize: 14, padding: '4px 8px' }}
-                      onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
-                    >
-                      <span role="img" aria-label="disminuir">A-</span>
-                    </button>
-                    <button
-                      className="btn btn-light btn-sm"
-                      title="Aumentar tamaño de texto"
-                      style={{ fontSize: 14, padding: '4px 8px' }}
-                      onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
-                    >
-                      <span role="img" aria-label="aumentar">A+</span>
-                    </button>
                     <button 
                       className="btn btn-info btn-sm" 
+                      style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                       onClick={() => {
                         const currentQuestion = infiniteQuestions[infiniteCurrent];
                         let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
@@ -808,6 +913,7 @@ export default function Home() {
                     </button>
                     <button 
                       className="btn btn-outline-secondary btn-sm" 
+                      style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                       onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}
                     >
                       📋 Copiar
@@ -833,7 +939,6 @@ export default function Home() {
                   correctCount={infiniteCorrect}
                   incorrectCount={infiniteIncorrect}
                   showTopButtons={false}
-                  customFontSize={customFontSize}
                   navRows={navRows}
                   setNavRows={setNavRows}
                 />
@@ -845,7 +950,7 @@ export default function Home() {
         {/* Vista de cargar test */}
         {view === 'cargar' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>
+            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>
               <span role="img" aria-label="inicio">Volver al inicio</span> 
             </button>
             <h1 className="mb-4">Test AGE</h1>
@@ -859,7 +964,7 @@ export default function Home() {
               </select>
             </div>
 
-            {/* Añadir controles de auto-continuar y tamaño de fuente */}
+            {/* Controles de auto-continuar */}
             {questions.length > 0 && (
               <div className="d-flex gap-3 align-items-center justify-content-center mb-3">
                 <div className="form-check">
@@ -873,23 +978,6 @@ export default function Home() {
                   <label className="form-check-label" htmlFor="autoNextCheckCargar">
                     Auto-continuar
                   </label>
-                </div>
-                
-                <div className="d-flex gap-2 align-items-center">
-                  <button
-                    className="btn btn-light btn-sm"
-                    title="Reducir tamaño de texto"
-                    onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
-                  >
-                    A-
-                  </button>
-                  <button
-                    className="btn btn-light btn-sm"
-                    title="Aumentar tamaño de texto"
-                    onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
-                  >
-                    A+
-                  </button>
                 </div>
               </div>
             )}
@@ -967,7 +1055,6 @@ export default function Home() {
                   nextQuestion={nextQuestion}
                   correctCount={correctCount}
                   incorrectCount={incorrectCount}
-                  customFontSize={customFontSize}
                   autoNext={autoNext}
                   navRows={navRows}
                   setNavRows={setNavRows}
@@ -980,7 +1067,7 @@ export default function Home() {
         {/* Vista crear test */}
         {view === 'crear' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
+            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
             {/* Copia del panel de crear test */}
             <div
               style={{
@@ -1052,6 +1139,7 @@ export default function Home() {
                 {errorPregunta && <div className="text-danger mb-2">{errorPregunta}</div>}
                 <button
                   className="btn btn-primary"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                   onClick={addOrEditQuestion}
                 >
                   {editIndex !== null ? 'Guardar cambios' : 'Añadir pregunta'}
@@ -1059,6 +1147,7 @@ export default function Home() {
                 {editIndex !== null && (
                   <button
                     className="btn btn-secondary ms-2"
+                    style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                     onClick={() => {
                       setEditIndex(null);
                       setNewQuestionText('');
@@ -1083,14 +1172,15 @@ export default function Home() {
                       <small className="text-muted">{q.tema}</small>
                     </div>
                     <div>
-                      <button className="btn btn-sm btn-outline-primary me-1" onClick={() => handleEdit(idx)}>Editar</button>
-                      <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(idx)}>Eliminar</button>
+                      <button className="btn btn-sm btn-outline-primary me-1" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => handleEdit(idx)}>Editar</button>
+                      <button className="btn btn-sm btn-outline-danger" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => handleDelete(idx)}>Eliminar</button>
                     </div>
                   </li>
                 ))}
               </ul>
               <button
                 className="btn btn-success mt-3"
+                style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                 onClick={downloadTest}
                 disabled={!newTestTitle || newQuestions.length === 0}
               >
@@ -1103,10 +1193,10 @@ export default function Home() {
         {/* Vista temario */}
         {view === 'temario' && (
           <>
-            <button className="btn btn-secondary mb-4" onClick={() => setView('')}>Volver</button>
+            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
             <div
               style={{
-                width: 500,
+                width: '100%',
                 margin: '0 auto',
                 background: '#fff',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
@@ -1125,7 +1215,7 @@ export default function Home() {
                     onChange={e => setTemarioInput(e.target.value)}
                   />
                   {temarioError && <div className="text-danger mb-2">{temarioError}</div>}
-                  <button className="btn btn-primary" onClick={handleTemarioLogin}>
+                  <button className="btn btn-primary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={handleTemarioLogin}>
                     Acceder
                   </button>
                 </div>
@@ -1138,6 +1228,7 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-primary"
+                      style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                     >
                       Abrir Temario en Notion
                     </a>
@@ -1151,14 +1242,15 @@ export default function Home() {
         {/* Vista test personalizado */}
         {view === 'personalizado' && (
           <>
-            <div className="d-flex justify-content-between align-items-center mb-4">
-              <button className="btn btn-secondary" onClick={() => setView('')}>
+            <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <button className="btn btn-secondary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>
                 Volver
               </button>
               {customTestStarted && (
                 <div className="d-flex gap-2">
                   <button 
-                    className="btn btn-warning" 
+                    className="btn btn-warning btn-sm" 
+                    style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                     onClick={() => {
                       showCustomConfirm(
                         '¿Estás seguro de que quieres reiniciar el test? Se perderán todas las respuestas.',
@@ -1179,7 +1271,8 @@ export default function Home() {
                     Reiniciar test
                   </button>
                   <button 
-                    className="btn btn-primary" 
+                    className="btn btn-primary btn-sm" 
+                    style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                     onClick={() => {
                       showCustomConfirm(
                         '¿Estás seguro de que quieres crear un nuevo test? Se perderá el progreso actual.',
@@ -1203,172 +1296,143 @@ export default function Home() {
               )}
             </div>
             
-            {/* Título fuera del contenedor, igual que en modo Infinito */}
             <h4 className="mb-3">Test personalizado</h4>
             
-            <div
-              style={{
-                width: PANEL_WIDTH,
-                margin: '0 auto'
-              }}
-            >
-              {customTestStarted && (
-                <>
-                  {/* Botones superiores con checkbox incluido */}
-                  <div className="d-flex gap-2 align-items-center justify-content-between mb-3">
-                    {/* Checkbox continuar automáticamente */}
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="autoNextCheckCustom"
-                        checked={autoNext}
-                        onChange={e => setAutoNext(e.target.checked)}
-                      />
-                      <label className="form-check-label" htmlFor="autoNextCheckCustom">
-                        Auto-continuar
-                      </label>
-                    </div>
-                    
-                    {/* Botones de herramientas alineados a la derecha */}
-                    <div className="d-flex gap-2 align-items-center">
-                      <button
-                        className="btn btn-light btn-sm"
-                        title="Reducir tamaño de texto"
-                        style={{ fontSize: 14, padding: '4px 8px' }}
-                        onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
-                      >
-                        <span role="img" aria-label="disminuir">A-</span>
-                      </button>
-                      <button
-                        className="btn btn-light btn-sm"
-                        title="Aumentar tamaño de texto"
-                        style={{ fontSize: 14, padding: '4px 8px' }}
-                        onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
-                      >
-                        <span role="img" aria-label="aumentar">A+</span>
-                      </button>
-                      <button 
-                        className="btn btn-info btn-sm" 
-                        onClick={() => {
-                          const currentQuestion = customTestQuestions[customTestCurrent];
-                          let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                          Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                            texto += `${key.toUpperCase()}: ${value}\n`;
-                          });
-                          const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                          window.open(url, '_blank');
-                        }}
-                      >
-                        <span role="img" aria-label="robot">🤖</span>
-                      </button>
-                      <button 
-                        className="btn btn-outline-secondary btn-sm" 
-                        onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
-                      >
-                        📋 Copiar
-                      </button>
-                    </div>
+            {!customTestStarted ? (
+              <div
+                style={{
+                  width: '100%',
+                  margin: '0 auto',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                  borderRadius: 0,
+                  padding: 24,
+                  transition: 'font-size 0.2s'
+                }}
+              >
+                {customLoading ? (
+                  <div className="my-4 text-center">
+                    <div className="spinner-border" />
+                    <div>Cargando preguntas...</div>
                   </div>
-                </>
-              )}
-              
-              {!customTestStarted ? (
-                <div
-                  style={{
-                    boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-                    borderRadius: 0,
-                    margin: 0,
-                    padding: 24,
-                    fontSize: customFontSize,
-                    transition: 'font-size 0.2s',
-                    width: 'auto',
-                    marginLeft: 'auto',
-                    marginRight: 'auto'
-                  }}
-                >
-                  {customLoading ? (
-                    <div className="my-4 text-center">
-                      <div className="spinner-border" />
-                      <div>Cargando preguntas...</div>
+                ) : (
+                  <>
+                    <div className="mb-3">
+                      <label className="form-label">Examen</label>
+                      <select
+                        className="form-select"
+                        value={customExam}
+                        onChange={e => setCustomExam(e.target.value)}
+                      >
+                        <option value="">-- Todos --</option>
+                        {customExamList.map((ex, i) => (
+                          <option key={i} value={ex}>{ex}</option>
+                        ))}
+                      </select>
                     </div>
-                  ) : (
-                    <>
-                      <div className="mb-3">
-                        <label className="form-label">Examen</label>
-                        <select
-                          className="form-select"
-                          value={customExam}
-                          onChange={e => setCustomExam(e.target.value)}
-                        >
-                          <option value="">-- Todos --</option>
-                          {customExamList.map((ex, i) => (
-                            <option key={i} value={ex}>{ex}</option>
-                          ))}
-                        </select>
-                      </div>
-                      <div className="mb-3">
-                        <label className="form-label">Tema</label>
-                        <select
-                          className="form-select"
-                          value={customTema}
-                          onChange={e => setCustomTema(e.target.value)}
-                        >
-                          <option value="">-- Todos --</option>
-                          {customTemas.map((t, i) => (
-                            <option key={i} value={t}>
-                              {t} ({customTemaCounts[t] || 0} preguntas)
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                      <div className="mb-3">
-                        <label className="form-label">Número de preguntas</label>
-                        <div className="form-check mb-2">
-                          <input
-                            className="form-check-input"
-                            type="checkbox"
-                            id="allQuestionsCheck"
-                            checked={customNumQuestions === getFilteredCustomQuestions().length}
-                            onChange={e => {
-                              if (e.target.checked) {
-                                setCustomNumQuestions(getFilteredCustomQuestions().length);
-                              } else {
-                                setCustomNumQuestions(10);
-                              }
-                            }}
-                          />
-                          <label className="form-check-label" htmlFor="allQuestionsCheck">
-                            Todas las preguntas disponibles
-                          </label>
-                        </div>
+                    <div className="mb-3">
+                      <label className="form-label">Tema</label>
+                      <select
+                        className="form-select"
+                        value={customTema}
+                        onChange={e => setCustomTema(e.target.value)}
+                      >
+                        <option value="">-- Todos --</option>
+                        {customTemas.map((t, i) => (
+                          <option key={i} value={t}>
+                            {t} ({customTemaCounts[t] || 0} preguntas)
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Número de preguntas</label>
+                      <div className="form-check mb-2">
                         <input
-                          type="number"
-                          className="form-control"
-                          min={1}
-                          max={Math.max(1, getFilteredCustomQuestions().length)}
-                          value={customNumQuestions}
-                          disabled={customNumQuestions === getFilteredCustomQuestions().length}
+                          className="form-check-input"
+                          type="checkbox"
+                          id="allQuestionsCheck"
+                          checked={customNumQuestions === getFilteredCustomQuestions().length}
                           onChange={e => {
-                            const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
-                            setCustomNumQuestions(val);
+                            if (e.target.checked) {
+                              setCustomNumQuestions(getFilteredCustomQuestions().length);
+                            } else {
+                              setCustomNumQuestions(10);
+                            }
                           }}
                         />
-                        <small className="text-muted">
-                          Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
-                        </small>
+                        <label className="form-check-label" htmlFor="allQuestionsCheck">
+                          Todas las preguntas disponibles
+                        </label>
                       </div>
-                      <button
-                        className="btn btn-success"
-                        disabled={getFilteredCustomQuestions().length === 0}
-                        onClick={startCustomTest}
-                      >
-                        Comenzar test
-                      </button>
-                    </>
-                  )}
+                      <input
+                        type="number"
+                        className="form-control"
+                        min={1}
+                        max={Math.max(1, getFilteredCustomQuestions().length)}
+                        value={customNumQuestions}
+                        disabled={customNumQuestions === getFilteredCustomQuestions().length}
+                        onChange={e => {
+                          const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
+                          setCustomNumQuestions(val);
+                        }}
+                      />
+                      <small className="text-muted">
+                        Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.
+                      </small>
+                    </div>
+                    <button
+                      className="btn btn-success"
+                      style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                      disabled={getFilteredCustomQuestions().length === 0}
+                      onClick={startCustomTest}
+                    >
+                      Comenzar test
+                    </button>
+                  </>
+                )}
+              </div>
+            ) : (
+              <div style={{ width: '100%', margin: '0 auto' }}>
+                <div className="d-flex gap-2 align-items-center justify-content-between mb-3">
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="autoNextCheckCustom"
+                      checked={autoNext}
+                      onChange={e => setAutoNext(e.target.checked)}
+                    />
+                    <label className="form-check-label" htmlFor="autoNextCheckCustom">
+                      Auto-continuar
+                    </label>
+                  </div>
+                  
+                  <div className="d-flex gap-2 align-items-center">
+                    <button 
+                      className="btn btn-info btn-sm" 
+                      style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                      onClick={() => {
+                        const currentQuestion = customTestQuestions[customTestCurrent];
+                        let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                          texto += `${key.toUpperCase()}: ${value}\n`;
+                        });
+                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                        window.open(url, '_blank');
+                      }}
+                    >
+                      <span role="img" aria-label="robot">🤖</span>
+                    </button>
+                    <button 
+                      className="btn btn-outline-secondary btn-sm" 
+                      style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                      onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
+                    >
+                      📋 Copiar
+                    </button>
+                  </div>
                 </div>
-              ) : (
+                
                 <TestPanel
                   questions={customTestQuestions}
                   current={customTestCurrent}
@@ -1388,12 +1452,11 @@ export default function Home() {
                   correctCount={customTestCorrect}
                   incorrectCount={customTestIncorrect}
                   showTopButtons={true}
-                  customFontSize={customFontSize}
                   navRows={navRows}
                   setNavRows={setNavRows}
                 />
-              )}
-            </div>
+              </div>
+            )}
           </>
         )}
 
@@ -1427,12 +1490,14 @@ export default function Home() {
               <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
                 <button 
                   className="btn btn-danger"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                   onClick={() => handleConfirm(true)}
                 >
                   Sí, continuar
                 </button>
                 <button 
                   className="btn btn-secondary"
+                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                   onClick={() => handleConfirm(false)}
                 >
                   Cancelar
