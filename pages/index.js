@@ -46,17 +46,19 @@ export default function Home() {
   const [customFontSize, setCustomFontSize] = useState(18);
   const [customLoading, setCustomLoading] = useState(false);
 
+  // Añadir estado para las filas de navegación
+  const [navRows, setNavRows] = useState(5);
+
   // Añadir estado para el ancho del panel
-  const [panelWidth, setPanelWidth] = useState(500);
   const [showCopiedMessage, setShowCopiedMessage] = useState(false);
+
+  // Añadir estado para mostrar/ocultar panel de navegación
+  const [showNavPanel, setShowNavPanel] = useState(true);
 
   // Añadir estado para el popup de confirmación
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
   const [confirmAction, setConfirmAction] = useState(null);
   const [confirmMessage, setConfirmMessage] = useState('');
-
-  // Nueva línea para controlar el número de filas de navegación
-  const [navRows, setNavRows] = useState(5); // Por defecto 5 filas visibles
 
   // Función para mostrar confirmación personalizada
   const showCustomConfirm = (message, action) => {
@@ -77,7 +79,6 @@ export default function Home() {
 
   useEffect(() => {
     // Obtener la lista de exámenes disponibles desde el backend
-    // volvi
     fetch('/api/exams')
       .then(res => res.json())
       .then(files => setExamFiles(files))
@@ -89,6 +90,33 @@ export default function Home() {
       .map(value => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
       .map(({ value }) => value);
+  };
+
+  // Función para barajar opciones de una pregunta (solo para modo infinito)
+  const shuffleQuestionOptions = (question) => {
+    const opciones = Object.entries(question.opciones);
+    const shuffledOpciones = opciones.sort(() => Math.random() - 0.5);
+    
+    const newOpciones = {};
+    const letters = ['a', 'b', 'c', 'd'];
+    let newCorrectAnswer = '';
+    
+    shuffledOpciones.forEach(([originalKey, value], index) => {
+      const newKey = letters[index];
+      newOpciones[newKey] = value;
+      
+      if (originalKey === question.respuesta_correcta) {
+        newCorrectAnswer = newKey;
+      }
+    });
+    
+    return {
+      ...question,
+      opciones: newOpciones,
+      respuesta_correcta: newCorrectAnswer,
+      opciones_originales: question.opciones,
+      respuesta_correcta_original: question.respuesta_correcta
+    };
   };
 
   // Modificar la función copiarPreguntaActual
@@ -391,26 +419,35 @@ export default function Home() {
     setCustomTestCurrent(prev => prev + 1);
   };
 
-  function TestPanel({ questions, current, setCurrent, selectedOption, setSelectedOption, handleAnswer, nextQuestion, correctCount, incorrectCount, copiarPreguntaActual, reiniciarTest, handleSenorGPT, crearNuevoTest, showTopButtons = false, customFontSize = 18 }) {
+  function TestPanel({ 
+    questions, 
+    current, 
+    setCurrent, 
+    selectedOption, 
+    setSelectedOption, 
+    handleAnswer, 
+    nextQuestion, 
+    correctCount, 
+    incorrectCount, 
+    showTopButtons = false, 
+    customFontSize = 18,
+    autoNext = false,
+    navRows, // Recibir como prop
+    setNavRows // Recibir como prop
+  }) {
     const currentQuestion = questions[current];
 
     // --- Panel de navegación regulable ---
     const BUTTON_SIZE = 36;
-    const GAP_SIZE = 4; // gap-1 ~ 4px
+    const GAP_SIZE = 4;
     const BUTTONS_PER_ROW = 8;
 
-    // Calcula filas totales y visibles
     const totalRows = Math.ceil(questions.length / BUTTONS_PER_ROW);
     const maxRows = Math.min(15, totalRows);
     const minRows = 1;
 
-    // Estado para filas visibles (usa el estado global si lo tienes, si no, usa local)
-    const [navRowsLocal, setNavRowsLocal] = useState(Math.min(5, totalRows));
-    // Si usas navRows global, reemplaza navRowsLocal por navRows y setNavRows
-
-    // Si quieres que el ajuste sea por test, usa navRowsLocal, si global, usa navRows
-
-    const visibleRows = Math.max(minRows, Math.min(navRowsLocal, maxRows));
+    // Usar las props en lugar del estado local
+    const visibleRows = Math.max(minRows, Math.min(navRows, maxRows));
     const panelHeight = visibleRows * (BUTTON_SIZE + GAP_SIZE);
     const needsScroll = totalRows > visibleRows;
 
@@ -444,7 +481,7 @@ export default function Home() {
                   );
                 })}
               </ul>
-              {selectedOption && current < questions.length - 1 && (
+              {selectedOption && current < questions.length - 1 && !autoNext && (
                 <button className="btn btn-primary mt-3" onClick={nextQuestion}>Siguiente</button>
               )}
               {selectedOption && current === questions.length - 1 && (
@@ -469,12 +506,15 @@ export default function Home() {
           }}
         >
           <div className="container-fluid">
-            {/* Primera fila: Contadores y botones de navegación */}
+            {/* Una sola fila con todos los elementos */}
             <div className="d-flex justify-content-between align-items-center mb-3">
+              {/* Contadores a la izquierda */}
               <div className="d-flex align-items-center gap-3">
                 <span><strong>Correctas:</strong> {correctCount}</span>
                 <span><strong>Incorrectas:</strong> {incorrectCount}</span>
               </div>
+              
+              {/* Botones de navegación centrados */}
               <div className="d-flex gap-2">
                 <button 
                   className="btn btn-outline-primary btn-sm"
@@ -487,7 +527,7 @@ export default function Home() {
                   }}
                   disabled={current === 0}
                 >
-                  <span role="img" aria-label="anterior">⬅️</span>
+                  Anterior
                 </button>
                 <button 
                   className="btn btn-outline-primary btn-sm"
@@ -500,71 +540,84 @@ export default function Home() {
                   }}
                   disabled={current === questions.length - 1}
                 >
-                  <span role="img" aria-label="siguiente">➡️</span>
+                  Siguiente
                 </button>
+              </div>
+
+              {/* Controles para regular filas a la derecha */}
+              <div className="d-flex align-items-center gap-2">
+                <button
+                  className="btn btn-outline-info btn-sm"
+                  onClick={() => setShowNavPanel(!showNavPanel)}
+                  title={showNavPanel ? "Ocultar panel de navegación" : "Mostrar panel de navegación"}
+                >
+                  {showNavPanel ? '👁️‍🗨️' : '👁️'}
+                </button>
+                {showNavPanel && (
+                  <>
+                    <button
+                      className="btn btn-light btn-sm"
+                      disabled={navRows <= minRows}
+                      onClick={() => setNavRows(r => Math.max(minRows, r - 1))}
+                      title="Reducir filas"
+                    >-</button>
+                    <span style={{ minWidth: 60, textAlign: 'center' }}>
+                      Filas: {visibleRows}
+                    </span>
+                    <button
+                      className="btn btn-light btn-sm"
+                      disabled={navRows >= Math.min(15, totalRows)}
+                      onClick={() => setNavRows(r => Math.min(15, r + 1, totalRows))}
+                      title="Aumentar filas"
+                    >+</button>
+                  </>
+                )}
               </div>
             </div>
 
-            {/* Controles para regular filas */}
-            <div className="d-flex justify-content-center align-items-center mb-2 gap-2">
-              <button
-                className="btn btn-light btn-sm"
-                disabled={navRowsLocal <= minRows}
-                onClick={() => setNavRowsLocal(r => Math.max(minRows, r - 1))}
-                title="Reducir filas"
-              >-</button>
-              <span style={{ minWidth: 60, textAlign: 'center' }}>
-                Filas: {visibleRows}
-              </span>
-              <button
-                className="btn btn-light btn-sm"
-                disabled={navRowsLocal >= Math.min(15, totalRows)}
-                onClick={() => setNavRowsLocal(r => Math.min(15, r + 1, totalRows))}
-                title="Aumentar filas"
-              >+</button>
-            </div>
-
-            {/* Panel de navegación numérica */}
-            <div
-              className="d-flex flex-wrap gap-1 justify-content-center"
-              style={{
-                height: `${panelHeight}px`,
-                overflowY: needsScroll ? 'auto' : 'hidden',
-                transition: 'height 0.2s'
-              }}
-            >
-              {questions.map((q, index) => {
-                let btnClass = "btn btn-outline-secondary btn-sm";
-                if (index === current) {
-                  btnClass = "btn btn-primary btn-sm";
-                } else if (q.respuesta_usuario) {
-                  btnClass = q.respuesta_usuario === q.respuesta_correcta 
-                    ? "btn btn-success btn-sm" 
-                    : "btn btn-danger btn-sm";
-                }
-                const num = (index + 1).toString().padStart(2, '0');
-                return (
-                  <button
-                    key={index}
-                    className={btnClass}
-                    style={{
-                      width: '36px',
-                      height: '36px',
-                      padding: 0,
-                      fontWeight: 'bold',
-                      fontSize: '12px',
-                      flex: '0 0 36px'
-                    }}
-                    onClick={() => {
-                      setCurrent(index);
-                      setSelectedOption(questions[index].respuesta_usuario || null);
-                    }}
-                  >
-                    {num}
-                  </button>
-                );
-              })}
-            </div>
+            {/* Panel de navegación numérica - solo se muestra si showNavPanel es true */}
+            {showNavPanel && (
+              <div
+                className="d-flex flex-wrap gap-1 justify-content-center"
+                style={{
+                  height: `${panelHeight}px`,
+                  overflowY: needsScroll ? 'auto' : 'hidden',
+                  transition: 'height 0.2s'
+                }}
+              >
+                {questions.map((q, index) => {
+                  let btnClass = "btn btn-outline-secondary btn-sm";
+                  if (index === current) {
+                    btnClass = "btn btn-primary btn-sm";
+                  } else if (q.respuesta_usuario) {
+                    btnClass = q.respuesta_usuario === q.respuesta_correcta 
+                      ? "btn btn-success btn-sm" 
+                      : "btn btn-danger btn-sm";
+                  }
+                  const num = (index + 1).toString().padStart(2, '0');
+                  return (
+                    <button
+                      key={index}
+                      className={btnClass}
+                      style={{
+                        width: '36px',
+                        height: '36px',
+                        padding: 0,
+                        fontWeight: 'bold',
+                        fontSize: '12px',
+                        flex: '0 0 36px'
+                      }}
+                      onClick={() => {
+                        setCurrent(index);
+                        setSelectedOption(questions[index].respuesta_usuario || null);
+                      }}
+                    >
+                      {num}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </>
@@ -573,8 +626,6 @@ export default function Home() {
 
   // Nuevo estado para el modo repaso
   const [reviewMode, setReviewMode] = useState('');
-  const [reviewQuestions, setReviewQuestions] = useState([]);
-  const [markedQuestions, setMarkedQuestions] = useState([]);
   const [infiniteQuestions, setInfiniteQuestions] = useState([]);
   const [infiniteCurrent, setInfiniteCurrent] = useState(0);
 
@@ -631,27 +682,6 @@ export default function Home() {
     }
   }, [view, questions]);
 
-  // Marcar/desmarcar pregunta difícil
-  const toggleMarkQuestion = (q) => {
-    setMarkedQuestions(prev => {
-      const exists = prev.find(mq => mq.id_pregunta === q.id_pregunta);
-      let updated;
-      if (exists) {
-        updated = prev.filter(mq => mq.id_pregunta !== q.id_pregunta);
-      } else {
-        updated = [...prev, q];
-      }
-      localStorage.setItem('preguntas_marcadas', JSON.stringify(updated));
-      return updated;
-    });
-  };
-
-  // Cargar preguntas marcadas al iniciar
-  useEffect(() => {
-    const marcadas = JSON.parse(localStorage.getItem('preguntas_marcadas') || '[]');
-    setMarkedQuestions(marcadas);
-  }, []);
-
   // --- Render principal ---
   return (
     <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -666,10 +696,10 @@ export default function Home() {
               <div className="alert alert-info" style={{ fontSize: 17 }}>
                 <strong>¿Qué puedes hacer aquí?</strong>
                 <ul className="mb-0 mt-2" style={{ paddingLeft: 22 }}>
-                  <li><strong>Crear test:</strong> Crea un test personalizado eligiendo temas y número de preguntas.</li>
+                  <li><strong>Crear test:</strong> Elige temas y número de preguntas.</li>
                   <li><strong>Cargar Temario:</strong> Consulta el temario completo.</li>
-                  <li><strong>Modo Infinito:</strong> Practica en modo Infinito, sin límite de preguntas.</li>
-                  <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y descárgalas en formato JSON.</li>
+                  <li><strong>Modo Infinito:</strong> Preguntas sin fin.</li>
+                  <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y genera un JSON.</li>
                 </ul>
               </div>
             </div>
@@ -686,10 +716,13 @@ export default function Home() {
 
               <div className="col-6 col-md-auto">
                 <button className="btn btn-secondary w-100" onClick={async () => {
-                  // Cargar todas las preguntas y barajar
                   const res = await fetch('/api/all-questions');
                   const all = await res.json();
-                  setInfiniteQuestions(all.sort(() => Math.random() - 0.5));
+                  
+                  // Aplicar barajado de opciones solo para modo infinito
+                  const questionsWithShuffledOptions = all.map(shuffleQuestionOptions);
+                  
+                  setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
                   setInfiniteCurrent(0);
                   setReviewMode('infinito');
                   setView('repaso');
@@ -713,19 +746,6 @@ export default function Home() {
             <h4 className="mb-3">
               {reviewMode === 'infinito' && 'Modo Infinito'}
             </h4>
-            {/* Check para continuar automáticamente */}
-            <div className="form-check mb-3">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="autoNextCheck"
-                checked={autoNext}
-                onChange={e => setAutoNext(e.target.checked)}
-              />
-              <label className="form-check-label" htmlFor="autoNextCheck">
-                Continuar automáticamente al responder
-              </label>
-            </div>
             {reviewMode === 'infinito' && infiniteQuestions.length === 0 && (
               <div className="alert alert-info">
                 No hay preguntas disponibles para el modo Infinito.
@@ -738,44 +758,61 @@ export default function Home() {
                   margin: '0 auto'
                 }}
               >
-                {/* Botones superiores como en test personalizado */}
-                <div className="d-flex gap-2 align-items-center mb-3 justify-content-end">
-                  <button
-                    className="btn btn-light btn-sm"
-                    title="Reducir tamaño de texto"
-                    style={{ fontSize: 18, padding: '2px 8px' }}
-                    onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
-                  >
-                    <span role="img" aria-label="disminuir">A-</span>
-                  </button>
-                  <button
-                    className="btn btn-light btn-sm"
-                    title="Aumentar tamaño de texto"
-                    style={{ fontSize: 22, padding: '2px 8px' }}
-                    onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
-                  >
-                    <span role="img" aria-label="aumentar">A+</span>
-                  </button>
-                  <button 
-                    className="btn btn-info btn-sm" 
-                    onClick={() => {
-                      const currentQuestion = infiniteQuestions[infiniteCurrent];
-                      let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                      Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                        texto += `${key.toUpperCase()}: ${value}\n`;
-                      });
-                      const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                      window.open(url, '_blank');
-                    }}
-                  >
-                    <span role="img" aria-label="robot">🤖</span>
-                  </button>
-                  <button 
-                    className="btn btn-outline-secondary btn-sm" 
-                    onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}
-                  >
-                    📋 Copiar
-                  </button>
+                {/* Botones superiores con checkbox incluido - IGUAL QUE EN TEST PERSONALIZADO */}
+                <div className="d-flex gap-2 align-items-center justify-content-between mb-3">
+                  {/* Checkbox continuar automáticamente */}
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="autoNextCheck"
+                      checked={autoNext}
+                      onChange={e => setAutoNext(e.target.checked)}
+                    />
+                    <label className="form-check-label" htmlFor="autoNextCheck">
+                      Auto-continuar
+                    </label>
+                  </div>
+                  
+                  {/* Botones de herramientas alineados a la derecha */}
+                  <div className="d-flex gap-2 align-items-center">
+                    <button
+                      className="btn btn-light btn-sm"
+                      title="Reducir tamaño de texto"
+                      style={{ fontSize: 14, padding: '4px 8px' }}
+                      onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
+                    >
+                      <span role="img" aria-label="disminuir">A-</span>
+                    </button>
+                    <button
+                      className="btn btn-light btn-sm"
+                      title="Aumentar tamaño de texto"
+                      style={{ fontSize: 14, padding: '4px 8px' }}
+                      onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
+                    >
+                      <span role="img" aria-label="aumentar">A+</span>
+                    </button>
+                    <button 
+                      className="btn btn-info btn-sm" 
+                      onClick={() => {
+                        const currentQuestion = infiniteQuestions[infiniteCurrent];
+                        let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                          texto += `${key.toUpperCase()}: ${value}\n`;
+                        });
+                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                        window.open(url, '_blank');
+                      }}
+                    >
+                      <span role="img" aria-label="robot">🤖</span>
+                    </button>
+                    <button 
+                      className="btn btn-outline-secondary btn-sm" 
+                      onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}
+                    >
+                      📋 Copiar
+                    </button>
+                  </div>
                 </div>
                 <TestPanel
                   questions={infiniteQuestions}
@@ -785,28 +822,20 @@ export default function Home() {
                   setSelectedOption={setInfiniteSelected}
                   handleAnswer={(key) => {
                     handleInfiniteAnswer(key);
-                    if (autoNext && infiniteCurrent < infiniteQuestions.length - 1) {
+                    if (autoNext) {
                       setTimeout(() => {
                         setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length);
+                        setInfiniteSelected(null);
                       }, 1000);
                     }
                   }}
                   nextQuestion={() => setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length)}
                   correctCount={infiniteCorrect}
                   incorrectCount={infiniteIncorrect}
-                  copiarPreguntaActual={copiarPreguntaActual}
-                  reiniciarTest={reiniciarInfinito}
-                  handleSenorGPT={() => {
-                    const currentQuestion = infiniteQuestions[infiniteCurrent];
-                    let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                    Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                      texto += `${key.toUpperCase()}: ${value}\n`;
-                    });
-                    const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                    window.open(url, '_blank');
-                  }}
                   showTopButtons={false}
                   customFontSize={customFontSize}
+                  navRows={navRows}
+                  setNavRows={setNavRows}
                 />
               </div>
             )}
@@ -817,7 +846,7 @@ export default function Home() {
         {view === 'cargar' && (
           <>
             <button className="btn btn-secondary mb-4" onClick={() => setView('')}>
-              <span role="img" aria-label="inicio">Volver Volver al inicio</span> 
+              <span role="img" aria-label="inicio">Volver al inicio</span> 
             </button>
             <h1 className="mb-4">Test AGE</h1>
             <div className="mb-3">
@@ -829,6 +858,42 @@ export default function Home() {
                 ))}
               </select>
             </div>
+
+            {/* Añadir controles de auto-continuar y tamaño de fuente */}
+            {questions.length > 0 && (
+              <div className="d-flex gap-3 align-items-center justify-content-center mb-3">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="checkbox"
+                    id="autoNextCheckCargar"
+                    checked={autoNext}
+                    onChange={e => setAutoNext(e.target.checked)}
+                  />
+                  <label className="form-check-label" htmlFor="autoNextCheckCargar">
+                    Auto-continuar
+                  </label>
+                </div>
+                
+                <div className="d-flex gap-2 align-items-center">
+                  <button
+                    className="btn btn-light btn-sm"
+                    title="Reducir tamaño de texto"
+                    onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
+                  >
+                    A-
+                  </button>
+                  <button
+                    className="btn btn-light btn-sm"
+                    title="Aumentar tamaño de texto"
+                    onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
+                  >
+                    A+
+                  </button>
+                </div>
+              </div>
+            )}
+
             <div className="mb-3">
               <input
                 type="text"
@@ -838,6 +903,7 @@ export default function Home() {
                 onChange={e => setSearch(e.target.value)}
               />
             </div>
+            
             {search && (
               <div className="mb-4">
                 <h5>Preguntas encontradas</h5>
@@ -881,81 +947,31 @@ export default function Home() {
               </div>
             )} {/* <-- Cierra correctamente el bloque de búsqueda aquí */}
 
-            <TestPanel
-              questions={questions}
-              current={current}
-              setCurrent={setCurrent}
-              selectedOption={selectedOption}
-              setSelectedOption={setSelectedOption}
-              handleAnswer={handleAnswer}
-              nextQuestion={nextQuestion}
-              correctCount={correctCount}
-              incorrectCount={incorrectCount}
-              copiarPreguntaActual={copiarPreguntaActual}
-              reiniciarTest={() => {
-                showCustomConfirm(
-                  '¿Estás seguro de que quieres reiniciar el test? Se perderán todas las respuestas.',
-                  () => {
-                    setCorrectCount(0);
-                    setIncorrectCount(0);
-                    const resetQuestions = questions.map(q => {
-                      const { respuesta_usuario, ...rest } = q;
-                      return rest;
-                    });
-                    setQuestions(resetQuestions);
-                    setCurrent(0);
-                    setSelectedOption(null);
-                    if (selectedExam) {
-                      localStorage.removeItem(`respuestas_${selectedExam}`);
-                    }
-                  }
-                );
-              }}
-              handleSenorGPT={() => {
-                let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                  texto += `${key.toUpperCase()}: ${value}\n`;
-                });
-                const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                window.open(url, '_blank');
-              }}
-            />
             {questions.length > 0 && (
-              <div className="mt-4">
-                <h5>Navegación de preguntas</h5>
-                <div className="d-flex flex-wrap gap-2 justify-content-center">
-                  {questions.map((q, index) => {
-                    let btnClass = "btn btn-outline-secondary";
-                    if (index === current) {
-                      btnClass += " active";
-                    } else if (q.respuesta_usuario) {
-                      btnClass += q.respuesta_usuario === q.respuesta_correcta ? " btn-success" : " btn-danger";
+              <div style={{ width: PANEL_WIDTH, margin: '0 auto' }}>
+                <TestPanel
+                  questions={questions}
+                  current={current}
+                  setCurrent={setCurrent}
+                  selectedOption={selectedOption}
+                  setSelectedOption={setSelectedOption}
+                  handleAnswer={(key) => {
+                    handleAnswer(key);
+                    if (autoNext && current < questions.length - 1) {
+                      setTimeout(() => {
+                        setCurrent(c => c + 1);
+                        setSelectedOption(questions[current + 1]?.respuesta_usuario || null);
+                      }, 1000);
                     }
-                    // Formato 01, 02, ..., 10, 11...
-                    const num = (index + 1).toString().padStart(2, '0');
-                    return (
-                      <button
-                        key={index}
-                        className={btnClass}
-                        style={{
-                          width: 44,
-                          height: 44,
-                          padding: 0,
-                          fontWeight: 'bold',
-                          fontVariantNumeric: 'tabular-nums',
-                          fontSize: 18,
-                          flex: '0 0 44px'
-                        }}
-                        onClick={() => {
-                          setCurrent(index);
-                          setSelectedOption(questions[index].respuesta_usuario || null);
-                        }}
-                      >
-                        {num}
-                      </button>
-                    );
-                  })}
-                </div>
+                  }}
+                  nextQuestion={nextQuestion}
+                  correctCount={correctCount}
+                  incorrectCount={incorrectCount}
+                  customFontSize={customFontSize}
+                  autoNext={autoNext}
+                  navRows={navRows}
+                  setNavRows={setNavRows}
+                />
               </div>
             )}
           </>
@@ -1190,20 +1206,6 @@ export default function Home() {
             {/* Título fuera del contenedor, igual que en modo Infinito */}
             <h4 className="mb-3">Test personalizado</h4>
             
-            {/* Checkbox continuar automáticamente - igual que en modo Infinito */}
-            <div className="form-check mb-3">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="autoNextCheckCustom"
-                checked={autoNext}
-                onChange={e => setAutoNext(e.target.checked)}
-              />
-              <label className="form-check-label" htmlFor="autoNextCheckCustom">
-                Continuar automáticamente al responder
-              </label>
-            </div>
-            
             <div
               style={{
                 width: PANEL_WIDTH,
@@ -1212,44 +1214,61 @@ export default function Home() {
             >
               {customTestStarted && (
                 <>
-                  {/* Botones alineados a la derecha */}
-                  <div className="d-flex gap-2 align-items-center justify-content-end mb-3">
-                    <button
-                      className="btn btn-light btn-sm"
-                      title="Reducir tamaño de texto"
-                      style={{ fontSize: 18, padding: '2px 8px' }}
-                      onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
-                    >
-                      <span role="img" aria-label="disminuir">A-</span>
-                    </button>
-                    <button
-                      className="btn btn-light btn-sm"
-                      title="Aumentar tamaño de texto"
-                      style={{ fontSize: 22, padding: '2px 8px' }}
-                      onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
-                    >
-                      <span role="img" aria-label="aumentar">A+</span>
-                    </button>
-                    <button 
-                      className="btn btn-info btn-sm" 
-                      onClick={() => {
-                        const currentQuestion = customTestQuestions[customTestCurrent];
-                        let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                          texto += `${key.toUpperCase()}: ${value}\n`;
-                        });
-                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                        window.open(url, '_blank');
-                      }}
-                    >
-                      <span role="img" aria-label="robot">🤖</span>
-                    </button>
-                    <button 
-                      className="btn btn-outline-secondary btn-sm" 
-                      onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
-                    >
-                      📋 Copiar
-                    </button>
+                  {/* Botones superiores con checkbox incluido */}
+                  <div className="d-flex gap-2 align-items-center justify-content-between mb-3">
+                    {/* Checkbox continuar automáticamente */}
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="autoNextCheckCustom"
+                        checked={autoNext}
+                        onChange={e => setAutoNext(e.target.checked)}
+                      />
+                      <label className="form-check-label" htmlFor="autoNextCheckCustom">
+                        Auto-continuar
+                      </label>
+                    </div>
+                    
+                    {/* Botones de herramientas alineados a la derecha */}
+                    <div className="d-flex gap-2 align-items-center">
+                      <button
+                        className="btn btn-light btn-sm"
+                        title="Reducir tamaño de texto"
+                        style={{ fontSize: 14, padding: '4px 8px' }}
+                        onClick={() => setCustomFontSize(s => Math.max(14, s - 2))}
+                      >
+                        <span role="img" aria-label="disminuir">A-</span>
+                      </button>
+                      <button
+                        className="btn btn-light btn-sm"
+                        title="Aumentar tamaño de texto"
+                        style={{ fontSize: 14, padding: '4px 8px' }}
+                        onClick={() => setCustomFontSize(s => Math.min(32, s + 2))}
+                      >
+                        <span role="img" aria-label="aumentar">A+</span>
+                      </button>
+                      <button 
+                        className="btn btn-info btn-sm" 
+                        onClick={() => {
+                          const currentQuestion = customTestQuestions[customTestCurrent];
+                          let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
+                          Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                            texto += `${key.toUpperCase()}: ${value}\n`;
+                          });
+                          const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                          window.open(url, '_blank');
+                        }}
+                      >
+                        <span role="img" aria-label="robot">🤖</span>
+                      </button>
+                      <button 
+                        className="btn btn-outline-secondary btn-sm" 
+                        onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}
+                      >
+                        📋 Copiar
+                      </button>
+                    </div>
                   </div>
                 </>
               )}
@@ -1305,12 +1324,31 @@ export default function Home() {
                       </div>
                       <div className="mb-3">
                         <label className="form-label">Número de preguntas</label>
+                        <div className="form-check mb-2">
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            id="allQuestionsCheck"
+                            checked={customNumQuestions === getFilteredCustomQuestions().length}
+                            onChange={e => {
+                              if (e.target.checked) {
+                                setCustomNumQuestions(getFilteredCustomQuestions().length);
+                              } else {
+                                setCustomNumQuestions(10);
+                              }
+                            }}
+                          />
+                          <label className="form-check-label" htmlFor="allQuestionsCheck">
+                            Todas las preguntas disponibles
+                          </label>
+                        </div>
                         <input
                           type="number"
                           className="form-control"
                           min={1}
                           max={Math.max(1, getFilteredCustomQuestions().length)}
                           value={customNumQuestions}
+                          disabled={customNumQuestions === getFilteredCustomQuestions().length}
                           onChange={e => {
                             const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
                             setCustomNumQuestions(val);
@@ -1342,24 +1380,17 @@ export default function Home() {
                     if (autoNext && customTestCurrent < customTestQuestions.length - 1) {
                       setTimeout(() => {
                         setCustomTestCurrent(c => c + 1);
+                        setCustomTestSelected(null);
                       }, 1000);
                     }
                   }}
                   nextQuestion={nextCustomTestQuestion}
                   correctCount={customTestCorrect}
                   incorrectCount={customTestIncorrect}
-                  copiarPreguntaActual={copiarPreguntaActual}
-                  handleSenorGPT={() => {
-                    const currentQuestion = customTestQuestions[customTestCurrent];
-                    let texto = `Pregunta: ${currentQuestion.pregunta}\n`;
-                    Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                      texto += `${key.toUpperCase()}: ${value}\n`;
-                    });
-                    const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                    window.open(url, '_blank');
-                  }}
                   showTopButtons={true}
                   customFontSize={customFontSize}
+                  navRows={navRows}
+                  setNavRows={setNavRows}
                 />
               )}
             </div>
@@ -1386,8 +1417,6 @@ export default function Home() {
               style={{
                 background: '#fff',
                 padding: '20px',
-                borderRadius: '8px',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
                 borderRadius: '8px',
                 boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
                 maxWidth: '400px',
@@ -1418,17 +1447,22 @@ export default function Home() {
           <div
             style={{
               position: 'fixed',
-              top: '20px',
-              right: '20px',
-              background: '#28a745',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              background: 'rgba(40, 167, 69, 0.65)',
               color: 'white',
-              padding: '10px 15px',
-              borderRadius: '5px',
+              padding: '12px 20px',
+              borderRadius: '8px',
               zIndex: 9999,
-              boxShadow: '0 2px 8px rgba(0,0,0,0.2)'
+              boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+              fontSize: '16px',
+              fontWeight: '500',
+              whiteSpace: 'nowrap',
+              backdropFilter: 'blur(4px)'
             }}
           >
-            ✅ Pregunta copiada
+            ¡Copiado!
           </div>
         )}
       </div>
