@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ErrorBoundary from '../components/ErrorBoundary';
+import { QuestionCard, NavigationPanel, TestControls } from '../components/test';
 
-const PANEL_WIDTH = 600; // Cambia este valor para modificar el ancho en ambos paneles
+const PANEL_WIDTH = 600;
 
 export default function Home() {
   // Estado para controlar la vista principal o subpaneles
@@ -418,224 +420,120 @@ export default function Home() {
   };
 
   function TestPanel({ 
-    questions, 
-    current, 
-    setCurrent, 
-    selectedOption, 
-    setSelectedOption, 
-    handleAnswer, 
-    nextQuestion, 
-    correctCount, 
-    incorrectCount, 
-    showTopButtons = false, 
-    autoNext = false,
-    navRows,
-    setNavRows
-  }) {
-    const currentQuestion = questions[current];
+  questions, 
+  current, 
+  setCurrent, 
+  selectedOption, 
+  setSelectedOption, 
+  handleAnswer, 
+  nextQuestion, 
+  correctCount, 
+  incorrectCount, 
+  showTopButtons = false, 
+  autoNext = false,
+  navRows,
+  setNavRows
+}) {
+  const currentQuestion = questions[current];
 
-    // --- Panel de navegación regulable ---
-    const BUTTON_SIZE = 36;
-    const GAP_SIZE = 4;
-    const BUTTONS_PER_ROW = 8;
+  // Calcular el margen inferior dinámicamente basado en el panel de navegación
+  const baseFooterHeight = 80;
+  const BUTTON_SIZE = 36;
+  const GAP_SIZE = 4;
+  const totalRows = Math.ceil(questions.length / 8);
+  const maxRows = Math.min(15, totalRows);
+  const visibleRows = Math.max(1, Math.min(navRows, maxRows));
+  const panelHeight = visibleRows * (BUTTON_SIZE + GAP_SIZE);
+  const navPanelHeight = showNavPanel ? panelHeight + 32 : 0;
+  const dynamicMarginBottom = baseFooterHeight + navPanelHeight + 20;
 
-    const totalRows = Math.ceil(questions.length / BUTTONS_PER_ROW);
-    const maxRows = Math.min(15, totalRows);
-    const minRows = 1;
+  const handleQuestionSelect = (index) => {
+    setCurrent(index);
+    setSelectedOption(questions[index]?.respuesta_usuario || null);
+  };
 
-    const visibleRows = Math.max(minRows, Math.min(navRows, maxRows));
-    const panelHeight = visibleRows * (BUTTON_SIZE + GAP_SIZE);
-    const needsScroll = totalRows > visibleRows;
+  const handlePrevious = () => {
+    const newCurrent = current - 1;
+    if (newCurrent >= 0 && newCurrent < questions.length) {
+      setCurrent(newCurrent);
+      setSelectedOption(questions[newCurrent].respuesta_usuario || null);
+    }
+  };
 
-    // Calcular el margen inferior dinámicamente basado en el panel de navegación
-    const baseFooterHeight = 80; // Altura base de la barra inferior
-    const navPanelHeight = showNavPanel ? panelHeight + 32 : 0; // +32 para padding y handle
-    const dynamicMarginBottom = baseFooterHeight + navPanelHeight + 20; // +20 margen extra
+  const handleNext = () => {
+    const newCurrent = current + 1;
+    if (newCurrent >= 0 && newCurrent < questions.length) {
+      setCurrent(newCurrent);
+      setSelectedOption(questions[newCurrent].respuesta_usuario || null);
+    }
+  };
 
-    return (
-      <>
-        {currentQuestion && (
-          <div className="card" style={{ 
-            marginBottom: `${dynamicMarginBottom}px`, 
-            boxShadow: '0 2px 8px rgba(0,0,0,0.1)', 
-            borderRadius: 0, 
-            margin: 0 
-          }}>
-            <div className="card-body">
-              <h5 className="card-title">Pregunta {current + 1}</h5>
-              <p><strong>Tema:</strong> {currentQuestion.tema || 'No especificado'}</p>
-              <p className="card-text">{currentQuestion.pregunta}</p>
-              <ul className="list-group" style={{ marginBottom: 0 }}>
-                {Object.entries(currentQuestion.opciones).map(([key, value]) => {
-                  let className = "list-group-item";
-                  if (selectedOption) {
-                    if (key === currentQuestion.respuesta_correcta) {
-                      className += " list-group-item-success";
-                    } else if (key === selectedOption) {
-                      className += " list-group-item-danger";
-                    }
-                  }
-                  return (
-                    <li
-                      key={key}
-                      className={className}
-                      style={{ cursor: selectedOption ? 'default' : 'pointer', pointerEvents: selectedOption ? 'none' : 'auto' }}
-                      onClick={() => !selectedOption && handleAnswer(key)}
-                    >
-                      <strong>{key.toUpperCase()}:</strong> {value}
-                    </li>
-                  );
-                })}
-              </ul>
-              {selectedOption && current < questions.length - 1 && !autoNext && (
-                <button className="btn btn-primary mt-3" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={nextQuestion}>Siguiente</button>
-              )}
-              {selectedOption && current === questions.length - 1 && (
-                <p className="mt-3 text-success">¡Has llegado al final del examen!</p>
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* Barra inferior fija */}
-        <div 
-          style={{
-            position: 'fixed',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            backgroundColor: '#f8f9fa',
-            borderTop: '1px solid #dee2e6',
-            padding: '5px',
-            zIndex: 1000,
-            boxShadow: '0 -2px 8px rgba(0,0,0,0.1)'
-          }}
-        >
-          <div className="container-fluid">
-            {/* Una sola fila con todos los elementos */}
-            <div className="d-flex justify-content-between align-items-center mb-3">
-              {/* Grupo izquierda - contadores */}
-              <div className="d-flex align-items-center gap-3">
-                {/* Versión móvil: iconos */}
-                <span className="d-md-none">
-                  <span style={{ color: '#28a745' }}>✅</span> {correctCount}
-                </span>
-                <span className="d-md-none">
-                  <span style={{ color: '#dc3545' }}>❌</span> {incorrectCount}
-                </span>
-                {/* Versión escritorio: texto completo */}
-                <span className="d-none d-md-inline"><strong>Correctas:</strong> {correctCount}</span>
-                <span className="d-none d-md-inline"><strong>Incorrectas:</strong> {incorrectCount}</span>
-              </div>
-              
-              {/* Grupo centro - controles */}
-              <div className="d-flex align-items-center gap-2">
-                <button
-                  className="btn btn-outline-info btn-sm"
-                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
-                  onClick={() => setShowNavPanel(!showNavPanel)}
-                  title={showNavPanel ? "Ocultar panel de navegación" : "Mostrar panel de navegación"}
-                >
-                  {showNavPanel ? '👁️‍🗨️' : '👁️'}
-                </button>
-                
-              </div>
-
-              {/* Grupo derecha - navegación */}
-              <div className="d-flex gap-2">
-                <button 
-                  className="btn btn-outline-primary btn-sm"
-                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
-                  onClick={() => {
-                    const newCurrent = current - 1;
-                    if (newCurrent >= 0 && newCurrent < questions.length) {
-                      setCurrent(newCurrent);
-                      setSelectedOption(questions[newCurrent].respuesta_usuario || null);
-                    }
-                  }}
-                  disabled={current === 0}
-                >
-                  {/* Versión móvil: solo emoji */}
-                  <span className="d-md-none">⬅️</span>
-                  {/* Versión escritorio: texto completo */}
-                  <span className="d-none d-md-inline">Anterior</span>
-                </button>
-                <button 
-                  className="btn btn-outline-primary btn-sm"
-                  style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
-                  onClick={() => {
-                    const newCurrent = current + 1;
-                    if (newCurrent >= 0 && newCurrent < questions.length) {
-                      setCurrent(newCurrent);
-                      setSelectedOption(questions[newCurrent].respuesta_usuario || null);
-                    }
-                  }}
-                  disabled={current === questions.length - 1}
-                >
-                  {/* Versión móvil: solo emoji */}
-                  <span className="d-md-none">➡️</span>
-                  {/* Versión escritorio: texto completo */}
-                  <span className="d-none d-md-inline">Siguiente</span>
-                </button>
-              </div>
-            </div>
-
-            {/* Panel de navegación numérica con resize handle */}
-            {showNavPanel && (
-              <div style={{ position: 'relative' }}>
-                {/* Panel de navegación */}
-                <div
-                  className="d-flex flex-wrap gap-1 justify-content-center"
-                  style={{
-                    height: `${panelHeight}px`,
-                    overflowY: needsScroll ? 'auto' : 'hidden',
-                    transition: 'height 0.2s',
-                    width: '100%',
-                    backgroundColor: '#fff',
-                    borderRadius: '8px',
-                    border: '1px solid #dee2e6',
-                    padding: '8px'
-                  }}
-                >
-                  {questions.map((q, index) => {
-                    let btnClass = "btn btn-outline-secondary btn-sm";
-                    if (index === current) {
-                      btnClass = "btn btn-primary btn-sm";
-                    } else if (q.respuesta_usuario) {
-                      btnClass = q.respuesta_usuario === q.respuesta_correcta 
-                        ? "btn btn-success btn-sm" 
-                        : "btn btn-danger btn-sm";
-                    }
-                    const num = (index + 1).toString().padStart(2, '0');
-                    return (
-                      <button
-                        key={index}
-                        className={btnClass}
-                        style={{
-                          width: '36px',
-                          height: '36px',
-                          padding: 0,
-                          fontWeight: 'bold',
-                          fontSize: '12px',
-                          flex: '0 0 36px'
-                        }}
-                        onClick={() => {
-                          setCurrent(index);
-                          setSelectedOption(questions[index].respuesta_usuario || null);
-                        }}
-                      >
-                        {num}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
+  return (
+    <>
+      {currentQuestion && (
+        <div style={{ marginBottom: `${dynamicMarginBottom}px` }}>
+          <QuestionCard
+            question={currentQuestion}
+            questionNumber={current + 1}
+            selectedOption={selectedOption}
+            onAnswer={handleAnswer}
+            showResult={!!selectedOption}
+          />
+          
+          {selectedOption && current < questions.length - 1 && !autoNext && (
+            <button 
+              className="btn btn-primary mt-3" 
+              style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+              onClick={nextQuestion}
+            >
+              Siguiente
+            </button>
+          )}
+          
+          {selectedOption && current === questions.length - 1 && (
+            <p className="mt-3 text-success">¡Has llegado al final del examen!</p>
+          )}
         </div>
-      </>
-    );
-  }
+      )}
+
+      {/* Barra inferior fija */}
+      <div 
+        style={{
+          position: 'fixed',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          backgroundColor: '#f8f9fa',
+          borderTop: '1px solid #dee2e6',
+          padding: '5px',
+          zIndex: 1000,
+          boxShadow: '0 -2px 8px rgba(0,0,0,0.1)'
+        }}
+      >
+        <div className="container-fluid">
+          <TestControls
+            correctCount={correctCount}
+            incorrectCount={incorrectCount}
+            current={current}
+            total={questions.length}
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            onToggleNavPanel={() => setShowNavPanel(!showNavPanel)}
+            showNavPanel={showNavPanel}
+          />
+
+          <NavigationPanel
+            questions={questions}
+            current={current}
+            onQuestionSelect={handleQuestionSelect}
+            navRows={navRows}
+            isVisible={showNavPanel}
+          />
+        </div>
+      </div>
+    </>
+  );
+}
 
   // Nuevo estado para el modo repaso
   const [reviewMode, setReviewMode] = useState('');
@@ -696,8 +594,9 @@ export default function Home() {
   }, [view, questions]);
 
   // --- Render principal ---
-  return (
-    <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+return (
+    <ErrorBoundary>
+      <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       <div className="container mt-5" style={{ flex: 1 }}>
 
         {view === '' && (
@@ -1426,5 +1325,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+    </ErrorBoundary>
   );
 }
