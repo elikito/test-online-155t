@@ -3,7 +3,8 @@ export default function QuestionCard({
   questionNumber, 
   selectedOption, 
   onAnswer, 
-  showResult = false 
+  showResult = false,
+  showTema = true  // Nueva prop con valor por defecto
 }) {
   if (!question) return null;
 
@@ -40,7 +41,12 @@ export default function QuestionCard({
     }}>
       <div className="card-body">
         <h5 className="card-title">Pregunta {questionNumber}</h5>
-        <p><strong>Tema:</strong> {question.tema || 'No especificado'}</p>
+        
+        {/* Mostrar tema solo si showTema es true */}
+        {showTema && (
+          <p><strong>Tema:</strong> {question.tema || 'No especificado'}</p>
+        )}
+        
         <p className="card-text">{question.pregunta}</p>
         
         {/* Imagen de la pregunta - NUEVA SECCIÓN */}

@@ -2,8 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/api/images/status": "pages/api/images/status.js",
+  "/api/all-questions": "pages/api/all-questions.js",
   "/api/exams": "pages/api/exams.js",
-  "/api/images/download": "pages/api/images/download.js"
+  "/": "pages/index.js"
 }

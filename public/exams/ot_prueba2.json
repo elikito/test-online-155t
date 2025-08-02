@@ -4,7 +4,7 @@
     "studentId": 865065,
     "realizedExamId": null,
     "oppositionId": 74,
-    "state": "in_progress",
+    "state": "completed",
     "title": "2 Test Prueba Gratis - T\u00e9cnicos Auxiliares Inform\u00e1tica de la Administraci\u00f3n del Estado TL [30 preguntas]",
     "annotation": null,
     "statement": null,
@@ -18,7 +18,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre un Trigger es INCORRECTA?",
-            "correctAnswerId": null,
+            "correctAnswerId": 733575,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -85,7 +85,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 733575,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -97,7 +97,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre \u00edndices en base de datos es INCORRECTA?",
-            "correctAnswerId": null,
+            "correctAnswerId": 733609,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -164,7 +164,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 733609,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -176,7 +176,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre la cardinalidad en el modelo entidad\/relaci\u00f3n es err\u00f3nea?:",
-            "correctAnswerId": null,
+            "correctAnswerId": 739108,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -243,7 +243,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 739107,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -255,7 +255,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "Si tenemos la relaci\u00f3n de esquema EMPLEADOS(DNI, NSS, nombre, apellido, tel\u00e9fono),  \u00bfCu\u00e1l o cuales ser\u00edan las claves candidatas?",
-            "correctAnswerId": null,
+            "correctAnswerId": 740715,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -322,7 +322,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 740715,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -334,7 +334,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l es el patr\u00f3n software donde los objetos encapsulan una acci\u00f3n y los par\u00e1metros que necesitan para ejecutarse?",
-            "correctAnswerId": null,
+            "correctAnswerId": 786554,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -401,7 +401,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 786554,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -413,7 +413,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l es el patr\u00f3n software que define un objeto que encapsula como interact\u00faan un conjunto de objetos?.",
-            "correctAnswerId": null,
+            "correctAnswerId": 789754,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -480,7 +480,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 789754,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -492,7 +492,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCual de las siguientes NO es una MALA PRACTICA en implementaciones en c\u00f3digo java?",
-            "correctAnswerId": null,
+            "correctAnswerId": 789934,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -559,7 +559,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 789934,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -571,7 +571,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "En un documento XML,\u00bfcu\u00e1l de las siguientes es una forma correcta de invocar a un DTD externo?",
-            "correctAnswerId": null,
+            "correctAnswerId": 793458,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -638,7 +638,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 793458,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -650,7 +650,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de los siguientes No es un formato de im\u00e1genes recomendado para utilizar en p\u00e1ginas web?",
-            "correctAnswerId": null,
+            "correctAnswerId": 811310,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -695,7 +695,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 811310,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -707,7 +707,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCual de las siguientes NO es una caracter\u00edstica de un repositorio GIT?",
-            "correctAnswerId": null,
+            "correctAnswerId": 874535,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -752,7 +752,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 874535,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -764,7 +764,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCual de las siguientes no es una plataforma de desarrollo software colaborativo?",
-            "correctAnswerId": null,
+            "correctAnswerId": 880931,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -809,7 +809,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 880931,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -821,7 +821,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes NO es una caracteristica del est\u00e1ndar 100BASE-TX de FAST ETHERNET?",
-            "correctAnswerId": null,
+            "correctAnswerId": 889868,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -866,7 +866,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 889868,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -878,7 +878,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfQu\u00e9 nombre recibe la memoria encargada de almacenar  sobre la configuraci\u00f3n del sistema por ejemplo la elecci\u00f3n de velocidad de buses o los tipos de discos duros instalados?",
-            "correctAnswerId": null,
+            "correctAnswerId": 897601,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -945,7 +945,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 897602,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -957,7 +957,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre la tecnolog\u00eda WIMAX es FALSA?",
-            "correctAnswerId": null,
+            "correctAnswerId": 901845,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1002,7 +1002,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 901845,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1014,7 +1014,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfEn cual de las siguientes tecnolog\u00edas de impresi\u00f3n basa su funcionamiento en la aplicaci\u00f3n de una corriente el\u00e9ctrica a una serie de elementos resistivos que calientan la tinta formando diminutas gotas?",
-            "correctAnswerId": null,
+            "correctAnswerId": 903964,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1081,7 +1081,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 903964,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1093,7 +1093,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "Indica con qu\u00e9 capacidad de almacenamiento total disponemos en un ordenador si \u00e9ste cuenta con dos discos duros, uno con capacidad de 1Gibibyte (GiB)  y otro de 1024 Kibibyte (KiB).",
-            "correctAnswerId": null,
+            "correctAnswerId": 904881,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1160,7 +1160,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 904881,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1172,7 +1172,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "La longitud de una direcci\u00f3n IPV4 es de:",
-            "correctAnswerId": null,
+            "correctAnswerId": 917517,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1217,7 +1217,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 917517,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1229,7 +1229,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "En linux la carpeta \/sbin contiene:",
-            "correctAnswerId": null,
+            "correctAnswerId": 927658,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1296,7 +1296,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 927658,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1308,7 +1308,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de los siguientes comandos devolver\u00e1 informaci\u00f3n de proceso para httpd?",
-            "correctAnswerId": null,
+            "correctAnswerId": 928048,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1375,7 +1375,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 928048,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1387,7 +1387,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre las bases de datos NoSQL de tipo clave-valor es INCORRECTA?",
-            "correctAnswerId": null,
+            "correctAnswerId": 937290,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1454,7 +1454,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 937290,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1466,7 +1466,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfCu\u00e1l es el n\u00famero m\u00ednimo de miembros que componen la Diputaci\u00f3n Permanente de cada C\u00e1mara de las Cortes Generales?",
-            "correctAnswerId": null,
+            "correctAnswerId": 1046887,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1511,7 +1511,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1046887,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1523,7 +1523,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "Seg\u00fan el art\u00edculo 68.6 de la Constituci\u00f3n Espa\u00f1ola, las elecciones tendr\u00e1n lugar:",
-            "correctAnswerId": null,
+            "correctAnswerId": 1046931,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1568,7 +1568,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1046931,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1580,7 +1580,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "Como se\u00f1ala la LOREG, Ceuta y Melilla estar\u00e1n representadas en el Congreso de los Diputados, cada una de ellas, por:",
-            "correctAnswerId": null,
+            "correctAnswerId": 1047155,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1625,7 +1625,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1047155,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1637,7 +1637,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "De acuerdo con el Reglamento del Congreso, la Mesa del Congreso de los Diputados estar\u00e1 compuesta por:",
-            "correctAnswerId": null,
+            "correctAnswerId": 1047171,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1682,7 +1682,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1047174,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1694,7 +1694,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfQu\u00e9 instrumento utilizar\u00e1n las Administraciones P\u00fablicas para verificar la identidad de los interesados en el procedimiento administrativo?",
-            "correctAnswerId": null,
+            "correctAnswerId": 1055479,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1739,7 +1739,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1055479,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1751,7 +1751,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "En el Plan Moderniza se contempla una de las siguientes iniciativas:",
-            "correctAnswerId": null,
+            "correctAnswerId": 1052157,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1796,7 +1796,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1052157,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1808,7 +1808,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "Est\u00e1n obligados a relacionarse a trav\u00e9s de medios electr\u00f3nicos con las Administraciones P\u00fablicas para la realizaci\u00f3n de cualquier tr\u00e1mite de un procedimiento administrativo:",
-            "correctAnswerId": null,
+            "correctAnswerId": 1057331,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1853,7 +1853,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1057331,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1865,7 +1865,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "Se\u00f1ala la respuesta incorrecta de acuerdo con la Ley 39\/2015. Cada Administraci\u00f3n dispondr\u00e1 de un Registro Electr\u00f3nico General:",
-            "correctAnswerId": null,
+            "correctAnswerId": 1058041,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1910,7 +1910,7 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1058042,
             "isDoubtful": false,
             "isHighlighted": false
         },
@@ -1922,7 +1922,7 @@
                 "code": "OPOSITATEST"
             },
             "declaration": "\u00bfQu\u00e9 cardinalidad debe tener la relaci\u00f3n entre pedido y art\u00edculo del diagrama E\/R del enunciado?",
-            "correctAnswerId": null,
+            "correctAnswerId": 1408571,
             "reason": "",
             "isRepealed": false,
             "isAnnulled": false,
@@ -1997,18 +1997,18 @@
                     "image": null
                 }
             ],
-            "answeredId": null,
+            "answeredId": 1408571,
             "isDoubtful": false,
             "isHighlighted": false
         }
     ],
-    "duration": 0,
-    "mark": 0,
-    "doubtfulMark": 0,
+    "duration": 3430,
+    "mark": 65.29,
+    "doubtfulMark": 65.29,
     "createdAt": "2025-08-02T10:43:55+00:00",
-    "updatedAt": "2025-08-02T10:43:55+00:00",
+    "updatedAt": "2025-08-02T11:41:38+00:00",
     "inProgressAt": "2025-08-02T10:43:55+00:00",
-    "completedAt": null,
+    "completedAt": "2025-08-02T11:41:38+00:00",
     "isRepeated": true,
     "evaluation": {
         "id": 78,
@@ -2017,15 +2017,15 @@
         "failedAnswer": -0.333,
         "notAnswered": 0
     },
-    "maxMark": 0,
-    "passed": null,
-    "doubtfulPassed": null,
+    "maxMark": 80,
+    "passed": true,
+    "doubtfulPassed": true,
     "info": {
         "questionsCount": 29,
-        "blankQuestionsCount": 29,
-        "answeredQuestionsCount": 0,
-        "correctQuestionsCount": 0,
-        "failedQuestionsCount": 0,
+        "blankQuestionsCount": 0,
+        "answeredQuestionsCount": 29,
+        "correctQuestionsCount": 25,
+        "failedQuestionsCount": 4,
         "doubtfulQuestionsCount": 0,
         "correctDoubtfulQuestionsCount": 0,
         "failedDoubtfulQuestionsCount": 0,
