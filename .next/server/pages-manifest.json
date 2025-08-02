@@ -3,7 +3,7 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
+  "/api/images/status": "pages/api/images/status.js",
   "/api/exams": "pages/api/exams.js",
-  "/login": "pages/login.js",
-  "/api/auth/tokens": "pages/api/auth/tokens.js"
+  "/api/images/download": "pages/api/images/download.js"
 }

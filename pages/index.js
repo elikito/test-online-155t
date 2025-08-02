@@ -638,7 +638,7 @@ return (
                     setShowTokenPanel(true);
                   }}
                 >
-                  🔑 Tokens
+                  Admin
                 </button>
               </div>
             </div>
@@ -671,7 +671,6 @@ return (
                       <li><strong>Cargar Temario:</strong> Consulta el temario completo.</li>
                       <li><strong>Modo Infinito:</strong> Preguntas sin fin.</li>
                       <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y genera un JSON.</li>
-                      <li><strong>🔑 Tokens:</strong> Gestiona el acceso privado a la aplicación.</li>
                     </ul>
                   </div>
                 </div>

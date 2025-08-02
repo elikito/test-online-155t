@@ -206,8 +206,9 @@ async function processImages() {
     }
 }
 
-// Ejecutar si se llama directamente o exportar para uso en dev
-if (import.meta.url === `file://${process.argv[1]}`) {
+// Ejecutar si se llama directamente o exportar para uso en API
+if (typeof require !== 'undefined' && require.main === module) {
+    // Ejecutado directamente desde terminal
     processImages();
 }
 
