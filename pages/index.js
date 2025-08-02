@@ -623,12 +623,6 @@ return (
             <div className="d-flex justify-content-between align-items-center mb-4">
               <h1 className="mb-0">Test AGE</h1>
               <div className="d-flex gap-2">
-                <button className="btn btn-outline-dark btn-sm" onClick={() => { closeAllPanels(); setView('test'); }}>
-                  Crear test
-                </button>
-                <button className="btn btn-primary btn-sm" onClick={() => { closeAllPanels(); setView('temario'); }}>
-                  Cargar Temario
-                </button>
                 <button className="btn btn-warning btn-sm" onClick={() => { closeAllPanels(); setShowTokenPanel(true); }}>
                   Admin
                 </button>
@@ -638,7 +632,7 @@ return (
             {showTokenPanel && (
               <div className="position-absolute w-100 h-100 bg-light" style={{ zIndex: 1000, overflowY: 'auto', top: 0, left: 0 }}>
                 <div className="d-flex justify-content-between align-items-center p-3 bg-white border-bottom">
-                  <h4 className="mb-0">🔑 Gestión de Tokens</h4>
+                  <h4 className="mb-0">Panel de administración</h4>
                   <button className="btn btn-danger btn-sm" onClick={() => setShowTokenPanel(false)}>✕ Cerrar</button>
                 </div>
                 <TokenManager />
@@ -875,24 +869,23 @@ return (
                     </div>
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" id="showTemaCheckTest" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="showTemaCheckTest">Mostrar tema</label>
+                      <label className="form-check-label" htmlFor="showTemaCheckTest">Tema</label>
                     </div>
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckTest" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="shuffleOptionsCheckTest">Mezclar opciones</label>
+                      <label className="form-check-label" htmlFor="shuffleOptionsCheckTest">Mezclar</label>
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
                     {/* Buscador */}
-                    <div className="position-relative">
+                    <div className="position-relative flex-grow-1">
                       <input
                         type="text"
-                        className="form-control form-control-sm"
+                        className="form-control form-control-sm w-100"
                         placeholder="Buscar..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         style={{ 
-                          width: '150px',
                           fontSize: '0.875rem'
                         }}
                       />
@@ -919,7 +912,7 @@ return (
                         </button>
                       )}
                     </div>
-                    <button className="btn btn-info btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                    <button className="btn btn-info btn-sm flex-shrink-0" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                       onClick={() => {
                         const currentQuestion = customTestQuestions[customTestCurrent];
                         let texto = '';
@@ -933,7 +926,7 @@ return (
                         const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
                         window.open(url, '_blank');
                       }}>🤖</button>
-                    <button className="btn btn-outline-secondary btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                    <button className="btn btn-outline-secondary btn-sm flex-shrink-0" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
                       onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}>📋</button>
                   </div>
                 </div>
@@ -1100,24 +1093,23 @@ return (
                     </div>
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" id="showTemaCheckInfinite" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="showTemaCheckInfinite">Mostrar tema</label>
+                      <label className="form-check-label" htmlFor="showTemaCheckInfinite">Tema</label>
                     </div>
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckInfinite" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="shuffleOptionsCheckInfinite">Mezclar opciones</label>
+                      <label className="form-check-label" htmlFor="shuffleOptionsCheckInfinite">Mezclar</label>
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
                     {/* Buscador */}
-                    <div className="position-relative">
+                    <div className="position-relative flex-grow-1">
                       <input
                         type="text"
-                        className="form-control form-control-sm"
+                        className="form-control form-control-sm w-100"
                         placeholder="Buscar..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         style={{ 
-                          width: '150px',
                           fontSize: '0.875rem'
                         }}
                       />
@@ -1144,7 +1136,7 @@ return (
                         </button>
                       )}
                     </div>
-                    <button className="btn btn-info btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                    <button className="btn btn-info btn-sm flex-shrink-0" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                       onClick={() => {
                         const currentQuestion = infiniteQuestions[infiniteCurrent];
                         let texto = '';
@@ -1158,7 +1150,7 @@ return (
                         const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
                         window.open(url, '_blank');
                       }}>🤖</button>
-                    <button className="btn btn-outline-secondary btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                    <button className="btn btn-outline-secondary btn-sm flex-shrink-0" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
                       onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}>📋</button>
                   </div>
                 </div>
