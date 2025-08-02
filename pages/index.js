@@ -354,23 +354,28 @@ export default function Home() {
     }
   };
 
+  // Corregir el useEffect para cargar preguntas personalizadas
   useEffect(() => {
-  if (view === 'personalizado') {
-    setCustomLoading(true);
-    fetch('/api/all-questions')
-      .then(res => res.json())
-      .then(allQuestions => {
-        setCustomQuestions(allQuestions);
-        const temaCounts = {};
-        allQuestions.forEach(q => {
-          temaCounts[q.tema] = (temaCounts[q.tema] || 0) + 1;
+    if (view === 'test') {
+      setCustomLoading(true);
+      fetch('/api/all-questions')
+        .then(res => res.json())
+        .then(allQuestions => {
+          setCustomQuestions(allQuestions);
+          const temaCounts = {};
+          allQuestions.forEach(q => {
+            temaCounts[q.tema] = (temaCounts[q.tema] || 0) + 1;
+          });
+          setCustomTemaCounts(temaCounts);
+          setCustomTemas(Object.keys(temaCounts).sort());
+          const exams = [...new Set(allQuestions.map(q => q.examen))];
+          setCustomExamList(exams);
+          setCustomLoading(false);
+        })
+        .catch(err => {
+          console.error('Error loading questions:', err);
+          setCustomLoading(false);
         });
-        setCustomTemaCounts(temaCounts);
-        setCustomTemas(Object.keys(temaCounts).sort());
-        const exams = [...new Set(allQuestions.map(q => q.examen))];
-        setCustomExamList(exams);
-        setCustomLoading(false);
-      });
     }
   }, [view]);
 
@@ -559,7 +564,7 @@ return (
             <div className="d-flex justify-content-between align-items-center mb-4">
               <h1 className="mb-0">Test AGE</h1>
               <div className="d-flex gap-2">
-                <button className="btn btn-outline-dark btn-sm" onClick={() => { closeAllPanels(); setView('personalizado'); }}>
+                <button className="btn btn-outline-dark btn-sm" onClick={() => { closeAllPanels(); setView('test'); }}>
                   Crear test
                 </button>
                 <button className="btn btn-primary btn-sm" onClick={() => { closeAllPanels(); setView('temario'); }}>
@@ -597,23 +602,29 @@ return (
 
                 <div className="row mb-3 g-2">
                   <div className="col-6 col-md-auto">
-                    <button className="btn btn-outline-dark w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('personalizado')}>Crear test</button>
+                    <button className="btn btn-outline-dark w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('test')}>Crear test</button>
                   </div>
                   <div className="col-6 col-md-auto">
                     <button className="btn btn-primary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('temario')}>Cargar Temario</button>
                   </div>
                   <div className="col-6 col-md-auto">
                     <button className="btn btn-secondary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={async () => {
-                      const res = await fetch('/api/all-questions');
-                      const all = await res.json();
-                      // Aplicar mezcla condicionalmente basado en el checkbox
-                      const questionsWithShuffledOptions = shuffleOptions 
-                        ? all.map(shuffleQuestionOptions)
-                        : all;
-                      setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
-                      setInfiniteCurrent(0);
-                      setReviewMode('infinito');
-                      setView('repaso');
+                      try {
+                        const res = await fetch('/api/all-questions');
+                        const all = await res.json();
+                        const questionsWithShuffledOptions = shuffleOptions 
+                          ? all.map(shuffleQuestionOptions)
+                          : all;
+                        setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
+                        setInfiniteCurrent(0);
+                        setInfiniteSelected(null);
+                        setInfiniteCorrect(0);
+                        setInfiniteIncorrect(0);
+                        setReviewMode('infinito');
+                        setView('infinito');
+                      } catch (error) {
+                        console.error('Error loading infinite questions:', error);
+                      }
                     }}>
                       Modo Infinito
                     </button>
@@ -627,272 +638,8 @@ return (
           </>
         )}
 
-        {/* Panel de repaso */}
-        {view === 'repaso' && !showTokenPanel && (
-          <>
-            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
-            <h4 className="mb-3">Modo Infinito</h4>
-            {infiniteQuestions.length === 0 ? (
-              <div className="alert alert-info">No hay preguntas disponibles para el modo Infinito.</div>
-            ) : (
-              <div style={{ width: '100%', margin: '0 auto' }}>
-                <div className="d-flex gap-3 align-items-center justify-content-between mb-3 flex-wrap">
-                  <div className="d-flex gap-3 align-items-center">
-                    <div className="form-check">
-                      <input className="form-check-input" type="checkbox" id="autoNextCheck" checked={autoNext} onChange={e => setAutoNext(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="autoNextCheck">Auto-continuar</label>
-                    </div>
-                    <div className="form-check">
-                      <input className="form-check-input" type="checkbox" id="showTemaCheck" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="showTemaCheck">Mostrar tema</label>
-                    </div>
-                    <div className="form-check">
-                      <input className="form-check-input" type="checkbox" id="shuffleOptionsCheck" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="shuffleOptionsCheck">Mezclar opciones</label>
-                    </div>
-                  </div>
-                  <div className="d-flex gap-2 align-items-center">
-                    <button className="btn btn-info btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
-                      onClick={() => {
-                        const currentQuestion = infiniteQuestions[infiniteCurrent];
-                        let texto = '';
-                        if (showTema && currentQuestion.tema) {
-                          texto += `Tema: ${currentQuestion.tema}\n`;
-                        }
-                        texto += `Pregunta: ${currentQuestion.pregunta}\n`;
-                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
-                          texto += `${key.toUpperCase()}: ${value}\n`;
-                        });
-                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
-                        window.open(url, '_blank');
-                      }}>🤖</button>
-                    <button className="btn btn-outline-secondary btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}>📋</button>
-                  </div>
-                </div>
-                <TestPanel
-                  questions={infiniteQuestions}
-                  current={infiniteCurrent}
-                  setCurrent={setInfiniteCurrent}
-                  selectedOption={infiniteSelected}
-                  setSelectedOption={setInfiniteSelected}
-                  handleAnswer={(key) => {
-                    handleInfiniteAnswer(key);
-                    if (autoNext) {
-                      setTimeout(() => {
-                        setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length);
-                        setInfiniteSelected(null);
-                      }, 1000);
-                    }
-                  }}
-                  nextQuestion={() => setInfiniteCurrent(c => (c + 1) % infiniteQuestions.length)}
-                  correctCount={infiniteCorrect}
-                  incorrectCount={infiniteIncorrect}
-                  navRows={navRows}
-                  setNavRows={setNavRows}
-                />
-              </div>
-            )}
-          </>
-        )}
-
-        {/* Vista cargar test */}
-        {view === 'cargar' && !showTokenPanel && (
-          <>
-            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver al inicio</button>
-            <h1 className="mb-4">Test AGE</h1>
-            <div className="mb-3">
-              <label className="form-label">Selecciona un examen:</label>
-              <select className="form-select" onChange={handleSelect} value={selectedExam}>
-                <option value="">-- Selecciona --</option>
-                {examFiles.map((file, idx) => <option key={idx} value={file}>{file}</option>)}
-              </select>
-            </div>
-
-            {questions.length > 0 && (
-              <div className="d-flex gap-3 align-items-center justify-content-center mb-3 flex-wrap">
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" id="autoNextCheckCargar" checked={autoNext} onChange={e => setAutoNext(e.target.checked)} />
-                  <label className="form-check-label" htmlFor="autoNextCheckCargar">Auto-continuar</label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" id="showTemaCheckCargar" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
-                  <label className="form-check-label" htmlFor="showTemaCheckCargar">Mostrar tema</label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckCargar" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
-                  <label className="form-check-label" htmlFor="shuffleOptionsCheckCargar">Mezclar opciones</label>
-                </div>
-              </div>
-            )}
-
-            <div className="mb-3">
-              <input type="text" className="form-control" placeholder="Buscar en preguntas o respuestas..." value={search} onChange={e => setSearch(e.target.value)} />
-            </div>
-            
-            {search && (
-              <div className="mb-4">
-                <h5>Preguntas encontradas</h5>
-                {searchResults.preguntas.length === 0 ? <p>No hay coincidencias.</p> : (
-                  <ul>
-                    {searchResults.preguntas.map((q, idx) => (
-                      <li key={q.id_pregunta || idx}>
-                        <button className="btn btn-link p-0" onClick={() => {
-                          const i = questions.findIndex(qq => qq.id_pregunta === q.id_pregunta);
-                          if (i !== -1) {
-                            setCurrent(i);
-                            setSelectedOption(questions[i].respuesta_usuario || null);
-                          }
-                        }}>{q.pregunta}</button>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                <h5>Respuestas encontradas</h5>
-                {searchResults.respuestas.length === 0 ? <p>No hay coincidencias.</p> : (
-                  <ul>
-                    {searchResults.respuestas.map((r, idx) => (
-                      <li key={idx}>
-                        <button className="btn btn-link p-0" onClick={() => {
-                          setCurrent(r.index);
-                          setSelectedOption(questions[r.index].respuesta_usuario || null);
-                        }}>
-                          Pregunta: {r.pregunta} <br />
-                          <strong>{r.opcion.toUpperCase()}:</strong> {r.texto}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            )}
-
-            {questions.length > 0 && (
-              <div style={{ width: PANEL_WIDTH, margin: '0 auto' }}>
-                <TestPanel
-                  questions={questions}
-                  current={current}
-                  setCurrent={setCurrent}
-                  selectedOption={selectedOption}
-                  setSelectedOption={setSelectedOption}
-                  handleAnswer={(key) => {
-                    handleAnswer(key);
-                    if (autoNext && current < questions.length - 1) {
-                      setTimeout(() => {
-                        setCurrent(c => c + 1);
-                        setSelectedOption(questions[current + 1]?.respuesta_usuario || null);
-                      }, 1000);
-                    }
-                  }}
-                  nextQuestion={nextQuestion}
-                  correctCount={correctCount}
-                  incorrectCount={incorrectCount}
-                  autoNext={autoNext}
-                  navRows={navRows}
-                  setNavRows={setNavRows}
-                />
-              </div>
-            )}
-          </>
-        )}
-
-        {/* Vista crear test */}
-        {view === 'crear' && !showTokenPanel && (
-          <>
-            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
-            <div style={{ width: 400, margin: '0 auto', background: '#fff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', padding: 24, overflowY: 'auto' }}>
-              <h4>Nuevo test</h4>
-              <div className="mb-3">
-                <label className="form-label">Título del test</label>
-                <input className="form-control" value={newTestTitle} onChange={e => setNewTestTitle(e.target.value)} />
-              </div>
-              <hr />
-              <h5>{editIndex !== null ? 'Editar pregunta' : 'Añadir pregunta'}</h5>
-              <div className="mb-2">
-                <input className="form-control mb-2" placeholder="Texto de la pregunta" value={newQuestionText} onChange={e => setNewQuestionText(e.target.value)} />
-                <input className="form-control mb-2" placeholder="Buscar tema..." value={temaSearch} onChange={e => setTemaSearch(e.target.value)} />
-                <select className="form-select mb-2" value={newTema} onChange={e => setNewTema(e.target.value)}>
-                  <option value="">-- Selecciona tema --</option>
-                  {temas.filter(t => t.toLowerCase().includes(temaSearch.toLowerCase())).map((t, i) => (
-                    <option key={i} value={t}>{t}</option>
-                  ))}
-                </select>
-                {['a', 'b', 'c', 'd'].map(opt => (
-                  <div className="input-group mb-2" key={opt}>
-                    <span className="input-group-text">{opt.toUpperCase()}</span>
-                    <input className="form-control" placeholder={`Opción ${opt.toUpperCase()}`} value={newOptions[opt]} onChange={e => setNewOptions({ ...newOptions, [opt]: e.target.value })} />
-                    <span className="input-group-text">
-                      <input type="radio" name="correct" checked={newCorrect === opt} onChange={() => setNewCorrect(opt)} />
-                      Correcta
-                    </span>
-                  </div>
-                ))}
-                {errorPregunta && <div className="text-danger mb-2">{errorPregunta}</div>}
-                <button className="btn btn-primary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={addOrEditQuestion}>
-                  {editIndex !== null ? 'Guardar cambios' : 'Añadir pregunta'}
-                </button>
-                {editIndex !== null && (
-                  <button className="btn btn-secondary ms-2" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => {
-                    setEditIndex(null);
-                    setNewQuestionText('');
-                    setNewOptions({ a: '', b: '', c: '', d: '' });
-                    setNewCorrect('a');
-                    setNewTema('');
-                    setErrorPregunta('');
-                  }}>Cancelar</button>
-                )}
-              </div>
-              <hr />
-              <h6>Preguntas añadidas: {newQuestions.length}</h6>
-              <ul className="list-group mb-2">
-                {newQuestions.map((q, idx) => (
-                  <li key={q.id_pregunta || idx} className="list-group-item d-flex justify-content-between align-items-center">
-                    <div>
-                      <strong>{q.id_pregunta}.</strong> {q.pregunta}
-                      <br />
-                      <small className="text-muted">{q.tema}</small>
-                    </div>
-                    <div>
-                      <button className="btn btn-sm btn-outline-primary me-1" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => handleEdit(idx)}>Editar</button>
-                      <button className="btn btn-sm btn-outline-danger" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => handleDelete(idx)}>Eliminar</button>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-              <button className="btn btn-success mt-3" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={downloadTest} disabled={!newTestTitle || newQuestions.length === 0}>
-                Descargar test en formato JSON
-              </button>
-            </div>
-          </>
-        )}
-
-        {/* Vista temario */}
-        {view === 'temario' && !showTokenPanel && (
-          <>
-            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
-            <div style={{ width: '100%', margin: '0 auto', background: '#fff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', padding: 24, overflowY: 'auto' }}>
-              <h4>Temario</h4>
-              {!temarioAuth ? (
-                <div className="mt-4">
-                  <p>Introduce la contraseña para acceder al temario:</p>
-                  <input type="password" className="form-control mb-2" value={temarioInput} onChange={e => setTemarioInput(e.target.value)} />
-                  {temarioError && <div className="text-danger mb-2">{temarioError}</div>}
-                  <button className="btn btn-primary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={handleTemarioLogin}>Acceder</button>
-                </div>
-              ) : (
-                <div className="mt-4 text-center">
-                  <p>El temario se encuentra en Notion.<br />
-                    <a href={temarioUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}>
-                      Abrir Temario en Notion
-                    </a>
-                  </p>
-                </div>
-              )}
-            </div>
-          </>
-        )}
-
-        {/* Vista test personalizado */}
-        {view === 'personalizado' && !showTokenPanel && (
+        {/* Vista test personalizado y cargar archivo */}
+        {view === 'test' && !showTokenPanel && (
           <>
             <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
               <button className="btn btn-secondary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
@@ -929,6 +676,11 @@ return (
                           setCustomExam('');
                           setCustomTema('');
                           setCustomNumQuestions(10);
+                          setSelectedExam('');
+                          setQuestions([]);
+                          setCurrent(0);
+                          setCorrectCount(0);
+                          setIncorrectCount(0);
                         }
                       );
                     }}>Crear nuevo test</button>
@@ -936,59 +688,122 @@ return (
               )}
             </div>
             
-            <h4 className="mb-3">Test personalizado</h4>
+            <h4 className="mb-3">Crear Test</h4>
             
             {!customTestStarted ? (
-              <div style={{ width: '100%', margin: '0 auto', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', borderRadius: 0, padding: 24, transition: 'font-size 0.2s' }}>
-                {customLoading ? (
-                  <div className="my-4 text-center">
-                    <div className="spinner-border" />
-                    <div>Cargando preguntas...</div>
+              <div style={{ width: '100%', margin: '0 auto', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', borderRadius: 0, padding: 24 }}>
+                {/* Pestañas para alternar entre modos */}
+                <div className="mb-4">
+                  <div className="btn-group w-100" role="group">
+                    <input type="radio" className="btn-check" name="testMode" id="modeCustom" checked={!selectedExam} onChange={() => setSelectedExam('')} />
+                    <label className="btn btn-outline-primary" htmlFor="modeCustom">Test Personalizado</label>
+                    
+                    <input type="radio" className="btn-check" name="testMode" id="modeFile" checked={!!selectedExam} onChange={() => {
+                      setCustomExam('');
+                      setCustomTema('');
+                      setCustomNumQuestions(10);
+                    }} />
+                    <label className="btn btn-outline-primary" htmlFor="modeFile">Cargar Archivo</label>
                   </div>
-                ) : (
-                  <>
-                    <div className="mb-3">
-                      <label className="form-label">Examen</label>
-                      <select className="form-select" value={customExam} onChange={e => setCustomExam(e.target.value)}>
-                        <option value="">-- Todos --</option>
-                        {customExamList.map((ex, i) => <option key={i} value={ex}>{ex}</option>)}
-                      </select>
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label">Tema</label>
-                      <select className="form-select" value={customTema} onChange={e => setCustomTema(e.target.value)}>
-                        <option value="">-- Todos --</option>
-                        {customTemas.map((t, i) => (
-                          <option key={i} value={t}>{t} ({customTemaCounts[t] || 0} preguntas)</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div className="mb-3">
-                      <label className="form-label">Número de preguntas</label>
-                      <div className="form-check mb-2">
-                        <input className="form-check-input" type="checkbox" id="allQuestionsCheck"
-                          checked={customNumQuestions === getFilteredCustomQuestions().length}
-                          onChange={e => {
-                            if (e.target.checked) {
-                              setCustomNumQuestions(getFilteredCustomQuestions().length);
-                            } else {
-                              setCustomNumQuestions(10);
-                            }
-                          }} />
-                        <label className="form-check-label" htmlFor="allQuestionsCheck">Todas las preguntas disponibles</label>
+                </div>
+
+                {/* Modo cargar archivo */}
+                {selectedExam && (
+                  <div className="mb-3">
+                    <label className="form-label">Selecciona un examen:</label>
+                    <select className="form-select" onChange={handleSelect} value={selectedExam}>
+                      <option value="">-- Selecciona --</option>
+                      {examFiles.map((file, idx) => <option key={idx} value={file}>{file}</option>)}
+                    </select>
+                    {questions.length > 0 && (
+                      <div className="mt-3">
+                        <p className="text-success">✓ Examen cargado: {questions.length} preguntas</p>
+                        <button className="btn btn-success" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                          onClick={() => {
+                            setCustomTestQuestions(questions);
+                            setCustomTestStarted(true);
+                            setCustomTestCurrent(current);
+                            setCustomTestSelected(selectedOption);
+                            setCustomTestCorrect(correctCount);
+                            setCustomTestIncorrect(incorrectCount);
+                          }}>
+                          Comenzar con este examen
+                        </button>
                       </div>
-                      <input type="number" className="form-control" min={1} max={Math.max(1, getFilteredCustomQuestions().length)} value={customNumQuestions}
-                        disabled={customNumQuestions === getFilteredCustomQuestions().length}
-                        onChange={e => {
-                          const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
-                          setCustomNumQuestions(val);
-                        }} />
-                      <small className="text-muted">Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.</small>
-                    </div>
-                    <button className="btn btn-success" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} disabled={getFilteredCustomQuestions().length === 0} onClick={startCustomTest}>
-                      Comenzar test
-                    </button>
+                    )}
+                  </div>
+                )}
+
+                {/* Modo test personalizado */}
+                {!selectedExam && (
+                  <>
+                    {customLoading ? (
+                      <div className="my-4 text-center">
+                        <div className="spinner-border" />
+                        <div>Cargando preguntas...</div>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="mb-3">
+                          <label className="form-label">Examen</label>
+                          <select className="form-select" value={customExam} onChange={e => setCustomExam(e.target.value)}>
+                            <option value="">-- Todos --</option>
+                            {customExamList.map((ex, i) => <option key={i} value={ex}>{ex}</option>)}
+                          </select>
+                        </div>
+                        <div className="mb-3">
+                          <label className="form-label">Tema</label>
+                          <select className="form-select" value={customTema} onChange={e => setCustomTema(e.target.value)}>
+                            <option value="">-- Todos --</option>
+                            {customTemas.map((t, i) => (
+                              <option key={i} value={t}>{t} ({customTemaCounts[t] || 0} preguntas)</option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="mb-3">
+                          <label className="form-label">Número de preguntas</label>
+                          <div className="form-check mb-2">
+                            <input className="form-check-input" type="checkbox" id="allQuestionsCheck"
+                              checked={customNumQuestions === getFilteredCustomQuestions().length}
+                              onChange={e => {
+                                if (e.target.checked) {
+                                  setCustomNumQuestions(getFilteredCustomQuestions().length);
+                                } else {
+                                  setCustomNumQuestions(10);
+                                }
+                              }} />
+                            <label className="form-check-label" htmlFor="allQuestionsCheck">Todas las preguntas disponibles</label>
+                          </div>
+                          <input type="number" className="form-control" min={1} max={Math.max(1, getFilteredCustomQuestions().length)} value={customNumQuestions}
+                            disabled={customNumQuestions === getFilteredCustomQuestions().length}
+                            onChange={e => {
+                              const val = Math.max(1, Math.min(Number(e.target.value), getFilteredCustomQuestions().length));
+                              setCustomNumQuestions(val);
+                            }} />
+                          <small className="text-muted">Hay {getFilteredCustomQuestions().length} preguntas disponibles con estos filtros.</small>
+                        </div>
+                        <button className="btn btn-success" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                          disabled={getFilteredCustomQuestions().length === 0} onClick={startCustomTest}>
+                          Comenzar test
+                        </button>
+                      </>
+                    )}
                   </>
+                )}
+
+                {/* Si hay preguntas cargadas desde archivo */}
+                {selectedExam && questions.length > 0 && (
+                  <button className="btn btn-success" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                    onClick={() => {
+                      setCustomTestQuestions(questions);
+                      setCustomTestStarted(true);
+                      setCustomTestCurrent(current);
+                      setCustomTestSelected(selectedOption);
+                      setCustomTestCorrect(correctCount);
+                      setCustomTestIncorrect(incorrectCount);
+                    }}>
+                    Continuar con este examen
+                  </button>
                 )}
               </div>
             ) : (
@@ -996,16 +811,16 @@ return (
                 <div className="d-flex gap-2 align-items-center justify-content-between mb-3 flex-wrap">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="form-check">
-                      <input className="form-check-input" type="checkbox" id="autoNextCheckCustom" checked={autoNext} onChange={e => setAutoNext(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="autoNextCheckCustom">Auto-continuar</label>
+                      <input className="form-check-input" type="checkbox" id="autoNextCheckTest" checked={autoNext} onChange={e => setAutoNext(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="autoNextCheckTest">Auto-continuar</label>
                     </div>
                     <div className="form-check">
-                      <input className="form-check-input" type="checkbox" id="showTemaCheckCustom" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="showTemaCheckCustom">Mostrar tema</label>
+                      <input className="form-check-input" type="checkbox" id="showTemaCheckTest" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="showTemaCheckTest">Mostrar tema</label>
                     </div>
                     <div className="form-check">
-                      <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckCustom" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
-                      <label className="form-check-label" htmlFor="shuffleOptionsCheckCustom">Mezclar opciones</label>
+                      <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckTest" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="shuffleOptionsCheckTest">Mezclar opciones</label>
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
@@ -1023,7 +838,8 @@ return (
                         const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
                         window.open(url, '_blank');
                       }}>🤖</button>
-                    <button className="btn btn-outline-secondary btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}>📋</button>
+                    <button className="btn btn-outline-secondary btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                      onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}>📋</button>
                   </div>
                 </div>
                 
@@ -1050,6 +866,167 @@ return (
                 />
               </div>
             )}
+          </>
+        )}
+
+        {/* Vista temario */}
+        {view === 'temario' && !showTokenPanel && (
+          <>
+            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
+            <div style={{ width: '100%', margin: '0 auto', background: '#fff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', padding: 24, overflowY: 'auto' }}>
+              <h4>Temario</h4>
+              {!temarioAuth ? (
+                <div className="mt-4">
+                  <p>Introduce la contraseña para acceder al temario:</p>
+                  <input type="password" className="form-control mb-2" value={temarioInput} onChange={e => setTemarioInput(e.target.value)} />
+                  {temarioError && <div className="text-danger mb-2">{temarioError}</div>}
+                  <button className="btn btn-primary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={handleTemarioLogin}>Acceder</button>
+                </div>
+              ) : (
+                <div className="mt-4 text-center">
+                  <p>El temario se encuentra en Notion.<br />
+                    <a href={temarioUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}>
+                      Abrir Temario en Notion
+                    </a>
+                  </p>
+                </div>
+              )}
+            </div>
+          </>
+        )}
+
+        {/* Vista modo infinito */}
+        {view === 'infinito' && !showTokenPanel && (
+          <>
+            <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+              <button className="btn btn-secondary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
+              <div className="d-flex gap-2">
+                <button className="btn btn-warning btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                  onClick={() => {
+                    showCustomConfirm(
+                      '¿Quieres mezclar las preguntas de nuevo?',
+                      async () => {
+                        try {
+                          const res = await fetch('/api/all-questions');
+                          const all = await res.json();
+                          const questionsWithShuffledOptions = shuffleOptions 
+                            ? all.map(shuffleQuestionOptions)
+                            : all;
+                          setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
+                          setInfiniteCurrent(0);
+                          setInfiniteSelected(null);
+                          setInfiniteCorrect(0);
+                          setInfiniteIncorrect(0);
+                        } catch (error) {
+                          console.error('Error loading questions:', error);
+                        }
+                      }
+                    );
+                  }}>Mezclar</button>
+              </div>
+            </div>
+            
+            <h4 className="mb-3">Modo Infinito</h4>
+            
+            {infiniteQuestions.length === 0 ? (
+              <div className="text-center my-4">
+                <div className="spinner-border" />
+                <div>Cargando preguntas...</div>
+              </div>
+            ) : (
+              <div style={{ width: '100%', margin: '0 auto' }}>
+                <div className="d-flex gap-2 align-items-center justify-content-between mb-3 flex-wrap">
+                  <div className="d-flex gap-2 align-items-center">
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="autoNextCheckInfinite" checked={autoNext} onChange={e => setAutoNext(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="autoNextCheckInfinite">Auto-continuar</label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="showTemaCheckInfinite" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="showTemaCheckInfinite">Mostrar tema</label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckInfinite" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="shuffleOptionsCheckInfinite">Mezclar opciones</label>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-2 align-items-center">
+                    <button className="btn btn-info btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
+                      onClick={() => {
+                        const currentQuestion = infiniteQuestions[infiniteCurrent];
+                        let texto = '';
+                        if (showTema && currentQuestion.tema) {
+                          texto += `Tema: ${currentQuestion.tema}\n`;
+                        }
+                        texto += `Pregunta: ${currentQuestion.pregunta}\n`;
+                        Object.entries(currentQuestion.opciones).forEach(([key, value]) => {
+                          texto += `${key.toUpperCase()}: ${value}\n`;
+                        });
+                        const url = `https://www.google.com/search?q=${encodeURIComponent('ChatGPT ' + texto)}`;
+                        window.open(url, '_blank');
+                      }}>🤖</button>
+                    <button className="btn btn-outline-secondary btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} 
+                      onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}>📋</button>
+                  </div>
+                </div>
+                
+                <TestPanel
+                  questions={infiniteQuestions}
+                  current={infiniteCurrent}
+                  setCurrent={(newCurrent) => {
+                    // Modo infinito: si llega al final, vuelve al principio
+                    if (newCurrent >= infiniteQuestions.length) {
+                      setInfiniteCurrent(0);
+                      setInfiniteSelected(infiniteQuestions[0]?.respuesta_usuario || null);
+                    } else if (newCurrent < 0) {
+                      setInfiniteCurrent(infiniteQuestions.length - 1);
+                      setInfiniteSelected(infiniteQuestions[infiniteQuestions.length - 1]?.respuesta_usuario || null);
+                    } else {
+                      setInfiniteCurrent(newCurrent);
+                      setInfiniteSelected(infiniteQuestions[newCurrent]?.respuesta_usuario || null);
+                    }
+                  }}
+                  selectedOption={infiniteSelected}
+                  setSelectedOption={setInfiniteSelected}
+                  handleAnswer={(key) => {
+                    handleInfiniteAnswer(key);
+                    if (autoNext) {
+                      setTimeout(() => {
+                        const nextIndex = infiniteCurrent + 1;
+                        if (nextIndex >= infiniteQuestions.length) {
+                          setInfiniteCurrent(0);
+                          setInfiniteSelected(null);
+                        } else {
+                          setInfiniteCurrent(nextIndex);
+                          setInfiniteSelected(null);
+                        }
+                      }, 1000);
+                    }
+                  }}
+                  nextQuestion={() => {
+                    const nextIndex = infiniteCurrent + 1;
+                    if (nextIndex >= infiniteQuestions.length) {
+                      setInfiniteCurrent(0);
+                    } else {
+                      setInfiniteCurrent(nextIndex);
+                    }
+                    setInfiniteSelected(null);
+                  }}
+                  correctCount={infiniteCorrect}
+                  incorrectCount={infiniteIncorrect}
+                  navRows={navRows}
+                  setNavRows={setNavRows}
+                />
+              </div>
+            )}
+          </>
+        )}
+
+        {/* Vista crear preguntas */}
+        {view === 'crear' && !showTokenPanel && (
+          <>
+            <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
+            {/* Aquí va todo el código existente para crear preguntas */}
           </>
         )}
 
