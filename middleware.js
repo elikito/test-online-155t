@@ -1,6 +1,12 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
+  // En desarrollo, permitir acceso sin autenticación si no hay variables configuradas
+  if (process.env.NODE_ENV === 'development' && !process.env.VALID_TOKENS) {
+    console.log('🔓 Desarrollo: Saltando autenticación (no hay VALID_TOKENS configurado)');
+    return NextResponse.next();
+  }
+
   // Rutas que NO requieren autenticación
   const publicPaths = ['/api/auth/verify', '/login'];
   
