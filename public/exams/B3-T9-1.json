@@ -1,0 +1,4948 @@
+{
+    "id": "deed9550-908d-4a70-ac14-92593b208210",
+    "examId": 47899675,
+    "studentId": 865065,
+    "realizedExamId": null,
+    "oppositionId": 74,
+    "state": "in_progress",
+    "title": "",
+    "annotation": null,
+    "statement": null,
+    "type": "random",
+    "questions": [
+        {
+            "id": 260171,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes es una herramienta de control de versiones?",
+            "correctAnswerId": 1028873,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1028874,
+                    "declaration": "Make",
+                    "image": null
+                },
+                {
+                    "id": 1028872,
+                    "declaration": "Jira",
+                    "image": null
+                },
+                {
+                    "id": 1028873,
+                    "declaration": "Subversion",
+                    "image": null
+                },
+                {
+                    "id": 1028871,
+                    "declaration": "Bugzilla",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656110,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Es un sistema de control de versiones multiplataforma, para desarrolladores de software:",
+            "correctAnswerId": 2605650,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605649,
+                    "declaration": "Nunit",
+                    "image": null
+                },
+                {
+                    "id": 2605651,
+                    "declaration": "Lucene",
+                    "image": null
+                },
+                {
+                    "id": 2605650,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 2605648,
+                    "declaration": "Cassandra",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648012,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale cu\u00e1l de las siguientes NO es una herramienta de construcci\u00f3n de proyectos:",
+            "correctAnswerId": 2573577,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2573576,
+                    "declaration": "Ant",
+                    "image": null
+                },
+                {
+                    "id": 2573577,
+                    "declaration": "Subversion",
+                    "image": null
+                },
+                {
+                    "id": 2573575,
+                    "declaration": "Maven",
+                    "image": null
+                },
+                {
+                    "id": 2573578,
+                    "declaration": "Gradle",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620401,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes opciones representa mejor el prop\u00f3sito del Plan de Gesti\u00f3n de Riesgos en M\u00e9trica V3?",
+            "correctAnswerId": 2463469,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463469,
+                    "declaration": "Identificar los riesgos potenciales del proyecto.",
+                    "image": null
+                },
+                {
+                    "id": 2463472,
+                    "declaration": "Definir las fases y los entregables del proyecto.",
+                    "image": null
+                },
+                {
+                    "id": 2463470,
+                    "declaration": "Documentar los resultados de las pruebas realizadas.",
+                    "image": null
+                },
+                {
+                    "id": 2463471,
+                    "declaration": "Establecer la estrategia y los objetivos de las pruebas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523832,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Sobre las diferentes plataformas de control de  versiones, \u00bfCu\u00e1l de las siguientes afirmaciones es INCORRECTA?",
+            "correctAnswerId": 2080545,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2080544,
+                    "declaration": "En el modelo cliente-servido los desarrolladores usan un repositorio central al que acceden mediante un cliente en su m\u00e1quina.",
+                    "image": null
+                },
+                {
+                    "id": 2080542,
+                    "declaration": "Son un grupo de aplicaciones originalmente ideadas para gestionar \u00e1gilmente los cambios en el c\u00f3digo fuente de los programas y poder revertirlos.",
+                    "image": null
+                },
+                {
+                    "id": 2080543,
+                    "declaration": "Pueden existir plataformas de control de versiones de c\u00f3digo abierto.",
+                    "image": null
+                },
+                {
+                    "id": 2080545,
+                    "declaration": "En el modelo distribuido, cada desarrollador trabaja directamente con el repositorio central.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656141,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 hacen los preprocesadores CSS como Sass, Less y Stylus?",
+            "correctAnswerId": 2605774,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605774,
+                    "declaration": "Facilitan la creaci\u00f3n y el mantenimiento de hojas de estilo m\u00e1s complejas.",
+                    "image": null
+                },
+                {
+                    "id": 2605772,
+                    "declaration": "Disminuyen la eficiencia de las hojas de estilo.",
+                    "image": null
+                },
+                {
+                    "id": 2605775,
+                    "declaration": "No afectan la creaci\u00f3n ni el mantenimiento de hojas de estilo.",
+                    "image": null
+                },
+                {
+                    "id": 2605773,
+                    "declaration": "Complican la creaci\u00f3n y el mantenimiento de hojas de estilo.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656142,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes es un preprocesador CSS?",
+            "correctAnswerId": 2605778,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605779,
+                    "declaration": "Lex.",
+                    "image": null
+                },
+                {
+                    "id": 2605777,
+                    "declaration": "Saas.",
+                    "image": null
+                },
+                {
+                    "id": 2605776,
+                    "declaration": "Paas.",
+                    "image": null
+                },
+                {
+                    "id": 2605778,
+                    "declaration": "Stylus.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221766,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Dado un repositorio que se encuentra bajo control de versiones con la herramienta GIT, \u00bfqu\u00e9 nombre tiene\r\nel fichero en que se indican aquellos ficheros que NO deben ser tenidos en cuenta por el control de versiones?",
+            "correctAnswerId": 876490,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876492,
+                    "declaration": ".gituntrack",
+                    "image": null
+                },
+                {
+                    "id": 876490,
+                    "declaration": ".gitignore",
+                    "image": null
+                },
+                {
+                    "id": 876491,
+                    "declaration": ".gitexclude",
+                    "image": null
+                },
+                {
+                    "id": 876493,
+                    "declaration": ".gituncommit",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620399,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes opciones representa mejor el prop\u00f3sito del Plan de Pruebas en M\u00e9trica V3?",
+            "correctAnswerId": 2463463,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463462,
+                    "declaration": "Definir los requisitos de calidad del software.",
+                    "image": null
+                },
+                {
+                    "id": 2463464,
+                    "declaration": "Especificar las funciones y los procedimientos del software.",
+                    "image": null
+                },
+                {
+                    "id": 2463461,
+                    "declaration": "Documentar los resultados de las pruebas realizadas.",
+                    "image": null
+                },
+                {
+                    "id": 2463463,
+                    "declaration": "Establecer la estrategia y los objetivos de las pruebas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656111,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Dado un repositorio que se encuentra bajo control de versiones con la herramienta Git, \u00bfqu\u00e9 nombre tiene el fichero en que se indican aquellos ficheros que NO deben ser tenidos en cuenta por el control de versiones?",
+            "correctAnswerId": 2605652,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605654,
+                    "declaration": ".gitexclude",
+                    "image": null
+                },
+                {
+                    "id": 2605652,
+                    "declaration": ".gitignore",
+                    "image": null
+                },
+                {
+                    "id": 2605653,
+                    "declaration": ".gituntrack",
+                    "image": null
+                },
+                {
+                    "id": 2605655,
+                    "declaration": ".gituncommit",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221123,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual ser\u00eda la forma correcta en GIT para crear una copia de trabajo de un repositorio local ya existente?",
+            "correctAnswerId": 873945,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 873946,
+                    "declaration": "git clone username@host:\/path\/to\/repository",
+                    "image": null
+                },
+                {
+                    "id": 873948,
+                    "declaration": "svnadmin create --fs-type fsfs MiNuevoRepositorio",
+                    "image": null
+                },
+                {
+                    "id": 873945,
+                    "declaration": "git clone \/path\/to\/repository",
+                    "image": null
+                },
+                {
+                    "id": 873947,
+                    "declaration": "git create \/path\/to\/repository",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221761,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En cvs, si se ejecuta  \u0022cvs add -kb miFichero\u0022:",
+            "correctAnswerId": 876470,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876470,
+                    "declaration": "Se esta a\u00f1adiendo un fichero como binario.",
+                    "image": null
+                },
+                {
+                    "id": 876472,
+                    "declaration": "Se esta a\u00f1adiendo un fichero que no se podr\u00e1 modificar.",
+                    "image": null
+                },
+                {
+                    "id": 876471,
+                    "declaration": "Se esta a\u00f1adiendo un fichero como ascii.",
+                    "image": null
+                },
+                {
+                    "id": 876473,
+                    "declaration": "Se esta a\u00f1adiendo un fichero que no se podr\u00e1 descargar, salvo que se tenga el correspondiente permiso.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221774,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Son herramientas especificas del control de versiones de software:",
+            "correctAnswerId": 876524,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876522,
+                    "declaration": "Hbase,Redis y Gimp.",
+                    "image": null
+                },
+                {
+                    "id": 876523,
+                    "declaration": "Gimp,Mercurial y Cvs.",
+                    "image": null
+                },
+                {
+                    "id": 876525,
+                    "declaration": "RedMine,Planner y OpenProj",
+                    "image": null
+                },
+                {
+                    "id": 876524,
+                    "declaration": "Git,Mercurial y Apache Subversi\u00f3n.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 654385,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "De las siguientes herramientas, cuales son las dedicadas de forma especifica al control de versiones de software:",
+            "correctAnswerId": 2598765,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2598765,
+                    "declaration": "Mercurial, Git y Apache Subversion",
+                    "image": null
+                },
+                {
+                    "id": 2598766,
+                    "declaration": "Gimp, Mercurial y Git",
+                    "image": null
+                },
+                {
+                    "id": 2598768,
+                    "declaration": "Cassandra, Git y REDIS",
+                    "image": null
+                },
+                {
+                    "id": 2598767,
+                    "declaration": "RedMine, Planner y OpenProj",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620405,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es el objetivo de la Prueba de Carga en M\u00e9trica V3?",
+            "correctAnswerId": 2463485,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463485,
+                    "declaration": "Evaluar la capacidad del software para manejar grandes vol\u00famenes de datos.",
+                    "image": null
+                },
+                {
+                    "id": 2463487,
+                    "declaration": "Validar que el software cumple con los requisitos establecidos en la Especificaci\u00f3n de Requisitos de Pruebas.",
+                    "image": null
+                },
+                {
+                    "id": 2463488,
+                    "declaration": "Identificar los errores y defectos del software antes de su liberaci\u00f3n al mercado.",
+                    "image": null
+                },
+                {
+                    "id": 2463486,
+                    "declaration": "Verificar que el software funciona correctamente en diferentes entornos.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523825,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "La plataforma de control de versiones de Microsoft es:",
+            "correctAnswerId": 2080516,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2080516,
+                    "declaration": "Azure DevOps Server",
+                    "image": null
+                },
+                {
+                    "id": 2080515,
+                    "declaration": "Trello",
+                    "image": null
+                },
+                {
+                    "id": 2080514,
+                    "declaration": "CVS",
+                    "image": null
+                },
+                {
+                    "id": 2080517,
+                    "declaration": "ClearCase",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650543,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes es define con mas claridad los usos de JMeter?",
+            "correctAnswerId": 2583602,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583599,
+                    "declaration": "Como una herramienta de evaluar el funcionamiento y seguridad de una red virtual.",
+                    "image": null
+                },
+                {
+                    "id": 2583600,
+                    "declaration": "Como una herramienta de monitorizaci\u00f3n de conexiones de equipos a la red.",
+                    "image": null
+                },
+                {
+                    "id": 2583601,
+                    "declaration": "Como una herramienta de generaci\u00f3n de carga de datos en tablas relacionales.",
+                    "image": null
+                },
+                {
+                    "id": 2583602,
+                    "declaration": "Como una herramienta de pruebas unitarias para conexiones de bases de datos con JDBC, FTP, LDAP, Servicios web, JMS, HTTP y conexiones TCP gen\u00e9ricas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523829,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes plataformas para control de versiones es de c\u00f3digo libre y posee una arquitectura distribuida?",
+            "correctAnswerId": 2080531,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2080530,
+                    "declaration": "CVS",
+                    "image": null
+                },
+                {
+                    "id": 2080531,
+                    "declaration": "DCVS",
+                    "image": null
+                },
+                {
+                    "id": 2080532,
+                    "declaration": "Vault",
+                    "image": null
+                },
+                {
+                    "id": 2080533,
+                    "declaration": "Subversion",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221285,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En git si que queremos visualizar los cambios que se han producidos en diferentes commits,\u00bfQue comando ser\u00eda el que habr\u00eda que utilizar?",
+            "correctAnswerId": 874520,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 874522,
+                    "declaration": "git get diff",
+                    "image": null
+                },
+                {
+                    "id": 874521,
+                    "declaration": "git find",
+                    "image": null
+                },
+                {
+                    "id": 874523,
+                    "declaration": "git status",
+                    "image": null
+                },
+                {
+                    "id": 874520,
+                    "declaration": "git diff",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222881,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfEn cual de los siguientes controles de versiones cada usuario modifica su copia local y cuando los cambios se suben al sistema intenta combinar autom\u00e1ticamente las diferentes combinaciones?",
+            "correctAnswerId": 880936,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880936,
+                    "declaration": "GIT",
+                    "image": null
+                },
+                {
+                    "id": 880939,
+                    "declaration": "En GIT y SourceSafe",
+                    "image": null
+                },
+                {
+                    "id": 880938,
+                    "declaration": "CVS",
+                    "image": null
+                },
+                {
+                    "id": 880937,
+                    "declaration": "SourceSafe",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620407,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 herramienta de software libre se utiliza para realizar pruebas de carga y estr\u00e9s en aplicaciones web?",
+            "correctAnswerId": 2463494,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463493,
+                    "declaration": "Selenium",
+                    "image": null
+                },
+                {
+                    "id": 2463495,
+                    "declaration": "Xamarin",
+                    "image": null
+                },
+                {
+                    "id": 2463494,
+                    "declaration": "Apache JMeter",
+                    "image": null
+                },
+                {
+                    "id": 2463496,
+                    "declaration": "Applet",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656117,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes opciones es un preprocesador CSS?",
+            "correctAnswerId": 2605676,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605677,
+                    "declaration": "Grunt",
+                    "image": null
+                },
+                {
+                    "id": 2605676,
+                    "declaration": "LESS",
+                    "image": null
+                },
+                {
+                    "id": 2605679,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 2605678,
+                    "declaration": "Veeam",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656140,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes es una herramienta que mejora la funcionalidad del lenguaje de las hojas de estilo en las p\u00e1ginas web?",
+            "correctAnswerId": 2605769,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605770,
+                    "declaration": "preprocesador Doble n\u00facleo",
+                    "image": null
+                },
+                {
+                    "id": 2605769,
+                    "declaration": "preprocesador CSS",
+                    "image": null
+                },
+                {
+                    "id": 2605771,
+                    "declaration": "preprocesador jquery",
+                    "image": null
+                },
+                {
+                    "id": 2605768,
+                    "declaration": "preprocesador Html",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650546,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 es Gatling en el contexto de las pruebas de carga?",
+            "correctAnswerId": 2583611,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583611,
+                    "declaration": "Es una herramienta de prueba de carga que se integra con soluciones existentes.",
+                    "image": null
+                },
+                {
+                    "id": 2583612,
+                    "declaration": "Es un lenguaje de programaci\u00f3n utilizado para las pruebas de carga.",
+                    "image": null
+                },
+                {
+                    "id": 2583613,
+                    "declaration": "Es un sistema de control de versiones para pruebas de carga.",
+                    "image": null
+                },
+                {
+                    "id": 2583614,
+                    "declaration": "Es una soluci\u00f3n de integraci\u00f3n continua para pruebas de carga.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620409,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 protocolo de comunicaci\u00f3n utiliza Apache JMeter para realizar pruebas de carga y estr\u00e9s?",
+            "correctAnswerId": 2463504,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463501,
+                    "declaration": "HTTP\/1.0",
+                    "image": null
+                },
+                {
+                    "id": 2463502,
+                    "declaration": "HTTP\/1.1",
+                    "image": null
+                },
+                {
+                    "id": 2463503,
+                    "declaration": "HTTP\/2",
+                    "image": null
+                },
+                {
+                    "id": 2463504,
+                    "declaration": "Se puede utilizar con todos los protocolos anteriores.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 220981,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes no es un sistema de control de versiones?",
+            "correctAnswerId": 873380,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 873377,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 873378,
+                    "declaration": "CVS",
+                    "image": null
+                },
+                {
+                    "id": 873380,
+                    "declaration": "Bitbucket",
+                    "image": null
+                },
+                {
+                    "id": 873379,
+                    "declaration": "GIT",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656132,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 opci\u00f3n de las siguientes corresponde a un preprocesador CSS?",
+            "correctAnswerId": 2605736,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605739,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 2605736,
+                    "declaration": "LESS",
+                    "image": null
+                },
+                {
+                    "id": 2605738,
+                    "declaration": "Veeam",
+                    "image": null
+                },
+                {
+                    "id": 2605737,
+                    "declaration": "Grunt",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650548,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 es Selenium en el contexto de desarrollo de software?",
+            "correctAnswerId": 2583620,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583619,
+                    "declaration": "Es un lenguaje de programaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2583620,
+                    "declaration": "Es un entorno de pruebas de software para aplicaciones basadas en la web.",
+                    "image": null
+                },
+                {
+                    "id": 2583621,
+                    "declaration": "Es un sistema operativo.",
+                    "image": null
+                },
+                {
+                    "id": 2583622,
+                    "declaration": "Es un navegador web.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650541,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de los siguientes es un sistema gratuito y de c\u00f3digo abierto para pruebas de rendimiento?",
+            "correctAnswerId": 2583592,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583591,
+                    "declaration": "Selenium",
+                    "image": null
+                },
+                {
+                    "id": 2583592,
+                    "declaration": "Apache JMeter",
+                    "image": null
+                },
+                {
+                    "id": 2583593,
+                    "declaration": "Gatling",
+                    "image": null
+                },
+                {
+                    "id": 2583594,
+                    "declaration": "Appium",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221762,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Siendo el nombre remoto \u0022origin\u0022, y la rama \u0022master\u0022, para subir los commits de una rama local a un repositorio remoto,\u00bfCual ser\u00eda el comando en git?",
+            "correctAnswerId": 876474,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876475,
+                    "declaration": "git pull origin master",
+                    "image": null
+                },
+                {
+                    "id": 876476,
+                    "declaration": "git trust origin master",
+                    "image": null
+                },
+                {
+                    "id": 876474,
+                    "declaration": "git push origin master",
+                    "image": null
+                },
+                {
+                    "id": 876477,
+                    "declaration": "git init origin master",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648801,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es el comando de Git utilizado para crear una nueva rama en el repositorio?",
+            "correctAnswerId": 2576732,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2576734,
+                    "declaration": "git commit",
+                    "image": null
+                },
+                {
+                    "id": 2576733,
+                    "declaration": "git merge",
+                    "image": null
+                },
+                {
+                    "id": 2576732,
+                    "declaration": "git branch",
+                    "image": null
+                },
+                {
+                    "id": 2576731,
+                    "declaration": "git status",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222884,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de los siguientes servicios para administrar proyectos de GIT permite una integaci\u00f3n con la herramienta JIRA?",
+            "correctAnswerId": 880949,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880950,
+                    "declaration": "CodePlex",
+                    "image": null
+                },
+                {
+                    "id": 880948,
+                    "declaration": "Con ninguna.",
+                    "image": null
+                },
+                {
+                    "id": 880951,
+                    "declaration": "LaunchPad",
+                    "image": null
+                },
+                {
+                    "id": 880949,
+                    "declaration": "Bitbucket",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 527189,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Las pruebas  cuya finalidad es verificar que los distintos componentes del sistema interact\u00faan correctamente a trav\u00e9s de sus interfaces se denomina:",
+            "correctAnswerId": 2093947,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2093948,
+                    "declaration": "Pruebas de interacci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2093947,
+                    "declaration": "Pruebas de integraci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2093946,
+                    "declaration": "Pruebas de artefactos.",
+                    "image": null
+                },
+                {
+                    "id": 2093949,
+                    "declaration": "Pruebas de implantaci\u00f3n.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650542,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de los siguientes es es una herramienta de automatizaci\u00f3n de c\u00f3digo abierto para ejecutar scripts y probar aplicaciones nativas, aplicaciones web y aplicaciones h\u00edbridas sobre Android o iOS6\u200b utilizando un webdriver?",
+            "correctAnswerId": 2583598,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583595,
+                    "declaration": "Slenium",
+                    "image": null
+                },
+                {
+                    "id": 2583596,
+                    "declaration": "Apache JMeter",
+                    "image": null
+                },
+                {
+                    "id": 2583597,
+                    "declaration": "Gatling",
+                    "image": null
+                },
+                {
+                    "id": 2583598,
+                    "declaration": "Appium",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221760,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Si en cvs necesitamos verificar la revisi\u00f3n modificada de cada l\u00ednea de un archivo,\u00bfQue comando debemos utilizar?.",
+            "correctAnswerId": 876466,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876466,
+                    "declaration": "annotate",
+                    "image": null
+                },
+                {
+                    "id": 876469,
+                    "declaration": "diff",
+                    "image": null
+                },
+                {
+                    "id": 876468,
+                    "declaration": "release",
+                    "image": null
+                },
+                {
+                    "id": 876467,
+                    "declaration": "shows",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221209,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCon que comando se crea un nuevo repositorio local en GIT?",
+            "correctAnswerId": 874289,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 874289,
+                    "declaration": "GIT INIT",
+                    "image": null
+                },
+                {
+                    "id": 874291,
+                    "declaration": "GIT ADD",
+                    "image": null
+                },
+                {
+                    "id": 874292,
+                    "declaration": "GIT CREATE",
+                    "image": null
+                },
+                {
+                    "id": 874290,
+                    "declaration": "GIT CLONE",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523549,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Con respecto a las pruebas de regresi\u00f3n, se\u00f1ale la INCORRECTA:",
+            "correctAnswerId": 2079413,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2079413,
+                    "declaration": "No es posible automatizar las pruebas de regresi\u00f3n",
+                    "image": null
+                },
+                {
+                    "id": 2079410,
+                    "declaration": "Ante cambios sobre un componente software, ayudan a garantizar que el resto de componentes no se ve afectado.",
+                    "image": null
+                },
+                {
+                    "id": 2079412,
+                    "declaration": "Normalmente, implican la repetici\u00f3n de las pruebas que ya se han realizado previamente.",
+                    "image": null
+                },
+                {
+                    "id": 2079411,
+                    "declaration": "Son compatibles con las metodolog\u00edas \u00e1giles de desarrollo.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650547,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 permite el marco distribuido de Gatling?",
+            "correctAnswerId": 2583616,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583615,
+                    "declaration": "La computaci\u00f3n secuencial.",
+                    "image": null
+                },
+                {
+                    "id": 2583616,
+                    "declaration": "La computaci\u00f3n totalmente as\u00edncrona.",
+                    "image": null
+                },
+                {
+                    "id": 2583617,
+                    "declaration": "La comunicaci\u00f3n directa entre entidades.",
+                    "image": null
+                },
+                {
+                    "id": 2583618,
+                    "declaration": "La limitaci\u00f3n de JVM de manejar muchos subprocesos.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222887,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale cual de las siguientes herramientas es un proyecto GNOME y esta enfocada tanto para UML como para base de datos:",
+            "correctAnswerId": 880960,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880960,
+                    "declaration": "DIA",
+                    "image": null
+                },
+                {
+                    "id": 880963,
+                    "declaration": "MagicDraw",
+                    "image": null
+                },
+                {
+                    "id": 880962,
+                    "declaration": "EasyCase",
+                    "image": null
+                },
+                {
+                    "id": 880961,
+                    "declaration": "Edraw",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222886,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale cu\u00e1l ser\u00eda el comando correcto en GIT para actualizar el contenido de un branch y empezar a trabajar en ese branch:",
+            "correctAnswerId": 880959,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880959,
+                    "declaration": "git pull origin nombre_branch",
+                    "image": null
+                },
+                {
+                    "id": 880958,
+                    "declaration": "git branch -d [name]",
+                    "image": null
+                },
+                {
+                    "id": 880956,
+                    "declaration": "git add *",
+                    "image": null
+                },
+                {
+                    "id": 880957,
+                    "declaration": "git push origin [branch]",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221775,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Visual SourceSafe es:",
+            "correctAnswerId": 876528,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876527,
+                    "declaration": "Un antivirus.",
+                    "image": null
+                },
+                {
+                    "id": 876528,
+                    "declaration": "Una herramienta de control de versiones de Microsoft.",
+                    "image": null
+                },
+                {
+                    "id": 876526,
+                    "declaration": "Una herramienta CASE.",
+                    "image": null
+                },
+                {
+                    "id": 876529,
+                    "declaration": "Una herramienta para modelado UML.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221764,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Es un sistema de control de versiones multiplataforma, para desarrolladores de software:",
+            "correctAnswerId": 876484,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876482,
+                    "declaration": "Lucene",
+                    "image": null
+                },
+                {
+                    "id": 876483,
+                    "declaration": "Nunit",
+                    "image": null
+                },
+                {
+                    "id": 876484,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 876485,
+                    "declaration": "Cassandra",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620403,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es la afirmaci\u00f3n correcta sobre  la Especificaci\u00f3n de Requisitos de Pruebas en M\u00e9trica V3?",
+            "correctAnswerId": 2463477,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463480,
+                    "declaration": "Garantizar la calidad de los distintos modelos generados en el proceso de An\u00e1lisis del Sistema de Informaci\u00f3n, y asegurar que los usuarios y los Analistas tienen el mismo concepto del sistema.",
+                    "image": null
+                },
+                {
+                    "id": 2463479,
+                    "declaration": "Su objetivo es la presentaci\u00f3n del an\u00e1lisis del sistema de informaci\u00f3n al Comit\u00e9 de Direcci\u00f3n, para la aprobaci\u00f3n final del mismo.",
+                    "image": null
+                },
+                {
+                    "id": 2463477,
+                    "declaration": "Sirve como gu\u00eda para la realizaci\u00f3n de las pruebas, y permite verificar que el sistema de informaci\u00f3n cumple las necesidades establecidas por el usuario, con las debidas garant\u00edas de calidad.",
+                    "image": null
+                },
+                {
+                    "id": 2463478,
+                    "declaration": "Verificaci\u00f3n de la calidad t\u00e9cnica de cada modelo, asegurar la coherencia entre los distintos modelos.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 220982,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes es una herramienta de c\u00f3digo abierto que empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, c\u00f3digo y tiempo de ejecuci\u00f3n?",
+            "correctAnswerId": 873381,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 873383,
+                    "declaration": "Redmine",
+                    "image": null
+                },
+                {
+                    "id": 873381,
+                    "declaration": "Docker",
+                    "image": null
+                },
+                {
+                    "id": 873384,
+                    "declaration": "Bamboo",
+                    "image": null
+                },
+                {
+                    "id": 873382,
+                    "declaration": "JIRA",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648794,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes es una metodolog\u00eda \u00e1gil de desarrollo de software?",
+            "correctAnswerId": 2576703,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2576704,
+                    "declaration": "Jira.",
+                    "image": null
+                },
+                {
+                    "id": 2576706,
+                    "declaration": "Perl.",
+                    "image": null
+                },
+                {
+                    "id": 2576703,
+                    "declaration": "Scrum.",
+                    "image": null
+                },
+                {
+                    "id": 2576705,
+                    "declaration": "Junit.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620408,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes herramientas de software libre ofrece integraci\u00f3n con herramientas de CI\/CD?",
+            "correctAnswerId": 2463499,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463499,
+                    "declaration": "Gatling",
+                    "image": null
+                },
+                {
+                    "id": 2463500,
+                    "declaration": "Tsung",
+                    "image": null
+                },
+                {
+                    "id": 2463497,
+                    "declaration": "Locust",
+                    "image": null
+                },
+                {
+                    "id": 2463498,
+                    "declaration": "The Grinder",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 618371,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale cu\u00e1l de las siguientes herramientas de software libre se utiliza para realizar pruebas de carga y de estr\u00e9s, permitiendo simular escenarios de concurrencia de usuarios:",
+            "correctAnswerId": 2455505,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2455504,
+                    "declaration": "Mockito",
+                    "image": null
+                },
+                {
+                    "id": 2455505,
+                    "declaration": "JMeter",
+                    "image": null
+                },
+                {
+                    "id": 2455506,
+                    "declaration": "Foglight",
+                    "image": null
+                },
+                {
+                    "id": 2455503,
+                    "declaration": "Cactus",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 665299,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes herramientas NO es un software para el control de versiones?",
+            "correctAnswerId": 2640973,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2640973,
+                    "declaration": "JMeter",
+                    "image": null
+                },
+                {
+                    "id": 2640974,
+                    "declaration": "Subversion",
+                    "image": null
+                },
+                {
+                    "id": 2640975,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 2640976,
+                    "declaration": "GIT",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221767,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Dado un repositorio que se encuentra bajo control de versiones con la herramienta SVN, \u00bfque comando se ejecutar\u00e1 para indicar que ficheros NO deben ser tenidos en cuenta por el control de versiones?",
+            "correctAnswerId": 876494,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876497,
+                    "declaration": "svn propget svn:untrack",
+                    "image": null
+                },
+                {
+                    "id": 876496,
+                    "declaration": "svn propget svn:uncommit",
+                    "image": null
+                },
+                {
+                    "id": 876495,
+                    "declaration": "svn propget svn:exclude",
+                    "image": null
+                },
+                {
+                    "id": 876494,
+                    "declaration": "svn propget svn:ignore",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523839,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Dado un proyecto git, \u00bfcon qu\u00e9 comando puedo listar las etiquetas?",
+            "correctAnswerId": 2080570,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2080571,
+                    "declaration": "git list-tag",
+                    "image": null
+                },
+                {
+                    "id": 2080570,
+                    "declaration": "git tag",
+                    "image": null
+                },
+                {
+                    "id": 2080573,
+                    "declaration": "git -t",
+                    "image": null
+                },
+                {
+                    "id": 2080572,
+                    "declaration": "git rebase",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656127,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfC\u00f3mo se llama el comando en un repositorio controlado por la herramienta Git que especifica qu\u00e9 archivos NO deben ser considerados por el sistema de control de versiones?",
+            "correctAnswerId": 2605716,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605719,
+                    "declaration": ".gituncommit",
+                    "image": null
+                },
+                {
+                    "id": 2605716,
+                    "declaration": ".gitignore",
+                    "image": null
+                },
+                {
+                    "id": 2605718,
+                    "declaration": ".gitexclude",
+                    "image": null
+                },
+                {
+                    "id": 2605717,
+                    "declaration": ".gituntrack",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648792,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes tecnolog\u00edas est\u00e1 espec\u00edficamente dise\u00f1ada para la automatizaci\u00f3n de pruebas funcionales en aplicaciones web?",
+            "correctAnswerId": 2576696,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2576697,
+                    "declaration": "JTest",
+                    "image": null
+                },
+                {
+                    "id": 2576695,
+                    "declaration": "Unit4j",
+                    "image": null
+                },
+                {
+                    "id": 2576696,
+                    "declaration": "Selenium",
+                    "image": null
+                },
+                {
+                    "id": 2576698,
+                    "declaration": "Jmeter",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648796,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones es VERDADERA acerca de los sprints en Scrum?",
+            "correctAnswerId": 2576712,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2576714,
+                    "declaration": "Son las reuniones para planificar el proyecto antes de iniciar el desarrollo",
+                    "image": null
+                },
+                {
+                    "id": 2576711,
+                    "declaration": "Son las reuniones diarias del equipo de desarrollo.",
+                    "image": null
+                },
+                {
+                    "id": 2576713,
+                    "declaration": "Son las sesiones de revisi\u00f3n de proyecto con los stakeholders.",
+                    "image": null
+                },
+                {
+                    "id": 2576712,
+                    "declaration": "Son los ciclos de trabajo de corta duraci\u00f3n en los que se realiza incremento de producto.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656152,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfEs posible que los navegadores web interpreten de manera directa el c\u00f3digo Sass, Less o Stylus?",
+            "correctAnswerId": 2605817,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605818,
+                    "declaration": "S\u00ed, pero solo pueden interpretar c\u00f3digo Sass, no Less o Stylus.",
+                    "image": null
+                },
+                {
+                    "id": 2605819,
+                    "declaration": "No, pero pueden interpretar c\u00f3digo Less y Stylus, no Sass.",
+                    "image": null
+                },
+                {
+                    "id": 2605816,
+                    "declaration": "S\u00ed, los navegadores web pueden interpretar directamente c\u00f3digo Sass, Less o Stylus.",
+                    "image": null
+                },
+                {
+                    "id": 2605817,
+                    "declaration": "No, los navegadores web no pueden interpretar directamente c\u00f3digo Sass, Less o Stylus.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620402,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En m\u00e9trica v3, en el Especificaci\u00f3n del Plan de Pruebas se incluyen las tareas(se\u00f1ale la correcta):",
+            "correctAnswerId": 2463475,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463476,
+                    "declaration": "Elaboraci\u00f3n de la Especificaci\u00f3n de Requisitos Software, an\u00e1lisis de Consistencia entre Modelos, definici\u00f3n de las Pruebas de Aceptaci\u00f3n del Sistema.",
+                    "image": null
+                },
+                {
+                    "id": 2463473,
+                    "declaration": "Verificaci\u00f3n de los Modelos, an\u00e1lisis de Consistencia entre Modelos, validaci\u00f3n de los Modelos.",
+                    "image": null
+                },
+                {
+                    "id": 2463475,
+                    "declaration": "Definici\u00f3n del Alcance de las Pruebas, definici\u00f3n de Requisitos del Entorno de Pruebas, definici\u00f3n de las Pruebas de Aceptaci\u00f3n del Sistema.",
+                    "image": null
+                },
+                {
+                    "id": 2463474,
+                    "declaration": "Elaboraci\u00f3n de la Especificaci\u00f3n de Requisitos Software, an\u00e1lisis de Consistencia entre Modelos, validaci\u00f3n de los Modelos.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 654388,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es la funci\u00f3n de la herramienta Microsoft Visual SourceSafe (VSS)?",
+            "correctAnswerId": 2598779,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2598778,
+                    "declaration": "Un antivirus",
+                    "image": null
+                },
+                {
+                    "id": 2598779,
+                    "declaration": "Una herramienta de control de versiones de Microsoft",
+                    "image": null
+                },
+                {
+                    "id": 2598780,
+                    "declaration": "Una herramienta para modelado UML",
+                    "image": null
+                },
+                {
+                    "id": 2598777,
+                    "declaration": "Una herramienta CASE",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620400,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes opciones representa mejor el prop\u00f3sito del Informe de Pruebas en M\u00e9trica V3?",
+            "correctAnswerId": 2463465,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463465,
+                    "declaration": "Documentar los resultados de las pruebas realizadas.",
+                    "image": null
+                },
+                {
+                    "id": 2463467,
+                    "declaration": "Establecer la estrategia y los objetivos de las pruebas.",
+                    "image": null
+                },
+                {
+                    "id": 2463468,
+                    "declaration": "Especificar las funciones y los procedimientos del software.",
+                    "image": null
+                },
+                {
+                    "id": 2463466,
+                    "declaration": "Definir los requisitos de calidad del software.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 618432,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Indique cu\u00e1l de las siguientes opciones se corresponde con el concepto de ITIL:",
+            "correctAnswerId": 2455749,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2455749,
+                    "declaration": "Es una colecci\u00f3n de mejores pr\u00e1cticas de gesti\u00f3n de servicios de tecnolog\u00edas de la informaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2455750,
+                    "declaration": "Es una metodolog\u00eda de an\u00e1lisis y gesti\u00f3n de riesgos de los sistemas de informaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2455748,
+                    "declaration": "Es una librer\u00eda java, referida a la seguridad, que forma parte de la plataforma de Jakarta EE.",
+                    "image": null
+                },
+                {
+                    "id": 2455747,
+                    "declaration": "Su origen proviene de la metodolog\u00eda Scrum y ofrece a las organizaciones un instrumento \u00fatil para la sistematizaci\u00f3n de las actividades que dan soporte al ciclo de vida del software.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656143,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfPueden los navegadores web interpretar directamente c\u00f3digo Sass, Less o Stylus?",
+            "correctAnswerId": 2605781,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605780,
+                    "declaration": "S\u00ed, los navegadores web pueden interpretar directamente c\u00f3digo Sass, Less o Stylus.",
+                    "image": null
+                },
+                {
+                    "id": 2605782,
+                    "declaration": "S\u00ed, pero solo pueden interpretar c\u00f3digo Sass, no Less o Stylus.",
+                    "image": null
+                },
+                {
+                    "id": 2605783,
+                    "declaration": "No, pero pueden interpretar c\u00f3digo Less y Stylus, no Sass.",
+                    "image": null
+                },
+                {
+                    "id": 2605781,
+                    "declaration": "No, los navegadores web no pueden interpretar directamente c\u00f3digo Sass, Less o Stylus.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650544,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 tipo de pruebas puede realizar JMeter?",
+            "correctAnswerId": 2583603,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583603,
+                    "declaration": "Pruebas de rendimiento y pruebas unitarias.",
+                    "image": null
+                },
+                {
+                    "id": 2583604,
+                    "declaration": "Solamente pruebas de rendimiento en casos concretos.",
+                    "image": null
+                },
+                {
+                    "id": 2583605,
+                    "declaration": "Solamente pruebas unitarias.",
+                    "image": null
+                },
+                {
+                    "id": 2583606,
+                    "declaration": "No puede hacer ning\u00fan tipo de prueba.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523843,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Dado un proyecto git, \u00bfcon qu\u00e9 comando puedo generar  estad\u00edsticas de diferencias entre rutas o archivos en mi repositorio git?",
+            "correctAnswerId": 2080586,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2080587,
+                    "declaration": "git difference",
+                    "image": null
+                },
+                {
+                    "id": 2080588,
+                    "declaration": "git diff stats",
+                    "image": null
+                },
+                {
+                    "id": 2080589,
+                    "declaration": "git difference stats",
+                    "image": null
+                },
+                {
+                    "id": 2080586,
+                    "declaration": "git diff",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648795,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 es Scrum en el desarrollo de software?",
+            "correctAnswerId": 2576707,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2576709,
+                    "declaration": "Un est\u00e1ndar de codificaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2576710,
+                    "declaration": "Una biblioteca de funciones predefinidas",
+                    "image": null
+                },
+                {
+                    "id": 2576708,
+                    "declaration": "Un lenguaje de programaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2576707,
+                    "declaration": "Una metodolog\u00eda \u00e1gil.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 654208,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Visual SourceSafe es:",
+            "correctAnswerId": 2598059,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2598059,
+                    "declaration": "Una herramienta de control de versiones de Microsoft",
+                    "image": null
+                },
+                {
+                    "id": 2598058,
+                    "declaration": "Un antivirus",
+                    "image": null
+                },
+                {
+                    "id": 2598060,
+                    "declaration": "Una herramienta para modelado UML",
+                    "image": null
+                },
+                {
+                    "id": 2598057,
+                    "declaration": "Una herramienta CASE",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 654205,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Son herramientas espec\u00edficas de control de versiones de software:",
+            "correctAnswerId": 2598045,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2598048,
+                    "declaration": "Cassandra, Git y REDIS",
+                    "image": null
+                },
+                {
+                    "id": 2598046,
+                    "declaration": "Gimp, Mercurial y Git",
+                    "image": null
+                },
+                {
+                    "id": 2598045,
+                    "declaration": "Mercurial, Git y Apache Subversion",
+                    "image": null
+                },
+                {
+                    "id": 2598047,
+                    "declaration": "RedMine, Planner y OpenProj",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221286,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre el comando fetch de git es correcta?",
+            "correctAnswerId": 874527,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 874527,
+                    "declaration": "Ejecutando \u0022git fetch\u0022 se descargan objetos y referencias de otro repositorio.",
+                    "image": null
+                },
+                {
+                    "id": 874528,
+                    "declaration": "Descarga los cambios de una determinada rama y actualiza el repositorio local.",
+                    "image": null
+                },
+                {
+                    "id": 874526,
+                    "declaration": "Ejecutando \u0022git fetch\u0022 solamente se descargan las ultimas modificaciones en nuestro branch local.",
+                    "image": null
+                },
+                {
+                    "id": 874529,
+                    "declaration": "Ejecutar \u0022git fetch\u0022 equivaldr\u00eda a ejecutar git pull + git merge.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620404,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es el prop\u00f3sito de la Prueba de Aceptaci\u00f3n en M\u00e9trica V3?",
+            "correctAnswerId": 2463481,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463484,
+                    "declaration": "Evaluar la capacidad del software para manejar grandes vol\u00famenes de datos.",
+                    "image": null
+                },
+                {
+                    "id": 2463481,
+                    "declaration": "Validar que el software cumple con los requisitos establecidos en la Especificaci\u00f3n de Requisitos de Pruebas.",
+                    "image": null
+                },
+                {
+                    "id": 2463482,
+                    "declaration": "Verificar que el software funciona correctamente en diferentes entornos.",
+                    "image": null
+                },
+                {
+                    "id": 2463483,
+                    "declaration": "Identificar los errores y defectos del software antes de su liberaci\u00f3n al mercado.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221765,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual es el comando de mercurial mediante el cual podemos comprobar qu\u00e9 conjuntos de cambios se subir\u00e1n?",
+            "correctAnswerId": 876486,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876489,
+                    "declaration": "incoming",
+                    "image": null
+                },
+                {
+                    "id": 876487,
+                    "declaration": "pull",
+                    "image": null
+                },
+                {
+                    "id": 876486,
+                    "declaration": "outgoing",
+                    "image": null
+                },
+                {
+                    "id": 876488,
+                    "declaration": "init",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656126,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes t\u00e9rminos es un sistema de control de versiones multiplataforma utilizado por los desarrolladores de software?",
+            "correctAnswerId": 2605714,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605712,
+                    "declaration": "Cassandra",
+                    "image": null
+                },
+                {
+                    "id": 2605715,
+                    "declaration": "Lucene",
+                    "image": null
+                },
+                {
+                    "id": 2605714,
+                    "declaration": "Mercurial",
+                    "image": null
+                },
+                {
+                    "id": 2605713,
+                    "declaration": "Nunit",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620406,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes opciones representa mejor el prop\u00f3sito de la Prueba de Integraci\u00f3n en M\u00e9trica V3?",
+            "correctAnswerId": 2463492,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463490,
+                    "declaration": "Validar que el software cumple con los requisitos establecidos en la Especificaci\u00f3n de Requisitos de Pruebas.",
+                    "image": null
+                },
+                {
+                    "id": 2463489,
+                    "declaration": "Verificar que el software funciona correctamente en diferentes entornos.",
+                    "image": null
+                },
+                {
+                    "id": 2463492,
+                    "declaration": "Evaluar la capacidad del software para trabajar de manera efectiva con otros sistemas.",
+                    "image": null
+                },
+                {
+                    "id": 2463491,
+                    "declaration": "Identificar los errores y defectos del software antes de su liberaci\u00f3n al mercado.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650545,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de las siguientes NO es una funcionalidad de JMeter?",
+            "correctAnswerId": 2583610,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583607,
+                    "declaration": "Crear informes de rendimiento personalizados.",
+                    "image": null
+                },
+                {
+                    "id": 2583608,
+                    "declaration": "Probar la funcionalidad del hardware, como el rendimiento del servidor o la velocidad de la red.",
+                    "image": null
+                },
+                {
+                    "id": 2583609,
+                    "declaration": "Prueba el rendimiento de recursos est\u00e1ticos (JavaScript y HTML).",
+                    "image": null
+                },
+                {
+                    "id": 2583610,
+                    "declaration": "Como una herramienta para capturar tramas de red.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222885,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale cu\u00e1l de las siguientes respuestas se corresponde con una herramienta usada para el  control de versiones de desarrollo de software?",
+            "correctAnswerId": 880952,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880952,
+                    "declaration": "GIT",
+                    "image": null
+                },
+                {
+                    "id": 880953,
+                    "declaration": "LISP",
+                    "image": null
+                },
+                {
+                    "id": 880954,
+                    "declaration": "SWIFT",
+                    "image": null
+                },
+                {
+                    "id": 880955,
+                    "declaration": "GO",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 618343,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan M\u00e9trica v3, \u00bfqu\u00e9 tipo de pruebas consiste en determinar que los tiempos de respuesta est\u00e1n dentro de los intervalos establecidos en las especificaciones del sistema?",
+            "correctAnswerId": 2455393,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2455394,
+                    "declaration": "Pruebas de tiempo.",
+                    "image": null
+                },
+                {
+                    "id": 2455392,
+                    "declaration": "Pruebas de sobrecarga.",
+                    "image": null
+                },
+                {
+                    "id": 2455391,
+                    "declaration": "Pruebas de respuesta.",
+                    "image": null
+                },
+                {
+                    "id": 2455393,
+                    "declaration": "Pruebas de rendimiento.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222880,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes fue un sitio web  para alojar proyectos software de c\u00f3digo abierto creado por MICROSOFT?",
+            "correctAnswerId": 880933,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880932,
+                    "declaration": "SVN",
+                    "image": null
+                },
+                {
+                    "id": 880933,
+                    "declaration": "CodePlex",
+                    "image": null
+                },
+                {
+                    "id": 880934,
+                    "declaration": "LaunchPad",
+                    "image": null
+                },
+                {
+                    "id": 880935,
+                    "declaration": "SourForge.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656112,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En el control de versiones Git, el comando .gitignore que especifica:",
+            "correctAnswerId": 2605656,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605657,
+                    "declaration": "que archivos que  deben ser rastreados por el control de versiones",
+                    "image": null
+                },
+                {
+                    "id": 2605658,
+                    "declaration": "que archivos que deben ser eliminados por el control de versiones",
+                    "image": null
+                },
+                {
+                    "id": 2605659,
+                    "declaration": "que archivos que deben ser duplicados por el control de versiones",
+                    "image": null
+                },
+                {
+                    "id": 2605656,
+                    "declaration": "que archivos que no deben ser rastreados por el control de versiones.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 618370,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En el software para control de versiones GIT, hacer un \u0027commit\u0027 es:",
+            "correctAnswerId": 2455502,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2455499,
+                    "declaration": "La acci\u00f3n de introducir comentarios iterativos entre versiones.",
+                    "image": null
+                },
+                {
+                    "id": 2455500,
+                    "declaration": "La acci\u00f3n de establecer un compromiso de uso (commitment) entre ambas partes.",
+                    "image": null
+                },
+                {
+                    "id": 2455502,
+                    "declaration": "La acci\u00f3n de almacenar una nueva instant\u00e1nea (snapshot) del estado del proyecto en el historial de GIT.",
+                    "image": null
+                },
+                {
+                    "id": 2455501,
+                    "declaration": "La acci\u00f3n de descargar la rama de trabajo del repositorio central.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221773,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes herramientas para el desarrollo de diagramas UML es gratuito y open-source?",
+            "correctAnswerId": 876521,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876519,
+                    "declaration": "Visio",
+                    "image": null
+                },
+                {
+                    "id": 876521,
+                    "declaration": "Papyrus UML",
+                    "image": null
+                },
+                {
+                    "id": 876520,
+                    "declaration": "MagicDraw",
+                    "image": null
+                },
+                {
+                    "id": 876518,
+                    "declaration": "Modelio",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 656139,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 es un preprocesador CSS?",
+            "correctAnswerId": 2605765,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2605767,
+                    "declaration": "Es una herramienta software que no afecta la funcionalidad del lenguaje CSS est\u00e1ndar.",
+                    "image": null
+                },
+                {
+                    "id": 2605765,
+                    "declaration": "Es una herramienta software que mejora la funcionalidad del lenguaje CSS est\u00e1ndar.",
+                    "image": null
+                },
+                {
+                    "id": 2605766,
+                    "declaration": "Es una herramienta software que elimina la funcionalidad del lenguaje CSS est\u00e1ndar.",
+                    "image": null
+                },
+                {
+                    "id": 2605764,
+                    "declaration": "Es una herramienta software que disminuye la funcionalidad del lenguaje CSS est\u00e1ndar.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 523794,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Con respecto a SonarQube, se\u00f1ale la INCORRECTA:",
+            "correctAnswerId": 2080390,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2080392,
+                    "declaration": "Obtiene diversas m\u00e9tricas sobre el c\u00f3digo.",
+                    "image": null
+                },
+                {
+                    "id": 2080393,
+                    "declaration": "Permite definir \u0022Quality Gates\u0022 con las condiciones m\u00ednimas que el proyecto debe cumplir para subir a producci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2080391,
+                    "declaration": "Entre las verificaciones que puede realizar  est\u00e1 la detecci\u00f3n de c\u00f3digo duplicado.",
+                    "image": null
+                },
+                {
+                    "id": 2080390,
+                    "declaration": "Soluci\u00f3n dise\u00f1ada para realizar an\u00e1lisis din\u00e1mico del c\u00f3digo fuente de manera autom\u00e1tica.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 620410,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes herramientas de software libre se especializa en pruebas de carga y estr\u00e9s para aplicaciones basadas en protocolos de base de datos?",
+            "correctAnswerId": 2463506,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": null
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2463508,
+                    "declaration": "The Grinder",
+                    "image": null
+                },
+                {
+                    "id": 2463507,
+                    "declaration": "Gatling",
+                    "image": null
+                },
+                {
+                    "id": 2463506,
+                    "declaration": "Tsung",
+                    "image": null
+                },
+                {
+                    "id": 2463505,
+                    "declaration": "Apache JMeter",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221763,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Cu\u00e1l de los siguientes es un producto para la gesti\u00f3n continua de software (entrega continua desde el c\u00f3digo hasta el despliegue):",
+            "correctAnswerId": 876479,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 876479,
+                    "declaration": "Bamboo.",
+                    "image": null
+                },
+                {
+                    "id": 876480,
+                    "declaration": "InterSystemas Ensemble.",
+                    "image": null
+                },
+                {
+                    "id": 876481,
+                    "declaration": "DevExpress.",
+                    "image": null
+                },
+                {
+                    "id": 876478,
+                    "declaration": "Magnolia.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 650549,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfEn qu\u00e9 sistemas operativos se pueden ejecutar las pruebas de Selenium?",
+            "correctAnswerId": 2583626,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2583623,
+                    "declaration": "Solo en Windows.",
+                    "image": null
+                },
+                {
+                    "id": 2583624,
+                    "declaration": "Solo en Linux.",
+                    "image": null
+                },
+                {
+                    "id": 2583625,
+                    "declaration": "Solo en OSX.",
+                    "image": null
+                },
+                {
+                    "id": 2583626,
+                    "declaration": "En Windows, Linux y OSX.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 648793,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "El conjunto de bibliotecas para pruebas unitarias de aplicaciones Java se denomina:",
+            "correctAnswerId": 2576700,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2576702,
+                    "declaration": "Juniper",
+                    "image": null
+                },
+                {
+                    "id": 2576701,
+                    "declaration": "JTest",
+                    "image": null
+                },
+                {
+                    "id": 2576699,
+                    "declaration": "Unit4j",
+                    "image": null
+                },
+                {
+                    "id": 2576700,
+                    "declaration": "JUnit",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221287,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de las siguientes NO es una caracter\u00edstica de un repositorio GIT?",
+            "correctAnswerId": 874535,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 874535,
+                    "declaration": "Es necesario tener conexi\u00f3n a internet para poder realizar confirmaciones.",
+                    "image": null
+                },
+                {
+                    "id": 874532,
+                    "declaration": "Posee tres estados principales en los que se pueden encontrar los archivos.",
+                    "image": null
+                },
+                {
+                    "id": 874534,
+                    "declaration": "Identifica las acciones mediante una suma de comprobaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 874533,
+                    "declaration": "Es un sistema distribuido.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 222879,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de las siguientes no es una plataforma de desarrollo software colaborativo?",
+            "correctAnswerId": 880931,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "3.9 - Repositorios y control de versiones",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 880928,
+                    "declaration": "LaunchPad",
+                    "image": null
+                },
+                {
+                    "id": 880929,
+                    "declaration": "CodePlex",
+                    "image": null
+                },
+                {
+                    "id": 880931,
+                    "declaration": "CVS",
+                    "image": null
+                },
+                {
+                    "id": 880930,
+                    "declaration": "GitHub",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        }
+    ],
+    "duration": 0,
+    "mark": 0,
+    "doubtfulMark": 0,
+    "createdAt": "2025-08-02T15:36:39+00:00",
+    "updatedAt": "2025-08-02T15:36:39+00:00",
+    "inProgressAt": "2025-08-02T15:36:39+00:00",
+    "completedAt": null,
+    "isRepeated": false,
+    "evaluation": {
+        "id": 78,
+        "name": "TAI TL",
+        "correctAnswer": 1,
+        "failedAnswer": -0.333,
+        "notAnswered": 0
+    },
+    "maxMark": 0,
+    "passed": null,
+    "doubtfulPassed": null,
+    "info": {
+        "questionsCount": 84,
+        "blankQuestionsCount": 84,
+        "answeredQuestionsCount": 0,
+        "correctQuestionsCount": 0,
+        "failedQuestionsCount": 0,
+        "doubtfulQuestionsCount": 0,
+        "correctDoubtfulQuestionsCount": 0,
+        "failedDoubtfulQuestionsCount": 0,
+        "highlightedQuestionsCount": 0
+    },
+    "generationInfo": {
+        "contents": [
+            "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb"
+        ],
+        "contentsCount": [
+            {
+                "name": "Temas",
+                "count": 1
+            }
+        ]
+    },
+    "challengeToken": null,
+    "challenge": null
+}

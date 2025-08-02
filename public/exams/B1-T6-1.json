@@ -1,0 +1,2507 @@
+{
+    "id": "d1500ba6-4541-402a-a8b5-2bd7e8099cec",
+    "examId": 47898613,
+    "studentId": 865065,
+    "realizedExamId": null,
+    "oppositionId": 74,
+    "state": "in_progress",
+    "title": "",
+    "annotation": null,
+    "statement": null,
+    "type": "random",
+    "questions": [
+        {
+            "id": 266967,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Carlos tiene 34 a\u00f1os y quiere renovar su DNI, \u00bfqu\u00e9 per\u00edodo de validez tendr\u00e1 este documento con car\u00e1cter general?",
+            "correctAnswerId": 1056026,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1056028,
+                    "declaration": "9 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1056025,
+                    "declaration": "5 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1056027,
+                    "declaration": "15 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1056026,
+                    "declaration": "10 a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266831,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "No es un sistema admitido por la Ley 39\/2015 para que los interesados en el procedimiento administrativo puedan identificarse electr\u00f3nicamente:",
+            "correctAnswerId": 1055496,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055494,
+                    "declaration": "Sistemas basados en certificados electr\u00f3nicos cualificados de sello electr\u00f3nico expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055495,
+                    "declaration": "Cualquier otro sistema que las Administraciones p\u00fablicas consideren v\u00e1lido en los t\u00e9rminos y condiciones que se establezca, siempre que cuenten con un registro previo como usuario que permita garantizar su identidad.",
+                    "image": null
+                },
+                {
+                    "id": 1055496,
+                    "declaration": "Sistemas basados en certificados electr\u00f3nicos de identificaci\u00f3n sonora o facial expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055493,
+                    "declaration": "Sistemas basados en certificados electr\u00f3nicos cualificados de firma electr\u00f3nica expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266856,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale la respuesta incorrecta. Conforme a la Ley Org\u00e1nica 4\/2015, de 30 de marzo, de protecci\u00f3n de la seguridad ciudadana, en relaci\u00f3n con el Documento Nacional de Identidad:",
+            "correctAnswerId": 1055589,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055590,
+                    "declaration": "En el Documento Nacional de Identidad figurar\u00e1n la fotograf\u00eda y la firma de su titular, as\u00ed como los datos personales que se determinen reglamentariamente, que respetar\u00e1n el derecho a la intimidad de la persona, sin que en ning\u00fan caso, puedan ser relativos a la raza, etnia, religi\u00f3n, creencias, opini\u00f3n, ideolog\u00eda, discapacidad, orientaci\u00f3n o identidad sexual, o afiliaci\u00f3n pol\u00edtica o sindical.",
+                    "image": null
+                },
+                {
+                    "id": 1055588,
+                    "declaration": "La tarjeta soporte del Documento Nacional de Identidad incorporar\u00e1 las medidas de seguridad necesarias para la consecuci\u00f3n de condiciones de calidad e inalterabilidad y m\u00e1ximas garant\u00edas para impedir su falsificaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 1055589,
+                    "declaration": "El Documento Nacional de Identidad permite a todos los espa\u00f1oles mayores de edad y a los menores emancipados la identificaci\u00f3n electr\u00f3nica de su titular, as\u00ed como la firma electr\u00f3nica de documentos, en los t\u00e9rminos previstos en la legislaci\u00f3n espec\u00edfica.",
+                    "image": null
+                },
+                {
+                    "id": 1055587,
+                    "declaration": "El Documento Nacional de Identidad es un documento p\u00fablico y oficial y tendr\u00e1 la protecci\u00f3n que a \u00e9stos otorgan las leyes. Es el \u00fanico documento con suficiente valor por s\u00ed solo para la acreditaci\u00f3n, a todos los efectos, de la identidad y los datos personales de su titular.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409015,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes no es una causa de revocaci\u00f3n de un certificado electr\u00f3nico?",
+            "correctAnswerId": 1624622,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624622,
+                    "declaration": "El traspaso por el prestador de servicios de confianza de su actividad a otro prestador de servicios de confianza.",
+                    "image": null
+                },
+                {
+                    "id": 1624621,
+                    "declaration": "La terminaci\u00f3n de la representaci\u00f3n en los certificados electr\u00f3nicos con atributo de representante.",
+                    "image": null
+                },
+                {
+                    "id": 1624623,
+                    "declaration": "El fallecimiento del firmante.",
+                    "image": null
+                },
+                {
+                    "id": 1624620,
+                    "declaration": "La resoluci\u00f3n judicial o administrativa que lo ordene.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266867,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 organismo se encarga de emitir el Documento Nacional de Identidad?",
+            "correctAnswerId": 1055627,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055627,
+                    "declaration": "El Ministerio del Interior.",
+                    "image": null
+                },
+                {
+                    "id": 1055630,
+                    "declaration": "La Direcci\u00f3n General de la Guardia Civil.",
+                    "image": null
+                },
+                {
+                    "id": 1055629,
+                    "declaration": "El Ministerio de Inclusi\u00f3n, Seguridad Social y Migraciones.",
+                    "image": null
+                },
+                {
+                    "id": 1055628,
+                    "declaration": "El Ministerio de Funci\u00f3n P\u00fablica",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266852,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "De acuerdo con lo dispuesto en la Ley 39\/2015, en el caso de que los interesados en el procedimiento optaran por relacionarse con las Administraciones P\u00fablicas a trav\u00e9s de medios electr\u00f3nicos, se considerar\u00e1n v\u00e1lidos a efectos de firma:",
+            "correctAnswerId": 1055576,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055573,
+                    "declaration": "Sistemas de sello electr\u00f3nico cualificado basados en certificados electr\u00f3nicos cualificados de sello electr\u00f3nico incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055574,
+                    "declaration": "Sistemas de firma electr\u00f3nica cualificada y avanzada basados en certificados electr\u00f3nicos cualificados de firma electr\u00f3nica expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055575,
+                    "declaration": "Sistemas de sello electr\u00f3nico avanzado basados en certificados electr\u00f3nicos cualificados de sello electr\u00f3nico incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055576,
+                    "declaration": "Todas las respuestas anteriores son correctas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266847,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Los datos procedentes de sistemas de identificaci\u00f3n de clave concertada, \u00bfpueden ser objeto de transferencia a un tercer pa\u00eds u organizaci\u00f3n internacional?",
+            "correctAnswerId": 1055557,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055556,
+                    "declaration": "No, con la \u00fanica excepci\u00f3n de los que hayan sido objeto de una decisi\u00f3n de adecuaci\u00f3n de la Comisi\u00f3n Europea.",
+                    "image": null
+                },
+                {
+                    "id": 1055558,
+                    "declaration": "S\u00ed, en virtud del criterio de reciprocidad.",
+                    "image": null
+                },
+                {
+                    "id": 1055555,
+                    "declaration": "No, en ning\u00fan caso.",
+                    "image": null
+                },
+                {
+                    "id": 1055557,
+                    "declaration": "No, con excepci\u00f3n de los que hayan sido objeto de una decisi\u00f3n de adecuaci\u00f3n de la Comisi\u00f3n Europea o cuando as\u00ed lo exija el cumplimiento de las obligaciones internacionales asumidas por Espa\u00f1a.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409009,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Cuando se proceda a la revocaci\u00f3n de un certificado cualificado, el prestador de servicios deber\u00e1 comunicarla al titular:",
+            "correctAnswerId": 1624598,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624598,
+                    "declaration": "Por un medio que acredite la entrega y recepci\u00f3n efectiva siempre que sea factible.",
+                    "image": null
+                },
+                {
+                    "id": 1624599,
+                    "declaration": "Especificando la forma que en puede solicitarse el levantamiento de la decisi\u00f3n acordada.",
+                    "image": null
+                },
+                {
+                    "id": 1624596,
+                    "declaration": "De manera simult\u00e1nea o, si no fuese factible, inmediatamente despu\u00e9s de realizada.",
+                    "image": null
+                },
+                {
+                    "id": 1624597,
+                    "declaration": "Especificando los motivos, la fecha y la hora, y el periodo de suspensi\u00f3n tras el cual el certificado quedar\u00e1 sin efecto.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 723048,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Tal y como se recoge en la Resoluci\u00f3n de 14 de diciembre de 2015, de la Direcci\u00f3n de Tecnolog\u00edas de la Informaci\u00f3n y las Comunicaciones, por la que se establecen las prescripciones t\u00e9cnicas necesarias para el desarrollo y aplicaci\u00f3n del sistema Cl@ve, se\u00f1ale la respuesta correcta:",
+            "correctAnswerId": 2867896,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2867895,
+                    "declaration": "Proporcionar\u00e1 a los usuarios tres modalidades de identificaci\u00f3n electr\u00f3nica basadas en el uso de claves concertadas.",
+                    "image": null
+                },
+                {
+                    "id": 2867896,
+                    "declaration": "Permitir\u00e1 tambi\u00e9n el acceso a servicios de firma electr\u00f3nica, en particular, a servicios de firma de documentos electr\u00f3nicos mediante certificados electr\u00f3nicos centralizados.",
+                    "image": null
+                },
+                {
+                    "id": 2867893,
+                    "declaration": "Es un sistema que est\u00e1 dirigido a los ciudadanos que cumplan con los requisitos indicados en las Prescripciones T\u00e9cnicas.",
+                    "image": null
+                },
+                {
+                    "id": 2867894,
+                    "declaration": "Ofrece tres niveles de garant\u00eda de registro asociados a la forma y a las garant\u00edas que ofrezca la comunicaci\u00f3n de la informaci\u00f3n de registro por parte del ciudadano.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266056,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "La criptograf\u00eda asim\u00e9trica se basa en el uso de dos claves:",
+            "correctAnswerId": 1052394,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1052393,
+                    "declaration": "Una primaria y otra secundaria.",
+                    "image": null
+                },
+                {
+                    "id": 1052394,
+                    "declaration": "Una p\u00fablica y otra privada.",
+                    "image": null
+                },
+                {
+                    "id": 1052395,
+                    "declaration": "Una general y otra espec\u00edfica.",
+                    "image": null
+                },
+                {
+                    "id": 1052396,
+                    "declaration": "Ninguna de las respuestas anteriores es correcta.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409045,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan la Ley 6\/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electr\u00f3nicos de confianza, los prestadores de servicios de confianza no cualificados:",
+            "correctAnswerId": 1624741,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624742,
+                    "declaration": "Necesitan verificaci\u00f3n administrativa previa de cumplimiento de requisitos para iniciar su actividad y comunicaci\u00f3n de su actividad al Ministerio para la Transformaci\u00f3n Digital y la Funci\u00f3n P\u00fablica en el plazo de dos meses desde que la inicien.",
+                    "image": null
+                },
+                {
+                    "id": 1624741,
+                    "declaration": "No necesitan verificaci\u00f3n administrativa previa de cumplimiento de requisitos para iniciar su actividad, pero deber\u00e1n comunicar su actividad al Ministerio para la Transformaci\u00f3n Digital y la Funci\u00f3n P\u00fablica en el plazo de tres meses desde que la inicien.",
+                    "image": null
+                },
+                {
+                    "id": 1624740,
+                    "declaration": "Necesitan verificaci\u00f3n administrativa previa de cumplimiento de requisitos para iniciar su actividad y dar\u00e1n comunicaci\u00f3n de su actividad al Ministerio para la Transformaci\u00f3n Digital y la Funci\u00f3n P\u00fablica si les es requerida.",
+                    "image": null
+                },
+                {
+                    "id": 1624743,
+                    "declaration": "No podr\u00e1n iniciar su actividad sin previa verificaci\u00f3n administrativa.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409051,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "A la vista de la Ley 6\/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electr\u00f3nicos de confianza, se\u00f1ala la respuesta incorrecta. Los prestadores de servicios tienen la obligaci\u00f3n de:",
+            "correctAnswerId": 1624767,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624764,
+                    "declaration": "Tomar las medidas necesarias para resolver los incidentes de seguridad que les afecten.",
+                    "image": null
+                },
+                {
+                    "id": 1624766,
+                    "declaration": "Custodiar y proteger los datos de creaci\u00f3n de firma, sello o autenticaci\u00f3n de sitio web frente a cualquier alteraci\u00f3n, destrucci\u00f3n o acceso no autorizado.",
+                    "image": null
+                },
+                {
+                    "id": 1624765,
+                    "declaration": "Publicar informaci\u00f3n veraz y acorde con la Ley 6\/2020 y el Reglamento (UE) 910\/2014.",
+                    "image": null
+                },
+                {
+                    "id": 1624767,
+                    "declaration": "Disponer de un servicio de consulta sobre el estado de validez o revocaci\u00f3n de los certificados emitidos restringido al p\u00fablico.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 411070,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes requisitos no definen a una firma electr\u00f3nica avanzada?",
+            "correctAnswerId": 1632795,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1632794,
+                    "declaration": "Estar vinculada al firmante de manera \u00fanica.",
+                    "image": null
+                },
+                {
+                    "id": 1632793,
+                    "declaration": "Haber sido creada utilizando datos de creaci\u00f3n de la firma electr\u00f3nica que el firmante puede utilizar, con un alto nivel de confianza, bajo su control exclusivo.",
+                    "image": null
+                },
+                {
+                    "id": 1632796,
+                    "declaration": "Permitir la identificaci\u00f3n del firmante.",
+                    "image": null
+                },
+                {
+                    "id": 1632795,
+                    "declaration": "Estar vinculada con los datos firmados por la misma de modo tal que cualquier modificaci\u00f3n ulterior de los mismos no sea detectable.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409027,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Los prestadores cualificados de servicios electr\u00f3nicos de confianza deber\u00e1n constituir un seguro de responsabilidad civil:",
+            "correctAnswerId": 1624668,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624670,
+                    "declaration": "Por un importe m\u00ednimo que se fijar\u00e1 en normativa reglamentaria de desarrollo.",
+                    "image": null
+                },
+                {
+                    "id": 1624671,
+                    "declaration": "Por un importe inferior al inicial si se presta m\u00e1s de un servicio cualificado.",
+                    "image": null
+                },
+                {
+                    "id": 1624669,
+                    "declaration": "Que podr\u00e1 ser sustituido solo parcialmente por una garant\u00eda mediante aval bancario o seguro de cauci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 1624668,
+                    "declaration": "Exceptuando que el prestador pertenezca al sector p\u00fablico.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266836,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan el art\u00edculo 9 Ley 39\/2015,  los interesados podr\u00e1n identificarse electr\u00f3nicamente ante las Administraciones P\u00fablicas a trav\u00e9s de cualquier sistema que cuente con un registro previo como usuario que permita garantizar su identidad. En particular se admiten:",
+            "correctAnswerId": 1055515,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055513,
+                    "declaration": "Sistemas basados en datos biom\u00e9tricos o mec\u00e1nicos.",
+                    "image": null
+                },
+                {
+                    "id": 1055514,
+                    "declaration": "Sistema de clave discrecional proporcionada por prestadores de servicios autorizados. Sistemas basados en datos biom\u00e9tricos o mec\u00e1nicos.",
+                    "image": null
+                },
+                {
+                    "id": 1055515,
+                    "declaration": "Sistemas basados en certificados electr\u00f3nicos cualificados de firma electr\u00f3nica expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055516,
+                    "declaration": "Todas las respuestas son correctas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 411089,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan el Reglamento (UE) 910\/2014, los \u0022datos en formato electr\u00f3nico anejos a otros datos en formato electr\u00f3nico, o asociados de manera l\u00f3gica con ellos, para garantizar el origen y la integridad de estos \u00faltimos\u0022 es la definici\u00f3n de:",
+            "correctAnswerId": 1632869,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1632872,
+                    "declaration": "Un documento electr\u00f3nico.",
+                    "image": null
+                },
+                {
+                    "id": 1632871,
+                    "declaration": "Un servicio de confianza.",
+                    "image": null
+                },
+                {
+                    "id": 1632870,
+                    "declaration": "Una firma electr\u00f3nica.",
+                    "image": null
+                },
+                {
+                    "id": 1632869,
+                    "declaration": "Un sello electr\u00f3nico.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 265983,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes no es un metaproyecto contemplado por el Plan Conecta?",
+            "correctAnswerId": 1052104,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1052102,
+                    "declaration": "Simplifica.",
+                    "image": null
+                },
+                {
+                    "id": 1052104,
+                    "declaration": "Organiza.",
+                    "image": null
+                },
+                {
+                    "id": 1052103,
+                    "declaration": "eDNI.",
+                    "image": null
+                },
+                {
+                    "id": 1052101,
+                    "declaration": "Certifica.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 408997,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es el tiempo m\u00e1ximo de vigencia de un certificado cualificado?",
+            "correctAnswerId": 1624550,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624549,
+                    "declaration": "Seis a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1624551,
+                    "declaration": "El certificado cualificado no tiene un per\u00edodo m\u00e1ximo de vigencia.",
+                    "image": null
+                },
+                {
+                    "id": 1624550,
+                    "declaration": "Cinco a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1624548,
+                    "declaration": "Cuatro a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 723857,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "La Ley 56\/2007, de 28 de diciembre, de Medidas de Impulso de la Sociedad de la Informaci\u00f3n, \u00bfqu\u00e9 establece sobre la factura electr\u00f3nica en el art\u00edculo 1?",
+            "correctAnswerId": 2871113,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2871112,
+                    "declaration": "Los formatos estructurados de las facturas electr\u00f3nicas permitir\u00e1n su visualizaci\u00f3n y emisi\u00f3n en las distintas lenguas oficiales existentes y en ingl\u00e9s, con la finalidad de garantizar los derechos de los usuarios nacionales y extranjeros.",
+                    "image": null
+                },
+                {
+                    "id": 2871115,
+                    "declaration": "La factura electr\u00f3nica solo se utilizar\u00e1 en contrataci\u00f3n, estando excluida de la justificaci\u00f3n de ayudas y subvenciones.",
+                    "image": null
+                },
+                {
+                    "id": 2871113,
+                    "declaration": "Los formatos estructurados de las facturas electr\u00f3nicas permitir\u00e1n su visualizaci\u00f3n y emisi\u00f3n en las distintas lenguas oficiales existentes, con la finalidad de garantizar los derechos de los usuarios.",
+                    "image": null
+                },
+                {
+                    "id": 2871114,
+                    "declaration": "No trata en ning\u00fan art\u00edculo sobre la factura electr\u00f3nica",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266879,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Cuando el solicitante del Documento Nacional de Identidad no haya cumplido los 5 a\u00f1os, dicho Documento tendr\u00e1 una validez de:",
+            "correctAnswerId": 1055675,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055677,
+                    "declaration": "6 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055676,
+                    "declaration": "1 a\u00f1o.",
+                    "image": null
+                },
+                {
+                    "id": 1055675,
+                    "declaration": "2 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055674,
+                    "declaration": "5 a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266845,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En relaci\u00f3n con los sistemas de identificaci\u00f3n a los que se refiere el art\u00edculo 9.2.c) Ley 39\/2015, se establece la obligatoriedad de que los recursos t\u00e9cnicos necesarios para la recogida, almacenamiento, tratamiento y gesti\u00f3n de dichos sistemas se encuentren situados:",
+            "correctAnswerId": 1055547,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055547,
+                    "declaration": "En territorio de la Uni\u00f3n Europea.",
+                    "image": null
+                },
+                {
+                    "id": 1055550,
+                    "declaration": "En territorio de la UE o en otro Estado con el que Espa\u00f1a tenga firmado tratado.",
+                    "image": null
+                },
+                {
+                    "id": 1055549,
+                    "declaration": "En el Espacio Schengen.",
+                    "image": null
+                },
+                {
+                    "id": 1055548,
+                    "declaration": "En territorio espa\u00f1ol.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266966,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Con car\u00e1cter general, \u00bfa partir de qu\u00e9 edad el per\u00edodo de validez del Documento Nacional de Identidad ser\u00e1 permanente?",
+            "correctAnswerId": 1056023,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1056022,
+                    "declaration": "Cuando el titular haya cumplido 80 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1056021,
+                    "declaration": "Cuando el titular haya cumplido 65 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1056023,
+                    "declaration": "Cuando el titular haya cumplido 70 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1056024,
+                    "declaration": "Cuando el titular haya cumplido 60 a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266828,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Las Administraciones P\u00fablicas est\u00e1n obligadas a verificar la identidad de los interesados en el procedimiento administrativo, mediante la comprobaci\u00f3n:",
+            "correctAnswerId": 1055481,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055481,
+                    "declaration": "De su nombre y apellidos o denominaci\u00f3n o raz\u00f3n social, seg\u00fan corresponda, que consten en el Documento Nacional de Identidad o documento identificativo equivalente.",
+                    "image": null
+                },
+                {
+                    "id": 1055482,
+                    "declaration": "De su nombre, apellidos y domicilio social.",
+                    "image": null
+                },
+                {
+                    "id": 1055483,
+                    "declaration": "De su n\u00famero de documento nacional de identidad o n\u00famero de identificaci\u00f3n fiscal.",
+                    "image": null
+                },
+                {
+                    "id": 1055484,
+                    "declaration": "Ninguna es correcta.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266846,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En relaci\u00f3n con los sistemas de identificaci\u00f3n que consistan en sistemas de clave concertada, el art\u00edculo 9.3 de la Ley 39\/2015 establece que los datos se encontrar\u00e1n disponibles para su acceso:",
+            "correctAnswerId": 1055553,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055552,
+                    "declaration": "\u00danicamente por parte de las autoridades judiciales competentes.",
+                    "image": null
+                },
+                {
+                    "id": 1055553,
+                    "declaration": "Por parte de las autoridades judiciales y administrativas competentes.",
+                    "image": null
+                },
+                {
+                    "id": 1055554,
+                    "declaration": "Por parte de las autoridades judiciales, policiales y administrativas competentes.",
+                    "image": null
+                },
+                {
+                    "id": 1055551,
+                    "declaration": "Solo por parte de las autoridades judiciales del orden penal.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 497679,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "El Consejo Consultivo para la Transformaci\u00f3n Digital se articula en:",
+            "correctAnswerId": 1976343,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1976344,
+                    "declaration": "Tres comisiones permanentes, una de las cuales es la \u0022Comisi\u00f3n permanente de Conectividad Digital, Ciberseguridad e Inteligencia Artificial\u0022.",
+                    "image": null
+                },
+                {
+                    "id": 1976341,
+                    "declaration": "Dos comisiones permanentes, una de las cuales es la \u0022Comisi\u00f3n Permanente de Inteligencia Artificial\u0022.",
+                    "image": null
+                },
+                {
+                    "id": 1976343,
+                    "declaration": "Dos comisiones permanentes, una de las cuales es la \u0022Comisi\u00f3n Permanente de Digitalizaci\u00f3n de la Econom\u00eda, la Administraci\u00f3n, y la Ciudadan\u00eda\u0022.",
+                    "image": null
+                },
+                {
+                    "id": 1976342,
+                    "declaration": "Tres comisiones permanentes, una de las cuales es la \u0022Comisi\u00f3n Permanente de Telecomunicaciones, Infraestructuras Digitales, Conectividad Digital, y Sector Audiovisual\u0022.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266843,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale la afirmaci\u00f3n incorrecta. El art\u00edculo 10 de la Ley 39\/2015 se\u00f1ala que los interesados podr\u00e1n firmar a trav\u00e9s de cualquier medio que permita acreditar:",
+            "correctAnswerId": 1055541,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055539,
+                    "declaration": "La autenticidad de la expresi\u00f3n de su voluntad",
+                    "image": null
+                },
+                {
+                    "id": 1055542,
+                    "declaration": "La inalterabilidad del documento",
+                    "image": null
+                },
+                {
+                    "id": 1055540,
+                    "declaration": "La integridad del documento",
+                    "image": null
+                },
+                {
+                    "id": 1055541,
+                    "declaration": "Su identidad",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266959,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Luis tiene 5 a\u00f1os y va a renovar su DNI, \u00bfqu\u00e9 per\u00edodo de validez tendr\u00e1 este documento con car\u00e1cter general?",
+            "correctAnswerId": 1055993,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055994,
+                    "declaration": "2 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055993,
+                    "declaration": "5 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055996,
+                    "declaration": "4 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055995,
+                    "declaration": "3 a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409003,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes medios no es v\u00e1lido a los efectos de identificar a una persona f\u00edsica para la expedici\u00f3n de un certificado cualificado?",
+            "correctAnswerId": 1624574,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624574,
+                    "declaration": "La presentaci\u00f3n de una solicitud acompa\u00f1ada de Documento Nacional de Identidad compulsado, a\u00fan sin su personaci\u00f3n ante los encargados de verificarla.",
+                    "image": null
+                },
+                {
+                    "id": 1624573,
+                    "declaration": "La presentaci\u00f3n de una solicitud junto a su personaci\u00f3n ante los encargados de verificarla acreditando su identidad por pasaporte.",
+                    "image": null
+                },
+                {
+                    "id": 1624575,
+                    "declaration": "La presentaci\u00f3n de una solicitud junto a su personaci\u00f3n ante los encargados de verificarla acreditando su identidad por cualquier medio admitido en derecho.",
+                    "image": null
+                },
+                {
+                    "id": 1624572,
+                    "declaration": "La presentaci\u00f3n de una solicitud en que conste su firma legitimada en presencia notarial, a\u00fan sin su personaci\u00f3n ante los encargados de verificarla.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 411108,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de estos niveles de seguridad de los sistemas de identificaci\u00f3n electr\u00f3nica no se cita en el Reglamento (UE) 910\/2014?",
+            "correctAnswerId": 1632945,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1632947,
+                    "declaration": "Nivel de seguridad bajo.",
+                    "image": null
+                },
+                {
+                    "id": 1632948,
+                    "declaration": "Nivel de seguridad alto.",
+                    "image": null
+                },
+                {
+                    "id": 1632946,
+                    "declaration": "Nivel de seguridad sustancial.",
+                    "image": null
+                },
+                {
+                    "id": 1632945,
+                    "declaration": "Nivel de seguridad medio.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409033,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "De acuerdo con la Ley 6\/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electr\u00f3nicos de confianza, el prestador cualificado que vaya a cesar en su actividad deber\u00e1 comunicar a los clientes:",
+            "correctAnswerId": 1624692,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624692,
+                    "declaration": "Esta circunstancia, con una antelaci\u00f3n m\u00ednima de dos meses al cese efectivo de la actividad.",
+                    "image": null
+                },
+                {
+                    "id": 1624693,
+                    "declaration": "Cualquier otra circunstancia relevante que pueda impedir la continuaci\u00f3n de su actividad.",
+                    "image": null
+                },
+                {
+                    "id": 1624694,
+                    "declaration": "Cuanto tenga conocimiento de ello, la apertura de cualquier proceso concursal que se siga contra \u00e9l.",
+                    "image": null
+                },
+                {
+                    "id": 1624695,
+                    "declaration": "Las respuestas a) y b) son correctas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266054,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQue se entiende por Criptograf\u00eda?",
+            "correctAnswerId": 1052386,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1052387,
+                    "declaration": "Es un documento emitido y firmado por la Autoridad de Certificaci\u00f3n que identifica una clave p\u00fablica con su propietario.",
+                    "image": null
+                },
+                {
+                    "id": 1052388,
+                    "declaration": "Es un c\u00f3digo \u00fanico que identifica una y s\u00f3lo una de las claves que puede tener la FNMT-RCM con su NIF.",
+                    "image": null
+                },
+                {
+                    "id": 1052386,
+                    "declaration": "Es el arte de escribir en clave o de forma enigm\u00e1tica. En principio se puede expresar como el conjunto de t\u00e9cnicas que permiten asegurar que un mensaje solo es entendible por aquel al que va dirigido.",
+                    "image": null
+                },
+                {
+                    "id": 1052385,
+                    "declaration": "Es un documento emitido y firmado por la Autoridad de Certificaci\u00f3n que identifica una clave privada con su propietario.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 411127,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan el Reglamento (UE) 910\/2014, se entiende por firma electr\u00f3nica cualificada:",
+            "correctAnswerId": 1633021,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1633021,
+                    "declaration": "La firma electr\u00f3nica avanzada que se crea mediante un dispositivo cualificado de creaci\u00f3n de firmas electr\u00f3nicas y que se basa en un certificado cualificado de firma electr\u00f3nica.",
+                    "image": null
+                },
+                {
+                    "id": 1633023,
+                    "declaration": "La firma electr\u00f3nica avanzada que se crea mediante un dispositivo cualificado de creaci\u00f3n de firmas electr\u00f3nicas y que se basa en un prestador de servicios de confianza.",
+                    "image": null
+                },
+                {
+                    "id": 1633024,
+                    "declaration": "La firma electr\u00f3nica avanzada que se crea mediante un dispositivo cualificado de creaci\u00f3n de firmas electr\u00f3nicas y que se basa en un sello electr\u00f3nico cualificado.",
+                    "image": null
+                },
+                {
+                    "id": 1633022,
+                    "declaration": "La firma electr\u00f3nica avanzada que se crea mediante un dispositivo cualificado de creaci\u00f3n de firmas electr\u00f3nicas y que se basa en un servicio electr\u00f3nico de confianza.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266953,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Mar\u00eda tiene 21 a\u00f1os y quiere renovar su DNI, \u00bfqu\u00e9 per\u00edodo de validez tendr\u00e1 este documento con car\u00e1cter general?",
+            "correctAnswerId": 1055969,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055971,
+                    "declaration": "7 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055969,
+                    "declaration": "5 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055970,
+                    "declaration": "10 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055972,
+                    "declaration": "3 a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409021,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan la Ley 6\/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electr\u00f3nicos de confianza, el per\u00edodo de tiempo durante el que los prestadores cualificados de servicios electr\u00f3nicos de confianza deber\u00e1n conservar la informaci\u00f3n relativa a los servicios prestados es:",
+            "correctAnswerId": 1624646,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624647,
+                    "declaration": "De 5 a\u00f1os desde la extinci\u00f3n del certificado o la finalizaci\u00f3n del servicio prestado, sin perjuicio de la pr\u00f3rroga que establece la normativa comunitaria.",
+                    "image": null
+                },
+                {
+                    "id": 1624644,
+                    "declaration": "De 5 a\u00f1os desde la extinci\u00f3n del certificado o la finalizaci\u00f3n del servicio prestado, coincidiendo con la normativa comunitaria.",
+                    "image": null
+                },
+                {
+                    "id": 1624646,
+                    "declaration": "De 15 a\u00f1os desde la extinci\u00f3n del certificado o la finalizaci\u00f3n del servicio prestado, coincidiendo con la normativa comunitaria.",
+                    "image": null
+                },
+                {
+                    "id": 1624645,
+                    "declaration": "De 5 a\u00f1os desde la extinci\u00f3n del certificado o la finalizaci\u00f3n del servicio prestado.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266833,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "De acuerdo con el art. 9 de la Ley 39\/2015, \u00bfcu\u00e1les son los sistemas admitidos por las Administraciones P\u00fablicas para que los interesados puedan identificarse electr\u00f3nicamente?",
+            "correctAnswerId": 1055501,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055502,
+                    "declaration": "Sistemas de firma electr\u00f3nica cualificada y avanzada basados en t\u00edtulos electr\u00f3nicos reconocidos o cualificados de firma electr\u00f3nica expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055503,
+                    "declaration": "Sistemas de sello electr\u00f3nico cualificado y de sello electr\u00f3nico avanzado basados en t\u00edtulos electr\u00f3nicos reconocidos o cualificados de sello electr\u00f3nico incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055501,
+                    "declaration": "Sistemas basados en certificados electr\u00f3nicos cualificados de sello electr\u00f3nico expedidos por prestadores incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                },
+                {
+                    "id": 1055504,
+                    "declaration": "Sistemas basados en certificados electr\u00f3nicos cualificados de timbre electr\u00f3nico incluidos en la \u00abLista de confianza de prestadores de servicios de certificaci\u00f3n\u00bb.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 411146,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan el Reglamento (UE) 910\/2014, se define como \u0022todo contenido almacenado en formato electr\u00f3nico, en particular, texto o registro sonoro, visual o audiovisual\u0022:",
+            "correctAnswerId": 1633097,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1633097,
+                    "declaration": "El documento electr\u00f3nico.",
+                    "image": null
+                },
+                {
+                    "id": 1633098,
+                    "declaration": "La firma electr\u00f3nica.",
+                    "image": null
+                },
+                {
+                    "id": 1633099,
+                    "declaration": "El sello electr\u00f3nico.",
+                    "image": null
+                },
+                {
+                    "id": 1633100,
+                    "declaration": "El certificado cualificado.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 411166,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 Reglamento de la Uni\u00f3n Europea regula la identificaci\u00f3n electr\u00f3nica y los servicios de confianza para las transacciones electr\u00f3nicas en el mercado interior?",
+            "correctAnswerId": 1633177,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1633178,
+                    "declaration": "El Reglamento (UE) 923\/2014 de 10 de julio de 2014.",
+                    "image": null
+                },
+                {
+                    "id": 1633179,
+                    "declaration": "El Reglamento (UE) 910\/2013 de 23 de julio de 2013.",
+                    "image": null
+                },
+                {
+                    "id": 1633180,
+                    "declaration": "El Reglamento (UE) 923\/2013 de 10 de julio de 2013.",
+                    "image": null
+                },
+                {
+                    "id": 1633177,
+                    "declaration": "El Reglamento (UE) 910\/2014 de 23 de julio de 2014.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 409039,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Seg\u00fan la Ley 6\/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electr\u00f3nicos de confianza, los prestadores de servicios electr\u00f3nicos de confianza asumir\u00e1n toda la responsabilidad frente a terceros:",
+            "correctAnswerId": 1624717,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1624718,
+                    "declaration": "Por todos los da\u00f1os y perjuicios ocasionados a la persona a la que ha prestado sus servicios o a terceros de buena fe.",
+                    "image": null
+                },
+                {
+                    "id": 1624717,
+                    "declaration": "Por la actuaci\u00f3n de las personas u otros prestadores en los que deleguen la ejecuci\u00f3n de alguna o algunas de las funciones necesarias para la prestaci\u00f3n de servicios electr\u00f3nicos de confianza, incluyendo las actuaciones de comprobaci\u00f3n de identidad previas a la expedici\u00f3n de un certificado cualificado.",
+                    "image": null
+                },
+                {
+                    "id": 1624716,
+                    "declaration": "Por los da\u00f1os y perjuicios ocasionados a la persona a la que ha prestado sus servicios o a terceros de buena fe, si esta incurre en alguno de los supuestos previstos en el Reglamento (UE) 910\/2014.",
+                    "image": null
+                },
+                {
+                    "id": 1624719,
+                    "declaration": "Por la actuaci\u00f3n de las personas u otros prestadores en los que deleguen la ejecuci\u00f3n de alguna o algunas de las funciones necesarias para la prestaci\u00f3n de servicios electr\u00f3nicos de confianza, excluyendo las actuaciones de comprobaci\u00f3n de identidad previas a la expedici\u00f3n de un certificado cualificado.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 723046,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Se\u00f1ale la respuesta INCORRECTA sobre el uso obligatorio de firma requerida a los interesados por parte de las Administraciones P\u00fablicas que recoge el art\u00edculo 11 de Ley 39\/2015, de 1 de octubre, del Procedimiento Administrativo Com\u00fan de las Administraciones P\u00fablicas:",
+            "correctAnswerId": 2867885,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 2867887,
+                    "declaration": "Presentar declaraciones responsables o comunicaciones.",
+                    "image": null
+                },
+                {
+                    "id": 2867885,
+                    "declaration": "Conocer el estado de la tramitaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 2867888,
+                    "declaration": "Formular solicitudes.",
+                    "image": null
+                },
+                {
+                    "id": 2867886,
+                    "declaration": "Desistir de acciones.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266841,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Ante las Administraciones P\u00fablicas, los interesados podr\u00e1n firmar a trav\u00e9s de cualquier medio que permita acreditar:",
+            "correctAnswerId": 1055535,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055532,
+                    "declaration": "La autenticidad de la expresi\u00f3n de su voluntad y consentimiento.",
+                    "image": null
+                },
+                {
+                    "id": 1055533,
+                    "declaration": "La integridad del documento.",
+                    "image": null
+                },
+                {
+                    "id": 1055534,
+                    "declaration": "La inalterabilidad del documento.",
+                    "image": null
+                },
+                {
+                    "id": 1055535,
+                    "declaration": "Todas las respuestas anteriores son correctas.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266860,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfA partir de qu\u00e9 edad es obligatorio el Documento Nacional de Identidad seg\u00fan la Ley Org\u00e1nica de protecci\u00f3n de la seguridad ciudadana?",
+            "correctAnswerId": 1055601,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055602,
+                    "declaration": "16 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055603,
+                    "declaration": "12 a\u00f1os",
+                    "image": null
+                },
+                {
+                    "id": 1055604,
+                    "declaration": "10 a\u00f1os.",
+                    "image": null
+                },
+                {
+                    "id": 1055601,
+                    "declaration": "14 a\u00f1os.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 266827,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfQu\u00e9 instrumento utilizar\u00e1n las Administraciones P\u00fablicas para verificar la identidad de los interesados en el procedimiento administrativo?",
+            "correctAnswerId": 1055479,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1055480,
+                    "declaration": "\u00danicamente se aceptar\u00e1 la verificaci\u00f3n a trav\u00e9s del Documento Nacional de Identidad.",
+                    "image": null
+                },
+                {
+                    "id": 1055477,
+                    "declaration": "El correspondiente registro administrativo.",
+                    "image": null
+                },
+                {
+                    "id": 1055478,
+                    "declaration": "El Registro Electr\u00f3nico de la Administraci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 1055479,
+                    "declaration": "El Documento Nacional de Identidad o un documento identificativo equivalente.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 265997,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En el Plan Moderniza se contempla una de las siguientes iniciativas:",
+            "correctAnswerId": 1052157,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
+                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
+                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4",
+                        "name": "1.6 - Sociedad de la información",
+                        "slug": "tema-8-42",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 1052160,
+                    "declaration": "La creaci\u00f3n del Servicio de Comunicaci\u00f3n Ciudadana con la Administraci\u00f3n General.",
+                    "image": null
+                },
+                {
+                    "id": 1052158,
+                    "declaration": "La creaci\u00f3n del Observatorio Espa\u00f1ol de Gobierno Electr\u00f3nico.",
+                    "image": null
+                },
+                {
+                    "id": 1052157,
+                    "declaration": "La creaci\u00f3n del Observatorio de la Calidad de los Servicios.",
+                    "image": null
+                },
+                {
+                    "id": 1052159,
+                    "declaration": "La creaci\u00f3n del Servicio General de Calidad y Conexi\u00f3n Electr\u00f3nica.",
+                    "image": null
+                }
+            ],
+            "answeredId": null,
+            "isDoubtful": false,
+            "isHighlighted": false
+        }
+    ],
+    "duration": 0,
+    "mark": 0,
+    "doubtfulMark": 0,
+    "createdAt": "2025-08-02T14:45:16+00:00",
+    "updatedAt": "2025-08-02T14:45:16+00:00",
+    "inProgressAt": "2025-08-02T14:45:16+00:00",
+    "completedAt": null,
+    "isRepeated": false,
+    "evaluation": {
+        "id": 78,
+        "name": "TAI TL",
+        "correctAnswer": 1,
+        "failedAnswer": -0.333,
+        "notAnswered": 0
+    },
+    "maxMark": 0,
+    "passed": null,
+    "doubtfulPassed": null,
+    "info": {
+        "questionsCount": 43,
+        "blankQuestionsCount": 43,
+        "answeredQuestionsCount": 0,
+        "correctQuestionsCount": 0,
+        "failedQuestionsCount": 0,
+        "doubtfulQuestionsCount": 0,
+        "correctDoubtfulQuestionsCount": 0,
+        "failedDoubtfulQuestionsCount": 0,
+        "highlightedQuestionsCount": 0
+    },
+    "generationInfo": {
+        "contents": [
+            "e45d3c16-a24e-4b81-97cb-a3101ab2e6e4"
+        ],
+        "contentsCount": [
+            {
+                "name": "Temas",
+                "count": 1
+            }
+        ]
+    },
+    "challengeToken": null,
+    "challenge": null
+}

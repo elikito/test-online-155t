@@ -71,6 +71,36 @@ class StorageService {
       return [];
     }
   }
+
+  static saveStats(mode, stats) {
+    try {
+      localStorage.setItem(`stats_${mode}`, JSON.stringify(stats));
+      return true;
+    } catch (error) {
+      console.error('Error saving stats:', error);
+      return false;
+    }
+  }
+
+  static loadStats(mode) {
+    try {
+      const saved = localStorage.getItem(`stats_${mode}`);
+      return saved ? JSON.parse(saved) : { correct: 0, incorrect: 0 };
+    } catch (error) {
+      console.error('Error loading stats:', error);
+      return { correct: 0, incorrect: 0 };
+    }
+  }
+
+  static resetStats(mode) {
+    try {
+      localStorage.removeItem(`stats_${mode}`);
+      return true;
+    } catch (error) {
+      console.error('Error resetting stats:', error);
+      return false;
+    }
+  }
 }
 
 export default StorageService;

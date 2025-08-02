@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ErrorBoundary from '../components/ErrorBoundary';
 import { QuestionCard, NavigationPanel, TestControls } from '../components/test';
 import TokenManager from '../components/TokenManager';
+import StorageService from '../services/storageService';
 
 const PANEL_WIDTH = 600;
 
@@ -87,6 +88,33 @@ export default function Home() {
       .then(files => setExamFiles(files))
       .catch(() => setExamFiles([]));
   }, []);
+
+  // Cargar estadísticas al inicializar la aplicación
+  useEffect(() => {
+    const customStats = StorageService.loadStats('custom_test');
+    setCustomTestCorrect(customStats.correct);
+    setCustomTestIncorrect(customStats.incorrect);
+    
+    const infiniteStats = StorageService.loadStats('infinite');
+    setInfiniteCorrect(infiniteStats.correct);
+    setInfiniteIncorrect(infiniteStats.incorrect);
+  }, []);
+
+  // Guardar estadísticas de test personalizado cuando cambien
+  useEffect(() => {
+    StorageService.saveStats('custom_test', {
+      correct: customTestCorrect,
+      incorrect: customTestIncorrect
+    });
+  }, [customTestCorrect, customTestIncorrect]);
+
+  // Guardar estadísticas de modo infinito cuando cambien
+  useEffect(() => {
+    StorageService.saveStats('infinite', {
+      correct: infiniteCorrect,
+      incorrect: infiniteIncorrect
+    });
+  }, [infiniteCorrect, infiniteIncorrect]);
 
   const shuffleArray = (array) => {
     return array
@@ -682,8 +710,65 @@ return (
                       Modo Infinito
                     </button>
                   </div>
-                  <div className="col-6 col-md-auto">
+<div className="col-6 col-md-auto">
                     <button className="btn btn-success w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('crear')}>Crear preguntas</button>
+                  </div>
+                </div>
+
+                {/* Mostrar estadísticas persistentes */}
+                <div className="mt-4">
+                  <div className="alert alert-secondary" style={{ fontSize: 15 }}>
+                    <h6 className="mb-2">📊 Estadísticas Guardadas</h6>
+                    <div className="row text-center">
+                      <div className="col-6">
+                        <div className="border rounded p-2 mb-2">
+                          <div><strong>Test Personalizado</strong></div>
+                          <div className="text-success">✓ {customTestCorrect} correctas</div>
+                          <div className="text-danger">✗ {customTestIncorrect} incorrectas</div>
+                          <div className="text-muted small">Total: {customTestCorrect + customTestIncorrect}</div>
+                        </div>
+                        <button 
+                          className="btn btn-outline-warning btn-sm w-100" 
+                          style={{ fontSize: '0.75rem' }}
+                          onClick={() => {
+                            showCustomConfirm(
+                              '¿Estás seguro de que quieres resetear las estadísticas del test personalizado?',
+                              () => {
+                                setCustomTestCorrect(0);
+                                setCustomTestIncorrect(0);
+                                StorageService.resetStats('custom_test');
+                              }
+                            );
+                          }}
+                        >
+                          Resetear
+                        </button>
+                      </div>
+                      <div className="col-6">
+                        <div className="border rounded p-2 mb-2">
+                          <div><strong>Modo Infinito</strong></div>
+                          <div className="text-success">✓ {infiniteCorrect} correctas</div>
+                          <div className="text-danger">✗ {infiniteIncorrect} incorrectas</div>
+                          <div className="text-muted small">Total: {infiniteCorrect + infiniteIncorrect}</div>
+                        </div>
+                        <button 
+                          className="btn btn-outline-warning btn-sm w-100" 
+                          style={{ fontSize: '0.75rem' }}
+                          onClick={() => {
+                            showCustomConfirm(
+                              '¿Estás seguro de que quieres resetear las estadísticas del modo infinito?',
+                              () => {
+                                setInfiniteCorrect(0);
+                                setInfiniteIncorrect(0);
+                                StorageService.resetStats('infinite');
+                              }
+                            );
+                          }}
+                        >
+                          Resetear
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </>
