@@ -46,7 +46,7 @@ export default function Login() {
             <div className="card shadow">
               <div className="card-body p-4">
                 <div className="text-center mb-4">
-                  <h2 className="h4 text-dark mb-2">🔒 Acceso Privado</h2>
+                  <h2 className="h4 text-dark mb-2">Área restringida</h2>
                   <p className="text-muted">Introduce tu token de acceso</p>
                 </div>
 
