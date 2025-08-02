@@ -55,6 +55,7 @@ export default function Home() {
   const [infiniteIncorrect, setInfiniteIncorrect] = useState(0);
   const [autoNext, setAutoNext] = useState(false);
   const [showTema, setShowTema] = useState(true); // Nuevo estado para mostrar tema
+  const [shuffleOptions, setShuffleOptions] = useState(false); // Nuevo estado para mezclar opciones
   const [customTestQuestions, setCustomTestQuestions] = useState([]);
   const [customTestStarted, setCustomTestStarted] = useState(false);
   const [customTestCurrent, setCustomTestCurrent] = useState(0);
@@ -113,6 +114,33 @@ export default function Home() {
     };
   };
 
+  // Función para obtener pregunta con mezclado dinámico
+  const getQuestionWithDynamicShuffle = (question) => {
+    if (!question) return null;
+    
+    // Si ya tiene respuesta del usuario, no mezclar (mantener como está)
+    if (question.respuesta_usuario) {
+      return question;
+    }
+    
+    // Si shuffleOptions está activado y no tiene opciones_originales, aplicar mezclado
+    if (shuffleOptions && !question.opciones_originales) {
+      return shuffleQuestionOptions(question);
+    }
+    
+    // Si shuffleOptions está desactivado y tiene opciones_originales, restaurar originales
+    if (!shuffleOptions && question.opciones_originales) {
+      return {
+        ...question,
+        opciones: question.opciones_originales,
+        respuesta_correcta: question.respuesta_correcta_original
+      };
+    }
+    
+    // En cualquier otro caso, devolver la pregunta tal como está
+    return question;
+  };
+
   const copiarPreguntaActual = (pregunta) => {
     if (!pregunta) return;
     let texto = '';
@@ -136,12 +164,17 @@ export default function Home() {
     const data = await res.json();
     const shuffled = shuffleArray(data);
 
+    // Aplicar mezcla de opciones si está activada
+    const processedQuestions = shuffleOptions 
+      ? shuffled.map(q => shuffleQuestionOptions(q))
+      : shuffled;
+
     const saved = localStorage.getItem(`respuestas_${filename}`);
-    let restored = shuffled;
+    let restored = processedQuestions;
 
     if (saved) {
       const savedAnswers = JSON.parse(saved);
-      restored = shuffled.map(q => {
+      restored = processedQuestions.map(q => {
         const match = savedAnswers.find(sq => sq.id_pregunta === q.id_pregunta);
         return match ? { ...q, respuesta_usuario: match.respuesta_usuario } : q;
       });
@@ -350,7 +383,13 @@ export default function Home() {
 
   const startCustomTest = () => {
     const filtered = getFilteredCustomQuestions();
-    const shuffled = filtered.sort(() => Math.random() - 0.5).slice(0, customNumQuestions);
+    let shuffled = filtered.sort(() => Math.random() - 0.5).slice(0, customNumQuestions);
+    
+    // Aplicar mezcla de opciones si está activada
+    if (shuffleOptions) {
+      shuffled = shuffled.map(q => shuffleQuestionOptions(q));
+    }
+    
     setCustomTestQuestions(shuffled);
     setCustomTestStarted(true);
     setCustomTestCurrent(0);
@@ -391,7 +430,8 @@ export default function Home() {
     navRows,
     setNavRows
   }) {
-    const currentQuestion = questions[current];
+    // Aplicar mezclado dinámico a la pregunta actual
+    const currentQuestion = getQuestionWithDynamicShuffle(questions[current]);
     const baseFooterHeight = 80;
     const BUTTON_SIZE = 36;
     const GAP_SIZE = 4;
@@ -507,8 +547,7 @@ export default function Home() {
   const closeAllPanels = () => {
     setShowCreatePanel(false);
     setShowTokenPanel(false);
-  };
-
+  }
 // --- Render principal ---
 return (
     <ErrorBoundary>
@@ -567,7 +606,10 @@ return (
                     <button className="btn btn-secondary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={async () => {
                       const res = await fetch('/api/all-questions');
                       const all = await res.json();
-                      const questionsWithShuffledOptions = all.map(shuffleQuestionOptions);
+                      // Aplicar mezcla condicionalmente basado en el checkbox
+                      const questionsWithShuffledOptions = shuffleOptions 
+                        ? all.map(shuffleQuestionOptions)
+                        : all;
                       setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
                       setInfiniteCurrent(0);
                       setReviewMode('infinito');
@@ -603,6 +645,10 @@ return (
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" id="showTemaCheck" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
                       <label className="form-check-label" htmlFor="showTemaCheck">Mostrar tema</label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="shuffleOptionsCheck" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="shuffleOptionsCheck">Mezclar opciones</label>
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
@@ -671,6 +717,10 @@ return (
                 <div className="form-check">
                   <input className="form-check-input" type="checkbox" id="showTemaCheckCargar" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
                   <label className="form-check-label" htmlFor="showTemaCheckCargar">Mostrar tema</label>
+                </div>
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckCargar" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
+                  <label className="form-check-label" htmlFor="shuffleOptionsCheckCargar">Mezclar opciones</label>
                 </div>
               </div>
             )}
@@ -952,6 +1002,10 @@ return (
                     <div className="form-check">
                       <input className="form-check-input" type="checkbox" id="showTemaCheckCustom" checked={showTema} onChange={e => setShowTema(e.target.checked)} />
                       <label className="form-check-label" htmlFor="showTemaCheckCustom">Mostrar tema</label>
+                    </div>
+                    <div className="form-check">
+                      <input className="form-check-input" type="checkbox" id="shuffleOptionsCheckCustom" checked={shuffleOptions} onChange={e => setShuffleOptions(e.target.checked)} />
+                      <label className="form-check-label" htmlFor="shuffleOptionsCheckCustom">Mezclar opciones</label>
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
