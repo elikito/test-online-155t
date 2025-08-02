@@ -1,0 +1,795 @@
+{
+    "id": "c1e50123-c745-48a9-b6f3-7f2ec91f957a",
+    "examId": null,
+    "studentId": null,
+    "realizedExamId": null,
+    "oppositionId": 74,
+    "state": "completed",
+    "title": "Test Prueba Gratis - T\u00e9cnicos Auxiliares Inform\u00e1tica de la Administraci\u00f3n del Estado TL [30 preguntas]",
+    "annotation": null,
+    "statement": null,
+    "type": "oficial",
+    "questions": [
+        {
+            "id": 186017,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre un Trigger es INCORRECTA?",
+            "correctAnswerId": 733575,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "54ecaa20-2bf5-4749-a6bc-22562ba1bf79",
+                        "name": "Tema 3",
+                        "slug": "tema-4-58",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "54ecaa20-2bf5-4749-a6bc-22562ba1bf79",
+                        "name": "Tema 3",
+                        "slug": "tema-4-58",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "17cbbe5c-148f-4772-b386-b94596583674",
+                            "name": "Eventos y disparadores",
+                            "slug": "eventos-y-disparadores",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 733575,
+                    "declaration": "La acci\u00f3n solo puede referirse a valores nuevos que se insertaron.",
+                    "image": null
+                },
+                {
+                    "id": 733574,
+                    "declaration": "Los eventos de actualizaci\u00f3n pueden especificar un atributo particular o un conjunto de atributos(depende del DBMS).",
+                    "image": null
+                },
+                {
+                    "id": 733576,
+                    "declaration": "El disparador no puede utilizar sentencias que inicien o finalicen una transacci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 733573,
+                    "declaration": "La acci\u00f3n del trigger es un procedimiento at\u00f3mico.",
+                    "image": null
+                }
+            ],
+            "answeredId": 733575,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 186026,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre \u00edndices en base de datos es INCORRECTA?",
+            "correctAnswerId": 733609,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "54ecaa20-2bf5-4749-a6bc-22562ba1bf79",
+                        "name": "Tema 3",
+                        "slug": "tema-4-58",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "54ecaa20-2bf5-4749-a6bc-22562ba1bf79",
+                        "name": "Tema 3",
+                        "slug": "tema-4-58",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "111164d2-234d-4b16-859c-0906d75614b0",
+                            "name": "Lenguajes de interrogaci\u00f3n de base de datos. ANSI SQL.",
+                            "slug": "lenguajes-de-interrogacion-de-base-de-datos-ansi-sql",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 733610,
+                    "declaration": "Es una estructura de datos que mejora la velocidad de las operaciones.",
+                    "image": null
+                },
+                {
+                    "id": 733611,
+                    "declaration": "Un \u00edndice \u00fanico es usado para mantener la integridad de la informaci\u00f3n de las columnas sobre las cuales es creado",
+                    "image": null
+                },
+                {
+                    "id": 733609,
+                    "declaration": "Solo pueden ser creados utilizando una columna de la tabla.",
+                    "image": null
+                },
+                {
+                    "id": 733612,
+                    "declaration": "Esta asociado a una tabla o a una vista.",
+                    "image": null
+                }
+            ],
+            "answeredId": 733609,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 187400,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre la cardinalidad en el modelo entidad\/relaci\u00f3n es err\u00f3nea?:",
+            "correctAnswerId": 739108,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "b4e47111-497d-4879-8f9f-a1b48139db85",
+                        "name": "Tema 1",
+                        "slug": "tema-1-61",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "b4e47111-497d-4879-8f9f-a1b48139db85",
+                        "name": "Tema 1",
+                        "slug": "tema-1-61",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "859e4c8f-a3e3-406b-aae9-8b3e3c0ab8ad",
+                            "name": "Modelo relacional",
+                            "slug": "modelo-relacional",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 739106,
+                    "declaration": "La cardinalidad puede indicar si una relaci\u00f3n es obligatoria u opcional en funci\u00f3n del n\u00famero m\u00ednimo de ocurrencias.",
+                    "image": null
+                },
+                {
+                    "id": 739107,
+                    "declaration": "Dentro de la cardinalidad se distinguen dos tipos de relaci\u00f3n, obligatoria y opcional.",
+                    "image": null
+                },
+                {
+                    "id": 739108,
+                    "declaration": "No existe ninguna respuesta err\u00f3nea, todas son correctas.",
+                    "image": null
+                },
+                {
+                    "id": 739105,
+                    "declaration": "El nu\u0301mero ma\u0301ximo y mi\u0301nimo de ocurrencias de un tipo de entidad que pueden estar interrelacionadas con una ocurrencia de otro tipo de entidad",
+                    "image": null
+                }
+            ],
+            "answeredId": 739107,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 187802,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "Si tenemos la relaci\u00f3n de esquema EMPLEADOS(DNI, NSS, nombre, apellido, tel\u00e9fono),  \u00bfCu\u00e1l o cuales ser\u00edan las claves candidatas?",
+            "correctAnswerId": 740715,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "b4e47111-497d-4879-8f9f-a1b48139db85",
+                        "name": "Tema 1",
+                        "slug": "tema-1-61",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "b4e47111-497d-4879-8f9f-a1b48139db85",
+                        "name": "Tema 1",
+                        "slug": "tema-1-61",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "859e4c8f-a3e3-406b-aae9-8b3e3c0ab8ad",
+                            "name": "Modelo relacional",
+                            "slug": "modelo-relacional",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 740715,
+                    "declaration": "En el esquema EMPLEADOS, las claves candidatas son: {DNI}, {NSS} , {DNI, NSS}",
+                    "image": null
+                },
+                {
+                    "id": 740716,
+                    "declaration": "En el esquema EMPLEADOS, las claves candidatas son: {DNI}, {Telefono}",
+                    "image": null
+                },
+                {
+                    "id": 740713,
+                    "declaration": "En el esquema EMPLEADOS, las claves candidatas son: {DNI}",
+                    "image": null
+                },
+                {
+                    "id": 740714,
+                    "declaration": "En el esquema EMPLEADOS, las claves candidatas son:  {NSS}",
+                    "image": null
+                }
+            ],
+            "answeredId": 740715,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 199265,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es el patr\u00f3n software donde los objetos encapsulan una acci\u00f3n y los par\u00e1metros que necesitan para ejecutarse?",
+            "correctAnswerId": 786554,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "20e625c4-1ab1-4c75-81c2-1fe17b90c455",
+                        "name": "Tema 4",
+                        "slug": "tema-5-57",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "b48128a5-742c-4717-8d3d-36749c7d104f",
+                            "name": "Patrones de dise\u00f1o",
+                            "slug": "patrones-de-diseno",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "20e625c4-1ab1-4c75-81c2-1fe17b90c455",
+                        "name": "Tema 4",
+                        "slug": "tema-5-57",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 786556,
+                    "declaration": "Template Method",
+                    "image": null
+                },
+                {
+                    "id": 786555,
+                    "declaration": "Observer",
+                    "image": null
+                },
+                {
+                    "id": 786554,
+                    "declaration": "Command",
+                    "image": null
+                },
+                {
+                    "id": 786557,
+                    "declaration": "Decorator",
+                    "image": null
+                }
+            ],
+            "answeredId": 786554,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 200065,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l es el patr\u00f3n software que define un objeto que encapsula como interact\u00faan un conjunto de objetos?.",
+            "correctAnswerId": 789754,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "20e625c4-1ab1-4c75-81c2-1fe17b90c455",
+                        "name": "Tema 4",
+                        "slug": "tema-5-57",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "b48128a5-742c-4717-8d3d-36749c7d104f",
+                            "name": "Patrones de dise\u00f1o",
+                            "slug": "patrones-de-diseno",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "20e625c4-1ab1-4c75-81c2-1fe17b90c455",
+                        "name": "Tema 4",
+                        "slug": "tema-5-57",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 789757,
+                    "declaration": "Iterador",
+                    "image": null
+                },
+                {
+                    "id": 789755,
+                    "declaration": "Decorator",
+                    "image": null
+                },
+                {
+                    "id": 789756,
+                    "declaration": "Bridge",
+                    "image": null
+                },
+                {
+                    "id": 789754,
+                    "declaration": "Mediador",
+                    "image": null
+                }
+            ],
+            "answeredId": 789754,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 200110,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de las siguientes NO es una MALA PRACTICA en implementaciones en c\u00f3digo java?",
+            "correctAnswerId": 789934,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "2b3e20d0-e1b9-4d2c-8716-9727c751124e",
+                        "name": "Tema 5",
+                        "slug": "tema-6-51",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "479f49d2-1832-435e-809d-c683519c7092",
+                            "name": "Arquitectura JavaEE\/JakartaEE: componentes y caracter\u00edsticas.",
+                            "slug": "arquitectura-javaeejakartaee-componentes-y-caracteristicas",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "2b3e20d0-e1b9-4d2c-8716-9727c751124e",
+                        "name": "Tema 5",
+                        "slug": "tema-6-51",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 789935,
+                    "declaration": "Siempre que sea posible tratar de usar clases wrapper en lugar de tipos primitivos.",
+                    "image": null
+                },
+                {
+                    "id": 789934,
+                    "declaration": "Nunca hacer variables de instancia p\u00fablicas.",
+                    "image": null
+                },
+                {
+                    "id": 789937,
+                    "declaration": "Silenciar excepciones.",
+                    "image": null
+                },
+                {
+                    "id": 789936,
+                    "declaration": "Invocaciones manuales en el c\u00f3digo al GARBAGE COLLECTOR.",
+                    "image": null
+                }
+            ],
+            "answeredId": 789934,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 200991,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "En un documento XML,\u00bfcu\u00e1l de las siguientes es una forma correcta de invocar a un DTD externo?",
+            "correctAnswerId": 793458,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "cf99bbb4-be7d-4f76-8a60-4a7f6b97fa4b",
+                        "name": "Tema 6",
+                        "slug": "tema-7-50",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                },
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "cf99bbb4-be7d-4f76-8a60-4a7f6b97fa4b",
+                        "name": "Tema 6",
+                        "slug": "tema-7-50",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": {
+                            "id": "cd32b128-145f-476a-b3b2-fbf48718dabc",
+                            "name": "Arquitectura de servicios web y protocolos asociados.",
+                            "slug": "arquitectura-de-servicios-web-y-protocolos-asociados",
+                            "levelName": "Ep\u00edgrafes",
+                            "levelSlug": "",
+                            "child": null
+                        }
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 793459,
+                    "declaration": "\u003C!SYSTEM archivoExterno DOCTYPE \u0022archivoExterno.dtd\u0022\u003E",
+                    "image": null
+                },
+                {
+                    "id": 793458,
+                    "declaration": "\u003C!DOCTYPE archivoExterno SYSTEM \u0022archivoExterno.dtd\u0022\u003E",
+                    "image": null
+                },
+                {
+                    "id": 793460,
+                    "declaration": "\u003C!DOCTYPE archivoExterno ELEMENT \u0022archivoExterno.dtd\u0022\u003E",
+                    "image": null
+                },
+                {
+                    "id": 793461,
+                    "declaration": "\u003C!ELEMENT archivoExterno DOCTYPE \u0022archivoExterno.dtd\u0022\u003E",
+                    "image": null
+                }
+            ],
+            "answeredId": 793458,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 205454,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCu\u00e1l de los siguientes No es un formato de im\u00e1genes recomendado para utilizar en p\u00e1ginas web?",
+            "correctAnswerId": 811310,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "d11718a3-69a8-4375-a2e0-097f01380473",
+                        "name": "Tema 7",
+                        "slug": "tema-8-43",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 811307,
+                    "declaration": "JPEG",
+                    "image": null
+                },
+                {
+                    "id": 811308,
+                    "declaration": "GIF",
+                    "image": null
+                },
+                {
+                    "id": 811309,
+                    "declaration": "WEBP",
+                    "image": null
+                },
+                {
+                    "id": 811310,
+                    "declaration": "BMP",
+                    "image": null
+                }
+            ],
+            "answeredId": 811310,
+            "isDoubtful": false,
+            "isHighlighted": false
+        },
+        {
+            "id": 221287,
+            "organization": {
+                "id": 1,
+                "name": "OpositaTest",
+                "code": "OPOSITATEST"
+            },
+            "declaration": "\u00bfCual de las siguientes NO es una caracter\u00edstica de un repositorio GIT?",
+            "correctAnswerId": 874535,
+            "reason": "",
+            "isRepealed": false,
+            "isAnnulled": false,
+            "isDeleted": false,
+            "contents": [
+                {
+                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
+                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
+                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
+                    "levelName": "Materias",
+                    "levelSlug": "",
+                    "child": {
+                        "id": "f0da0253-26ef-4ab4-b9fe-aeb7c7885beb",
+                        "name": "Tema 9",
+                        "slug": "tema-10-40",
+                        "levelName": "Temas",
+                        "levelSlug": "",
+                        "child": null
+                    }
+                }
+            ],
+            "image": null,
+            "answers": [
+                {
+                    "id": 874533,
+                    "declaration": "Es un sistema distribuido.",
+                    "image": null
+                },
+                {
+                    "id": 874534,
+                    "declaration": "Identifica las acciones mediante una suma de comprobaci\u00f3n.",
+                    "image": null
+                },
+                {
+                    "id": 874535,
+                    "declaration": "Es necesario tener conexi\u00f3n a internet para poder realizar confirmaciones.",
+                    "image": null
+                },
+                {
+                    "id": 874532,
+                    "declaration": "Posee tres estados principales en los que se pueden encontrar los archivos.",
+                    "image": null
+                }
+            ],
+            "answeredId": 874535,
+            "isDoubtful": false,
+            "isHighlighted": false
+        }
+    ],
+    "duration": 1541,
+    "mark": 68.97,
+    "doubtfulMark": 68.97,
+    "createdAt": "2025-08-01T23:45:57+00:00",
+    "updatedAt": "2025-08-02T00:12:38+00:00",
+    "inProgressAt": "2025-08-01T23:45:57+00:00",
+    "completedAt": "2025-08-02T00:12:38+00:00",
+    "isRepeated": true,
+    "evaluation": {
+        "id": 78,
+        "name": "TAI TL",
+        "correctAnswer": 1,
+        "failedAnswer": -0.333,
+        "notAnswered": 0
+    },
+    "maxMark": 80,
+    "passed": true,
+    "doubtfulPassed": true,
+    "info": {
+        "questionsCount": 29,
+        "blankQuestionsCount": 0,
+        "answeredQuestionsCount": 29,
+        "correctQuestionsCount": 26,
+        "failedQuestionsCount": 3,
+        "doubtfulQuestionsCount": 0,
+        "correctDoubtfulQuestionsCount": 0,
+        "failedDoubtfulQuestionsCount": 0,
+        "highlightedQuestionsCount": 0
+    },
+    "generationInfo": {
+        "contents": [],
+        "contentsCount": []
+    },
+    "challengeToken": null,
+    "challenge": null
+}

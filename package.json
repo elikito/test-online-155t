@@ -1,10 +1,13 @@
 {
-  "name": "test-online",
-  "version": "1.0.0",
+  "name": "test-online-155t",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node scripts/download-images.js && next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.3.7",

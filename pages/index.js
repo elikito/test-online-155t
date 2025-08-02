@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ErrorBoundary from '../components/ErrorBoundary';
 import { QuestionCard, NavigationPanel, TestControls } from '../components/test';
+import TokenManager from '../components/TokenManager';
 
 const PANEL_WIDTH = 600;
 
@@ -34,8 +35,7 @@ export default function Home() {
   const [newTema, setNewTema] = useState('');
   const [editIndex, setEditIndex] = useState(null);
   const [errorPregunta, setErrorPregunta] = useState('');
-
-  // Añadir estado para el test personalizado
+  const [showTokenPanel, setShowTokenPanel] = useState(false);
   const [showCustomTestPanel, setShowCustomTestPanel] = useState(false);
   const [customNumQuestions, setCustomNumQuestions] = useState(10);
   const [customTema, setCustomTema] = useState('');
@@ -593,7 +593,15 @@ export default function Home() {
     }
   }, [view, questions]);
 
-  // --- Render principal ---
+  // Función para cerrar todos los paneles
+const closeAllPanels = () => {
+  setShowCreatePanel(false);
+  setShowTemarioPanel(false);
+  setShowCustomTestPanel(false);
+  setShowTokenPanel(false);
+};
+
+// --- Render principal ---
 return (
     <ErrorBoundary>
       <div className="container-fluid p-0" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
@@ -601,58 +609,110 @@ return (
 
         {view === '' && (
           <>
-            <h1 className="mb-4">Test AGE</h1>
-
-            {/* Texto descriptivo de las opciones principales */}
-            <div className="mb-4">
-              <div className="alert alert-info" style={{ fontSize: 17 }}>
-                <strong>¿Qué puedes hacer aquí?</strong>
-                <ul className="mb-0 mt-2" style={{ paddingLeft: 22 }}>
-                  <li><strong>Crear test:</strong> Elige temas y número de preguntas.</li>
-                  <li><strong>Cargar Temario:</strong> Consulta el temario completo.</li>
-                  <li><strong>Modo Infinito:</strong> Preguntas sin fin.</li>
-                  <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y genera un JSON.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="row mb-3 g-2">
-
-              <div className="col-6 col-md-auto">
-                <button className="btn btn-outline-dark w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('personalizado')}>Crear test</button>
-              </div>
-
-              <div className="col-6 col-md-auto">
-                <button className="btn btn-primary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('temario')}>Cargar Temario</button>
-              </div>
-
-              <div className="col-6 col-md-auto">
-                <button className="btn btn-secondary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={async () => {
-                  const res = await fetch('/api/all-questions');
-                  const all = await res.json();
-                  
-                  // Aplicar barajado de opciones solo para modo infinito
-                  const questionsWithShuffledOptions = all.map(shuffleQuestionOptions);
-                  
-                  setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
-                  setInfiniteCurrent(0);
-                  setReviewMode('infinito');
-                  setView('repaso');
-                }}>
-                  Modo Infinito
+            {/* Header con botones */}
+            <div className="d-flex justify-content-between align-items-center mb-4">
+              <h1 className="mb-0">Test AGE</h1>
+              <div className="d-flex gap-2">
+                <button
+                  className="btn btn-outline-dark btn-sm"
+                  onClick={() => {
+                    closeAllPanels();
+                    setView('personalizado');
+                  }}
+                >
+                  Crear test
+                </button>
+                <button
+                  className="btn btn-primary btn-sm"
+                  onClick={() => {
+                    closeAllPanels();
+                    setView('temario');
+                  }}
+                >
+                  Cargar Temario
+                </button>
+                <button
+                  className="btn btn-warning btn-sm"
+                  onClick={() => {
+                    closeAllPanels();
+                    setShowTokenPanel(true);
+                  }}
+                >
+                  🔑 Tokens
                 </button>
               </div>
-
-              <div className="col-6 col-md-auto">
-                <button className="btn btn-success w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('crear')}>Crear preguntas</button>
-              </div>
-              
             </div>
+
+            {/* Panel de Tokens */}
+            {showTokenPanel && (
+              <div className="position-absolute w-100 h-100 bg-light" style={{ zIndex: 1000, overflowY: 'auto', top: 0, left: 0 }}>
+                <div className="d-flex justify-content-between align-items-center p-3 bg-white border-bottom">
+                  <h4 className="mb-0">🔑 Gestión de Tokens</h4>
+                  <button
+                    className="btn btn-danger btn-sm"
+                    onClick={() => setShowTokenPanel(false)}
+                  >
+                    ✕ Cerrar
+                  </button>
+                </div>
+                <TokenManager />
+              </div>
+            )}
+
+            {/* Contenido principal solo si no hay paneles abiertos */}
+            {!showTokenPanel && (
+              <>
+                {/* Texto descriptivo de las opciones principales */}
+                <div className="mb-4">
+                  <div className="alert alert-info" style={{ fontSize: 17 }}>
+                    <strong>¿Qué puedes hacer aquí?</strong>
+                    <ul className="mb-0 mt-2" style={{ paddingLeft: 22 }}>
+                      <li><strong>Crear test:</strong> Elige temas y número de preguntas.</li>
+                      <li><strong>Cargar Temario:</strong> Consulta el temario completo.</li>
+                      <li><strong>Modo Infinito:</strong> Preguntas sin fin.</li>
+                      <li><strong>Crear preguntas:</strong> Añade tus propias preguntas y genera un JSON.</li>
+                      <li><strong>🔑 Tokens:</strong> Gestiona el acceso privado a la aplicación.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="row mb-3 g-2">
+                  <div className="col-6 col-md-auto">
+                    <button className="btn btn-outline-dark w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('personalizado')}>Crear test</button>
+                  </div>
+
+                  <div className="col-6 col-md-auto">
+                    <button className="btn btn-primary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('temario')}>Cargar Temario</button>
+                  </div>
+
+                  <div className="col-6 col-md-auto">
+                    <button className="btn btn-secondary w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={async () => {
+                      const res = await fetch('/api/all-questions');
+                      const all = await res.json();
+                      
+                      // Aplicar barajado de opciones solo para modo infinito
+                      const questionsWithShuffledOptions = all.map(shuffleQuestionOptions);
+                      
+                      setInfiniteQuestions(questionsWithShuffledOptions.sort(() => Math.random() - 0.5));
+                      setInfiniteCurrent(0);
+                      setReviewMode('infinito');
+                      setView('repaso');
+                    }}>
+                      Modo Infinito
+                    </button>
+                  </div>
+
+                  <div className="col-6 col-md-auto">
+                    <button className="btn btn-success w-100" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('crear')}>Crear preguntas</button>
+                  </div>
+                </div>
+              </>
+            )}
           </>
         )}
 
         {/* --- Panel de repaso inteligente --- */}
-        {view === 'repaso' && (
+        {view === 'repaso' && !showTokenPanel && (
           <>
             <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
             <h4 className="mb-3">
@@ -734,7 +794,7 @@ return (
         )}
 
         {/* Vista de cargar test */}
-        {view === 'cargar' && (
+        {view === 'cargar' && !showTokenPanel && (
           <>
             <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>
               <span role="img" aria-label="inicio">Volver al inicio</span> 
@@ -851,7 +911,7 @@ return (
         )}
 
         {/* Vista crear test */}
-        {view === 'crear' && (
+        {view === 'crear' && !showTokenPanel && (
           <>
             <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
             {/* Copia del panel de crear test */}
@@ -977,7 +1037,7 @@ return (
         )}
 
         {/* Vista temario */}
-        {view === 'temario' && (
+        {view === 'temario' && !showTokenPanel && (
           <>
             <button className="btn btn-secondary mb-4" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>Volver</button>
             <div
@@ -1026,7 +1086,7 @@ return (
         )}
 
         {/* Vista test personalizado */}
-        {view === 'personalizado' && (
+        {view === 'personalizado' && !showTokenPanel && (
           <>
             <div className="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
               <button className="btn btn-secondary" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }} onClick={() => setView('')}>

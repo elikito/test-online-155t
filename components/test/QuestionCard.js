@@ -43,17 +43,56 @@ export default function QuestionCard({
         <p><strong>Tema:</strong> {question.tema || 'No especificado'}</p>
         <p className="card-text">{question.pregunta}</p>
         
+        {/* Imagen de la pregunta - NUEVA SECCIÓN */}
+        {question.imagen && (
+          <div className="mb-4 text-center">
+            <img 
+              src={question.imagen} 
+              alt="Imagen de la pregunta" 
+              className="img-fluid rounded border shadow-sm"
+              style={{ 
+                maxHeight: '400px', 
+                maxWidth: '100%',
+                objectFit: 'contain'
+              }}
+            />
+          </div>
+        )}
+        
         <ul className="list-group" style={{ marginBottom: 0 }}>
-          {Object.entries(question.opciones).map(([key, value]) => (
-            <li
-              key={key}
-              className={getOptionClassName(key)}
-              style={getOptionStyle()}
-              onClick={() => handleOptionClick(key)}
-            >
-              <strong>{key.toUpperCase()}:</strong> {value}
-            </li>
-          ))}
+          {Object.entries(question.opciones).map(([key, value]) => {
+            // Verificar si esta opción tiene imagen
+            const opcionConImagen = question.opciones_con_imagen?.[key];
+            
+            return (
+              <li
+                key={key}
+                className={getOptionClassName(key)}
+                style={getOptionStyle()}
+                onClick={() => handleOptionClick(key)}
+              >
+                <div>
+                  <strong>{key.toUpperCase()}:</strong> {value}
+                  
+                  {/* Imagen de la opción si existe */}
+                  {opcionConImagen?.imagen && (
+                    <div className="mt-2 text-center">
+                      <img 
+                        src={opcionConImagen.imagen} 
+                        alt={`Imagen opción ${key.toUpperCase()}`} 
+                        className="img-fluid rounded border shadow-sm"
+                        style={{ 
+                          maxHeight: '200px', 
+                          maxWidth: '100%',
+                          objectFit: 'contain'
+                        }}
+                      />
+                    </div>
+                  )}
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

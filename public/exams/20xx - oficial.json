@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_01",
+    "pregunta": "De acuerdo con el artículo 64 de la Constitución Española de 1978 (en adelante CE), los actos del Rey, excepto la propuesta y el nombramiento del Presidente del Gobierno, y la disolución de las Cámaras prevista en el artículo 99, serán refrendados por:",
+    "opciones": {
+      "a": "Los Presidentes del Congreso y el Senado.",
+      "b": "Los Ministros o los Secretarios de Estado en función de la materia.",
+      "c": "El Presidente del Gobierno y, en su caso, por los Presidentes del Congreso y el Senado.",
+      "d": "El Presidente del Gobierno y, en su caso, por los Ministros competentes."
+    },
+    "respuesta_correcta": "d",
+    "tema": "1.1.3 - La Corona: funciones constitucionales del Rey (Título II)"
+  },
+  {
+    "id": 2,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_02",
+    "pregunta": "La suspensión de los derechos y libertades se encuentra regulada en la CE en:",
+    "opciones": {
+      "a": "En el Capítulo III del Título I.",
+      "b": "En sus artículos 52 y 53.",
+      "c": "En el artículo 58.",
+      "d": "En el Capítulo V del Título I."
+    },
+    "respuesta_correcta": "d",
+    "tema": "1.1.2 - Garantía y suspensión de derechos"
+  },
+  {
+    "id": 3,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_03",
+    "pregunta": "Según el artículo 68 de la CE, ¿cuál es la circunscripción electoral en nuestro sistema electoral?",
+    "opciones": {
+      "a": "La provincia.",
+      "b": "El municipio.",
+      "c": "La Comunidad Autónoma.",
+      "d": "Distrito Municipal."
+    },
+    "respuesta_correcta": "a",
+    "tema": "1.2.1 - Congreso de los Diputados: funciones legislativas y de control"
+  },
+  {
+    "id": 4,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_04",
+    "pregunta": "Según el artículo 18 de la ley 50/1997, de 27 de noviembre, del Gobierno que regula el funcionamiento del Consejo de Ministros, ¿quién actúa como Secretario de este órgano colegiado?",
+    "opciones": {
+      "a": "El Vicepresidente Primero.",
+      "b": "El Ministro portavoz del Gobierno.",
+      "c": "El Ministro de la Presidencia.",
+      "d": "El Ministro de Justicia."
+    },
+    "respuesta_correcta": "c",
+    "tema": "1.3.1 - Composición: Presidente, Vicepresidentes, Ministros"
+  },
+  {
+    "id": 5,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_05",
+    "pregunta": "De acuerdo con el artículo 78 de la CE, expirado el mandato de las Cortes Generales o en caso de disolución de las mismas, las Diputaciones Permanentes seguirán ejerciendo sus funciones hasta:",
+    "opciones": {
+      "a": "La celebración de las elecciones.",
+      "b": "La proclamación de los resultados electorales definitivos.",
+      "c": "La elección de los nuevos presidentes de cada una de las Cámaras de las Cortes Generales.",
+      "d": "La constitución de las nuevas Cortes Generales."
+    },
+    "respuesta_correcta": "d",
+    "tema": "1.2.1 - Congreso de los Diputados: funciones legislativas y de control"
+  },
+  {
+    "id": 6,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_06",
+    "pregunta": "Según establece el artículo 24 de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, el plazo máximo para resolver y notificar la resolución de una reclamación ante el Consejo de Transparencia y Buen Gobierno será de:",
+    "opciones": {
+      "a": "Un mes, transcurrido el cual, la reclamación se entenderá estimada.",
+      "b": "Un mes, transcurrido el cual, la reclamación se entenderá desestimada.",
+      "c": "Tres meses, transcurrido el cual, la reclamación se entenderá estimada.",
+      "d": "Tres meses, transcurrido el cual, la reclamación se entenderá desestimada."
+    },
+    "respuesta_correcta": "d",
+    "tema": "1.4.5 - Ley 19/2013 de Transparencia"
+  },
+  {
+    "id": 7,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_07",
+    "pregunta": "Señale cuál de los siguientes NO es un compromiso del IV Plan de Gobierno Abierto de España:",
+    "opciones": {
+      "a": "Participación de los jóvenes en políticas públicas.",
+      "b": "Protección de denunciantes.",
+      "c": "Huella normativa.",
+      "d": "Reforma del marco regulatorio."
+    },
+    "respuesta_correcta": "a",
+    "tema": "1.4.5 - Ley 19/2013 de Transparencia"
+  },
+  {
+    "id": 8,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_08",
+    "pregunta": "Conforme establece el artículo 18 de la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, todas las resoluciones de compatibilidad para desempeñar un segundo puesto o actividad en el sector público o el ejercicio de actividades privadas se inscribirán:",
+    "opciones": {
+      "a": "En el Registro Central de Personal.",
+      "b": "En la Oficina de Conflicto de Intereses.",
+      "c": "En la Unidad de Personal del Ministerio u Organismo correspondiente.",
+      "d": "En los Registros de Personal correspondientes."
+    },
+    "respuesta_correcta": "d",
+    "tema": "1.4.2 - Derechos y deberes del personal funcionario"
+  },
+  {
+    "id": 9,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_09",
+    "pregunta": "De acuerdo con el artículo 30 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, el grado de dependencia será revisable:",
+    "opciones": {
+      "a": "A instancia del interesado.",
+      "b": "A instancia de los representantes del interesado.",
+      "c": "De oficio por las Administraciones Públicas competentes.",
+      "d": "Todas las respuestas anteriores son correctas."
+    },
+    "respuesta_correcta": "d",
+    "tema": "1.5.4 - Régimen jurídico de discapacidad y dependencia"
+  },
+  {
+    "id": 10,
+    "examen": "DEMO TAI_ejer_1_libre_AGE_2022",
+    "id_pregunta": "2022_1_libre_10",
+    "pregunta": "Conforme el artículo 49 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, para impulsar la adopción voluntaria de planes de igualdad, el Gobierno establecerá:",
+    "opciones": {
+      "a": "Medidas de acción positiva, especialmente dirigidas a las pequeñas y las medianas empresas.",
+      "b": "Medidas de fomento, especialmente dirigidas a las empresas de 50 o más trabajadores.",
+      "c": "Medidas de fomento, especialmente dirigidas a las pequeñas y las medianas empresas.",
+      "d": "Medidas de acción positiva, dirigidas a cualquier empresa, sea de capital público o privado."
+    },
+    "respuesta_correcta": "c",
+    "tema": "1.5.1 - Igualdad efectiva entre mujeres y hombres"
+  }
+]
