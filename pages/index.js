@@ -63,6 +63,11 @@ export default function Home() {
   const [customTestCorrect, setCustomTestCorrect] = useState(0);
   const [customTestIncorrect, setCustomTestIncorrect] = useState(0);
 
+  // Añadir estados para el buscador (cambiar nombres para evitar conflictos)
+  const [searchQuery, setSearchQuery] = useState('');
+  const [questionSearchResults, setQuestionSearchResults] = useState([]);
+  const [showQuestionSearchResults, setShowQuestionSearchResults] = useState(false);
+
   const showCustomConfirm = (message, action) => {
     setConfirmMessage(message);
     setConfirmAction(() => action);
@@ -421,6 +426,60 @@ export default function Home() {
     setCustomTestCurrent(prev => prev + 1);
   };
 
+  // Función para buscar preguntas
+  const searchQuestions = (query, questionsArray) => {
+    if (!query.trim()) {
+      setQuestionSearchResults([]);
+      setShowQuestionSearchResults(false);
+      return;
+    }
+
+    const lowerQuery = query.toLowerCase();
+    const results = questionsArray
+      .map((question, index) => ({ ...question, originalIndex: index }))
+      .filter(question => 
+        question.pregunta.toLowerCase().includes(lowerQuery) ||
+        Object.values(question.opciones).some(opcion => 
+          opcion.toLowerCase().includes(lowerQuery)
+        ) ||
+        (question.tema && question.tema.toLowerCase().includes(lowerQuery))
+      );
+
+    setQuestionSearchResults(results);
+    setShowQuestionSearchResults(true);
+  };
+
+  // useEffect para la búsqueda
+  useEffect(() => {
+    let questionsToSearch = [];
+    
+    if (view === 'test' && customTestStarted) {
+      questionsToSearch = customTestQuestions;
+    } else if (view === 'infinito') {
+      questionsToSearch = infiniteQuestions;
+    }
+    
+    if (questionsToSearch.length > 0) {
+      searchQuestions(searchQuery, questionsToSearch);
+    } else {
+      setQuestionSearchResults([]);
+      setShowQuestionSearchResults(false);
+    }
+  }, [searchQuery, customTestQuestions, infiniteQuestions, view, customTestStarted]);
+
+  // Función para ir a una pregunta específica desde los resultados
+  const goToQuestion = (questionIndex) => {
+    if (view === 'test' && customTestStarted) {
+      setCustomTestCurrent(questionIndex);
+      setCustomTestSelected(customTestQuestions[questionIndex]?.respuesta_usuario || null);
+    } else if (view === 'infinito') {
+      setInfiniteCurrent(questionIndex);
+      setInfiniteSelected(infiniteQuestions[questionIndex]?.respuesta_usuario || null);
+    }
+    setShowQuestionSearchResults(false);
+    setSearchQuery('');
+  };
+
   function TestPanel({ 
     questions, 
     current, 
@@ -478,7 +537,7 @@ export default function Home() {
             selectedOption={selectedOption}
             onAnswer={handleAnswer}
             showResult={!!selectedOption}
-            showTema={showTema} // Pasar la prop showTema
+            showTema={showTema}
           />
           
           {selectedOption && current < questions.length - 1 && !autoNext && (
@@ -824,6 +883,42 @@ return (
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
+                    {/* Buscador */}
+                    <div className="position-relative">
+                      <input
+                        type="text"
+                        className="form-control form-control-sm"
+                        placeholder="Buscar..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        style={{ 
+                          width: '150px',
+                          fontSize: '0.875rem'
+                        }}
+                      />
+                      {searchQuery && (
+                        <button
+                          className="btn btn-sm position-absolute"
+                          style={{
+                            right: '2px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            border: 'none',
+                            background: 'transparent',
+                            padding: '0',
+                            width: '20px',
+                            height: '20px',
+                            fontSize: '12px'
+                          }}
+                          onClick={() => {
+                            setSearchQuery('');
+                            setShowQuestionSearchResults(false);
+                          }}
+                        >
+                          ✕
+                        </button>
+                      )}
+                    </div>
                     <button className="btn btn-info btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                       onClick={() => {
                         const currentQuestion = customTestQuestions[customTestCurrent];
@@ -842,6 +937,68 @@ return (
                       onClick={() => copiarPreguntaActual(customTestQuestions[customTestCurrent])}>📋</button>
                   </div>
                 </div>
+
+                {/* Área de búsqueda y resultados - AQUÍ */}
+                {showQuestionSearchResults && questionSearchResults.length > 0 && (
+                  <div className="mb-4" style={{ 
+                    background: '#f8f9fa', 
+                    border: '1px solid #dee2e6', 
+                    borderRadius: '8px', 
+                    padding: '16px',
+                    maxHeight: '300px',
+                    overflowY: 'auto'
+                  }}>
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <h6 className="mb-0">Resultados de búsqueda ({questionSearchResults.length})</h6>
+                      <button 
+                        className="btn btn-sm btn-outline-secondary"
+                        onClick={() => {
+                          setShowQuestionSearchResults(false);
+                          setSearchQuery('');
+                        }}
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    {questionSearchResults.map((result, index) => (
+                      <div 
+                        key={index}
+                        className="mb-2 p-2"
+                        style={{ 
+                          background: '#fff', 
+                          border: '1px solid #e9ecef', 
+                          borderRadius: '4px',
+                          cursor: 'pointer',
+                          transition: 'background-color 0.2s'
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#e9ecef'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#fff'}
+                        onClick={() => goToQuestion(result.originalIndex)}
+                      >
+                        <div className="d-flex justify-content-between align-items-start">
+                          <div style={{ flex: 1 }}>
+                            {showTema && result.tema && (
+                              <small className="text-muted d-block mb-1">
+                                <strong>Tema:</strong> {result.tema}
+                              </small>
+                            )}
+                            <div style={{ fontSize: '0.9rem' }}>
+                              <strong>P{result.originalIndex + 1}:</strong> {result.pregunta.length > 100 ? result.pregunta.substring(0, 100) + '...' : result.pregunta}
+                            </div>
+                            {result.respuesta_usuario && (
+                              <small className={`mt-1 d-block ${result.respuesta_usuario === result.respuesta_correcta ? 'text-success' : 'text-danger'}`}>
+                                ✓ {result.respuesta_usuario === result.respuesta_correcta ? 'Correcta' : 'Incorrecta'}
+                              </small>
+                            )}
+                          </div>
+                          <small className="text-muted ms-2">
+                            Ir →
+                          </small>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 
                 <TestPanel
                   questions={customTestQuestions}
@@ -951,6 +1108,42 @@ return (
                     </div>
                   </div>
                   <div className="d-flex gap-2 align-items-center">
+                    {/* Buscador */}
+                    <div className="position-relative">
+                      <input
+                        type="text"
+                        className="form-control form-control-sm"
+                        placeholder="Buscar..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                        style={{ 
+                          width: '150px',
+                          fontSize: '0.875rem'
+                        }}
+                      />
+                      {searchQuery && (
+                        <button
+                          className="btn btn-sm position-absolute"
+                          style={{
+                            right: '2px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            border: 'none',
+                            background: 'transparent',
+                            padding: '0',
+                            width: '20px',
+                            height: '20px',
+                            fontSize: '12px'
+                          }}
+                          onClick={() => {
+                            setSearchQuery('');
+                            setShowQuestionSearchResults(false);
+                          }}
+                        >
+                          ✕
+                        </button>
+                      )}
+                    </div>
                     <button className="btn btn-info btn-sm" style={{ fontSize: '0.875rem', padding: '0.375rem 0.75rem' }}
                       onClick={() => {
                         const currentQuestion = infiniteQuestions[infiniteCurrent];
@@ -969,6 +1162,68 @@ return (
                       onClick={() => copiarPreguntaActual(infiniteQuestions[infiniteCurrent])}>📋</button>
                   </div>
                 </div>
+
+                {/* Área de búsqueda y resultados - AQUÍ TAMBIÉN */}
+                {showQuestionSearchResults && questionSearchResults.length > 0 && (
+                  <div className="mb-4" style={{ 
+                    background: '#f8f9fa', 
+                    border: '1px solid #dee2e6', 
+                    borderRadius: '8px', 
+                    padding: '16px',
+                    maxHeight: '300px',
+                    overflowY: 'auto'
+                  }}>
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                      <h6 className="mb-0">Resultados de búsqueda ({questionSearchResults.length})</h6>
+                      <button 
+                        className="btn btn-sm btn-outline-secondary"
+                        onClick={() => {
+                          setShowQuestionSearchResults(false);
+                          setSearchQuery('');
+                        }}
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    {questionSearchResults.map((result, index) => (
+                      <div 
+                        key={index}
+                        className="mb-2 p-2"
+                        style={{ 
+                          background: '#fff', 
+                          border: '1px solid #e9ecef', 
+                          borderRadius: '4px',
+                          cursor: 'pointer',
+                          transition: 'background-color 0.2s'
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#e9ecef'}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#fff'}
+                        onClick={() => goToQuestion(result.originalIndex)}
+                      >
+                        <div className="d-flex justify-content-between align-items-start">
+                          <div style={{ flex: 1 }}>
+                            {showTema && result.tema && (
+                              <small className="text-muted d-block mb-1">
+                                <strong>Tema:</strong> {result.tema}
+                              </small>
+                            )}
+                            <div style={{ fontSize: '0.9rem' }}>
+                              <strong>P{result.originalIndex + 1}:</strong> {result.pregunta.length > 100 ? result.pregunta.substring(0, 100) + '...' : result.pregunta}
+                            </div>
+                            {result.respuesta_usuario && (
+                              <small className={`mt-1 d-block ${result.respuesta_usuario === result.respuesta_correcta ? 'text-success' : 'text-danger'}`}>
+                                ✓ {result.respuesta_usuario === result.respuesta_correcta ? 'Correcta' : 'Incorrecta'}
+                              </small>
+                            )}
+                          </div>
+                          <small className="text-muted ms-2">
+                            Ir →
+                          </small>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 
                 <TestPanel
                   questions={infiniteQuestions}
