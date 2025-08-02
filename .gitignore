@@ -5,6 +5,7 @@ node_modules/
 npm-debug.log
 # Images cache (no subir a git)
 .images-cache.json
-
+.env.local
 # Opcional: descomentar si NO quieres subir las imágenes a git
 # public/images/questions/
+
