@@ -8,4 +8,3 @@ npm-debug.log
 .env.local
 # Opcional: descomentar si NO quieres subir las imágenes a git
 # public/images/questions/
-
