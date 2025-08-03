@@ -716,61 +716,8 @@ return (
                 </div>
 
                 {/* Mostrar estadísticas persistentes */}
-                <div className="mt-4">
-                  <div className="alert alert-secondary" style={{ fontSize: 15 }}>
-                    <h6 className="mb-2">📊 Estadísticas Guardadas</h6>
-                    <div className="row text-center">
-                      <div className="col-6">
-                        <div className="border rounded p-2 mb-2">
-                          <div><strong>Test Personalizado</strong></div>
-                          <div className="text-success">✓ {customTestCorrect} correctas</div>
-                          <div className="text-danger">✗ {customTestIncorrect} incorrectas</div>
-                          <div className="text-muted small">Total: {customTestCorrect + customTestIncorrect}</div>
-                        </div>
-                        <button 
-                          className="btn btn-outline-warning btn-sm w-100" 
-                          style={{ fontSize: '0.75rem' }}
-                          onClick={() => {
-                            showCustomConfirm(
-                              '¿Estás seguro de que quieres resetear las estadísticas del test personalizado?',
-                              () => {
-                                setCustomTestCorrect(0);
-                                setCustomTestIncorrect(0);
-                                StorageService.resetStats('custom_test');
-                              }
-                            );
-                          }}
-                        >
-                          Resetear
-                        </button>
-                      </div>
-                      <div className="col-6">
-                        <div className="border rounded p-2 mb-2">
-                          <div><strong>Modo Infinito</strong></div>
-                          <div className="text-success">✓ {infiniteCorrect} correctas</div>
-                          <div className="text-danger">✗ {infiniteIncorrect} incorrectas</div>
-                          <div className="text-muted small">Total: {infiniteCorrect + infiniteIncorrect}</div>
-                        </div>
-                        <button 
-                          className="btn btn-outline-warning btn-sm w-100" 
-                          style={{ fontSize: '0.75rem' }}
-                          onClick={() => {
-                            showCustomConfirm(
-                              '¿Estás seguro de que quieres resetear las estadísticas del modo infinito?',
-                              () => {
-                                setInfiniteCorrect(0);
-                                setInfiniteIncorrect(0);
-                                StorageService.resetStats('infinite');
-                              }
-                            );
-                          }}
-                        >
-                          Resetear
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                {/* PANEL DE ESTADÍSTICAS ELIMINADO */}
+                {/* FIN PANEL DE ESTADÍSTICAS ELIMINADO */}
               </>
             )}
           </>

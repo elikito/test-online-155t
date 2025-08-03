@@ -1,42 +1,35 @@
 {
-    "id": "b295afc6-988b-4697-8ed5-137a97ab5d7b",
-    "examId": 47898649,
-    "studentId": 865065,
-    "realizedExamId": null,
-    "oppositionId": 74,
-    "state": "in_progress",
-    "title": "",
-    "annotation": null,
-    "statement": null,
-    "type": "random",
     "questions": [
         {
             "id": 465553,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, en el caso de las entidades locales, el acto o resoluci\u00f3n de creaci\u00f3n o supresi\u00f3n de una sede electr\u00f3nica o sede electr\u00f3nica asociada:",
             "correctAnswerId": 1848154,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -62,38 +55,38 @@
                     "declaration": "Ser\u00e1 publicado en el Bolet\u00edn Oficial del Estado.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465546,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, el PAGe de la Administraci\u00f3n General del Estado, a trav\u00e9s de su sede, permitir\u00e1:",
             "correctAnswerId": 1848126,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -119,38 +112,38 @@
                     "declaration": "La comprobaci\u00f3n de la interoperabilidad y seguridad de los documentos facilitados por el sector p\u00fablico estatal a trav\u00e9s del C\u00f3digo Seguro de Verificaci\u00f3n o de cualquier otro sistema de firma o sello basado en certificado electr\u00f3nico cualificado que se haya utilizado en su generaci\u00f3n.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 724113,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el Real Decreto 203\/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, \u00bfcu\u00e1l de las siguientes opciones forma parte del contenido m\u00ednimo que debe contener una sede electr\u00f3nica?",
             "correctAnswerId": 2872139,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -176,38 +169,38 @@
                     "declaration": "Relaci\u00f3n de los canales de acceso electr\u00f3nico a dicha sede como instrumento de comunicaci\u00f3n para los ciudadanos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 728121,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Marque la respuesta correcta relacionada con el nodo eIDAS espa\u00f1ol:",
             "correctAnswerId": 2888172,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -233,38 +226,38 @@
                     "declaration": "Permite el reconocimiento de identidades en soportes f\u00edsicos emitidas por otros pa\u00edses",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267720,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con lo dispuesto en el Real Decreto 203\/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, el Punto de acceso general de la Administraci\u00f3n General del Estado ser\u00e1 gestionado por:",
             "correctAnswerId": 1058992,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -290,38 +283,38 @@
                     "declaration": "El Ministerio de Transportes, Movilidad y Agenda Urbana.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465539,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el art\u00edculo 5.3 del Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, los portales de internet dispondr\u00e1n de sistemas que permitan el establecimiento de medidas de:",
             "correctAnswerId": 1848098,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -347,38 +340,38 @@
                     "declaration": "Seguridad de acuerdo con lo establecido en Real Decreto 3\/2010, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el \u00e1mbito de la Administraci\u00f3n Electr\u00f3nica.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465540,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, en el \u00e1mbito estatal, la creaci\u00f3n o supresi\u00f3n de portales se llevar\u00e1 a cabo:",
             "correctAnswerId": 1848102,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -404,38 +397,38 @@
                     "declaration": "Mediante Real Decreto acordado en Consejo de Ministros o por resoluci\u00f3n de la persona titular del \u00f3rgano superior, en el caso de la Administraci\u00f3n General del Estado, y por resoluci\u00f3n de la persona titular de la Presidencia o de la Direcci\u00f3n en el caso de sus organismos p\u00fablicos y entidades de derecho p\u00fablico vinculados o dependientes.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465551,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, se podr\u00e1n crear una o varias sedes electr\u00f3nicas asociadas a una sede electr\u00f3nica atendiendo a:",
             "correctAnswerId": 1848146,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -461,38 +454,38 @@
                     "declaration": "Razones de coordinaci\u00f3n y adaptabilidad.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267791,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n al Punto de Acceso General, se\u00f1ale la afirmaci\u00f3n correcta:",
             "correctAnswerId": 1059279,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -518,38 +511,38 @@
                     "declaration": "Todas las afirmaciones son correctas",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465557,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, el titular de la sede electr\u00f3nica y, en su caso, de la sede electr\u00f3nica asociada, ser\u00e1 responsable de:",
             "correctAnswerId": 1848170,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -575,38 +568,38 @@
                     "declaration": "La integridad, veracidad y actualizaci\u00f3n de la informaci\u00f3n y los servicios de su competencia a los que pueda accederse a trav\u00e9s de la misma.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465555,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, se\u00f1ale la respuesta incorrecta, toda sede electr\u00f3nica o sede electr\u00f3nica asociada dispondr\u00e1 del siguiente contenido m\u00ednimo a disposici\u00f3n de las personas interesadas:",
             "correctAnswerId": 1848165,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -632,38 +625,38 @@
                     "declaration": "Informaci\u00f3n acerca de cualquier incidencia t\u00e9cnica que acontezca e imposibilite el funcionamiento ordinario del sistema o aplicaci\u00f3n que corresponda, as\u00ed como de la ampliaci\u00f3n del plazo no vencido que, en su caso, haya acordado el \u00f3rgano competente debido a dicha circunstancia.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267819,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es la Red SARA?",
             "correctAnswerId": 1059389,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -689,38 +682,38 @@
                     "declaration": "Un conjunto de infraestructuras de comunicaciones y servicios b\u00e1sicos que conecta las Administraciones P\u00fablicas facilitando el intercambio de informaci\u00f3n y el acceso a los servicios",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267790,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "A tenor de lo dispuesto en el art. 10 del Real Decreto 203\/2021 por el que se aprueba el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, el acto o resoluci\u00f3n de creaci\u00f3n de una sede electr\u00f3nica o sede electr\u00f3nica asociada determinar\u00e1, al menos:",
             "correctAnswerId": 1059275,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -746,38 +739,38 @@
                     "declaration": "Todas son correctas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465542,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, en el \u00e1mbito estatal, la supresi\u00f3n de portales requerir\u00e1:",
             "correctAnswerId": 1848110,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -803,38 +796,38 @@
                     "declaration": "La comunicaci\u00f3n previa a la Comisi\u00f3n Ministerial de Administraci\u00f3n Digital respectiva.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465556,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, se\u00f1ale la respuesta incorrecta, las sedes electr\u00f3nicas y sedes electr\u00f3nicas asociadas dispondr\u00e1n, al menos, de los siguientes servicios a disposici\u00f3n de las personas interesadas:",
             "correctAnswerId": 1848169,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -860,38 +853,38 @@
                     "declaration": "Un acceso a los servicios y tr\u00e1mites disponibles en la sede electr\u00f3nica o sede electr\u00f3nica asociada, con indicaci\u00f3n de los plazos m\u00e1ximos de duraci\u00f3n de los procedimientos, incluyendo las posibles ampliaciones o suspensiones que en su caso, pudiera acordar el \u00f3rgano competente.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465550,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, una sede electr\u00f3nica es:",
             "correctAnswerId": 1848142,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -917,38 +910,38 @@
                     "declaration": "Es el punto de acceso electr\u00f3nico cuya titularidad corresponda a una Administraci\u00f3n P\u00fablica, organismo p\u00fablico o entidad de derecho p\u00fablico que permite el acceso a trav\u00e9s de internet a la informaci\u00f3n.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465552,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, con car\u00e1cter general, el acto o resoluci\u00f3n de creaci\u00f3n o supresi\u00f3n de una sede electr\u00f3nica o sede electr\u00f3nica asociada:",
             "correctAnswerId": 1848150,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -974,38 +967,38 @@
                     "declaration": "Ser\u00e1 publicado en el directorio del Punto de Acceso General Electr\u00f3nico que corresponda, pero no en ning\u00fan bolet\u00edn oficial.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465549,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, la Carpeta Ciudadana podr\u00e1 ofrecer, entre otras, las funcionalidades siguientes para el interesado o sus representantes:",
             "correctAnswerId": 1848139,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1031,38 +1024,38 @@
                     "declaration": "Todas son correctas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267801,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 tipo de protocolo ha incorporado la Red SARA?",
             "correctAnswerId": 1059316,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1088,38 +1081,38 @@
                     "declaration": "FTP",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465548,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, se\u00f1ale la respuesta incorrecta, \u00bfqui\u00e9nes podr\u00e1n acceder a la Carpeta Ciudadana?",
             "correctAnswerId": 1848137,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1145,38 +1138,38 @@
                     "declaration": "Los representantes legales de los interesados.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267817,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 significan las siglas que conforman la Red \u0022SARA\u0022?",
             "correctAnswerId": 1059380,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1202,38 +1195,38 @@
                     "declaration": "Sistema de Agencia y Regulaci\u00f3n de la Administraci\u00f3n.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267785,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale la respuesta correcta. Toda sede electr\u00f3nica dispondr\u00e1 del siguiente contenido m\u00ednimo:",
             "correctAnswerId": 1059255,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1259,38 +1252,38 @@
                     "declaration": "Todas las respuestas anteriores son correctas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465538,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, en lo relativo a los portales de internet, las Administraciones P\u00fablicas deber\u00e1n tener en cuenta los contenidos, formatos y funcionalidades que en la normativa de:",
             "correctAnswerId": 1848094,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1316,38 +1309,38 @@
                     "declaration": "Reutilizaci\u00f3n, adaptabilidad y transparencia se establezcan como obligatorios para los sitios web.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465554,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, en el \u00e1mbito estatal, tanto la creaci\u00f3n o supresi\u00f3n de una sede electr\u00f3nica asociada a la sede electr\u00f3nica del PAGe de la Administraci\u00f3n General del Estado como la creaci\u00f3n o supresi\u00f3n de sedes electr\u00f3nicas o sedes electr\u00f3nicas asociadas de los organismos p\u00fablicos y entidades de derecho p\u00fablico vinculados o dependientes se har\u00e1 mediante:",
             "correctAnswerId": 1848158,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1373,38 +1366,38 @@
                     "declaration": "Real Decreto acordado en Consejo de Ministros o por Orden de la persona titular del Departamento competente, con el informe previo favorable del Ministerio de Hacienda y del Ministerio de Econom\u00eda, Comercio y Empresa.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465544,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, el PAGe de la Administraci\u00f3n General del Estado y su sede electr\u00f3nica ser\u00e1n gestionados por:",
             "correctAnswerId": 1848118,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1430,38 +1423,38 @@
                     "declaration": "El Ministerio de Transportes, Movilidad y Agenda Urbana.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267793,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale la afirmaci\u00f3n correcta:",
             "correctAnswerId": 1059284,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1487,38 +1480,38 @@
                     "declaration": "El Punto de Acceso General contendr\u00e1 informaci\u00f3n administrativa de car\u00e1cter vertical de los Departamentos ministeriales y Organismos p\u00fablicos, vinculados o dependientes como las ayudas, becas, subvenciones, empleo p\u00fablico y legislaci\u00f3n, que sean de inter\u00e9s para el ciudadano",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267800,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale la respuesta incorrecta. El Punto de Acceso General deber\u00e1 garantizar, de forma gradual y progresiva a medida que los recursos y desarrollos t\u00e9cnicos lo permitan, el acceso a los siguientes servicios:",
             "correctAnswerId": 1059312,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1544,38 +1537,38 @@
                     "declaration": "Portal de transparencia",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 267818,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de los siguientes no es un organismo responsable del Sistema de Aplicaciones y Redes para las Administraciones (Red SARA)?",
             "correctAnswerId": 1059387,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1601,38 +1594,38 @@
                     "declaration": "Ministerio para la Transformaci\u00f3n Digital y de la Funci\u00f3n P\u00fablica.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465545,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, \u00bfen d\u00f3nde se encontrar\u00e1 alojada la Direcci\u00f3n Electr\u00f3nica Habilitada \u00fanica?",
             "correctAnswerId": 1848122,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1658,38 +1651,38 @@
                     "declaration": "En la sede electr\u00f3nica de la Comisi\u00f3n de Administraci\u00f3n Digital.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465543,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, el PAGe de cada Administraci\u00f3n P\u00fablica:",
             "correctAnswerId": 1848114,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1715,38 +1708,38 @@
                     "declaration": "Permite la emisi\u00f3n del correspondiente recibo que acredite la fecha y hora de presentaci\u00f3n de solicitudes, comunicaciones y documentos que presenten las personas interesadas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465547,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De conformidad con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, \u00bfqu\u00e9 es la Carpeta Ciudadana del sector p\u00fablico estatal?",
             "correctAnswerId": 1848130,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1772,38 +1765,38 @@
                     "declaration": "Es el punto de acceso electr\u00f3nico cuya titularidad corresponda a una Administraci\u00f3n P\u00fablica, organismo p\u00fablico o entidad de derecho p\u00fablico que permite el acceso a trav\u00e9s de internet a la informaci\u00f3n y, en su caso, a la sede electr\u00f3nica o sede electr\u00f3nica asociada correspondiente.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 465541,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De acuerdo con el Reglamento de actuaci\u00f3n y funcionamiento del sector p\u00fablico por medios electr\u00f3nicos, en el \u00e1mbito estatal, la creaci\u00f3n de portales requerir\u00e1:",
             "correctAnswerId": 1848107,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "29055a77-362e-4f52-8799-87aca81962fe",
-                    "name": "Bloque I. Organizaci\u00f3n del Estado y Administraci\u00f3n electr\u00f3nica - TAI TL",
-                    "slug": "bloque-i-organizacion-del-estado-y-administracion-electronica-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "1",
+                    "name": "Organización del Estado y Administración Electrónica",
+                    "slug": "organizacion-del-estado-y-administracion-electronica",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
-                        "id": "d072b97a-4ff8-4fe4-b56c-b902e2f1adf8",
+                        "id": "1.9",
                         "name": "1.9 - Infraestructura digital pública",
-                        "slug": "tema-11-15",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "slug": "infraestructura-digital-publica",
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1829,20 +1822,9 @@
                     "declaration": "Comunicaci\u00f3n al Ministerio de Pol\u00edtica Territorial y Memoria Democr\u00e1tica y posterior informe favorable del Ministerio de Econom\u00eda, Comercio y Empresa.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         }
     ],
-    "duration": 0,
-    "mark": 0,
-    "doubtfulMark": 0,
-    "createdAt": "2025-08-02T14:47:07+00:00",
-    "updatedAt": "2025-08-02T14:47:07+00:00",
-    "inProgressAt": "2025-08-02T14:47:07+00:00",
-    "completedAt": null,
-    "isRepeated": false,
     "evaluation": {
         "id": 78,
         "name": "TAI TL",
@@ -1850,9 +1832,6 @@
         "failedAnswer": -0.333,
         "notAnswered": 0
     },
-    "maxMark": 0,
-    "passed": null,
-    "doubtfulPassed": null,
     "info": {
         "questionsCount": 32,
         "blankQuestionsCount": 32,
@@ -1874,7 +1853,5 @@
                 "count": 1
             }
         ]
-    },
-    "challengeToken": null,
-    "challenge": null
+    }
 }

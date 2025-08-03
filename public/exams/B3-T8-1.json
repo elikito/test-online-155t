@@ -1,42 +1,35 @@
 {
-    "id": "0db6a81f-e413-4aee-a0bd-1126dc47ac22",
-    "examId": 47899653,
-    "studentId": 865065,
-    "realizedExamId": null,
-    "oppositionId": 74,
-    "state": "in_progress",
-    "title": "",
-    "annotation": null,
-    "statement": null,
-    "type": "random",
     "questions": [
         {
             "id": 208013,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCuales son los principios  de WCAG 2.1?",
             "correctAnswerId": 821543,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -62,38 +55,38 @@
                     "declaration": "Perceptible, Operable y Robustez.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 618339,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con el Real Decreto 1112\/2018, sobre accesibilidad de los sitios web y aplicaciones para dispositivos m\u00f3viles del sector p\u00fablico, indique qu\u00e9 respuesta es INCORRECTA:",
             "correctAnswerId": 2455377,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -119,38 +112,38 @@
                     "declaration": "La primera revisi\u00f3n de accesibilidad deber\u00e1 haberse realizado en el caso de las aplicaciones m\u00f3viles, antes de dos a\u00f1os desde la entrada en vigor de este real decreto.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220721,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Cuando hablamos de garantizar la integridad de los datos en un sistema de informaci\u00f3n nos referimos a:",
             "correctAnswerId": 872338,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -176,38 +169,38 @@
                     "declaration": "La \u00fanica forma de garantizar la integridad ser\u00eda cifrar la informaci\u00f3n mediante contrase\u00f1a.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656123,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes alternativas es una aplicaci\u00f3n de c\u00f3digo abierto para el sistema operativo Microsoft Windows que ofrece un lector de pantalla para personas con visi\u00f3n reducida o sin visi\u00f3n?",
             "correctAnswerId": 2605700,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -233,38 +226,38 @@
                     "declaration": "Orca",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220723,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes NO es una buena pr\u00e1ctica en la gesti\u00f3n de la informaci\u00f3n en el puesto de trabajo?",
             "correctAnswerId": 872347,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -290,38 +283,38 @@
                     "declaration": "Trasladar la normativa de utilizaci\u00f3n de internet y correo corporativo solo al director de la empresa.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 208168,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre los principios de la WCAG 2.1 es INCORRECTA?",
             "correctAnswerId": 822163,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -347,38 +340,38 @@
                     "declaration": "Proporcione alternativas sincronizadas para contenidos multimedia sincronizados dependientes del tiempo.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 618341,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Seg\u00fan las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1, \u00bfcu\u00e1l es el objetivo de que un contenido sea Distinguible?",
             "correctAnswerId": 2455384,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -404,38 +397,38 @@
                     "declaration": "Crear contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposici\u00f3n m\u00e1s simple) sin perder  informaci\u00f3n o estructura",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656120,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Indique la afirmaci\u00f3n CORRECTA en lo que respecta a la accesibilidad universal:",
             "correctAnswerId": 2605689,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -461,38 +454,38 @@
                     "declaration": "La aplicaci\u00f3n de la accesibilidad universal en el \u00e1mbito de las telecomunicaciones y socledad de la informaci\u00f2n esta regulada por ley.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 219694,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre la nueva versi\u00f3n de pautas de dise\u00f1o web WCAG 2.1 es FALSA?",
             "correctAnswerId": 868232,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -518,38 +511,38 @@
                     "declaration": "Sigue respetando la numeraci\u00f3n de WCAG 2.0.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220718,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCuales son los tres principios b\u00e1sicos de la seguridad en el acceso a la informaci\u00f3n?",
             "correctAnswerId": 872325,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -575,38 +568,38 @@
                     "declaration": "Confidencialidad,Aislamiento y Trazabilidad.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 207763,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre la web sem\u00e1ntica es falsa?",
             "correctAnswerId": 820546,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -632,38 +625,38 @@
                     "declaration": "Utiliza los siguientes est\u00e1ndares sem\u00e1nticos RDF, RDFS,OWL  y SPARK.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656104,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relacion a la accesibilidad universal, se\u00f1ale la afirmaci\u00f3n VERDADERA:",
             "correctAnswerId": 2605625,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -689,38 +682,38 @@
                     "declaration": "EIPMBOK, del Project Management Institute, es una gu\u00eda metodol\u00f3gica para implantar la accesibilidad universal en proyectos de Tecnolog\u00edas de la Informaci\u00f3n.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212256,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes criterios de accesibilidad de la WCAG 2.0 ser\u00edan algunos  que tiene que cumplir una p\u00e1gina web para obtener el nivel de conformidad doble A?",
             "correctAnswerId": 838498,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -746,38 +739,38 @@
                     "declaration": "Para obtener el nivel de conformidad AA, la p\u00e1gina debe cumplir todos los criterios anteriores.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 527394,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale cu\u00e1l es una pauta del Principio Operable WCAG 2.1:",
             "correctAnswerId": 2094752,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -803,38 +796,38 @@
                     "declaration": "Asistencia a la entrada de datos: los usuarios de ayuda evitar\u00e1n y corregir\u00e1n errores.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212250,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCuantos niveles de conformidad existen en WCAG 2.0?",
             "correctAnswerId": 838472,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -860,38 +853,38 @@
                     "declaration": "2",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656122,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCon cu\u00e1l de los principios establecidos en la WCAG 2.1 se relaciona la pauta 3.3. Entrada de datos asistida?",
             "correctAnswerId": 2605699,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -917,38 +910,38 @@
                     "declaration": "Operable",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220720,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQue nos garantiza el principio b\u00e1sico de CONFIDENCIALIDAD en un sistema de informaci\u00f3n?",
             "correctAnswerId": 872336,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -974,38 +967,38 @@
                     "declaration": "Aumentar la divulgaci\u00f3n de la informaci\u00f3n a determinadas personas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 527403,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale cual NO es una pauta del Principio Operable de WCAG 2.1:",
             "correctAnswerId": 2094791,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1031,38 +1024,38 @@
                     "declaration": "Contenido multimedia dependiente del tiempo: Proporcione alternativas sincronizadas para contenidos multimedia sincronizados dependientes del tiempo.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 208164,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes pautas de accesibilidad WCAG 2.1 NO pertenece al principio 3 (Comprensible)?:",
             "correctAnswerId": 822147,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1088,38 +1081,38 @@
                     "declaration": "Legible.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 219695,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes afirmaciones sobre las normas WCAG 2.0, es FALSA?",
             "correctAnswerId": 868235,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1145,38 +1138,38 @@
                     "declaration": "Las WCAG 2.0 se aplican a cualquier tecnolog\u00eda con la que se pueda crear contenido accesible y no \u00fanicamente a tecnolog\u00edas W3C.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 207722,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En las pautas de accesibilidad para el contenido web 2.0 se identifican niveles de orientaci\u00f3n, \u00bfcu\u00e1l ser\u00eda la respuesta correcta que enumera estos niveles desde lo m\u00e1s general a lo m\u00e1s particular?",
             "correctAnswerId": 820381,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1202,38 +1195,38 @@
                     "declaration": "Principios, pautas, criterios de conformidad, t\u00e9cnicas suficientes y recomendables.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656137,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Indique la respuesta correcta sobre la accesibilidad universal:",
             "correctAnswerId": 2605757,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1259,38 +1252,38 @@
                     "declaration": "El Esquema Nacional de Interoperabilidad (ENI) es la responsable de la creaci\u00f3n de una Norma T\u00e9cnica de Interoperabilidad de Accesibilidad Universal.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 219696,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Las WCAG 2.0 se estructuran en:",
             "correctAnswerId": 868237,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1316,38 +1309,38 @@
                     "declaration": "Principios, pautas y criterios de conformidad.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 219699,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es la afirmaci\u00f3n correcta sobre los Niveles de Conformidad de las  WCAG 2.0?",
             "correctAnswerId": 868249,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1373,38 +1366,38 @@
                     "declaration": "Los criterios de nivel A son los de mayor importancia en cuanto a la accesibilidad final.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 219701,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Seg\u00fan los conceptos de WCAG 2.0 en que caso se pueden utilizar tecnolog\u00edas \u0022NO ACCESIBLES\u0022",
             "correctAnswerId": 868258,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1430,38 +1423,38 @@
                     "declaration": "Solo se puede en el caso de un documento PDF generado de forma \u0022no accesible\u0022, proporcionando la misma informaci\u00f3n en HTML y CSS.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656134,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Seleccione la afirmaci\u00f3n VERDADERA en relaci\u00f3n con la accesibilidad universal:",
             "correctAnswerId": 2605745,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1487,38 +1480,38 @@
                     "declaration": "Una ley regula la implementaci\u00f3n de la accesibilidad universal en el campo de las telecomunicaciones y la sociedad de la informaci\u00f3n.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 207896,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el elemento dentro de la web sem\u00e1ntica que muestra forma descriptiva y sencilla todos los recursos e informaci\u00f3n?",
             "correctAnswerId": 821075,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1544,38 +1537,38 @@
                     "declaration": "OWL",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 219697,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes conceptos sobre las pautas de las WCAG 2.0 es FALSO?.",
             "correctAnswerId": 868244,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1601,38 +1594,38 @@
                     "declaration": "Las pautas de accesibilidad es una parte de la estructura de las WCAG 2.0.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656103,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de los siguientes criterios de conformidad es de nivel AAA seg\u00fan WCAG 2.0?",
             "correctAnswerId": 2605623,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1658,38 +1651,38 @@
                     "declaration": "Contraste (M\u00ednimo).",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 527198,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale cual NO es una pauta del principio Perceptible de WCAG 2.1:",
             "correctAnswerId": 2093980,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1715,38 +1708,38 @@
                     "declaration": "Contenido multimedia dependiente del tiempo: Proporcione alternativas para contenidos multimedia sincronizados dependientes del tiempo.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 354640,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Para la realizaci\u00f3n de la firma electr\u00f3nica en esta aplicaci\u00f3n se va a necesitar firmas con m\u00faltiples usuarios(solicitantes y responsables, seg\u00fan el caso), en la que el orden en el que se firma es importante, ya que cada firma debe refrendar o certificar la firma del firmante anterior, a esto se le llama:",
             "correctAnswerId": 1408560,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1772,38 +1765,38 @@
                     "declaration": "Firma en l\u00ednea",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656119,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfSeg\u00fan WCAG 2.0, \u00bfcu\u00e1l de los siguientes criterios de conformidad corresponde al nivel AAA?",
             "correctAnswerId": 2605687,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1829,38 +1822,38 @@
                     "declaration": "Etiquetas o instrucciones.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212260,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre los criterios de conformidad de WCAG 2.1 es FALSA?",
             "correctAnswerId": 838514,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1886,38 +1879,38 @@
                     "declaration": "Las p\u00e1ginas web no contienen nada que destelle m\u00e1s de tres veces por segundo no  es un criterio de nivel A.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 527398,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale cual  NO es una pauta del principio Comprensible de WCAG 2.1:",
             "correctAnswerId": 2094771,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1943,38 +1936,38 @@
                     "declaration": "Previsible: Hacer la apariencia y la forma de utilizar las p\u00e1ginas web previsibles.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665262,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es WCAG?",
             "correctAnswerId": 2640825,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2000,38 +1993,38 @@
                     "declaration": "Un framework javascript especialmente indicado para trabajar con bases de datos no relacionales.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 208161,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes pautas de accesibilidad de WCAG 2.1 se enmarca dentro del principio Operable?",
             "correctAnswerId": 822136,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2057,38 +2050,38 @@
                     "declaration": "Facilitar a los usuarios ver y escuchar el contenido incluyendo la distinci\u00f3n entre lo m\u00e1s y menos importante.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220722,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con los equipos inform\u00e1ticos cual de las siguientes NO ser\u00eda un ejemplo de \u0022mala praxis\u0022:",
             "correctAnswerId": 872341,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2114,38 +2107,38 @@
                     "declaration": "Todas son actuaciones de malas praxis.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 527390,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale cu\u00e1l es una pauta del Principio Perceptible WCAG 2.1:",
             "correctAnswerId": 2094736,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2171,38 +2164,38 @@
                     "declaration": "Distinguible: Facilitar a los usuarios ver y escuchar el contenido incluyendo la distinci\u00f3n entre lo m\u00e1s y menos importante.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212263,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de los siguientes NO es un criterio de conformidad de WCAG 2.0?",
             "correctAnswerId": 838526,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2228,38 +2221,38 @@
                     "declaration": "Audiodescripci\u00f3n o Medio Alternativo (grabado).",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656105,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfA cu\u00e1l de los principios descritos en la WCAG 2.1 esta vinculada la pauta 3.3. Entrada de datos asistida?",
             "correctAnswerId": 2605631,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2285,38 +2278,38 @@
                     "declaration": "Operable",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 208165,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes afirmaciones sobre los principios de la WCAG 2.1 es FALSA?",
             "correctAnswerId": 822153,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2342,38 +2335,38 @@
                     "declaration": "El contenido debe ser suficientemente robusto.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212249,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCuales son las pautas que utilizan los desarrolladores en el dise\u00f1o de agentes de usuario que hagan que la web sea m\u00e1s accesible para las personas con discapacidades?",
             "correctAnswerId": 838468,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2399,38 +2392,38 @@
                     "declaration": "UAAG",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656107,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes opciones representa una aplicaci\u00f3n de c\u00f3digo abierto para sistema operativo Microsoft Windows que proporciona un lector de pantalla para personas ciegas o con baja visi\u00f3n?",
             "correctAnswerId": 2605636,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2456,38 +2449,38 @@
                     "declaration": "Orca",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220719,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Dentro de los puntos de la CIA, \u00bfcual determina que los datos deben mantenerse libre de modificaciones o alteraciones por terceros?",
             "correctAnswerId": 872331,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2513,38 +2506,38 @@
                     "declaration": "Integridad",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212257,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Dentro de los criterios de accesibilidad de WCAG 2.0, \u0022Proporcionar una transcripci\u00f3n descriptiva para todo audio presente en cualquier contenido multimedia en directo\u0022 ser\u00eda de nivel:",
             "correctAnswerId": 838501,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2570,38 +2563,38 @@
                     "declaration": "Nivel de conformidad A.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 220725,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de estas no ser\u00eda una medida t\u00e9cnica correcta para asegurar el correcto cumplimiento de los pilares de seguridad de un sistema de informaci\u00f3n?",
             "correctAnswerId": 872355,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2627,38 +2620,38 @@
                     "declaration": "Configurar el bloqueo de sesi\u00f3n por inactividad en sistemas y aplicaciones.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 656109,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "NVDA (NonVisual Desktop Access) es:",
             "correctAnswerId": 2605644,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2684,38 +2677,38 @@
                     "declaration": "es un lector de pantalla  propiedad de microsoft que permite a las personas ciegas o con discapacidades visuales usar computadoras basadas en Windows.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 212270,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de los siguientes es un criterio de conformidad que pertenece a la versi\u00f3n WCAG 2.1?",
             "correctAnswerId": 838553,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "69beb016-30e8-4104-8387-0ee9c36198c6",
-                    "name": "Bloque III. Desarrollo de sistemas - TAI TL",
-                    "slug": "bloque-iii-desarrollo-de-sistemas-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "3",
+                    "name": "Desarrollo de sistemas",
+                    "slug": "desarrollo-de-sistemas",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "86b4f7ea-dbdc-4a8e-8c39-96e12b5361c3",
                         "name": "3.8 - Usabilidad y seguridad en desarrollo",
                         "slug": "tema-9-41",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2741,20 +2734,9 @@
                     "declaration": "Se proporcionan subt\u00edtulos para todo el contenido de audio en directo de los multimedia sincronizados.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         }
     ],
-    "duration": 0,
-    "mark": 0,
-    "doubtfulMark": 0,
-    "createdAt": "2025-08-02T15:35:33+00:00",
-    "updatedAt": "2025-08-02T15:35:33+00:00",
-    "inProgressAt": "2025-08-02T15:35:33+00:00",
-    "completedAt": null,
-    "isRepeated": false,
     "evaluation": {
         "id": 78,
         "name": "TAI TL",
@@ -2762,9 +2744,6 @@
         "failedAnswer": -0.333,
         "notAnswered": 0
     },
-    "maxMark": 0,
-    "passed": null,
-    "doubtfulPassed": null,
     "info": {
         "questionsCount": 48,
         "blankQuestionsCount": 48,
@@ -2786,7 +2765,5 @@
                 "count": 1
             }
         ]
-    },
-    "challengeToken": null,
-    "challenge": null
+    }
 }

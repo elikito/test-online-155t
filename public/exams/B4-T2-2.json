@@ -1,42 +1,35 @@
 {
-    "id": "808f948f-4b4c-4637-9eab-c2b2cdb227ac",
-    "examId": 47899944,
-    "studentId": 865065,
-    "realizedExamId": null,
-    "oppositionId": 74,
-    "state": "in_progress",
-    "title": "",
-    "annotation": null,
-    "statement": null,
-    "type": "random",
     "questions": [
         {
             "id": 620597,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el beneficio de utilizar thick provisioning en la administraci\u00f3n de almacenamiento?",
             "correctAnswerId": 2464203,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -62,38 +55,38 @@
                     "declaration": "Aumenta la capacidad de almacenamiento agregando nuevos discos duros.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250753,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "El Virtual Desktop Infraestructure es una tecnolog\u00eda de virtualizaci\u00f3n (Se\u00f1ale la correcta):",
             "correctAnswerId": 991297,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -119,38 +112,38 @@
                     "declaration": "de escritorio que almacena un sistema operativo linux en un servidor centralizado de un centro de datos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646924,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de los siguientes modelos de servicio en la computaci\u00f3n en la nube proporciona a los desarrolladores un entorno completo para el desarrollo y despliegue de aplicaciones, eliminando la necesidad de manejar el hardware y sistemas operativos subyacentes?",
             "correctAnswerId": 2569331,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -176,38 +169,38 @@
                     "declaration": "Platform as a Service(PaaS).",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253975,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCuales son los protocolos que pueden usarse para compartir archivos en un dispositivo NAS?",
             "correctAnswerId": 1004120,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -233,38 +226,38 @@
                     "declaration": "EXT3 y NTFS",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646927,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es una de las ventajas de utilizar la infraestructura como servicio (IaaS)?",
             "correctAnswerId": 2569342,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -290,38 +283,38 @@
                     "declaration": "Mayor seguridad y copia de seguridad de los datos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252003,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale la respuesta INCORRECTA sobre RAID 1:",
             "correctAnswerId": 996237,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -347,38 +340,38 @@
                     "declaration": "Utiliza 2 discos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646929,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Al utilizar una plataforma como servicio (PaaS), algunas tareas que no son necesarias incluyen:",
             "correctAnswerId": 2569352,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -404,38 +397,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 508248,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes es una plataforma de virtualizaci\u00f3n de computaci\u00f3n en nube de VMware?",
             "correctAnswerId": 2018267,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -461,38 +454,38 @@
                     "declaration": "QEMU",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252006,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se desea establecer un sistema de salvaguarda de informaci\u00f3n (back-up) que asegure una p\u00e9rdida potencial m\u00e1xima del trabajo realizado en 24 horas. Con el fin de facilitar el proceso se han propuesto diversas medidas. Indicar aqu\u00e9lla que sea v\u00e1lida:",
             "correctAnswerId": 996247,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -518,38 +511,38 @@
                     "declaration": "No se puede efectuar un sistema de salvaguarda basado en cinta para un sistema distribuido en el que las estaciones de trabajo no posean cinta magn\u00e9tica.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665303,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Una copia de seguridad (backup) diferencial:",
             "correctAnswerId": 2640990,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -575,38 +568,38 @@
                     "declaration": "Realiza una copia integral de los datos, copiando todos los contenidos de los sistemas a mantener.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253483,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes NO es una funci\u00f3n del administrador de base de datos?",
             "correctAnswerId": 1002155,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -632,38 +625,38 @@
                     "declaration": "Dise\u00f1ar los diferentes diagramas UML de los sistemas corporativos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646932,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 implica el modelo SaaS en t\u00e9rminos de mantenimiento y administraci\u00f3n?",
             "correctAnswerId": 2569363,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -689,38 +682,38 @@
                     "declaration": "El modelo SaaS  requiere  un alto mantenimiento.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252004,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En el \u00e1mbito de las bases de datos, \u00bfCu\u00e1l es la funci\u00f3n del motor de persistencia?",
             "correctAnswerId": 996238,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -746,38 +739,38 @@
                     "declaration": "El motor de persistencia es un  tipo de implementaci\u00f3n de un ORM.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662924,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 tipo de copia de seguridad, contiene todos los datos que han cambiado desde la \u00faltima copia completa?",
             "correctAnswerId": 2631512,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -803,44 +796,44 @@
                     "declaration": "Tanto diferencial como incremental contiene los datos que han cambiado desde la \u00faltima copia completa",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620598,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es la subasignaci\u00f3n en la administraci\u00f3n de almacenamiento?",
             "correctAnswerId": 2464208,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 },
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
                     "levelName": "Materias",
                     "levelSlug": "",
                     "child": null
@@ -868,38 +861,38 @@
                     "declaration": "La creaci\u00f3n de particiones de almacenamiento m\u00e1s peque\u00f1as de lo que realmente se necesita",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250917,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes  es una soluci\u00f3n de virtualizaci\u00f3n para empresas de Microsoft?",
             "correctAnswerId": 991921,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -925,38 +918,38 @@
                     "declaration": "Nutanix",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253486,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes NO es un tipo de Virtualizaci\u00f3n de almacenamiento?",
             "correctAnswerId": 1002169,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -982,38 +975,38 @@
                     "declaration": "Todas son correctas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250914,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "De las siguientes, \u00bfcu\u00e1l es una soluci\u00f3n de virtualizaci\u00f3n?",
             "correctAnswerId": 991911,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1039,38 +1032,38 @@
                     "declaration": "SlackVM",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252066,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre los diferentes tipos de BACKUP es cierta?",
             "correctAnswerId": 996488,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1096,38 +1089,38 @@
                     "declaration": "En el tipo de backup incremental se hace un respaldo completo de todos los archivos del equipo.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646931,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es una caracter\u00edstica del modelo SaaS?",
             "correctAnswerId": 2569359,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1153,38 +1146,38 @@
                     "declaration": "El precio se paga por uso, pero no por suscripci\u00f3n.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662961,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el nombre del tipo de copia de seguridad que incluye \u00fanicamente los datos que han sido modificados desde la \u00faltima copia completa?",
             "correctAnswerId": 2631660,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1210,44 +1203,44 @@
                     "declaration": "Tanto diferencial como incremental contiene los datos que han cambiado desde la \u00faltima copia completa",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 618375,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En el contexto de la administraci\u00f3n del almacenamiento, \u00bfqu\u00e9 es el Thin Provisioning?",
             "correctAnswerId": 2455520,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 },
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
                     "levelName": "Materias",
                     "levelSlug": "",
                     "child": null
@@ -1275,38 +1268,38 @@
                     "declaration": "Es un m\u00e9todo por el que se asigna todo el espacio virtualizado disponible y se va a reduciendo (shrinking) a medida que el liente lo descarta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662925,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el prop\u00f3sito de la \u201cvirtualizaci\u00f3n de un sistema operativo\u201d y en qu\u00e9 situaciones se utiliza com\u00fanmente?",
             "correctAnswerId": 2631516,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1332,38 +1325,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662977,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En una cabina de almacenamiento, los datos que deben ser accesibles r\u00e1pidamente y se almacenan en bloques se encuentran ubicados en:",
             "correctAnswerId": 2631726,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1389,38 +1382,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252002,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale la respuesta INCORRECTA con respecto a los sistemas RAID:",
             "correctAnswerId": 996231,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1446,38 +1439,38 @@
                     "declaration": "RAID 3 precisa al menos tres discos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250752,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n a la virtualizaci\u00f3n de escritorio, \u00bfQu\u00e9 opci\u00f3n NO es correcta?",
             "correctAnswerId": 991293,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1503,38 +1496,38 @@
                     "declaration": "Es una copia del escritorio que incluye el sistema operativo, aplicaciones y datos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 618377,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n a los sistemas RAID, indique qu\u00e9 configuraci\u00f3n permite acceso independiente con paridad distribuida",
             "correctAnswerId": 2455530,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1560,38 +1553,38 @@
                     "declaration": "RAID 3",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253976,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En el entorno VMWARE, un datastore es:",
             "correctAnswerId": 1004124,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1617,38 +1610,38 @@
                     "declaration": "Un espacio de almacenamiento independiente que centraliza los datos f\u00edsicos de una m\u00e1quina virtual.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665284,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En SQL, \u00bfc\u00f3mo se pueden eliminar los datos en una tabla, pero no la propia definici\u00f3n de la tabla?",
             "correctAnswerId": 2640914,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1674,38 +1667,38 @@
                     "declaration": "ERASE",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620605,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es el nivel RAID 1?",
             "correctAnswerId": 2464237,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1731,38 +1724,38 @@
                     "declaration": "Un nivel de RAID que utiliza la suma de verificaci\u00f3n para garantizar la integridad de los datos",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665268,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con los sistemas RAID se\u00f1ale la respuesta INCORRECTA:",
             "correctAnswerId": 2640852,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1788,38 +1781,38 @@
                     "declaration": "Un RAID 4 distribuye la informaci\u00f3n a nivel de bloques con dos discos de paridad dedicados.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665302,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Respecto a la virtualizaci\u00f3n de m\u00e1quinas, indique la opci\u00f3n FALSA:",
             "correctAnswerId": 2640986,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1845,38 +1838,38 @@
                     "declaration": "Permite un aprovechamiento mayor de la capacidad del hardware.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646926,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 tipo de detalles de infraestructura se pueden indireccionar utilizando la infraestructura como servicio (IaaS)?",
             "correctAnswerId": 2569341,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1902,38 +1895,38 @@
                     "declaration": "Todos los anteriores son detalles que se pueden indireccionar con Iaas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253536,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el mecanismo de protecci\u00f3n ante fallos de disco implementado por ORACLE?",
             "correctAnswerId": 1002366,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -1959,38 +1952,38 @@
                     "declaration": "Checkpoint",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646786,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con el almacenamiento NAS(Network Attached Storage) y SAN(Storage Area Network), se\u00f1ale la opci\u00f3n CORRECTA:",
             "correctAnswerId": 2568801,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2016,38 +2009,38 @@
                     "declaration": "Ambos operan a nivel de bloque",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 502747,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Si durante la misma semana, el administrador de seguridad decide el lunes hacer una copia de seguridad completa, el martes una copia de seguridad incremental y el mi\u00e9rcoles una copia diferencial, \u00bfQu\u00e9 contendr\u00eda la copia realizada el mi\u00e9rcoles?",
             "correctAnswerId": 1996448,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2073,38 +2066,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253475,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes es una herramienta  para sincronizar los ficheros y directorios que tenemos almacenados en un sitio, en otro diferente,  minimizando la transferencia de datos?",
             "correctAnswerId": 1002122,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2130,38 +2123,38 @@
                     "declaration": "FTPSync",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253534,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre los procesos background de una base de datos ORACLE es FALSA?",
             "correctAnswerId": 1002360,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2187,38 +2180,38 @@
                     "declaration": "ARCn  es el proceso que gestiona el contenido que tiene que ver con los ficheros red log.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646791,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con el almacenamiento SAN(Storage Area Network) , un servidor puede conectarse a una SAN utilizando:",
             "correctAnswerId": 2568822,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2244,38 +2237,38 @@
                     "declaration": "Hdmi",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646794,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfC\u00faal de las siguientes es una tecnolog\u00eda de red utilizada principalmente para arquitecturas de almacenamiento en red (SAN) ?",
             "correctAnswerId": 2568833,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2301,44 +2294,44 @@
                     "declaration": "ATX2",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620599,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 comando se utiliza para crear un archivo de disco virtual (VMDK) en VMWare?",
             "correctAnswerId": 2464211,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 },
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
                     "levelName": "Materias",
                     "levelSlug": "",
                     "child": null
@@ -2366,38 +2359,38 @@
                     "declaration": "mkfs",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250918,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes es una soluci\u00f3n de software en la nube que ofrece infraestructura virtualizada hiperconvergente y permite el almacenamiento en un Data store \u00fanico?",
             "correctAnswerId": 991925,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2423,38 +2416,38 @@
                     "declaration": "Roundcube",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646930,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 permite a los usuarios empresariales la plataforma como servicio (PaaS)?",
             "correctAnswerId": 2569357,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2480,38 +2473,38 @@
                     "declaration": "Alcanzar una velocidad de desarrollo m\u00e1s r\u00e1pida.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253538,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Si un sistema de almacenamiento es remoto y utiliza tecnolog\u00edas Fibre-Channel hablamos de un sistema:",
             "correctAnswerId": 1002376,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2537,38 +2530,38 @@
                     "declaration": "DAS.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646789,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con el almacenamiento SAN(Storage Area Network) , se\u00f1ale la opci\u00f3n CORRECTA:",
             "correctAnswerId": 2568814,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2594,38 +2587,38 @@
                     "declaration": "Opera a nivel de byte",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662974,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el nombre que se le da a la fase en la que se ejecutan sistemas de virtualizaci\u00f3n de m\u00e1quinas?",
             "correctAnswerId": 2631715,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2651,38 +2644,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646793,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes tecnolog\u00edas es un bus de comunicaciones serie de alta velocidad, baja latencia y de baja sobrecarga de CPU, dise\u00f1ado tanto para conexiones internas como externas.?",
             "correctAnswerId": 2568828,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2708,38 +2701,38 @@
                     "declaration": "InfinidBand",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662937,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "A la instancia que se realiza en los sistemas de virtualizaci\u00f3n de m\u00e1quinas se le llama:",
             "correctAnswerId": 2631565,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2765,44 +2758,44 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620596,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es el thick provisioning en la administraci\u00f3n de almacenamiento?",
             "correctAnswerId": 2464202,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 },
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
                     "levelName": "Materias",
                     "levelSlug": "",
                     "child": null
@@ -2830,38 +2823,38 @@
                     "declaration": "Una t\u00e9cnica de gesti\u00f3n de almacenamiento que permite crear particiones de almacenamiento de forma din\u00e1mica y sobre la marcha",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665264,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Con respecto a las sentencias del lenguaje SQL, indique la respuesta INCORRECTA:",
             "correctAnswerId": 2640833,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2887,38 +2880,38 @@
                     "declaration": "La sentencia GRANT se utiliza para dar permisos a un usuario.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620603,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es la funci\u00f3n principal de un sistema RAID?",
             "correctAnswerId": 2464230,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -2944,38 +2937,38 @@
                     "declaration": "Aumentar la capacidad de almacenamiento de los discos duros",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646925,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el objetivo principal de la infraestructura como servicio (IaaS)?",
             "correctAnswerId": 2569335,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3001,38 +2994,38 @@
                     "declaration": "Garantizar la seguridad y copia de seguridad de los datos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662940,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Dentro de un cabina de almacenamiento, los datos que han de ser accesibles a gran velocidad y son guardados en bloques se sit\u00faan en la parte:",
             "correctAnswerId": 2631578,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3058,38 +3051,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646787,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con el almacenamiento NAS(Network Attached Storage) , se\u00f1ale la opci\u00f3n CORRECTA:",
             "correctAnswerId": 2568805,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3115,38 +3108,38 @@
                     "declaration": "Opera a nivel de bite.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620590,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es el thin provisioning en la administraci\u00f3n de almacenamiento?",
             "correctAnswerId": 2464177,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3172,38 +3165,38 @@
                     "declaration": "Una t\u00e9cnica de gesti\u00f3n de almacenamiento que permite aumentar el tama\u00f1o de las particiones de almacenamiento de forma din\u00e1mica y sobre la marcha",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253531,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En una Base de Datos Oracle, cuando un proceso de usuario falla, que proceso se encarga de limpiar la cach\u00e9 y liberar los recursos que utilizaba:",
             "correctAnswerId": 1002348,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3229,38 +3222,38 @@
                     "declaration": "PFAIL.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646928,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es la principal ventaja de utilizar la plataforma como servicio (PaaS)?",
             "correctAnswerId": 2569346,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3286,38 +3279,38 @@
                     "declaration": "Permite a los usuarios empresariales crear aplicaciones en la nube.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252005,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "La pol\u00edtica de respaldo que consiste en salvaguardar s\u00f3lo los archivos que han sido modificados desde la \u00faltima copia de seguridad completa, se denomina:",
             "correctAnswerId": 996242,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3343,38 +3336,38 @@
                     "declaration": "Mensual",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253532,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En una base de datos oracle, \u00bfCu\u00e1l es el proceso que escribe en los ficheros de control los puntos de sincronizaci\u00f3n ?",
             "correctAnswerId": 1002350,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3400,38 +3393,38 @@
                     "declaration": "CKPT",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250916,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCual de las siguientes respuestas est\u00e1n integramente  formada por soluciones de virtualizaci\u00f3n?",
             "correctAnswerId": 991917,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3457,38 +3450,38 @@
                     "declaration": "Vmware, PowerVM, Citrix,Mandrake.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 654927,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Los posibles estados de una base de datos contenida en un DAG (Database Availability Group) de Microsoft Exchange 2013 son:",
             "correctAnswerId": 2600919,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3514,38 +3507,38 @@
                     "declaration": "las bases de datos en un DAG siempre est\u00e1n activas.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620606,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es el nivel RAID 5?",
             "correctAnswerId": 2464240,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3571,38 +3564,38 @@
                     "declaration": "Combina la divisi\u00f3n a nivel de bloques de un RAID 0 con la paridad distribuida de un RAID 5.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 252743,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n a las diferentes estrategias de backup, se\u00f1ale la CORRECTA:",
             "correctAnswerId": 999194,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3628,38 +3621,38 @@
                     "declaration": "La estrategia de backup incremental hace copia de lo que cambi\u00f3 desde el \u00faltimo backup completo, pero no desde uno incremental.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646790,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En relaci\u00f3n con el almacenamiento SAN(Storage Area Network) , se\u00f1ale la opci\u00f3n CORRECTA:",
             "correctAnswerId": 2568818,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3685,38 +3678,38 @@
                     "declaration": "Opera a nivel de fichero.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253979,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En una instancia de BD Oracle existen 2 estructuras de memoria b:\u00e1sicas",
             "correctAnswerId": 1004137,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3742,38 +3735,38 @@
                     "declaration": "SGA (System Global Area) y TGA (Transaction GlobalArea)",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253559,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 sistema de almacenamiento remoto utiliza protocolos est\u00e1ndar de\r\ncomunicaciones como TCP\/IP?",
             "correctAnswerId": 1002457,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3799,38 +3792,38 @@
                     "declaration": "DAS",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 646933,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es un ejemplo com\u00fan de una aplicaci\u00f3n SaaS?",
             "correctAnswerId": 2569368,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3856,38 +3849,38 @@
                     "declaration": "Un software que requiere que los clientes administren la infraestructura subyacente.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 368402,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Le env\u00edan un correo electr\u00f3nico con la nueva cadena de conexi\u00f3n a la base de datos Oracle, \u00bfen qu\u00e9 fichero ha de configurarlo?",
             "correctAnswerId": 1463316,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3913,38 +3906,38 @@
                     "declaration": "tnsnames.ora",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 250755,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes afirmaciones sobre la tecnolog\u00eda VDI(Virtual Desktop Infraestructure)  es FALSA?",
             "correctAnswerId": 991304,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -3970,38 +3963,38 @@
                     "declaration": "En un VDI persistente cada usuario dispondr\u00e1 de su propia imagen de escritorio, que podr\u00e1 ser personalizada seg\u00fan sus necesidades, pues las modificaciones se guardaran.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253977,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Cuando hablamos de computaci\u00f3n en la Nube(Cloud Computing)  existen:",
             "correctAnswerId": 1004128,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4027,38 +4020,38 @@
                     "declaration": "3 Modelos de de servicios: Software como servicio, Plataforma como servicio e Infraestructura como servicio.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 662962,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l es el objetivo de la \u0022virtualizaci\u00f3n de un sistema operativo\u0022 y en qu\u00e9 escenarios se suele emplear de manera frecuente?",
             "correctAnswerId": 2631664,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4084,38 +4077,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620604,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 es el nivel RAID 0?",
             "correctAnswerId": 2464233,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4141,38 +4134,38 @@
                     "declaration": "Un nivel de RAID que no divide los datos en bloques y los distribuye entre los discos",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665269,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfCu\u00e1l de las siguientes es una tecnolog\u00eda de almacenamiento en disco mediante bus serie?",
             "correctAnswerId": 2640853,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4198,38 +4191,38 @@
                     "declaration": "DLT",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620600,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 comando se utiliza para asignar un disco a una m\u00e1quina virtual en VMWare?",
             "correctAnswerId": 2464217,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4255,38 +4248,38 @@
                     "declaration": "esxcfg-volume",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 253569,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "En un servidor VMWare con varias m\u00e1quinas virtuales:",
             "correctAnswerId": 1002496,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4312,38 +4305,38 @@
                     "declaration": "Ninguna es correcta.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 620602,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "\u00bfQu\u00e9 significa el acr\u00f3nimo RAID?",
             "correctAnswerId": 2464226,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4369,38 +4362,38 @@
                     "declaration": "Robust Array of Inexpensive Disks",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         },
         {
             "id": 665277,
             "organization": {
                 "id": 1,
-                "name": "OpositaTest",
-                "code": "OPOSITATEST"
+                "name": null,
+                "code": null
             },
             "declaration": "Se\u00f1ale qu\u00e9 es el Machine Learning Services para SQL Server:",
             "correctAnswerId": 2640886,
             "reason": "",
-            "isRepealed": false,
-            "isAnnulled": false,
-            "isDeleted": false,
             "contents": [
                 {
-                    "id": "d162ec05-045f-4b97-ac43-2690bd60d386",
-                    "name": "Bloque IV. Sistemas y comunicaciones - TAI TL",
-                    "slug": "bloque-iv-sistemas-y-comunicaciones-tai-tl",
-                    "levelName": "Materias",
-                    "levelSlug": "",
+                    "id": "4",
+                    "name": "Sistemas y comunicaciones",
+                    "slug": "sistemas-y-comunicaciones",
+                    "levelName": "Bloque",
+                    "levelSlug": "bloque",
                     "child": {
                         "id": "b89bb6e9-34a2-4308-88b1-6b02558d8c8e",
                         "name": "4.2 - Bases de datos y virtualización",
                         "slug": "tema-2-62",
-                        "levelName": "Temas",
-                        "levelSlug": "",
-                        "child": null
+                        "levelName": "Tema",
+                        "levelSlug": "tema",
+                        "child": {
+                            "id": "",
+                            "name": "",
+                            "slug": "",
+                            "levelName": "Unidad",
+                            "levelSlug": "unidad"
+                        }
                     }
                 }
             ],
@@ -4426,20 +4419,9 @@
                     "declaration": "Es el servicio principal para almacenar, procesar y proteger los datos.",
                     "image": null
                 }
-            ],
-            "answeredId": null,
-            "isDoubtful": false,
-            "isHighlighted": false
+            ]
         }
     ],
-    "duration": 0,
-    "mark": 0,
-    "doubtfulMark": 0,
-    "createdAt": "2025-08-02T15:48:29+00:00",
-    "updatedAt": "2025-08-02T15:48:29+00:00",
-    "inProgressAt": "2025-08-02T15:48:29+00:00",
-    "completedAt": null,
-    "isRepeated": false,
     "evaluation": {
         "id": 78,
         "name": "TAI TL",
@@ -4447,9 +4429,6 @@
         "failedAnswer": -0.333,
         "notAnswered": 0
     },
-    "maxMark": 0,
-    "passed": null,
-    "doubtfulPassed": null,
     "info": {
         "questionsCount": 77,
         "blankQuestionsCount": 77,
@@ -4471,7 +4450,5 @@
                 "count": 1
             }
         ]
-    },
-    "challengeToken": null,
-    "challenge": null
+    }
 }
